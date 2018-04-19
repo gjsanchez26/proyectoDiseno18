@@ -1,0 +1,16 @@
+
+libraries 		= ['libcluster-delegator','libboost_serialization']
+library_paths 	= ['/usr/local/include', '/usr/local/lib', '/opt/local/include' '${MPI_INCLUDE_PATH}', '${Boost_INCLUDE_DIRS}' , '${USER_INCLUDE_PATH}']
+cppDefines 		= {}
+cppFlags 		= ['-Wall']
+cxxFlags 		= ['-std=c++11','-L']
+
+common_env = Environment()
+common_env.Replace(CXX = 'mpicxx')
+common_env.Append(LIBS 			= libraries)
+common_env.Append(LIBPATH 		= library_paths)
+common_env.Append(CPPDEFINES 	        = cppDefines)
+common_env.Append(CPPFLAGS 		= cppFlags)
+common_env.Append(CXXFLAGS 		= cxxFlags)
+
+common_env.Program('test','example1.cpp')

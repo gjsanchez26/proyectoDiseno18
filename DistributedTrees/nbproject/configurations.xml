@@ -5,13 +5,15 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="f3" displayName="DistributionHeaders" projectFiles="true">
+        <itemPath>/home/gabo/Documents/DistributedTrees/Process.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2"
                      displayName="InitializationHeaders"
                      projectFiles="true">
+        <itemPath>/home/gabo/Documents/DistributedTrees/config.h</itemPath>
         <itemPath>configData.h</itemPath>
         <itemPath>configValidator.h</itemPath>
-        <itemPath>inicializator.h</itemPath>
+        <itemPath>initializator.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="userHeaders" projectFiles="true">
         <itemPath>userValidator.h</itemPath>
@@ -25,6 +27,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <logicalFolder name="f2" displayName="DistributionSource" projectFiles="true">
+        <itemPath>/home/gabo/Documents/DistributedTrees/Process.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="InitializationSource" projectFiles="true">
         <itemPath>configData.cpp</itemPath>
@@ -60,9 +63,38 @@
         <ccTool>
           <stripSymbols>true</stripSymbols>
           <standard>8</standard>
-          <commandlineTool>g++</commandlineTool>
+          <commandlineTool>mpicxx</commandlineTool>
         </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/local/lib</pElem>
+            <pElem>/usr/local/include</pElem>
+            <pElem>${MPI_INCLUDE_PATH}</pElem>
+            <pElem>${Boost_INCLUDE_DIRS}</pElem>
+            <pElem>${USER_INCLUDE_PATH}</pElem>
+            <pElem>/opt/local/include</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerOptionItem>-lboost_serialization</linkerOptionItem>
+            <linkerOptionItem>-lcluster-delegator</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
+      <item path="/home/gabo/Documents/DistributedTrees/Process.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Process.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/config.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="configData.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="configData.h" ex="false" tool="3" flavor2="0">
@@ -71,9 +103,9 @@
       </item>
       <item path="configValidator.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="inicializator.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="initializator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="initializator.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -102,6 +134,21 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="/home/gabo/Documents/DistributedTrees/Process.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Process.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/config.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="configData.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="configData.h" ex="false" tool="3" flavor2="0">
@@ -110,9 +157,9 @@
       </item>
       <item path="configValidator.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="inicializator.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="initializator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="initializator.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

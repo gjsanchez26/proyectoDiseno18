@@ -24,24 +24,28 @@ bool userValidator::validateConfiguration(configData& pData){
     switch( pData.GetTrainningMethod()){
         case 0: {
             cout << "BPC METHOD VALIDATION \n";
+            return true;
             break;
         }
         case 1: {
             cout << "OJR METHOD VALIDATION\n";
+            return true;
+
             break;
         }
         case 2: {
             cout << "LATENT METHOD VALIDATION\n";
+            return true;
             break;
         }
         default: {
             cout << "CHOOSE METHOD";
+            return false;
             break;
         }
             
     
     }
-    return true;
 
 }
 

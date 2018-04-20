@@ -15,8 +15,8 @@ NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
 CC=gcc
-CCC=g++
-CXX=g++
+CCC=mpicxx
+CXX=mpicxx
 FC=gfortran
 AS=as
 
@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/7e3bde50/Process.o \
 	${OBJECTDIR}/configData.o \
 	${OBJECTDIR}/configValidator.o \
 	${OBJECTDIR}/initializator.o \
@@ -56,7 +57,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-L/usr/local/lib -L/usr/local/include -L${MPI_INCLUDE_PATH} -L${Boost_INCLUDE_DIRS} -L${USER_INCLUDE_PATH} -L/opt/local/include -lboost_serialization -lcluster-delegator
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -65,6 +66,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/distributedtrees: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/distributedtrees ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/_ext/7e3bde50/Process.o: /home/gabo/Documents/DistributedTrees/Process.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -s -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/Process.o /home/gabo/Documents/DistributedTrees/Process.cpp
 
 ${OBJECTDIR}/configData.o: configData.cpp 
 	${MKDIR} -p ${OBJECTDIR}

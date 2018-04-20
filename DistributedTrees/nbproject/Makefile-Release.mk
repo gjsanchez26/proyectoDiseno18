@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/_ext/7e3bde50/Process.o \
 	${OBJECTDIR}/configData.o \
 	${OBJECTDIR}/configValidator.o \
 	${OBJECTDIR}/initializator.o \
@@ -65,6 +66,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/distributedtrees: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/distributedtrees ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/_ext/7e3bde50/Process.o: /home/gabo/Documents/DistributedTrees/Process.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/Process.o /home/gabo/Documents/DistributedTrees/Process.cpp
 
 ${OBJECTDIR}/configData.o: configData.cpp 
 	${MKDIR} -p ${OBJECTDIR}

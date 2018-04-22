@@ -1,0 +1,29 @@
+import sys
+import os
+import re
+
+Import('env')
+
+localEnv = env.Clone()
+
+env['LIBS'] = '${LIBS}'
+localEnv.Program("helloworld", "helloworld.cpp")
+localEnv.Append(LIBS=['helloworld', '${LIBS}'])
+localEnv.Program("skeleton", "skeleton.cpp")
+localEnv.Append(LIBS=['skeleton', '${LIBS}'])
+localEnv.Program("example1", "example1.cpp")
+localEnv.Append(LIBS=['example1', 'libcluster-delegator', '${LIBS}'])
+localEnv.Program("example2", "example2.cpp")
+localEnv.Append(LIBS=['example2', '${LIBS}'])
+if (MPI_COMPILE_FLAGS):
+    localEnv.Append(CXXFLAGS=['${MPI_COMPILE_FLAGS}'])
+    localEnv.Append(CXXFLAGS=['${MPI_COMPILE_FLAGS}'])
+    localEnv.Append(CXXFLAGS=['${MPI_COMPILE_FLAGS}'])
+    localEnv.Append(CXXFLAGS=['${MPI_COMPILE_FLAGS}'])
+
+if (MPI_LINK_FLAGS):
+
+# install(TARGETS, helloworld, skeleton, example1, example2, RUNTIME, DESTINATION, ${CMAKE_SOURCE_DIR}/bin)
+
+Export('env')
+

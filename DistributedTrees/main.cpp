@@ -50,7 +50,8 @@ int main(int argc, char** argv) {
     delegator::Start ();
     delegator::Run < Process > (argc, argv);
     delegator::Stop ();
-
+    
+    
     return 0;
 }
 

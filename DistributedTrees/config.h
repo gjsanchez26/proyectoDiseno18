@@ -16,14 +16,14 @@
 
 #define VECTOR_AMOUNT           0
 #define THRESHOLD_AMOUNT        1 
-#define TREE_AMOUNT            2
+#define TREE_AMOUNT             2
 #define PROCESS_AMOUNT          3
 #define TEST_IMAGES_AMOUNT      4
 #define TRAIN_IMAGES_AMOUNT     5
 #define LOG_VERBOSITY           6
 #define NOTICED_TIME            7
 #define THREAD_AMOUT            8
-#define TRAINNING_METHOD        9
+#define TRAINNING_METHOD        0
 #define STOP_METHOD             10
 #define SELECTION_METHOD        11
 

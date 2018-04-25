@@ -24,6 +24,7 @@ inline void Process::work ( Message & result_message, const Message & job_messag
   std::pair < int, int > job;
   job_message >> job;
   // Compute something interesting
+  
   std::pair < int, int > result;
   result.first = job.first + job.second; 
   result.second = job.first * job.second;

@@ -12,7 +12,7 @@
  */
 
 #include <iostream>
-#include "initializator.h"
+#include "Initializator.h"
 #include "Process.h"
 
 
@@ -44,8 +44,9 @@ int main(int argc, char** argv) {
     configValidator *validator = new userValidator(); // Utilizacion de interfaz por medio de la clase implementada por usuario
     validator->validateConfiguration(*data);*/
     
-    initializator *init = new initializator();
-    init->createPlataform();
+    //initializator *init = new initializator();
+    //init->createPlataform();
+
     
     delegator::Start ();
     delegator::Run < Process > (argc, argv);

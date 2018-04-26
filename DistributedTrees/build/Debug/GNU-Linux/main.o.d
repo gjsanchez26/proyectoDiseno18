@@ -1,14 +1,14 @@
-build/Debug/GNU-Linux/main.o: main.cpp initializator.h config.h \
- configData.h configValidator.h userValidator.h Process.h
+build/Debug/GNU-Linux/main.o: main.cpp Initializator.h Config.h \
+ ConfigData.h ConfigValidator.h UserValidator.h Process.h
 
-initializator.h:
+Initializator.h:
 
-config.h:
+Config.h:
 
-configData.h:
+ConfigData.h:
 
-configValidator.h:
+ConfigValidator.h:
 
-userValidator.h:
+UserValidator.h:
 
 Process.h:

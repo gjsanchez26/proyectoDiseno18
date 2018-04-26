@@ -11,8 +11,9 @@
  * Created on April 19, 2018, 2:35 PM
  */
 #include "cluster-delegator.hpp"
-#include "config.h"
+#include "Config.h"
 #include <iostream>
+#include <tuple>
 
 #ifndef PROCESS_H
 #define PROCESS_H
@@ -21,9 +22,12 @@ using namespace std;
 
 class Process : public Coordinator_Worker_Process {
 public:
-  void initialize ( void );
-  void work ( Message & result_message, const Message & job_message ) const;
-  void finalize ( void );
+    //void command_line(int argcin, char * argvin []);
+    int  prepare ( Message & job_message );
+    void initialize ( void );
+    void work ( Message & result_message, const Message & job_message ) const;
+    void accept(Message const& result_message);
+    void finalize ( void );
 private:
   int num_jobs_sent;
   int num_jobs;

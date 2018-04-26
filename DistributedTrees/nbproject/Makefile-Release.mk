@@ -36,11 +36,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/_ext/7e3bde50/Process.o \
-	${OBJECTDIR}/configData.o \
-	${OBJECTDIR}/configValidator.o \
-	${OBJECTDIR}/initializator.o \
-	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/userValidator.o
+	${OBJECTDIR}/ConfigData.o \
+	${OBJECTDIR}/ConfigValidator.o \
+	${OBJECTDIR}/Initializator.o \
+	${OBJECTDIR}/UserValidator.o \
+	${OBJECTDIR}/main.o
 
 
 # C Compiler Flags
@@ -72,30 +72,30 @@ ${OBJECTDIR}/_ext/7e3bde50/Process.o: /home/gabo/Documents/DistributedTrees/Proc
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/Process.o /home/gabo/Documents/DistributedTrees/Process.cpp
 
-${OBJECTDIR}/configData.o: configData.cpp 
+${OBJECTDIR}/ConfigData.o: ConfigData.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/configData.o configData.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ConfigData.o ConfigData.cpp
 
-${OBJECTDIR}/configValidator.o: configValidator.cpp 
+${OBJECTDIR}/ConfigValidator.o: ConfigValidator.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/configValidator.o configValidator.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ConfigValidator.o ConfigValidator.cpp
 
-${OBJECTDIR}/initializator.o: initializator.cpp 
+${OBJECTDIR}/Initializator.o: Initializator.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/initializator.o initializator.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Initializator.o Initializator.cpp
+
+${OBJECTDIR}/UserValidator.o: UserValidator.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/UserValidator.o UserValidator.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
-
-${OBJECTDIR}/userValidator.o: userValidator.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/userValidator.o userValidator.cpp
 
 # Subprojects
 .build-subprojects:

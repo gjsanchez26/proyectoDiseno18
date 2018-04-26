@@ -1,4 +1,4 @@
-build/Debug/GNU-Linux/userValidator.o: userValidator.cpp UserValidator.h \
+build/Debug/GNU-Linux/UserValidator.o: UserValidator.cpp UserValidator.h \
  ConfigValidator.h ConfigData.h
 
 UserValidator.h:

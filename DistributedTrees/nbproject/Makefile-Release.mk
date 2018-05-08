@@ -36,9 +36,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/_ext/7e3bde50/Process.o \
+	${OBJECTDIR}/_ext/7e3bde50/treeScheduler.o \
+	${OBJECTDIR}/Initializator.o \
 	${OBJECTDIR}/configData.o \
 	${OBJECTDIR}/configValidator.o \
-	${OBJECTDIR}/initializator.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/userValidator.o
 
@@ -72,6 +73,16 @@ ${OBJECTDIR}/_ext/7e3bde50/Process.o: /home/gabo/Documents/DistributedTrees/Proc
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/Process.o /home/gabo/Documents/DistributedTrees/Process.cpp
 
+${OBJECTDIR}/_ext/7e3bde50/treeScheduler.o: /home/gabo/Documents/DistributedTrees/treeScheduler.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/treeScheduler.o /home/gabo/Documents/DistributedTrees/treeScheduler.cpp
+
+${OBJECTDIR}/Initializator.o: Initializator.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Initializator.o Initializator.cpp
+
 ${OBJECTDIR}/configData.o: configData.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -81,11 +92,6 @@ ${OBJECTDIR}/configValidator.o: configValidator.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/configValidator.o configValidator.cpp
-
-${OBJECTDIR}/initializator.o: initializator.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/initializator.o initializator.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

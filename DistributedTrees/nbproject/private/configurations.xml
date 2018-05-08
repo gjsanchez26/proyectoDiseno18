@@ -27,8 +27,9 @@
           <runcommandpicklistitem>"mpiexec -np 4 ${OUTPUT_PATH}"</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
           <runcommandpicklistitem>mpiexec -np 4 "${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 4 "${OUTPUT_PATH}" 10 20</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>mpiexec -np 4 "${OUTPUT_PATH}"</runcommand>
+        <runcommand>mpiexec -np 4 "${OUTPUT_PATH}" 10 20</runcommand>
         <rundir></rundir>
         <buildfirst>true</buildfirst>
         <terminal-type>0</terminal-type>

@@ -10,66 +10,7 @@
  *
  * Created on April 19, 2018, 10:36 AM
  * ]3.669
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
+ *
  */
 
 #ifndef CONFIG_H
@@ -87,6 +28,7 @@
 #define TRAINNING_METHOD        0
 #define STOP_METHOD             10
 #define SELECTION_METHOD        11
+#define NODE_AMOUNT             4
 
 
 #endif /* CONFIG_H */

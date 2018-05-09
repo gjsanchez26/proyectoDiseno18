@@ -42,13 +42,14 @@ public:
     void work ( Message & result_message, const Message & job_message ) const;
     void accept(Message const& result_message);
     void finalize ( void );
-    string getNodeIP(string _pName) const;
+    int getNodeIP(string _pName) const;
     pair<int,int> setImageRange(string _pName) const;
 private:
   int num_jobs_sent;
   int num_jobs;
   treeScheduler *_scheduler;
   pair<int,int> _range;
+  int _rank;
 };
 
 #endif /* PROCESS_H */

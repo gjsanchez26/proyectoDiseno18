@@ -24,8 +24,15 @@
       </nativedebugger>
       <runprofile version="9">
         <runcommandpicklist>
-          <runcommandpicklistitem>"mpiexec -np 4 ${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 4 "${OUTPUT_PATH}" 10 20</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 1 "${OUTPUT_PATH}" 10 20</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 2 "${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 1 "${OUTPUT_PATH}" </runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 1000 "${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 12 "${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 8 "${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 6 "${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>mpiexec -np 10 "${OUTPUT_PATH}"</runcommandpicklistitem>
           <runcommandpicklistitem>mpiexec -np 4 "${OUTPUT_PATH}"</runcommandpicklistitem>
         </runcommandpicklist>
         <runcommand>mpiexec -np 4 "${OUTPUT_PATH}"</runcommand>

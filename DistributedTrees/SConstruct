@@ -1,0 +1,37 @@
+
+libraries 		= ['libboost_mpi','libboost_serialization',"libopencv_calib3d","libopencv_contrib","libopencv_core","libopencv_features2d","libopencv_flann","libopencv_gpu","libopencv_highgui","libopencv_imgproc","libopencv_legacy","libopencv_ml","libopencv_nonfree","libopencv_objdetect","libopencv_ocl","libopencv_photo","libopencv_stitching","libopencv_superres","libopencv_ts","libopencv_video","libopencv_videostab","atomic","tbb","libGL","libGLU","pthread","m","dl"]
+library_paths 	        = ['/usr/lib/x86_64-linux-gnu/','/usr/local/include', '/usr/local/lib', '/opt/local/include','${MPI_INCLUDE_PATH}', 
+                          '${Boost_INCLUDE_DIRS}' , '${USER_INCLUDE_PATH}']
+cppDefines 		= {}
+cppFlags 		= ['-Wall']
+cxxFlags 		= ['-std=c++11','-L','-fopemmp']
+
+common_env = Environment()
+common_env.Replace(CXX                  = 'mpicxx')
+common_env.Append( LIBS 	        = libraries)
+common_env.Append( LIBPATH 		= library_paths)
+common_env.Append( CPPDEFINES 	        = cppDefines)
+common_env.Append( CPPFLAGS 		= cppFlags)
+common_env.Append( CXXFLAGS 		= cxxFlags)
+
+
+	
+
+#main = common_env.Program( "main", [ "example2.cpp" ] )
+
+#test = common_env.Command( target = "output",
+#                source = "./main",
+#                action = ["mpiexec -hostfile host_file ./main 20 is the answer"] )
+#AlwaysBuild( test )
+
+
+main0 = common_env.Program( "main0", ["main.cpp" , "DistributionManager.cpp", "Task.cpp", "configData.cpp", "ImageDispatcher.cpp","Collection.cpp","configValidator.cpp","DepthImage.cpp", "Estructura.cpp","Features.cpp","FeaturesMat.cpp", "ForestManager.cpp", "Image.cpp" , "LabelImage.cpp" , "NodeResource.cpp" , "PointsSelect.cpp" , "StrategyImage.cpp" , "treeScheduler.cpp", "ImageGetter.cpp" , "Initializator.cpp" , "userValidator.cpp","NodeResult.cpp"])                
+
+
+test0 = common_env.Command( target = "output0",
+                source = "./main0",
+                action = ["mpiexec -np 4 ./main0"] )
+                #action = ["mpiexec -hostfile host_file ./main0"] )
+AlwaysBuild( test0 )
+
+

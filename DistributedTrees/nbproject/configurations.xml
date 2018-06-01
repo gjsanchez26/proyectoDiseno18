@@ -5,39 +5,109 @@
                    displayName="Header Files"
                    projectFiles="true">
       <logicalFolder name="f3" displayName="DistributionHeaders" projectFiles="true">
-        <itemPath>/home/gabo/Documents/DistributedTrees/Process.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/DistributionManager.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/ImageDispatcher.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f4" displayName="ForestHeaders" projectFiles="true">
+        <itemPath>/home/gabo/Documents/DistributedTrees/Cell.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/CellBPC.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/ForestManager.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Matrix.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/MatrixBPC.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/NodeResource.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/NodeResult.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Resource.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Resources.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Task.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/TrainManager.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="ImagesHeaders" projectFiles="true">
+        <itemPath>/home/gabo/Documents/DistributedTrees/Collection.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/DepthImage.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Estructura.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Image.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/ImageGetter.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/ImageManager.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/LabelImage.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/PointsSelect.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/StrategyImage.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f2"
                      displayName="InitializationHeaders"
                      projectFiles="true">
         <itemPath>/home/gabo/Documents/DistributedTrees/Config.h</itemPath>
         <itemPath>ConfigData.h</itemPath>
-        <itemPath>ConfigValidator.h</itemPath>
+        <itemPath>ConfigValidationInterface.h</itemPath>
         <itemPath>Initializator.h</itemPath>
       </logicalFolder>
-      <logicalFolder name="f1" displayName="userHeaders" projectFiles="true">
-        <itemPath>UserValidator.h</itemPath>
+      <logicalFolder name="f7" displayName="SchedulerHeaders" projectFiles="true">
+        <itemPath>/home/gabo/Documents/DistributedTrees/QueueTask.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/QueueThread.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Scheduler.h</itemPath>
       </logicalFolder>
+      <logicalFolder name="SourceFiles"
+                     displayName="Source Files"
+                     projectFiles="true">
+        <logicalFolder name="f2" displayName="DistributionSource" projectFiles="true">
+          <itemPath>/home/gabo/Documents/DistributedTrees/DistributionManager.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/ImageDispatcher.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/NodeResource.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f4" displayName="ForestSource" projectFiles="true">
+          <itemPath>/home/gabo/Documents/DistributedTrees/Cell.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/CellBPC.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/ForestManager.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Matrix.tpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/MatrixBPC.tpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/NodeResult.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Resource.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Resources.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Task.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/TrainManager.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f6" displayName="ImagesSource" projectFiles="true">
+          <itemPath>/home/gabo/Documents/DistributedTrees/Collection.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/DepthImage.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Estructura.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Image.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/ImageGetter.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/ImageManager.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/LabelImage.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/PointsSelect.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/StrategyImage.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f1" displayName="InitializationSource" projectFiles="true">
+          <itemPath>ConfigData.cpp</itemPath>
+          <itemPath>Initializator.cpp</itemPath>
+          <itemPath>configValidator.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f7" displayName="SchedulerSource" projectFiles="true">
+          <itemPath>/home/gabo/Documents/DistributedTrees/QueueTask.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/QueueThread.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Scheduler.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f5" displayName="TrainSource" projectFiles="true">
+          <itemPath>/home/gabo/Documents/DistributedTrees/Features.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/FeaturesMat.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f3" displayName="UserSource" projectFiles="true">
+          <itemPath>userValidator.cpp</itemPath>
+        </logicalFolder>
+        <itemPath>/home/gabo/Documents/DistributedTrees/BestFeatureMsg.cpp</itemPath>
+        <itemPath>main.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="TrainHeaders" projectFiles="true">
+        <itemPath>/home/gabo/Documents/DistributedTrees/Features.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/FeaturesMat.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="userHeaders" projectFiles="true">
+        <itemPath>userValidator.h</itemPath>
+      </logicalFolder>
+      <itemPath>/home/gabo/Documents/DistributedTrees/BestFeatureMsg.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-    </logicalFolder>
-    <logicalFolder name="SourceFiles"
-                   displayName="Source Files"
-                   projectFiles="true">
-      <logicalFolder name="f2" displayName="DistributionSource" projectFiles="true">
-        <itemPath>/home/gabo/Documents/DistributedTrees/Process.cpp</itemPath>
-      </logicalFolder>
-      <logicalFolder name="f1" displayName="InitializationSource" projectFiles="true">
-        <itemPath>ConfigData.cpp</itemPath>
-        <itemPath>ConfigValidator.cpp</itemPath>
-        <itemPath>Initializator.cpp</itemPath>
-      </logicalFolder>
-      <logicalFolder name="f3" displayName="UserSource" projectFiles="true">
-        <itemPath>UserValidator.cpp</itemPath>
-      </logicalFolder>
-      <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -51,6 +121,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>/home/gabo/Documents/DistributedTrees</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -64,6 +137,7 @@
           <stripSymbols>true</stripSymbols>
           <standard>8</standard>
           <commandlineTool>mpicxx</commandlineTool>
+          <commandLine>-fopenmp</commandLine>
         </ccTool>
         <linkerTool>
           <linkerAddLib>
@@ -77,20 +151,292 @@
           <linkerLibItems>
             <linkerOptionItem>-lboost_serialization</linkerOptionItem>
             <linkerOptionItem>-lcluster-delegator</linkerOptionItem>
+            <linkerOptionItem>-lboost_mpi</linkerOptionItem>
+            <linkerOptionItem>`pkg-config --libs opencv`</linkerOptionItem>
           </linkerLibItems>
         </linkerTool>
       </compileType>
+      <item path="/home/gabo/Documents/DistributedTrees/BestFeatureMsg.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/BestFeatureMsg.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Cell.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Cell.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/CellBPC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/CellBPC.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Collection.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Collection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/gabo/Documents/DistributedTrees/Config.h"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/gabo/Documents/DistributedTrees/Process.cpp"
+      <item path="/home/gabo/Documents/DistributedTrees/DepthImage.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/gabo/Documents/DistributedTrees/Process.h"
+      <item path="/home/gabo/Documents/DistributedTrees/DepthImage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/DistributionManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/DistributionManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Estructura.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Estructura.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Features.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Features.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/FeaturesMat.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/FeaturesMat.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ForestManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ForestManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Image.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Image.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageDispatcher.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageDispatcher.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageGetter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageGetter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/LabelImage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/LabelImage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Matrix.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Matrix.tpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/MatrixBPC.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/MatrixBPC.tpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeResource.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeResource.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/PointsSelect.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/PointsSelect.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/QueueTask.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/QueueTask.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/QueueThread.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/QueueThread.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Resource.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Resource.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Resources.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Resources.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Scheduler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Scheduler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/StrategyImage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/StrategyImage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Task.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Task.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainManager.h"
             ex="false"
             tool="3"
             flavor2="0">
@@ -99,19 +445,19 @@
       </item>
       <item path="ConfigData.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ConfigValidator.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ConfigValidator.h" ex="false" tool="3" flavor2="0">
+      <item path="ConfigValidationInterface.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Initializator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Initializator.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="UserValidator.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="UserValidator.h" ex="false" tool="3" flavor2="0">
+      <item path="configValidator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="userValidator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="userValidator.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -134,17 +480,287 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="/home/gabo/Documents/DistributedTrees/BestFeatureMsg.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/BestFeatureMsg.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Cell.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Cell.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/CellBPC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/CellBPC.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Collection.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Collection.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/gabo/Documents/DistributedTrees/Config.h"
             ex="false"
             tool="3"
             flavor2="0">
       </item>
-      <item path="/home/gabo/Documents/DistributedTrees/Process.cpp"
+      <item path="/home/gabo/Documents/DistributedTrees/DepthImage.cpp"
             ex="false"
             tool="1"
             flavor2="0">
       </item>
-      <item path="/home/gabo/Documents/DistributedTrees/Process.h"
+      <item path="/home/gabo/Documents/DistributedTrees/DepthImage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/DistributionManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/DistributionManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Estructura.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Estructura.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Features.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Features.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/FeaturesMat.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/FeaturesMat.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ForestManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ForestManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Image.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Image.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageDispatcher.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageDispatcher.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageGetter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageGetter.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/LabelImage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/LabelImage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Matrix.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Matrix.tpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/MatrixBPC.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/MatrixBPC.tpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeResource.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeResource.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeResult.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/PointsSelect.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/PointsSelect.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/QueueTask.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/QueueTask.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/QueueThread.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/QueueThread.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Resource.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Resource.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Resources.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Resources.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Scheduler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Scheduler.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/StrategyImage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/StrategyImage.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Task.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Task.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainManager.h"
             ex="false"
             tool="3"
             flavor2="0">
@@ -153,19 +769,19 @@
       </item>
       <item path="ConfigData.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ConfigValidator.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ConfigValidator.h" ex="false" tool="3" flavor2="0">
+      <item path="ConfigValidationInterface.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Initializator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Initializator.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="UserValidator.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="UserValidator.h" ex="false" tool="3" flavor2="0">
+      <item path="configValidator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="userValidator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="userValidator.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>

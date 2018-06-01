@@ -1,3 +1,0 @@
-/home/will/github/proyectoDiseno18/Imagenes/build/CMakeFiles/edit_cache.dir
-/home/will/github/proyectoDiseno18/Imagenes/build/CMakeFiles/rebuild_cache.dir
-/home/will/github/proyectoDiseno18/Imagenes/build/CMakeFiles/ImageGetter.dir

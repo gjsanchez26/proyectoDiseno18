@@ -12,25 +12,32 @@
  */
 #include "Config.h"
 #include "ConfigData.h"
-#include "ConfigValidator.h"
-#include "UserValidator.h"
+#include "ConfigValidationInterface.h"
+#include "userValidator.h"
 
 
 #ifndef INITIALIZATOR_H
 #define INITIALIZATOR_H
 
-class initializator {
-public:
-    initializator();
-    initializator(const initializator& orig);
-    void createPlataform();
-    initializator(const configData &Data);
-    virtual ~initializator();
-private:
-    configData       *_config;
-    configValidator  *_validator;
-
-};
-
+namespace rdf {
+    /* This class allow to initialize the platform
+        */
+    class Initializator {
+        
+        private:
+            ConfigData                  *_config;
+            ConfigValidationInterface   *_validator;
+            
+        public:
+            Initializator();
+            Initializator(const Initializator& orig);
+            Initializator(const ConfigData &Data);
+            virtual ~Initializator();
+            
+            void createPlataform();
+            
+            
+    };
+}
 #endif /* INITIALIZATOR_H */
 

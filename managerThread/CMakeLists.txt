@@ -1,6 +1,0 @@
-cmake_minimum_required(VERSION 2.8)
-project( resources )
-find_package( OpenCV REQUIRED )
-add_executable( resources Resources.cpp )
-target_link_libraries( resources ${OpenCV_LIBS} )
-set(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS} -g -ftest-coverage -fprofile-arcs")

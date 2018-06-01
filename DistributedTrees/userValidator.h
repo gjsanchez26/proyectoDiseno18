@@ -14,14 +14,13 @@
 #ifndef USERVALIDATOR_H
 #define USERVALIDATOR_H
 
-#include "configValidator.h"
-#include "configData.h"
+#include "ConfigValidationInterface.h"
+#include "ConfigData.h"
 
-class userValidator: public configValidator {
+class userValidator: public ConfigValidationInterface {
 public:
     //userValidator();
-    bool validateConfiguration(configData &pData);
-    
+    bool validateConfiguration(ConfigData &pData);
     //userValidator(const userValidator& orig);
 private:
 

@@ -17,13 +17,28 @@
 
 using namespace std;
 
-class configData {
+class ConfigData {
+private:
+    const int _vectorAmount     = 0;
+    const int _thresholdAmount  = 0;
+    const int _treeAmount       = 0;
+    const int _testImageAmount  = 0;
+    const int _trainImageAmount = 0;
+    const int _logVerbosity     = 0;
+    const int _noticeTime       = 0;
+    const int _threadAmount     = 0;
+    const int _trainningMethod  = 0;
+    const int _stopMethod       = 0;
+    const int _selectionMethod  = 0;
+    
 public:
-    configData();
-    configData(const configData& orig);
-    configData(const int _vectorAmount, const int _thresholdAmount, const int _treeAmount, const int _testImageAmount, const int _trainImageAmount, const int _logVerbosity, const int _noticeTime, const int _threadAmount, const int _trainningMethod, const int _stopMethod, const int _selectionMethod) :
+    ConfigData();
+    ConfigData(const ConfigData& orig);
+    ConfigData(const int _vectorAmount, const int _thresholdAmount, const int _treeAmount, const int _testImageAmount, const int _trainImageAmount, const int _logVerbosity, const int _noticeTime, const int _threadAmount, const int _trainningMethod, const int _stopMethod, const int _selectionMethod) :
     _vectorAmount(_vectorAmount), _thresholdAmount(_thresholdAmount), _treeAmount(_treeAmount), _testImageAmount(_testImageAmount), _trainImageAmount(_trainImageAmount), _logVerbosity(_logVerbosity), _noticeTime(_noticeTime), _threadAmount(_threadAmount), _trainningMethod(_trainningMethod), _stopMethod(_stopMethod), _selectionMethod(_selectionMethod) {
     }
+    virtual ~ConfigData();
+    
     void printData();
     
     const int GetLogVerbosity() const {
@@ -68,23 +83,7 @@ public:
 
     const int GetVectorAmount() const {
         return _vectorAmount;
-    }
-
-
-    virtual ~configData();
-private:
-    const int _vectorAmount = 0;
-    const int _thresholdAmount = 0;
-    const int _treeAmount = 0;
-    const int _testImageAmount = 0;
-    const int _trainImageAmount = 0;
-    const int _logVerbosity = 0;
-    const int _noticeTime = 0;
-    const int _threadAmount = 0;
-    const int _trainningMethod = 0;
-    const int _stopMethod = 0;
-    const int _selectionMethod = 0;
-    
+    }      
 };
 
 #endif /* CONFIGDATA_H */

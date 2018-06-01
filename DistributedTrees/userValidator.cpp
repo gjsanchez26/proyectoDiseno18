@@ -13,7 +13,7 @@
 
 #include "userValidator.h"
 
-bool userValidator::validateConfiguration(configData& pData){
+bool userValidator::validateConfiguration(ConfigData& pData){
     /*  WRITE YOUR CODE HERE
      * USER WAY TO VALIDATE CONFIGURATION
      * 

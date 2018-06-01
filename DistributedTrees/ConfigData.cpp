@@ -13,29 +13,36 @@
 
 #include "ConfigData.h"
 
-configData::configData() {
+ConfigData::ConfigData() {
 }
 
-configData::configData(const configData& orig) {
+ConfigData::ConfigData(const ConfigData& orig) {
+    /*_vectorAmount       = orig._vectorAmount;
+        _thresholdAmount    = orig._thresholdAmount;
+        _treeAmount         = orig._treeAmount;
+        _testImageAmount    = orig._trainImageAmount;
+        _logVerbosity       = orig._logVerbosity;
+        _noticeTime         = orig._noticeTime;
+        _threadAmount       = orig._threadAmount;
+        _trainImageAmount   = orig._trainImageAmount;
+        _stopMethod         = orig._stopMethod;
+        _selectionMethod    = orig._selectionMethod;*/
 }
 
-configData::~configData() {
+ConfigData::~ConfigData() {
 }
-void configData::printData(){
-    cout << "**** Configuration Info ****" << '\n';
-    cout << "   Vectors: " << _vectorAmount << '\n';
-    cout << "   Thresholds: " << _thresholdAmount << '\n';
-    cout << "   Trees: " << _treeAmount << '\n';
-    cout << "   TestImages: " << _testImageAmount << '\n';
-    cout << "   TrainImages: " << _trainImageAmount << '\n';
-    cout << "   Verbosity: " << _logVerbosity << '\n';
-    cout << "   NoticeTime : " << _noticeTime << '\n';
-    cout << "   Threads : " << _threadAmount << '\n';
-    cout << "   TrainningMethod: " << _trainningMethod << '\n';
-    cout << "   StopMethod : " << _stopMethod << '\n';
-    cout << "   SelectionMethod: " << _selectionMethod << '\n';
-    
-    
-
+void ConfigData::printData(){
+    cout << "**** Configuration Info ****"              << '\n';
+    cout << "   Vectors: "         << _vectorAmount     << '\n';
+    cout << "   Thresholds: "      << _thresholdAmount  << '\n';
+    cout << "   Trees: "           << _treeAmount       << '\n';
+    cout << "   TestImages: "      << _testImageAmount  << '\n';
+    cout << "   TrainImages: "     << _trainImageAmount << '\n';
+    cout << "   Verbosity: "       << _logVerbosity     << '\n';
+    cout << "   NoticeTime : "     << _noticeTime       << '\n';
+    cout << "   Threads : "        << _threadAmount     << '\n';
+    cout << "   TrainningMethod: " << _trainningMethod  << '\n';
+    cout << "   StopMethod : "     << _stopMethod       << '\n';
+    cout << "   SelectionMethod: " << _selectionMethod  << '\n';
 }
 

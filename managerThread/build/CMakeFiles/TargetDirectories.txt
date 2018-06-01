@@ -1,3 +1,0 @@
-/home/will/github/proyectoDiseno18/managerThread/build/CMakeFiles/edit_cache.dir
-/home/will/github/proyectoDiseno18/managerThread/build/CMakeFiles/rebuild_cache.dir
-/home/will/github/proyectoDiseno18/managerThread/build/CMakeFiles/resources.dir

@@ -7,9 +7,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/gabo/Documents/DistributedTrees/Process.cpp</file>
-            <file>file:/home/gabo/Documents/DistributedTrees/main.cpp</file>
-            <file>file:/home/gabo/Documents/DistributedTrees/Process.h</file>
+            <file>file:/home/gabo/Documents/DistributedTrees/QueueThread.h</file>
+            <file>file:/home/gabo/Documents/DistributedTrees/DistributionManager.h</file>
+            <file>file:/home/gabo/Documents/DistributedTrees/Scheduler.cpp</file>
+            <file>file:/home/gabo/Documents/DistributedTrees/Scheduler.h</file>
+            <file>file:/home/gabo/Documents/DistributedTrees/QueueTask.cpp</file>
+            <file>file:/home/gabo/Documents/DistributedTrees/DistributionManager.cpp</file>
+            <file>file:/home/gabo/Documents/DistributedTrees/QueueThread.cpp</file>
         </group>
     </open-files>
 </project-private>

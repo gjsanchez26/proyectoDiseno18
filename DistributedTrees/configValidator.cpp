@@ -11,9 +11,9 @@
  * Created on April 18, 2018, 7:27 AM
  */
 
-#include "configValidator.h"
+#include "ConfigValidationInterface.h"
 
 
-configValidator::~configValidator() {
+ConfigValidationInterface::~ConfigValidationInterface() {
 }
 

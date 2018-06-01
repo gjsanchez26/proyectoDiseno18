@@ -13,8 +13,8 @@
 
 #include "Initializator.h"
 
-initializator::initializator() {
-    _config = new configData(   VECTOR_AMOUNT,
+rdf::Initializator::Initializator() {
+    _config = new ConfigData(       VECTOR_AMOUNT,
                                 THRESHOLD_AMOUNT,
                                 TREE_AMOUNT, 
                                 PROCESS_AMOUNT, 
@@ -25,23 +25,21 @@ initializator::initializator() {
                                 TRAINNING_METHOD, 
                                 STOP_METHOD, 
                                 SELECTION_METHOD);
-    _validator = new userValidator();
+    _validator = new userValidator(); 
 }
 
-initializator::initializator(const initializator& orig) {
+rdf::Initializator::Initializator(const Initializator& orig) {
 }
 
-void initializator::createPlataform(){
+void rdf::Initializator::createPlataform(){
     if(_validator->validateConfiguration(*_config)){
         cout << "Creating Plataform \n";
     }
     else {
         cout << "Error creating Plataform \n";
     }
-
-
 }
 
-initializator::~initializator() {
+rdf::Initializator::~Initializator() {
 }
 

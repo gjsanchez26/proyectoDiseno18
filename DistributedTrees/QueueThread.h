@@ -20,7 +20,11 @@
 #include <mutex>              // std::mutex, std::unique_lock
 #include <condition_variable> // std::condition_variable
 #include "Task.h"
+#include "NodeResult.h"
 #include <queue>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
 
 class QueueThread {
 public:
@@ -34,32 +38,17 @@ public:
     std::vector<Estructura::Node> structure;
     rdf::Task task;
     std::priority_queue<rdf::Task> tasks;
+    rdf::NodeResult nodeResult;
 
 
     void run();
     
-    void connect(std::vector<Estructura::Node> structure,  rdf::Task task, std::priority_queue<rdf::Task> tasks);
+    void connect(std::vector<Estructura::Node> structure,  rdf::Task task, std::priority_queue<rdf::Task> tasks,
+            rdf::NodeResult &nodeResult);
     
     
-
-    /*struct ThreadStruct {
-        std::thread th;
-        struct ThreadStruct *next;
-    } taskStruct;
-
-    struct QueueThreads {
-        ThreadStruct *first;
-        ThreadStruct *last;
-    } queueThreads;
-
-    void add(struct QueueThreads& threads, std::thread th);
-
-    void runThread(std::thread th); //, std::vector<Estructura::Node> structure, QueueTask::Queue tasks, std::vector<std::thread> &threads ,int numberThreads*/
 
 private:
-    //struct ThreadStruct *createThread(std::thread th);
-
-    //void addQueue(struct QueueThreads &threads, std::thread th);
     
     void sync();
 

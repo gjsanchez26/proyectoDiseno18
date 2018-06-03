@@ -26,6 +26,7 @@
 #include "Estructura.h"
 #include "QueueThread.h"
 #include "Task.h"
+#include "NodeResult.h"
 
 /*struct comp {
 
@@ -42,17 +43,34 @@ public:
     Scheduler(const Scheduler& orig);
     virtual ~Scheduler();
     void assingTask(std::vector<Estructura::Node> structure, rdf::Task &task);
-    void checkQueues(std::vector<Estructura::Node> structure, std::priority_queue<rdf::Task> tasks, int numberThreads);
-    void addThreadQueue(QueueThread thread, std::vector<Estructura::Node> structure, std::priority_queue<rdf::Task> tasks);
+    void addThreadQueue(QueueThread thread);
+    void start();
+    void getResult(std::queue<rdf::NodeResult> &results);
+    void cleanQueueResult();
+    
+    std::queue<rdf::NodeResult> getResults() const {
+        return results;
+    }
 
+    void setResults(std::queue<rdf::NodeResult> results) {
+        this->results = results;
+    }
+
+    
+    
 private:
     //std::vector<std::thread> threads;
+    std::queue<rdf::NodeResult> results;
     std::queue<QueueThread> threads;
     std::priority_queue<rdf::Task> tasks;
+    std::vector<Estructura::Node> structureTemp;
     std::mutex mtx;
     std::condition_variable cv;
     bool ready = false;
+    std::thread threadManager;
+    
     void lock();
+    void checkQueues(std::vector<Estructura::Node> structure, std::priority_queue<rdf::Task> tasks);
     
     
     //void assingThreadTask(std::vector<Estructura::Node> structure, QueueTask::Queue tasks, int numberThreads);

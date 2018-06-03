@@ -44,7 +44,7 @@ namespace rdf{
     }
 
     template <typename T>
-    void Matrix<T>::AddFeaturesMat(FeaturesMat mat){
+    void Matrix<T>::AddFeaturesMat(const FeaturesMat &mat){
       featuresMatrix_ = mat;
       rows_ = mat.numFeatures_;
       cols_ = mat.numThresholds_;
@@ -66,6 +66,12 @@ namespace rdf{
 
     template <typename T>
     Matrix<T>::Matrix(const Matrix& orig) {
+        AddFeaturesMat(orig.featuresMatrix_);
+        for (size_t i = 0; i < rows_; i++) {
+          for (size_t j = 0; j < cols_; j++) {
+              cells_[i * rows_ + j] = orig.cells_[i * rows_ + j];
+          }
+        }
     }
 
 

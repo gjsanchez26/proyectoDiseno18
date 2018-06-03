@@ -34,6 +34,7 @@ public:
         cv::Mat imageDepth;
         cv::Mat imageLabel;
         std::vector<Estructura::Pixel> points;
+        std::vector<int> treesAvailability;
         int tree;
         int node;
         void getTotalSize(int& valor){

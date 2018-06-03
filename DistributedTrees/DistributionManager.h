@@ -65,12 +65,14 @@ namespace rdf {
                 *  ALL THIS FUNCTIONS ARE FOR SENDING MESSAGES BETWEEN SLAVE NODES AND MASTER NODE
                 *  All documentation about it is in  DistributionManager.cpp
                 */
+        void waitingResults();
+        void sendingResults();
         
         void transferResources();
         void transferRanges();
         
         void transferNodes(Task &pTask);
-        void transferResults(NodeResult &pResult);
+        void transferResults();
         
         void transferBeacon();
 
@@ -78,6 +80,7 @@ namespace rdf {
         
         void transferBestFeature(rdf::bpc::BestFeatureMsg pFeature); 
         void transferFinish();
+        
         
         /**
                 *  GETTERS AND SETTERS FOR MAIN VARIABLES

@@ -27,6 +27,29 @@ rdf::DistributionManager::DistributionManager(const DistributionManager& orig) {
 }
 rdf::DistributionManager::~DistributionManager() {}
 
+void rdf::DistributionManager::waitingResults() {
+    while(true){
+        std::cout << "WAITING THREAD \n";
+        rdf::NodeResult newResult;
+        _world.recv(boost::mpi::any_source, 2, newResult); 
+        newResult.getTask().showTask();
+        _forestManager.addResuld(newResult);            
+        _forestManager.showQueue();
+        
+    }
+}
+
+void rdf::DistributionManager::sendingResults() {
+    while(true){
+        
+        if(!_scheduler.getResults().empty()) {
+            std::cout << "SENDING THREAD \n";
+            _world.send(0, 2,_scheduler.getResults().front()) ; 
+            _scheduler.getResults().pop();
+            
+        }
+    }
+}
 
 /**
  * This function send and receive messages about node resources
@@ -122,9 +145,7 @@ void rdf::DistributionManager::transferNodes(Task& pTask) {
             _world.send(0,0,response);                                    // Send confirmation about received node
             //PROCESAR TAREA; 
             _scheduler.assingTask(_myImageManager.getStructure(),toProcess);
-            _scheduler.assingTask(_myImageManager.getStructure(),toProcess);
-            _scheduler.assingTask(_myImageManager.getStructure(),toProcess);
-
+            
             int time = rand() % 1000000 + 10000;
             usleep(time);
         }
@@ -165,29 +186,16 @@ void rdf::DistributionManager::transferBeacon() {
  * @param pResult
  * @param pForest
  */
-void rdf::DistributionManager::transferResults(NodeResult& pResult) {
+void rdf::DistributionManager::transferResults() {
     if (_world.size() > 1) {
         if(_world.rank() != 0){
-            std::cout << "Node_"<<_world.rank()<<" is sending results \n";
-            Task tast;
-            tast.setRank(_world.rank());
-            tast.setTree(pResult.getTask().getTree());
-            tast.setNode(pResult.getTask().getNode());
-            tast.setStatus(pResult.getTask().isStatus());
-            pResult.setTask(tast);
-            pResult.setResultSize(_world.size()-1);
-            pResult.setStatus(false);
-            std::cout << "XXXXXXXXX"<< pResult.getResultSize() << "\n";
-            //pResult.getTask().setRank(_world.rank());
-            _world.send(0,1,pResult);  
+            std::thread t1(&rdf::DistributionManager::sendingResults, rdf::DistributionManager());
+            t1.detach();
+            
         }
-        else{          
-            NodeResult newResult; //while
-            std::cout << "Master is receiving results \n";
-            _world.recv(boost::mpi::any_source, 1, newResult);
-            newResult.getTask().showTask();
-            _forestManager.addResuld(newResult);            
-            _forestManager.showQueue();
+        else{  
+            std::thread t2(&rdf::DistributionManager::waitingResults, rdf::DistributionManager());
+            t2.detach();
         }
     }
     else { 
@@ -241,5 +249,7 @@ void rdf::DistributionManager::transferTrainStart(ForestManager & pForest) {
     //}
     
 }
+
+
 
 

@@ -46,7 +46,7 @@ namespace rdf {
          Matrix(const FeaturesMat &);
          Matrix(const Matrix& orig);
         virtual ~Matrix();
-        void AddFeaturesMat(FeaturesMat mat);
+        void AddFeaturesMat(const FeaturesMat &mat);
          void AllocateCells();
       //    void train();
          void Reduce(Matrix &other);

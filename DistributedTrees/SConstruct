@@ -25,7 +25,9 @@ common_env.Append( CXXFLAGS 		= cxxFlags)
 #AlwaysBuild( test )
 
 
-main0 = common_env.Program( "main0", ["main.cpp" , "DistributionManager.cpp", "Task.cpp", "configData.cpp", "ImageDispatcher.cpp","Collection.cpp","configValidator.cpp","DepthImage.cpp", "Estructura.cpp","Features.cpp","FeaturesMat.cpp", "ForestManager.cpp", "Image.cpp" , "LabelImage.cpp" , "NodeResource.cpp" , "PointsSelect.cpp" , "StrategyImage.cpp" , "treeScheduler.cpp", "ImageGetter.cpp" , "Initializator.cpp" , "userValidator.cpp","NodeResult.cpp"])                
+#main0 = common_env.Program( "main0", ["main.cpp" , "DistributionManager.cpp", "Task.cpp", "configData.cpp", "ImageDispatcher.cpp","Collection.cpp","configValidator.cpp","DepthImage.cpp", "Estructura.cpp","Features.cpp","FeaturesMat.cpp", "ForestManager.cpp", "Image.cpp" , "LabelImage.cpp" , "NodeResource.cpp" , "PointsSelect.cpp" , "StrategyImage.cpp" , "treeScheduler.cpp", "ImageGetter.cpp" , "Initializator.cpp" , "userValidator.cpp","NodeResult.cpp"])          
+
+main0 = common_env.Program( "main0", Glob("*.cpp"))
 
 
 test0 = common_env.Command( target = "output0",

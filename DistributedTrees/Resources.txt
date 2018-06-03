@@ -1,6 +1,4 @@
 Memory_info
-MemTotal:8076220kB
-MemFree:2221548kB
 CPU_info
 processor:0
 cpuMHz:2499.921

@@ -49,9 +49,12 @@ OBJECTFILES= \
 	${OBJECTDIR}/_ext/7e3bde50/ImageDispatcher.o \
 	${OBJECTDIR}/_ext/7e3bde50/ImageGetter.o \
 	${OBJECTDIR}/_ext/7e3bde50/ImageManager.o \
+	${OBJECTDIR}/_ext/7e3bde50/ImageOperations.o \
 	${OBJECTDIR}/_ext/7e3bde50/LabelImage.o \
+	${OBJECTDIR}/_ext/7e3bde50/Node.o \
 	${OBJECTDIR}/_ext/7e3bde50/NodeResource.o \
 	${OBJECTDIR}/_ext/7e3bde50/NodeResult.o \
+	${OBJECTDIR}/_ext/7e3bde50/NodeTrainee.o \
 	${OBJECTDIR}/_ext/7e3bde50/PointsSelect.o \
 	${OBJECTDIR}/_ext/7e3bde50/QueueTask.o \
 	${OBJECTDIR}/_ext/7e3bde50/QueueThread.o \
@@ -61,6 +64,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/_ext/7e3bde50/StrategyImage.o \
 	${OBJECTDIR}/_ext/7e3bde50/Task.o \
 	${OBJECTDIR}/_ext/7e3bde50/TrainManager.o \
+	${OBJECTDIR}/_ext/7e3bde50/Trainer.o \
+	${OBJECTDIR}/_ext/7e3bde50/TrainerBPC.o \
+	${OBJECTDIR}/_ext/7e3bde50/TrainingJob.o \
 	${OBJECTDIR}/ConfigData.o \
 	${OBJECTDIR}/Initializator.o \
 	${OBJECTDIR}/configValidator.o \
@@ -162,10 +168,20 @@ ${OBJECTDIR}/_ext/7e3bde50/ImageManager.o: /home/gabo/Documents/DistributedTrees
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/ImageManager.o /home/gabo/Documents/DistributedTrees/ImageManager.cpp
 
+${OBJECTDIR}/_ext/7e3bde50/ImageOperations.o: /home/gabo/Documents/DistributedTrees/ImageOperations.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/ImageOperations.o /home/gabo/Documents/DistributedTrees/ImageOperations.cpp
+
 ${OBJECTDIR}/_ext/7e3bde50/LabelImage.o: /home/gabo/Documents/DistributedTrees/LabelImage.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/LabelImage.o /home/gabo/Documents/DistributedTrees/LabelImage.cpp
+
+${OBJECTDIR}/_ext/7e3bde50/Node.o: /home/gabo/Documents/DistributedTrees/Node.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/Node.o /home/gabo/Documents/DistributedTrees/Node.cpp
 
 ${OBJECTDIR}/_ext/7e3bde50/NodeResource.o: /home/gabo/Documents/DistributedTrees/NodeResource.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
@@ -176,6 +192,11 @@ ${OBJECTDIR}/_ext/7e3bde50/NodeResult.o: /home/gabo/Documents/DistributedTrees/N
 	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/NodeResult.o /home/gabo/Documents/DistributedTrees/NodeResult.cpp
+
+${OBJECTDIR}/_ext/7e3bde50/NodeTrainee.o: /home/gabo/Documents/DistributedTrees/NodeTrainee.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/NodeTrainee.o /home/gabo/Documents/DistributedTrees/NodeTrainee.cpp
 
 ${OBJECTDIR}/_ext/7e3bde50/PointsSelect.o: /home/gabo/Documents/DistributedTrees/PointsSelect.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
@@ -221,6 +242,21 @@ ${OBJECTDIR}/_ext/7e3bde50/TrainManager.o: /home/gabo/Documents/DistributedTrees
 	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/TrainManager.o /home/gabo/Documents/DistributedTrees/TrainManager.cpp
+
+${OBJECTDIR}/_ext/7e3bde50/Trainer.o: /home/gabo/Documents/DistributedTrees/Trainer.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/Trainer.o /home/gabo/Documents/DistributedTrees/Trainer.cpp
+
+${OBJECTDIR}/_ext/7e3bde50/TrainerBPC.o: /home/gabo/Documents/DistributedTrees/TrainerBPC.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/TrainerBPC.o /home/gabo/Documents/DistributedTrees/TrainerBPC.cpp
+
+${OBJECTDIR}/_ext/7e3bde50/TrainingJob.o: /home/gabo/Documents/DistributedTrees/TrainingJob.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/7e3bde50
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -s `pkg-config --cflags opencv` -std=c++11  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/7e3bde50/TrainingJob.o /home/gabo/Documents/DistributedTrees/TrainingJob.cpp
 
 ${OBJECTDIR}/ConfigData.o: ConfigData.cpp 
 	${MKDIR} -p ${OBJECTDIR}

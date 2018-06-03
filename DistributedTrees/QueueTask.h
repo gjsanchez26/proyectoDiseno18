@@ -43,9 +43,9 @@ public:
     void add(struct Queue &tasks, int rank, int tree, int node);
 
     void isEmpty(struct Queue tasks, bool &empty);
-    
+
     void pop(struct Queue &tasks, struct TaskStruct &task);
-    
+
     void getNumberElements(struct Queue &tasks, int &numberElements);
 
 private:
@@ -58,4 +58,3 @@ private:
 };
 
 #endif /* QUEUETASK_H */
-

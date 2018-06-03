@@ -21,7 +21,7 @@
 #define TREE_AMOUNT             3
 #define PROCESS_AMOUNT          3
 #define TEST_IMAGES_AMOUNT      4
-#define TRAIN_IMAGES_AMOUNT     9
+#define TRAIN_IMAGES_AMOUNT     6
 #define LOG_VERBOSITY           6
 #define NOTICED_TIME            7
 #define THREAD_AMOUT            8

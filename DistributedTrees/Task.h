@@ -90,7 +90,7 @@ namespace rdf {
             }
             bool operator< (const Task& pTask) const
             {
-                if(pTask._node < this->_node)
+                if(pTask._rank < this->_rank)
                     return true;
             }
             bool operator== (const Task& pTask) const

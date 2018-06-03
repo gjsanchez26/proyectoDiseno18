@@ -89,6 +89,13 @@
         <logicalFolder name="f5" displayName="TrainSource" projectFiles="true">
           <itemPath>/home/gabo/Documents/DistributedTrees/Features.cpp</itemPath>
           <itemPath>/home/gabo/Documents/DistributedTrees/FeaturesMat.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/ImageOperations.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Node.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/NodeTrainee.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/NodeTraineeBPC.tpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/Trainer.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/TrainerBPC.cpp</itemPath>
+          <itemPath>/home/gabo/Documents/DistributedTrees/TrainingJob.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f3" displayName="UserSource" projectFiles="true">
           <itemPath>userValidator.cpp</itemPath>
@@ -99,6 +106,13 @@
       <logicalFolder name="f5" displayName="TrainHeaders" projectFiles="true">
         <itemPath>/home/gabo/Documents/DistributedTrees/Features.h</itemPath>
         <itemPath>/home/gabo/Documents/DistributedTrees/FeaturesMat.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/ImageOperations.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Node.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/NodeTrainee.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/NodeTraineeBPC.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/Trainer.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/TrainerBPC.h</itemPath>
+        <itemPath>/home/gabo/Documents/DistributedTrees/TrainingJob.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f1" displayName="userHeaders" projectFiles="true">
         <itemPath>userValidator.h</itemPath>
@@ -301,6 +315,16 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageOperations.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageOperations.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/gabo/Documents/DistributedTrees/LabelImage.cpp"
             ex="false"
             tool="1"
@@ -331,6 +355,16 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Node.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Node.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/gabo/Documents/DistributedTrees/NodeResource.cpp"
             ex="false"
             tool="1"
@@ -347,6 +381,26 @@
             flavor2="0">
       </item>
       <item path="/home/gabo/Documents/DistributedTrees/NodeResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeTrainee.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeTrainee.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeTraineeBPC.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeTraineeBPC.tpp"
             ex="false"
             tool="3"
             flavor2="0">
@@ -437,6 +491,36 @@
             flavor2="0">
       </item>
       <item path="/home/gabo/Documents/DistributedTrees/TrainManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Trainer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Trainer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainerBPC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainerBPC.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainingJob.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainingJob.h"
             ex="false"
             tool="3"
             flavor2="0">
@@ -625,6 +709,16 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageOperations.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/ImageOperations.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/gabo/Documents/DistributedTrees/LabelImage.cpp"
             ex="false"
             tool="1"
@@ -655,6 +749,16 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Node.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Node.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/gabo/Documents/DistributedTrees/NodeResource.cpp"
             ex="false"
             tool="1"
@@ -671,6 +775,26 @@
             flavor2="0">
       </item>
       <item path="/home/gabo/Documents/DistributedTrees/NodeResult.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeTrainee.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeTrainee.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeTraineeBPC.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/NodeTraineeBPC.tpp"
             ex="false"
             tool="3"
             flavor2="0">
@@ -761,6 +885,36 @@
             flavor2="0">
       </item>
       <item path="/home/gabo/Documents/DistributedTrees/TrainManager.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Trainer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/Trainer.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainerBPC.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainerBPC.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainingJob.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/gabo/Documents/DistributedTrees/TrainingJob.h"
             ex="false"
             tool="3"
             flavor2="0">

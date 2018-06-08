@@ -37,7 +37,7 @@ void Scheduler::start() {
 
 void Scheduler::assingTask(std::vector<Estructura::Node> structure, rdf::Task &task) {
 
-    structureTemp = structure;
+    //structureTemp = structure;
     tasks.push(task);
     checkQueues(structure, tasks);
 
@@ -56,26 +56,33 @@ void Scheduler::checkQueues(std::vector<Estructura::Node> structure, std::priori
         if (ready && threads.size() > 0) {
 
             //objeto node result
-            rdf::NodeResult nodeResult;
-            rdf::NodeResult nodeResultTemp;
-            nodeResult.setTask(task);
+            rdf::NodeResult *nodeResult  = new rdf::NodeResult();
+            //rdf::NodeResult nodeResultTemp;
+            nodeResult->setTask(task);
             QueueThread thread = Scheduler::threads.front();
             Scheduler::threads.pop();
-            threadManager = std::thread(&QueueThread::connect, QueueThread(), structure, task, tasks, std::ref(nodeResult));
+            threadManager = std::thread(&QueueThread::connect, QueueThread(), structure, task, tasks, std::ref(*nodeResult));
             if (threadManager.joinable())
                 threadManager.join();
             ready = false;
             addThreadQueue(thread);
+            std::cout << "Task: ";
+            nodeResult->getTask().showTask();
+            std::cout << "Results: \n";
+            nodeResult->getMatrixResults().Print();
+            nodeResult->setStatus(0);
             //nodeResult.setMatrixResults(nodeResultTemp.getMatrixResults());
-            results.push(nodeResult);
-            std::cout << "hsakdlmkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk: ";
+            results.push(*nodeResult);
+            
             std::cout << results.size() << " \n";
             for (int i = 0; i < results.size(); i++) {
                  rdf::NodeResult nodetemp = results.front();
                  results.pop();
                  nodetemp.getTask().showTask();
-                 std::cout << "________________________________________________________________ \n ";
+                 
+                 std::cout << "_______________________________________________________________________________ \n ";
                  nodetemp.getMatrixResults().Print();
+                 std::cout << "CE: " << nodetemp.isStatus() << "\n";
                  std::cout << "______________________________****************__________________________________\n ";
 
             }

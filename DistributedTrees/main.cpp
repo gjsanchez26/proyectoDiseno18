@@ -60,11 +60,11 @@ int main()
     
     
     _manager.transferNodes(_task);
-    _manager.transferNodes(_task2);
-    _manager.transferNodes(_task3);
-    _manager.transferNodes(_task4);
-    _manager.transferNodes(_task5);
-    _manager.transferNodes(_task6);
+   // _manager.transferNodes(_task2);
+   // _manager.transferNodes(_task3);
+   // _manager.transferNodes(_task4);
+   // _manager.transferNodes(_task5);
+   // _manager.transferNodes(_task6);
     
     
       // _manager.transferResults();

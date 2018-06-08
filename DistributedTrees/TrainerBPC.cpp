@@ -36,6 +36,7 @@ Trainer::Trainer(const Trainer& orig) {
 
 
 void Trainer::Train(Node * node, std::vector<Estructura::Node>& imagesTrainingSet, rdf::NodeResult& nodeResult){
+    std::cout<< "Calculating...\n";
   NodeTrainee<Cell>* nodeTrainee = static_cast<NodeTrainee<Cell>* > (node);
   int nodeId =  nodeTrainee->nodeId_;
   int treeId =  nodeTrainee->treeId_;
@@ -59,8 +60,8 @@ void Trainer::Train(Node * node, std::vector<Estructura::Node>& imagesTrainingSe
         }
   }
 //  nodeTrainee->GetMatrix().Print();
-  nodeResult.setMatrixResults(nodeTrainee->GetMatrix());
-  nodeResult.getMatrixResults().Print();
+   nodeResult.setMatrixResults(nodeTrainee->GetMatrix());
+  //nodeResult.getMatrixResults().Print();
   
 }
 

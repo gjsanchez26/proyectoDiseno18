@@ -47,6 +47,8 @@ public:
             rdf::NodeResult &nodeResult);
     
     
+    
+    
 
 private:
     

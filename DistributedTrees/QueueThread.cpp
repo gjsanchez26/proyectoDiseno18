@@ -28,10 +28,10 @@ QueueThread::~QueueThread() {
 }
 
 
-void init(std::vector<Estructura::Node> &structure, rdf::Task& task, rdf::NodeResult &nodeResult) {
+void init(std::vector<Estructura::Node> &structure, rdf::Task& task, rdf::NodeResult & nodeResult) {
     std::cout << "********************************************** SLAVE " << task.getRank() << " is TRAINNING *************************************\n";
     rdf::bpc::NodeTrainee<rdf::bpc::Cell>   _node;
-    rdf::NodeResult nodeResultTemp;
+    rdf::NodeResult *nodeResultTemp = new rdf::NodeResult();
     _node.SetTreeId(task.getTree());
     _node.SetNodeId(task.getNode());
     _node.GetMatrix().AddFeaturesMat(task.getFeatureMatrix());
@@ -41,9 +41,9 @@ void init(std::vector<Estructura::Node> &structure, rdf::Task& task, rdf::NodeRe
     
     
     rdf::bpc::Trainer trainer;
-    trainer.Train(&_node,structure, nodeResultTemp); // cambiar para meter nodeResult
+    trainer.Train(&_node,structure, nodeResult); // cambiar para meter nodeResult
     
-    nodeResult = nodeResultTemp;
+//    nodeResult = nodeResultTemp;
     //std::cout << "        SIZE " << img<< "\n"; 
     
 }
@@ -83,14 +83,14 @@ void QueueThread::run() {
 }
 
 void QueueThread::connect(std::vector<Estructura::Node> structure, rdf::Task task, 
-        std::priority_queue<rdf::Task> tasks, rdf::NodeResult &nodeResult) {
+    std::priority_queue<rdf::Task> tasks, rdf::NodeResult &nodeResult) {
     QueueThread::structure = structure;
     QueueThread::task = task;
-    QueueThread::tasks = tasks;
-    std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \n ";
+    QueueThread::tasks = tasks;;
+    std::cout << "ALE ->> " ;
     nodeResult.getMatrixResults().Print();
-    std::cout << "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX \n ";
-    nodeResult.setMatrixResults(QueueThread::nodeResult.getMatrixResults());
+    
+    
     sync();
     run();
 

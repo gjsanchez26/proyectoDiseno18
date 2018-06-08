@@ -35,7 +35,7 @@ void init(std::vector<Estructura::Node> &structure, rdf::Task& task, rdf::NodeRe
     _node.SetTreeId(task.getTree());
     _node.SetNodeId(task.getNode());
     _node.GetMatrix().AddFeaturesMat(task.getFeatureMatrix());
-    std::cout << "SIZE " << structure.size() <<"\n";
+    //std::cout << "SIZE " << structure.size() <<"\n";
     
     cv::Mat img = structure[0].imageLabel;
     
@@ -83,12 +83,11 @@ void QueueThread::run() {
 }
 
 void QueueThread::connect(std::vector<Estructura::Node> structure, rdf::Task task, 
-    std::priority_queue<rdf::Task> tasks, rdf::NodeResult &nodeResult) {
+std::priority_queue<rdf::Task> tasks, rdf::NodeResult &nodeResult) {
     QueueThread::structure = structure;
     QueueThread::task = task;
     QueueThread::tasks = tasks;;
-    std::cout << "ALE ->> " ;
-    nodeResult.getMatrixResults().Print();
+
     
     
     sync();

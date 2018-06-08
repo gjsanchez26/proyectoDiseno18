@@ -26,8 +26,8 @@ Image::~Image() {
 }
 
 void Image::getStructura(std::vector<Estructura::Node>& structure, Estructura::DataMaster dataMaster) {
-    std::string PathDepthImage = "/home/gabo/Documents/DistributedTrees/Image_Data/pathDepth.txt";
-    std::string PathLabelImage = "/home/gabo/Documents/DistributedTrees/Image_Data/pathLabel.txt";
+    std::string PathDepthImage = "/home/RDF/code/DistributedTrees/Database/pathDepth.txt";
+    std::string PathLabelImage = "/home/RDF/code/DistributedTrees/Database/pathLabel.txt";
 
 
     std::vector<Estructura::Node> structureTemp;
@@ -92,14 +92,13 @@ void Image::generatedStructureShotton(std::vector<Estructura::Node>& structure,
         pointSelect.generatedPoints(type_Algorithm, puntos, NumPoints, height, width, NumTree);
 
         //llena los campos y carga al vector
-
         dataAll.imageDepth = imageDepth;
         dataAll.imageLabel = imageLabel;
         dataAll.points = puntos;
         dataAll.node = node;
         dataAll.tree = tree;
-
         structure.push_back(dataAll);
+        
     }
 
 

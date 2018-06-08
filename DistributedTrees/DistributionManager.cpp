@@ -107,8 +107,10 @@ void rdf::DistributionManager::transferRanges() {
             _world.recv(0, 0, _myRange);                                // Receive  message from master 
             std::cout << "Process #" << _world.rank() << " will work with [" << _myRange.first << "," << _myRange.second<< "] \n" ;
             _myImageManager.setRange(_myRange);                         // Set range to imageManager
-            _myImageManager.loadImages();                               // ImageManger get all images in the range and create structure
-            _myImageManager.showStructure(true);                        // Muestra el contenido de la estructura (0: pixeles, 1: C_Imagenes)
+            const clock_t begin_time = clock();
+            _myImageManager.loadImages(); 
+            std::cout << "TIME: " << float( clock () - begin_time ) /double(CLOCKS_PER_SEC) << " seconds\n";                        
+            //_myImageManager.showStructure(false);                        // Muestra el contenido de la estructura (0: pixeles, 1: C_Imagenes)
         }
     }
 }

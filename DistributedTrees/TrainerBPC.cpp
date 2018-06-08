@@ -36,7 +36,7 @@ Trainer::Trainer(const Trainer& orig) {
 
 
 void Trainer::Train(Node * node, std::vector<Estructura::Node>& imagesTrainingSet, rdf::NodeResult& nodeResult){
-    std::cout<< "Calculating...\n";
+  std::cout<< "Trainning...\n";
   NodeTrainee<Cell>* nodeTrainee = static_cast<NodeTrainee<Cell>* > (node);
   int nodeId =  nodeTrainee->nodeId_;
   int treeId =  nodeTrainee->treeId_;
@@ -56,7 +56,7 @@ void Trainer::Train(Node * node, std::vector<Estructura::Node>& imagesTrainingSe
             /*if (nodeInTree == nodeId){
                // nodeTrainee->GetMatrix().EvaluatePointInMatrix(point); //for every feature and threshold
             }*/
-          std::cout << "Punto ("<< p.x << "," << p.y <<") \n"; 
+          //std::cout << "Punto ("<< p.x << "," << p.y <<") \n"; 
         }
   }
 //  nodeTrainee->GetMatrix().Print();

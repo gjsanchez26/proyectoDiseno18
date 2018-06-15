@@ -1,0 +1,150 @@
+\hypertarget{classrdf_1_1Initializator}{}\section{rdf\+:\+:Initializator Class Reference}
+\label{classrdf_1_1Initializator}\index{rdf\+::\+Initializator@{rdf\+::\+Initializator}}
+
+
+{\ttfamily \#include $<$Initializator.\+h$>$}
+
+
+
+Collaboration diagram for rdf\+:\+:Initializator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrdf_1_1Initializator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1Initializator_a0b3af95b92279e6fa09ebd629b6e3058}{Initializator} ()
+\item 
+\hyperlink{classrdf_1_1Initializator_ade9d2861f25524b5456482d8c504bdb5}{Initializator} (const \hyperlink{classrdf_1_1Initializator}{Initializator} \&orig)
+\item 
+\hyperlink{classrdf_1_1Initializator_aafbadfcb6826d7239681cf62d35adfa1}{Initializator} (const \hyperlink{classConfigData}{Config\+Data} \&Data)
+\item 
+virtual \hyperlink{classrdf_1_1Initializator_a49dcff8b25770c154fef04a9fead85b4}{$\sim$\+Initializator} ()
+\item 
+void \hyperlink{classrdf_1_1Initializator_ae48962e4dda1d9fff4bb1a9e1947fa9e}{create\+Plataform} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConfigData}{Config\+Data} $\ast$ \hyperlink{classrdf_1_1Initializator_a5294154934886ac4dd76c4f808781cad}{\+\_\+config}
+\item 
+\hyperlink{classConfigValidationInterface}{Config\+Validation\+Interface} $\ast$ \hyperlink{classrdf_1_1Initializator_a961484bb3a4e149498fd093e395de9e4}{\+\_\+validator}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::\+Initializator@{rdf\+::\+Initializator}!Initializator@{Initializator}}
+\index{Initializator@{Initializator}!rdf\+::\+Initializator@{rdf\+::\+Initializator}}
+\subsubsection[{\texorpdfstring{Initializator()}{Initializator()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Initializator\+::\+Initializator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Initializator_a0b3af95b92279e6fa09ebd629b6e3058}{}\label{classrdf_1_1Initializator_a0b3af95b92279e6fa09ebd629b6e3058}
+
+
+References \+\_\+config, \+\_\+validator, L\+O\+G\+\_\+\+V\+E\+R\+B\+O\+S\+I\+TY, N\+O\+T\+I\+C\+E\+D\+\_\+\+T\+I\+ME, P\+R\+O\+C\+E\+S\+S\+\_\+\+A\+M\+O\+U\+NT, S\+E\+L\+E\+C\+T\+I\+O\+N\+\_\+\+M\+E\+T\+H\+OD, S\+T\+O\+P\+\_\+\+M\+E\+T\+H\+OD, T\+E\+S\+T\+\_\+\+I\+M\+A\+G\+E\+S\+\_\+\+A\+M\+O\+U\+NT, T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+A\+M\+O\+U\+NT, T\+R\+A\+I\+N\+\_\+\+I\+M\+A\+G\+E\+S\+\_\+\+A\+M\+O\+U\+NT, T\+R\+A\+I\+N\+N\+I\+N\+G\+\_\+\+M\+E\+T\+H\+OD, T\+R\+E\+E\+\_\+\+A\+M\+O\+U\+NT, and V\+E\+C\+T\+O\+R\+\_\+\+A\+M\+O\+U\+NT.
+
+
+\begin{DoxyCode}
+16                                 \{
+17     \hyperlink{classrdf_1_1Initializator_a5294154934886ac4dd76c4f808781cad}{\_config} = \textcolor{keyword}{new} \hyperlink{classConfigData}{ConfigData}(       \hyperlink{Config_8h_a42a88b6f9794602ba8d3df8681586d6c}{VECTOR\_AMOUNT},
+18                                 \hyperlink{Config_8h_a046baffcfc17bd9008df03cf43da388a}{THRESHOLD\_AMOUNT},
+19                                 \hyperlink{Config_8h_a534cdc6cb39fa1f6fc95a92491cab5fb}{TREE\_AMOUNT}, 
+20                                 \hyperlink{Config_8h_a8d13e9cc2082061ecb8db36a3f697964}{PROCESS\_AMOUNT}, 
+21                                 \hyperlink{Config_8h_a2b708e4320618c29fd29d98d666e29f5}{TEST\_IMAGES\_AMOUNT},
+22                                 \hyperlink{Config_8h_a2f82dae94103cd6733842f0fed0aeb62}{TRAIN\_IMAGES\_AMOUNT},
+23                                 \hyperlink{Config_8h_a65533daa2b934c9fb36258439bdbcc4f}{LOG\_VERBOSITY},
+24                                 \hyperlink{Config_8h_a31424dcd5dc3fdf15bde25f9d5963dd1}{NOTICED\_TIME},
+25                                 \hyperlink{Config_8h_aaed4c456b4e56636c56d188849f8ddad}{TRAINNING\_METHOD}, 
+26                                 \hyperlink{Config_8h_a784d3494097313752a8140763b84666e}{STOP\_METHOD}, 
+27                                 \hyperlink{Config_8h_a07af8d3f8ee59b6ff02555bd154f3dbb}{SELECTION\_METHOD});
+28     \hyperlink{classrdf_1_1Initializator_a961484bb3a4e149498fd093e395de9e4}{\_validator} = \textcolor{keyword}{new} \hyperlink{classuserValidator}{userValidator}(); 
+29 \}
+\end{DoxyCode}
+\index{rdf\+::\+Initializator@{rdf\+::\+Initializator}!Initializator@{Initializator}}
+\index{Initializator@{Initializator}!rdf\+::\+Initializator@{rdf\+::\+Initializator}}
+\subsubsection[{\texorpdfstring{Initializator(const Initializator \&orig)}{Initializator(const Initializator &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Initializator\+::\+Initializator (
+\begin{DoxyParamCaption}
+\item[{const {\bf Initializator} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Initializator_ade9d2861f25524b5456482d8c504bdb5}{}\label{classrdf_1_1Initializator_ade9d2861f25524b5456482d8c504bdb5}
+
+\begin{DoxyCode}
+31                                                          \{
+32 \}
+\end{DoxyCode}
+\index{rdf\+::\+Initializator@{rdf\+::\+Initializator}!Initializator@{Initializator}}
+\index{Initializator@{Initializator}!rdf\+::\+Initializator@{rdf\+::\+Initializator}}
+\subsubsection[{\texorpdfstring{Initializator(const Config\+Data \&\+Data)}{Initializator(const ConfigData &Data)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Initializator\+::\+Initializator (
+\begin{DoxyParamCaption}
+\item[{const {\bf Config\+Data} \&}]{Data}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Initializator_aafbadfcb6826d7239681cf62d35adfa1}{}\label{classrdf_1_1Initializator_aafbadfcb6826d7239681cf62d35adfa1}
+\index{rdf\+::\+Initializator@{rdf\+::\+Initializator}!````~Initializator@{$\sim$\+Initializator}}
+\index{````~Initializator@{$\sim$\+Initializator}!rdf\+::\+Initializator@{rdf\+::\+Initializator}}
+\subsubsection[{\texorpdfstring{$\sim$\+Initializator()}{~Initializator()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Initializator\+::$\sim$\+Initializator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1Initializator_a49dcff8b25770c154fef04a9fead85b4}{}\label{classrdf_1_1Initializator_a49dcff8b25770c154fef04a9fead85b4}
+
+\begin{DoxyCode}
+43                                  \{
+44 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::\+Initializator@{rdf\+::\+Initializator}!create\+Plataform@{create\+Plataform}}
+\index{create\+Plataform@{create\+Plataform}!rdf\+::\+Initializator@{rdf\+::\+Initializator}}
+\subsubsection[{\texorpdfstring{create\+Plataform()}{createPlataform()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Initializator\+::create\+Plataform (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Initializator_ae48962e4dda1d9fff4bb1a9e1947fa9e}{}\label{classrdf_1_1Initializator_ae48962e4dda1d9fff4bb1a9e1947fa9e}
+
+
+References \+\_\+config, \+\_\+validator, and Config\+Validation\+Interface\+::validate\+Configuration().
+
+
+
+Referenced by rdf\+::\+Train\+Manager\+::validate\+Configuration().
+
+
+\begin{DoxyCode}
+34                                       \{
+35     \textcolor{keywordflow}{if}(\hyperlink{classrdf_1_1Initializator_a961484bb3a4e149498fd093e395de9e4}{\_validator}->\hyperlink{classConfigValidationInterface_a9f500c653a7b4b4559f920d499d7b96d}{validateConfiguration}(*\hyperlink{classrdf_1_1Initializator_a5294154934886ac4dd76c4f808781cad}{\_config}))\{
+36         cout << \textcolor{stringliteral}{"Creating Plataform \(\backslash\)n"};
+37     \}
+38     \textcolor{keywordflow}{else} \{
+39         cout << \textcolor{stringliteral}{"Error creating Plataform \(\backslash\)n"};
+40     \}
+41 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::\+Initializator@{rdf\+::\+Initializator}!\+\_\+config@{\+\_\+config}}
+\index{\+\_\+config@{\+\_\+config}!rdf\+::\+Initializator@{rdf\+::\+Initializator}}
+\subsubsection[{\texorpdfstring{\+\_\+config}{_config}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\+Data}$\ast$ rdf\+::\+Initializator\+::\+\_\+config\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Initializator_a5294154934886ac4dd76c4f808781cad}{}\label{classrdf_1_1Initializator_a5294154934886ac4dd76c4f808781cad}
+
+
+Referenced by create\+Plataform(), and Initializator().
+
+\index{rdf\+::\+Initializator@{rdf\+::\+Initializator}!\+\_\+validator@{\+\_\+validator}}
+\index{\+\_\+validator@{\+\_\+validator}!rdf\+::\+Initializator@{rdf\+::\+Initializator}}
+\subsubsection[{\texorpdfstring{\+\_\+validator}{_validator}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Config\+Validation\+Interface}$\ast$ rdf\+::\+Initializator\+::\+\_\+validator\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Initializator_a961484bb3a4e149498fd093e395de9e4}{}\label{classrdf_1_1Initializator_a961484bb3a4e149498fd093e395de9e4}
+
+
+Referenced by create\+Plataform(), and Initializator().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Initializator_8h}{Initializator.\+h}\item 
+\hyperlink{Initializator_8cpp}{Initializator.\+cpp}\end{DoxyCompactItemize}

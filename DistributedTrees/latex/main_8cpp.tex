@@ -1,0 +1,77 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Train\+Manager.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Resources.\+h\char`\"{}}\\*
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{main()}{main()}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}
+
+
+References rdf\+::\+Task\+::set\+Node(), rdf\+::\+Task\+::set\+Rank(), rdf\+::\+Task\+::set\+Status(), rdf\+::\+Task\+::set\+Tree(), rdf\+::\+Distribution\+Manager\+::transfer\+Nodes(), rdf\+::\+Distribution\+Manager\+::transfer\+Ranges(), and rdf\+::\+Distribution\+Manager\+::transfer\+Resources().
+
+
+\begin{DoxyCode}
+12 \{
+13 
+14     \textcolor{comment}{//rdf::TrainManager \_trainer;}
+15     \textcolor{comment}{//\_trainer.validateConfiguration();}
+16     \textcolor{comment}{//\_trainer.initPlatform();}
+17     \textcolor{comment}{//\_trainer.sendingNodes();}
+18    \textcolor{comment}{// \_trainer.sendingResults();    }
+19     
+20     \hyperlink{classrdf_1_1DistributionManager}{rdf::DistributionManager} \_manager;
+21     \_manager.\hyperlink{classrdf_1_1DistributionManager_aee4c4143848ea57742d79f8ee137b4c7}{transferResources}();
+22 
+23     \_manager.\hyperlink{classrdf_1_1DistributionManager_af601ca87a8a5b21632e5c70de253d8cb}{transferRanges}();
+24     
+25     \hyperlink{classrdf_1_1Task}{rdf::Task} \_task;
+26     \_task.\hyperlink{classrdf_1_1Task_aa55d27b31ed812e31e21fa5676208f1b}{setRank}(1);
+27     \_task.\hyperlink{classrdf_1_1Task_ad7948910883a02524a0975d47c1827a7}{setTree}(1);
+28     \_task.\hyperlink{classrdf_1_1Task_aa7667e08b39f5b6cae63aa0abeb4c412}{setNode}(2);
+29     \_task.\hyperlink{classrdf_1_1Task_af030aac32a3943f2cd0fb22c8e964071}{setStatus}(0);
+30          
+31     \_manager.\hyperlink{classrdf_1_1DistributionManager_ac98b0403d6311d00e7b95c03fa4aa0f3}{transferNodes}(\_task);
+32 
+33    \textcolor{comment}{// \_manager.transferNodes(\_task2);}
+34    \textcolor{comment}{// \_manager.transferNodes(\_task3);}
+35    \textcolor{comment}{// \_manager.transferNodes(\_task4);}
+36    \textcolor{comment}{// \_manager.transferNodes(\_task5);}
+37    \textcolor{comment}{// \_manager.transferNodes(\_task6);}
+38     
+39     
+40       \textcolor{comment}{// \_manager.transferResults();}
+41     
+42 
+43     
+44     
+45 
+46        
+47 
+48 
+49   \textcolor{keywordflow}{return} 0;
+50 \}
+\end{DoxyCode}

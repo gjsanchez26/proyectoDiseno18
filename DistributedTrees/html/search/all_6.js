@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['feature',['Feature',['../namespacerdf_1_1bpc.html#a507d4ac6b23164245625d13196e564bc',1,'rdf::bpc']]],
+  ['feature1_5f',['feature1_',['../classrdf_1_1bpc_1_1Features.html#a01f4d6cb79311da3b39f82882112bbcb',1,'rdf::bpc::Features']]],
+  ['feature2_5f',['feature2_',['../classrdf_1_1bpc_1_1Features.html#a563e43877615b6967a5ec9049bab4b65',1,'rdf::bpc::Features']]],
+  ['features',['Features',['../classrdf_1_1bpc_1_1Features.html',1,'rdf::bpc']]],
+  ['features',['Features',['../classrdf_1_1bpc_1_1Features.html#abfca82d68cea9e637d0b601395d6da6f',1,'rdf::bpc::Features::Features()'],['../classrdf_1_1bpc_1_1Features.html#a47d8976ae88c7c3dc1445d1437eba66c',1,'rdf::bpc::Features::Features(float, float, float, float)'],['../classrdf_1_1bpc_1_1Features.html#a9055f349ed663508478dbe1e92dcdceb',1,'rdf::bpc::Features::Features(const Features &amp;orig)'],['../MatrixBPCFeatures_8h.html#ab023c08b6db726ae7e0acc935755cfe6',1,'Features():&#160;MatrixBPCFeatures.h']]],
+  ['features_2ecpp',['Features.cpp',['../Features_8cpp.html',1,'']]],
+  ['features_2eh',['Features.h',['../Features_8h.html',1,'']]],
+  ['features_5f',['features_',['../classrdf_1_1bpc_1_1FeaturesMat.html#a476cd5bf74e3808ea56e585db0083ceb',1,'rdf::bpc::FeaturesMat::features_()'],['../classMatrixBPCFeatures.html#ad6ce34b650ac55b5d857a322cb239132',1,'MatrixBPCFeatures::features_()']]],
+  ['featureshighrange_5f',['featuresHighRange_',['../classrdf_1_1bpc_1_1FeaturesMat.html#a3c6a55c571fac002562a59b67f681719',1,'rdf::bpc::FeaturesMat::featuresHighRange_()'],['../classMatrixBPCFeatures.html#a35acee240ac781db0390c068c782437d',1,'MatrixBPCFeatures::featuresHighRange_()']]],
+  ['featureslowrange_5f',['featuresLowRange_',['../classrdf_1_1bpc_1_1FeaturesMat.html#a77e4d847ce04f626964fe361d7bee1a5',1,'rdf::bpc::FeaturesMat::featuresLowRange_()'],['../classMatrixBPCFeatures.html#a973ec0283a77495339d330c482e73782',1,'MatrixBPCFeatures::featuresLowRange_()']]],
+  ['featuresmat',['FeaturesMat',['../classrdf_1_1bpc_1_1FeaturesMat.html',1,'rdf::bpc']]],
+  ['featuresmat',['FeaturesMat',['../classrdf_1_1bpc_1_1FeaturesMat.html#a97d121d34349bf2c59b94c2048cf8543',1,'rdf::bpc::FeaturesMat::FeaturesMat()'],['../classrdf_1_1bpc_1_1FeaturesMat.html#abc3e95ccbc49b66cd506496985ca8fb0',1,'rdf::bpc::FeaturesMat::FeaturesMat(const FeaturesMat &amp;orig)'],['../classrdf_1_1bpc_1_1FeaturesMat.html#a4656343c72c85949ef2e13d01f4b0bbf',1,'rdf::bpc::FeaturesMat::FeaturesMat(int fn, float fh, float fl, int tn, float th, float tl)']]],
+  ['featuresmat_2ecpp',['FeaturesMat.cpp',['../FeaturesMat_8cpp.html',1,'']]],
+  ['featuresmat_2eh',['FeaturesMat.h',['../FeaturesMat_8h.html',1,'']]],
+  ['featuresmatrix_5f',['featuresMatrix_',['../classrdf_1_1bpc_1_1Matrix.html#a635849575c43df7969d5328cede7a040',1,'rdf::bpc::Matrix']]],
+  ['findbestpair',['FindBestPair',['../classrdf_1_1bpc_1_1Matrix.html#ab6cf5e854c06f976908b4f53462b6bd3',1,'rdf::bpc::Matrix']]],
+  ['first',['first',['../structQueueTask_1_1Queue.html#aefe07ecf93c1276d1436e57656799a41',1,'QueueTask::Queue']]],
+  ['forestmanager',['ForestManager',['../classrdf_1_1ForestManager.html',1,'rdf']]],
+  ['forestmanager',['ForestManager',['../classrdf_1_1ForestManager.html#a91a1f9806518ed82227b382bc4427c56',1,'rdf::ForestManager::ForestManager()'],['../classrdf_1_1ForestManager.html#a5ca6326452d58bd367459b00bf893eae',1,'rdf::ForestManager::ForestManager(const ForestManager &amp;orig)']]],
+  ['forestmanager_2ecpp',['ForestManager.cpp',['../ForestManager_8cpp.html',1,'']]],
+  ['forestmanager_2eh',['ForestManager.h',['../ForestManager_8h.html',1,'']]],
+  ['frequency',['Frequency',['../classrdf_1_1Resource.html#ab5f7c94360292b32006f95e4a718decb',1,'rdf::Resource']]]
+];

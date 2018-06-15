@@ -1,0 +1,38 @@
+\hypertarget{FeaturesMat_8cpp}{}\section{Features\+Mat.\+cpp File Reference}
+\label{FeaturesMat_8cpp}\index{Features\+Mat.\+cpp@{Features\+Mat.\+cpp}}
+{\ttfamily \#include \char`\"{}Features\+Mat.\+h\char`\"{}}\\*
+Include dependency graph for Features\+Mat.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{FeaturesMat_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mt19937 \hyperlink{FeaturesMat_8cpp_a0c2f708dd4e06898c274c468e8f281c2}{Initialize\+Random\+Device} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Features\+Mat.\+cpp@{Features\+Mat.\+cpp}!Initialize\+Random\+Device@{Initialize\+Random\+Device}}
+\index{Initialize\+Random\+Device@{Initialize\+Random\+Device}!Features\+Mat.\+cpp@{Features\+Mat.\+cpp}}
+\subsubsection[{\texorpdfstring{Initialize\+Random\+Device()}{InitializeRandomDevice()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mt19937 Initialize\+Random\+Device (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{FeaturesMat_8cpp_a0c2f708dd4e06898c274c468e8f281c2}{}\label{FeaturesMat_8cpp_a0c2f708dd4e06898c274c468e8f281c2}
+
+
+References rdf\+::bpc\+::\+Features\+Mat\+::mt\+\_\+.
+
+
+\begin{DoxyCode}
+133                                     \{
+134     std::random\_device rd;
+135     std::mt19937 mt(rd());
+136     \textcolor{keywordflow}{return} mt;
+137 \}
+\end{DoxyCode}

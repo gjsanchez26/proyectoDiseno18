@@ -1,0 +1,27 @@
+<map id="Estructura.h" name="Estructura.h">
+<area shape="rect" id="node2" href="$ImageManager_8h.html" title="ImageManager.h" alt="" coords="382,155,501,181"/>
+<area shape="rect" id="node5" href="$TrainManager_8h.html" title="TrainManager.h" alt="" coords="49,304,161,331"/>
+<area shape="rect" id="node9" href="$PointsSelect_8h.html" title="PointsSelect.h" alt="" coords="207,80,313,107"/>
+<area shape="rect" id="node12" href="$Image_8h.html" title="Image.h" alt="" coords="337,80,407,107"/>
+<area shape="rect" id="node13" href="$Scheduler_8h.html" title="Scheduler.h" alt="" coords="547,155,637,181"/>
+<area shape="rect" id="node17" href="$QueueThread_8h.html" title="QueueThread.h" alt="" coords="533,80,643,107"/>
+<area shape="rect" id="node18" href="$Estructura_8cpp.html" title="Estructura.cpp" alt="" coords="668,80,775,107"/>
+<area shape="rect" id="node19" href="$ImageOperations_8h.html" title="ImageOperations.h" alt="" coords="799,80,931,107"/>
+<area shape="rect" id="node21" href="$Trainer_8h.html" title="Trainer.h" alt="" coords="1029,80,1102,107"/>
+<area shape="rect" id="node22" href="$TrainerBPC_8h.html" title="TrainerBPC.h" alt="" coords="919,155,1020,181"/>
+<area shape="rect" id="node3" href="$DistributionManager_8h.html" title="DistributionManager.h" alt="" coords="367,229,516,256"/>
+<area shape="rect" id="node8" href="$ImageManager_8cpp.html" title="ImageManager.cpp" alt="" coords="209,229,343,256"/>
+<area shape="rect" id="node4" href="$DistributionManager_8cpp.html" title="DistributionManager.cpp" alt="" coords="360,304,523,331"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="main.cpp" alt="" coords="5,379,80,405"/>
+<area shape="rect" id="node7" href="$TrainManager_8cpp.html" title="TrainManager.cpp" alt="" coords="105,379,231,405"/>
+<area shape="rect" id="node10" href="$Image_8cpp.html" title="Image.cpp" alt="" coords="224,155,307,181"/>
+<area shape="rect" id="node11" href="$PointsSelect_8cpp.html" title="PointsSelect.cpp" alt="" coords="78,155,199,181"/>
+<area shape="rect" id="node14" href="$QueueTask_8cpp.html" title="QueueTask.cpp" alt="" coords="540,229,655,256"/>
+<area shape="rect" id="node15" href="$QueueThread_8cpp.html" title="QueueThread.cpp" alt="" coords="809,229,935,256"/>
+<area shape="rect" id="node16" href="$Scheduler_8cpp.html" title="Scheduler.cpp" alt="" coords="679,229,785,256"/>
+<area shape="rect" id="node20" href="$ImageOperations_8cpp.html" title="ImageOperations.cpp" alt="" coords="748,155,895,181"/>
+<area shape="rect" id="node24" href="$Trainer_8cpp.html" title="Trainer.cpp" alt="" coords="1045,155,1131,181"/>
+<area shape="rect" id="node25" href="$TrainingJob_8h.html" title="TrainingJob.h" alt="" coords="1155,155,1255,181"/>
+<area shape="rect" id="node23" href="$TrainerBPC_8cpp.html" title="TrainerBPC.cpp" alt="" coords="959,229,1073,256"/>
+<area shape="rect" id="node26" href="$TrainingJob_8cpp.html" title="TrainingJob.cpp" alt="" coords="1148,229,1263,256"/>
+</map>

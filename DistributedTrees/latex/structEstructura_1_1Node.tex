@@ -1,0 +1,103 @@
+\hypertarget{structEstructura_1_1Node}{}\section{Estructura\+:\+:Node Struct Reference}
+\label{structEstructura_1_1Node}\index{Estructura\+::\+Node@{Estructura\+::\+Node}}
+
+
+{\ttfamily \#include $<$Estructura.\+h$>$}
+
+
+
+Collaboration diagram for Estructura\+:\+:Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{structEstructura_1_1Node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structEstructura_1_1Node_a5831e80817a1241fba2de601a9d6fda6}{get\+Total\+Size} (int \&valor)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+cv\+::\+Mat \hyperlink{structEstructura_1_1Node_a117720b249be79aaf71bc0a42d2c9b6b}{image\+Depth}
+\item 
+cv\+::\+Mat \hyperlink{structEstructura_1_1Node_a7905c0696cb214e84ac855e7a6b6366c}{image\+Label}
+\item 
+std\+::vector$<$ \hyperlink{structEstructura_1_1Pixel}{Estructura\+::\+Pixel} $>$ \hyperlink{structEstructura_1_1Node_a0ad44a6cbbffdcd39f26733cc0e6f196}{points}
+\item 
+std\+::vector$<$ int $>$ \hyperlink{structEstructura_1_1Node_aab4eb88cc631cf0829658ca0e7a313a4}{trees\+Availability}
+\item 
+int \hyperlink{structEstructura_1_1Node_abb400b36a5e8179766c35bc73c22e816}{tree}
+\item 
+int \hyperlink{structEstructura_1_1Node_a2e360ae2439d4d82dd38d9b30358feac}{node}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Estructura\+::\+Node@{Estructura\+::\+Node}!get\+Total\+Size@{get\+Total\+Size}}
+\index{get\+Total\+Size@{get\+Total\+Size}!Estructura\+::\+Node@{Estructura\+::\+Node}}
+\subsubsection[{\texorpdfstring{get\+Total\+Size(int \&valor)}{getTotalSize(int &valor)}}]{\setlength{\rightskip}{0pt plus 5cm}void Estructura\+::\+Node\+::get\+Total\+Size (
+\begin{DoxyParamCaption}
+\item[{int \&}]{valor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{structEstructura_1_1Node_a5831e80817a1241fba2de601a9d6fda6}{}\label{structEstructura_1_1Node_a5831e80817a1241fba2de601a9d6fda6}
+
+
+References Estructura\+::node.
+
+
+\begin{DoxyCode}
+40                                      \{
+41             valor = \textcolor{keyword}{sizeof}(\hyperlink{structEstructura_1_1Node_a117720b249be79aaf71bc0a42d2c9b6b}{imageDepth}) + \textcolor{keyword}{sizeof}(\hyperlink{structEstructura_1_1Node_a7905c0696cb214e84ac855e7a6b6366c}{imageLabel}) + \textcolor{keyword}{sizeof}(
+      \hyperlink{structEstructura_1_1Node_a0ad44a6cbbffdcd39f26733cc0e6f196}{points}) + \textcolor{keyword}{sizeof}(\hyperlink{structEstructura_1_1Node_abb400b36a5e8179766c35bc73c22e816}{tree})+ \textcolor{keyword}{sizeof}(\hyperlink{structEstructura_1_1Node_a2e360ae2439d4d82dd38d9b30358feac}{node});
+42         \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Estructura\+::\+Node@{Estructura\+::\+Node}!image\+Depth@{image\+Depth}}
+\index{image\+Depth@{image\+Depth}!Estructura\+::\+Node@{Estructura\+::\+Node}}
+\subsubsection[{\texorpdfstring{image\+Depth}{imageDepth}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Estructura\+::\+Node\+::image\+Depth}\hypertarget{structEstructura_1_1Node_a117720b249be79aaf71bc0a42d2c9b6b}{}\label{structEstructura_1_1Node_a117720b249be79aaf71bc0a42d2c9b6b}
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+\index{Estructura\+::\+Node@{Estructura\+::\+Node}!image\+Label@{image\+Label}}
+\index{image\+Label@{image\+Label}!Estructura\+::\+Node@{Estructura\+::\+Node}}
+\subsubsection[{\texorpdfstring{image\+Label}{imageLabel}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Estructura\+::\+Node\+::image\+Label}\hypertarget{structEstructura_1_1Node_a7905c0696cb214e84ac855e7a6b6366c}{}\label{structEstructura_1_1Node_a7905c0696cb214e84ac855e7a6b6366c}
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+\index{Estructura\+::\+Node@{Estructura\+::\+Node}!node@{node}}
+\index{node@{node}!Estructura\+::\+Node@{Estructura\+::\+Node}}
+\subsubsection[{\texorpdfstring{node}{node}}]{\setlength{\rightskip}{0pt plus 5cm}int Estructura\+::\+Node\+::node}\hypertarget{structEstructura_1_1Node_a2e360ae2439d4d82dd38d9b30358feac}{}\label{structEstructura_1_1Node_a2e360ae2439d4d82dd38d9b30358feac}
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+\index{Estructura\+::\+Node@{Estructura\+::\+Node}!points@{points}}
+\index{points@{points}!Estructura\+::\+Node@{Estructura\+::\+Node}}
+\subsubsection[{\texorpdfstring{points}{points}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Estructura\+::\+Pixel}$>$ Estructura\+::\+Node\+::points}\hypertarget{structEstructura_1_1Node_a0ad44a6cbbffdcd39f26733cc0e6f196}{}\label{structEstructura_1_1Node_a0ad44a6cbbffdcd39f26733cc0e6f196}
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+\index{Estructura\+::\+Node@{Estructura\+::\+Node}!tree@{tree}}
+\index{tree@{tree}!Estructura\+::\+Node@{Estructura\+::\+Node}}
+\subsubsection[{\texorpdfstring{tree}{tree}}]{\setlength{\rightskip}{0pt plus 5cm}int Estructura\+::\+Node\+::tree}\hypertarget{structEstructura_1_1Node_abb400b36a5e8179766c35bc73c22e816}{}\label{structEstructura_1_1Node_abb400b36a5e8179766c35bc73c22e816}
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+\index{Estructura\+::\+Node@{Estructura\+::\+Node}!trees\+Availability@{trees\+Availability}}
+\index{trees\+Availability@{trees\+Availability}!Estructura\+::\+Node@{Estructura\+::\+Node}}
+\subsubsection[{\texorpdfstring{trees\+Availability}{treesAvailability}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$int$>$ Estructura\+::\+Node\+::trees\+Availability}\hypertarget{structEstructura_1_1Node_aab4eb88cc631cf0829658ca0e7a313a4}{}\label{structEstructura_1_1Node_aab4eb88cc631cf0829658ca0e7a313a4}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Estructura_8h}{Estructura.\+h}\end{DoxyCompactItemize}

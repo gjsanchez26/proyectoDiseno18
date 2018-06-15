@@ -1,0 +1,3 @@
+<map id="rdf::Task" name="rdf::Task">
+<area shape="rect" id="node2" href="$classrdf_1_1bpc_1_1FeaturesMat.html" title="{rdf::bpc::FeaturesMat\n|&#45; thresholds_\l&#45; features_\l&#45; numFeatures_\l&#45; numThresholds_\l&#45; thresholdsLowRange_\l&#45; thresholdsHighRange_\l&#45; featuresLowRange_\l&#45; featuresHighRange_\l&#45; mt_\l|+ FeaturesMat()\l+ FeaturesMat()\l+ FeaturesMat()\l+ SetMatrixSize()\l+ SetNumThresholds()\l+ SetNumFeatures()\l+ SetThresholdsNumRange()\l+ SetFeaturesNumRange()\l+ GenerateVectors()\l+ Print()\l+ ~FeaturesMat()\l+ GetThresholdAt()\l+ GetFeaturesAt()\l&#45; GenerateThresholdsVector()\l&#45; GenerateFeaturesVector()\l&#45; serialize()\l}" alt="" coords="5,5,199,420"/>
+</map>

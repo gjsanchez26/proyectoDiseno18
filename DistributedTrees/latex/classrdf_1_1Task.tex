@@ -1,0 +1,522 @@
+\hypertarget{classrdf_1_1Task}{}\section{rdf\+:\+:Task Class Reference}
+\label{classrdf_1_1Task}\index{rdf\+::\+Task@{rdf\+::\+Task}}
+
+
+{\ttfamily \#include $<$Task.\+h$>$}
+
+
+
+Collaboration diagram for rdf\+:\+:Task\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classrdf_1_1Task__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1Task_a8457894b8d8fa131f71a7d517ba7bf74}{Task} ()
+\item 
+\hyperlink{classrdf_1_1Task_ae22d87a6bbaa872fb9a2d7b635e23017}{Task} (int \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\+\_\+rank}, int \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\+\_\+tree}, int \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\+\_\+node}, bool \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\+\_\+status})
+\item 
+\hyperlink{classrdf_1_1Task_a1858fac2f9519af47ac11fcb742d4866}{Task} (const \hyperlink{classrdf_1_1Task}{Task} \&orig)
+\item 
+virtual \hyperlink{classrdf_1_1Task_aad3f295247fa60106899c5ee5b9eae8a}{$\sim$\+Task} ()
+\item 
+void \hyperlink{classrdf_1_1Task_aed5f96455f9684078a5fa8fce849d197}{show\+Task} ()
+\item 
+void \hyperlink{classrdf_1_1Task_aee187dbed7bb9b900114920162f9866b}{reduce} (\hyperlink{classrdf_1_1Task}{Task} \&p\+Task1)
+\item 
+int \hyperlink{classrdf_1_1Task_abed5b1d313483299a04f0ccb63901c54}{get\+Node} () const 
+\item 
+void \hyperlink{classrdf_1_1Task_aa7667e08b39f5b6cae63aa0abeb4c412}{set\+Node} (int \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\+\_\+node})
+\item 
+int \hyperlink{classrdf_1_1Task_ab1bcd01480e2c381541b6346f15cf4b7}{get\+Rank} () const 
+\item 
+void \hyperlink{classrdf_1_1Task_aa55d27b31ed812e31e21fa5676208f1b}{set\+Rank} (int \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\+\_\+rank})
+\item 
+bool \hyperlink{classrdf_1_1Task_a2d78d32594b0c8f76a599cc3883211c7}{is\+Status} () const 
+\item 
+void \hyperlink{classrdf_1_1Task_af030aac32a3943f2cd0fb22c8e964071}{set\+Status} (bool \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\+\_\+status})
+\item 
+int \hyperlink{classrdf_1_1Task_a942297717d39a25db9ed8636ef72dca1}{get\+Tree} () const 
+\item 
+void \hyperlink{classrdf_1_1Task_ad7948910883a02524a0975d47c1827a7}{set\+Tree} (int \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\+\_\+tree})
+\item 
+\hyperlink{classrdf_1_1bpc_1_1FeaturesMat}{rdf\+::bpc\+::\+Features\+Mat} \hyperlink{classrdf_1_1Task_a2c122a98bbf1eed3f957314b77d4d127}{get\+Feature\+Matrix} () const 
+\item 
+void \hyperlink{classrdf_1_1Task_a9e2210a4bdaf42a67817e27e2f14765f}{set\+Feature\+Matrix} (\hyperlink{classrdf_1_1bpc_1_1FeaturesMat}{rdf\+::bpc\+::\+Features\+Mat} \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\+\_\+feature\+Matrix})
+\item 
+bool \hyperlink{classrdf_1_1Task_a17da81a7663395f4d457182a000daed6}{operator$<$} (const \hyperlink{classrdf_1_1Task}{Task} \&p\+Task) const 
+\item 
+bool \hyperlink{classrdf_1_1Task_a5ce1713364f37d1675b104dc65dd51f4}{operator==} (const \hyperlink{classrdf_1_1Task}{Task} \&p\+Task) const 
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classrdf_1_1Task_a1e1bfd2786560793c6aa25a91eabca29}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\+\_\+rank}
+\item 
+int \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\+\_\+tree}
+\item 
+int \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\+\_\+node}
+\item 
+bool \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\+\_\+status}
+\item 
+\hyperlink{classrdf_1_1bpc_1_1FeaturesMat}{rdf\+::bpc\+::\+Features\+Mat} \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\+\_\+feature\+Matrix}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrdf_1_1Task_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class encapsulate a task in the process of training trees 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!Task@{Task}}
+\index{Task@{Task}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{Task()}{Task()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Task\+::\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Task_a8457894b8d8fa131f71a7d517ba7bf74}{}\label{classrdf_1_1Task_a8457894b8d8fa131f71a7d517ba7bf74}
+
+
+References \+\_\+feature\+Matrix, rdf\+::bpc\+::\+Features\+Mat\+::\+Generate\+Vectors(), rdf\+::bpc\+::\+Features\+Mat\+::\+Set\+Features\+Num\+Range(), rdf\+::bpc\+::\+Features\+Mat\+::\+Set\+Matrix\+Size(), rdf\+::bpc\+::\+Features\+Mat\+::\+Set\+Thresholds\+Num\+Range(), T\+H\+R\+E\+S\+H\+O\+L\+D\+\_\+\+A\+M\+O\+U\+NT, and V\+E\+C\+T\+O\+R\+\_\+\+A\+M\+O\+U\+NT.
+
+
+\begin{DoxyCode}
+16               \{
+17     \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\_featureMatrix}.\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a14292e637f99011c2f519f938acf89c6}{SetMatrixSize}(\hyperlink{Config_8h_a42a88b6f9794602ba8d3df8681586d6c}{VECTOR\_AMOUNT},
+      \hyperlink{Config_8h_a046baffcfc17bd9008df03cf43da388a}{THRESHOLD\_AMOUNT});
+18     \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\_featureMatrix}.\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a03f0951ab28c3f8056eafb5c76412519}{SetThresholdsNumRange}(100,0);
+19     \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\_featureMatrix}.\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a46e93bc1f4714aa57bee42d7e1da35fd}{SetFeaturesNumRange}(100,0);
+20     \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\_featureMatrix}.\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aafcb6a653e6f4e161ca91b22710ff226}{GenerateVectors}();
+21     \textcolor{comment}{//\_featureMatrix.Print();}
+22 \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!Task@{Task}}
+\index{Task@{Task}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{Task(int \+\_\+rank, int \+\_\+tree, int \+\_\+node, bool \+\_\+status)}{Task(int _rank, int _tree, int _node, bool _status)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Task\+::\+Task (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+rank, }
+\item[{int}]{\+\_\+tree, }
+\item[{int}]{\+\_\+node, }
+\item[{bool}]{\+\_\+status}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Task_ae22d87a6bbaa872fb9a2d7b635e23017}{}\label{classrdf_1_1Task_ae22d87a6bbaa872fb9a2d7b635e23017}
+
+
+References \+\_\+node, \+\_\+rank, \+\_\+status, and \+\_\+tree.
+
+
+\begin{DoxyCode}
+37                                                               \{
+38     \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank} = \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank};
+39     \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree} = \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree};
+40     \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node} = \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node};
+41     \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status} = \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status};
+42 \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!Task@{Task}}
+\index{Task@{Task}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{Task(const Task \&orig)}{Task(const Task &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Task\+::\+Task (
+\begin{DoxyParamCaption}
+\item[{const {\bf Task} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Task_a1858fac2f9519af47ac11fcb742d4866}{}\label{classrdf_1_1Task_a1858fac2f9519af47ac11fcb742d4866}
+
+
+References \+\_\+feature\+Matrix, \+\_\+node, \+\_\+rank, \+\_\+status, and \+\_\+tree.
+
+
+\begin{DoxyCode}
+24                               \{
+25     \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank}           = orig.\_rank;
+26     \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree}           = orig.\_tree;
+27     \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node}           = orig.\_node;
+28     \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status}         = orig.\_status;
+29     \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\_featureMatrix}  = orig.\_featureMatrix;
+30 \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!````~Task@{$\sim$\+Task}}
+\index{````~Task@{$\sim$\+Task}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{$\sim$\+Task()}{~Task()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Task\+::$\sim$\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1Task_aad3f295247fa60106899c5ee5b9eae8a}{}\label{classrdf_1_1Task_aad3f295247fa60106899c5ee5b9eae8a}
+
+\begin{DoxyCode}
+33                \{
+34     
+35 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!get\+Feature\+Matrix@{get\+Feature\+Matrix}}
+\index{get\+Feature\+Matrix@{get\+Feature\+Matrix}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{get\+Feature\+Matrix() const }{getFeatureMatrix() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rdf\+::bpc\+::\+Features\+Mat} rdf\+::\+Task\+::get\+Feature\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_a2c122a98bbf1eed3f957314b77d4d127}{}\label{classrdf_1_1Task_a2c122a98bbf1eed3f957314b77d4d127}
+
+
+References \+\_\+feature\+Matrix.
+
+
+
+Referenced by init(), rdf\+::\+Node\+Result\+::reduce(), and Queue\+Thread\+::run().
+
+
+\begin{DoxyCode}
+84                                                        \{
+85                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\_featureMatrix};
+86             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!get\+Node@{get\+Node}}
+\index{get\+Node@{get\+Node}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{get\+Node() const }{getNode() const }}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Task\+::get\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_abed5b1d313483299a04f0ccb63901c54}{}\label{classrdf_1_1Task_abed5b1d313483299a04f0ccb63901c54}
+
+
+References \+\_\+node.
+
+
+
+Referenced by rdf\+::\+Forest\+Manager\+::add\+Resuld(), init(), reduce(), Queue\+Thread\+::run(), and rdf\+::\+Distribution\+Manager\+::transfer\+Nodes().
+
+
+\begin{DoxyCode}
+53                                 \{
+54                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node};
+55             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!get\+Rank@{get\+Rank}}
+\index{get\+Rank@{get\+Rank}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{get\+Rank() const }{getRank() const }}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Task\+::get\+Rank (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_ab1bcd01480e2c381541b6346f15cf4b7}{}\label{classrdf_1_1Task_ab1bcd01480e2c381541b6346f15cf4b7}
+
+
+References \+\_\+rank.
+
+
+
+Referenced by rdf\+::\+Forest\+Manager\+::add\+Resuld(), init(), reduce(), and rdf\+::\+Distribution\+Manager\+::transfer\+Nodes().
+
+
+\begin{DoxyCode}
+60                                 \{
+61                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank};
+62             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!get\+Tree@{get\+Tree}}
+\index{get\+Tree@{get\+Tree}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{get\+Tree() const }{getTree() const }}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Task\+::get\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_a942297717d39a25db9ed8636ef72dca1}{}\label{classrdf_1_1Task_a942297717d39a25db9ed8636ef72dca1}
+
+
+References \+\_\+tree.
+
+
+
+Referenced by rdf\+::\+Forest\+Manager\+::add\+Resuld(), init(), reduce(), Queue\+Thread\+::run(), and rdf\+::\+Distribution\+Manager\+::transfer\+Nodes().
+
+
+\begin{DoxyCode}
+76                                 \{
+77                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree};
+78             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!is\+Status@{is\+Status}}
+\index{is\+Status@{is\+Status}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{is\+Status() const }{isStatus() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool rdf\+::\+Task\+::is\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_a2d78d32594b0c8f76a599cc3883211c7}{}\label{classrdf_1_1Task_a2d78d32594b0c8f76a599cc3883211c7}
+
+
+References \+\_\+status.
+
+
+
+Referenced by rdf\+::\+Forest\+Manager\+::add\+Resuld(), reduce(), and rdf\+::\+Distribution\+Manager\+::transfer\+Nodes().
+
+
+\begin{DoxyCode}
+68                                   \{
+69                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status};
+70             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{operator$<$(const Task \&p\+Task) const }{operator<(const Task &pTask) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool rdf\+::\+Task\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Task} \&}]{p\+Task}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_a17da81a7663395f4d457182a000daed6}{}\label{classrdf_1_1Task_a17da81a7663395f4d457182a000daed6}
+
+
+References \+\_\+rank.
+
+
+\begin{DoxyCode}
+92             \{
+93                 \textcolor{keywordflow}{if}(pTask.\_rank < this->\_rank)
+94                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+95             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!operator==@{operator==}}
+\index{operator==@{operator==}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{operator==(const Task \&p\+Task) const }{operator==(const Task &pTask) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool rdf\+::\+Task\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Task} \&}]{p\+Task}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_a5ce1713364f37d1675b104dc65dd51f4}{}\label{classrdf_1_1Task_a5ce1713364f37d1675b104dc65dd51f4}
+
+
+References \+\_\+node, and \+\_\+tree.
+
+
+\begin{DoxyCode}
+97             \{
+98                 \textcolor{keywordflow}{if}(pTask.\_node == this->\_node && pTask.\_tree == this->\_tree )
+99                     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+100             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!reduce@{reduce}}
+\index{reduce@{reduce}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{reduce(\+Task \&p\+Task1)}{reduce(Task &pTask1)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Task\+::reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} \&}]{p\+Task1}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Task_aee187dbed7bb9b900114920162f9866b}{}\label{classrdf_1_1Task_aee187dbed7bb9b900114920162f9866b}
+
+
+References \+\_\+node, \+\_\+rank, \+\_\+status, \+\_\+tree, get\+Node(), get\+Rank(), get\+Tree(), and is\+Status().
+
+
+\begin{DoxyCode}
+48                                 \{
+49     \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank}   = \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank} + pTask.getRank();
+50     \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree}   = \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree} + pTask.getTree();
+51     \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node}   = \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node} + pTask.getNode();
+52     \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status} = pTask.isStatus();   
+53 \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!serialize@{serialize}}
+\index{serialize@{serialize}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{serialize(\+Archive \&ar, const unsigned int version)}{serialize(Archive &ar, const unsigned int version)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void rdf\+::\+Task\+::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classrdf_1_1Task_a1e1bfd2786560793c6aa25a91eabca29}{}\label{classrdf_1_1Task_a1e1bfd2786560793c6aa25a91eabca29}
+
+
+References \+\_\+feature\+Matrix, \+\_\+node, \+\_\+rank, \+\_\+status, and \+\_\+tree.
+
+
+\begin{DoxyCode}
+28             \{
+29                 ar & \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank};
+30                 ar & \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree};
+31                 ar & \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node};
+32                 ar & \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status};
+33                 ar & \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\_featureMatrix};
+34             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!set\+Feature\+Matrix@{set\+Feature\+Matrix}}
+\index{set\+Feature\+Matrix@{set\+Feature\+Matrix}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{set\+Feature\+Matrix(rdf\+::bpc\+::\+Features\+Mat \+\_\+feature\+Matrix)}{setFeatureMatrix(rdf::bpc::FeaturesMat _featureMatrix)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Task\+::set\+Feature\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf rdf\+::bpc\+::\+Features\+Mat}}]{\+\_\+feature\+Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_a9e2210a4bdaf42a67817e27e2f14765f}{}\label{classrdf_1_1Task_a9e2210a4bdaf42a67817e27e2f14765f}
+
+
+References \+\_\+feature\+Matrix.
+
+
+\begin{DoxyCode}
+88                                                                     \{
+89                 this->\_featureMatrix = \hyperlink{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{\_featureMatrix};
+90             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!set\+Node@{set\+Node}}
+\index{set\+Node@{set\+Node}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{set\+Node(int \+\_\+node)}{setNode(int _node)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Task\+::set\+Node (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_aa7667e08b39f5b6cae63aa0abeb4c412}{}\label{classrdf_1_1Task_aa7667e08b39f5b6cae63aa0abeb4c412}
+
+
+References \+\_\+node.
+
+
+
+Referenced by rdf\+::\+Forest\+Manager\+::add\+Resuld(), rdf\+::\+Forest\+Manager\+::initialize\+Forest(), and main().
+
+
+\begin{DoxyCode}
+56                                     \{
+57                 this->\hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node} = \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node};
+58             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!set\+Rank@{set\+Rank}}
+\index{set\+Rank@{set\+Rank}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{set\+Rank(int \+\_\+rank)}{setRank(int _rank)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Task\+::set\+Rank (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+rank}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_aa55d27b31ed812e31e21fa5676208f1b}{}\label{classrdf_1_1Task_aa55d27b31ed812e31e21fa5676208f1b}
+
+
+References \+\_\+rank.
+
+
+
+Referenced by rdf\+::\+Forest\+Manager\+::add\+Resuld(), rdf\+::\+Forest\+Manager\+::initialize\+Forest(), and main().
+
+
+\begin{DoxyCode}
+64                                     \{
+65                 this->\hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank} = \hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank};
+66             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!set\+Status@{set\+Status}}
+\index{set\+Status@{set\+Status}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{set\+Status(bool \+\_\+status)}{setStatus(bool _status)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Task\+::set\+Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_af030aac32a3943f2cd0fb22c8e964071}{}\label{classrdf_1_1Task_af030aac32a3943f2cd0fb22c8e964071}
+
+
+References \+\_\+status.
+
+
+
+Referenced by rdf\+::\+Forest\+Manager\+::add\+Resuld(), rdf\+::\+Forest\+Manager\+::initialize\+Forest(), and main().
+
+
+\begin{DoxyCode}
+72                                          \{
+73                 this->\hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status} = \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status};
+74             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!set\+Tree@{set\+Tree}}
+\index{set\+Tree@{set\+Tree}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{set\+Tree(int \+\_\+tree)}{setTree(int _tree)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Task\+::set\+Tree (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+tree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Task_ad7948910883a02524a0975d47c1827a7}{}\label{classrdf_1_1Task_ad7948910883a02524a0975d47c1827a7}
+
+
+References \+\_\+tree.
+
+
+
+Referenced by rdf\+::\+Forest\+Manager\+::add\+Resuld(), rdf\+::\+Forest\+Manager\+::initialize\+Forest(), and main().
+
+
+\begin{DoxyCode}
+80                                     \{
+81                 this->\hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree} = \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree};
+82             \}
+\end{DoxyCode}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!show\+Task@{show\+Task}}
+\index{show\+Task@{show\+Task}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{show\+Task()}{showTask()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Task\+::show\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Task_aed5f96455f9684078a5fa8fce849d197}{}\label{classrdf_1_1Task_aed5f96455f9684078a5fa8fce849d197}
+
+
+References \+\_\+node, \+\_\+rank, \+\_\+status, and \+\_\+tree.
+
+
+
+Referenced by Scheduler\+::check\+Queues(), rdf\+::\+Node\+Result\+::reduce(), rdf\+::\+Train\+Manager\+::sending\+Results(), rdf\+::\+Forest\+Manager\+::show\+Queue(), and rdf\+::\+Distribution\+Manager\+::waiting\+Results().
+
+
+\begin{DoxyCode}
+44                        \{
+45     std::cout << \textcolor{stringliteral}{"\{ "} <<\hyperlink{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{\_rank} <<  \textcolor{stringliteral}{","} << \hyperlink{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{\_tree} << \textcolor{stringliteral}{","} << \hyperlink{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{\_node} <<\textcolor{stringliteral}{","} <<
+      \hyperlink{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{\_status} << \textcolor{stringliteral}{" \} \(\backslash\)n"};
+46 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!boost\+::serialization\+::access@{boost\+::serialization\+::access}}
+\index{boost\+::serialization\+::access@{boost\+::serialization\+::access}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{boost\+::serialization\+::access}{boost::serialization::access}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classrdf_1_1Task_ac98d07dd8f7b70e16ccb9a01abf56b9c}{}\label{classrdf_1_1Task_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::\+Task@{rdf\+::\+Task}!\+\_\+feature\+Matrix@{\+\_\+feature\+Matrix}}
+\index{\+\_\+feature\+Matrix@{\+\_\+feature\+Matrix}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{\+\_\+feature\+Matrix}{_featureMatrix}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rdf\+::bpc\+::\+Features\+Mat} rdf\+::\+Task\+::\+\_\+feature\+Matrix\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}{}\label{classrdf_1_1Task_a05d2cb8251477edc1c869b98a63970fa}
+Feature \hyperlink{classrdf_1_1Matrix}{Matrix} 
+
+Referenced by get\+Feature\+Matrix(), serialize(), set\+Feature\+Matrix(), and Task().
+
+\index{rdf\+::\+Task@{rdf\+::\+Task}!\+\_\+node@{\+\_\+node}}
+\index{\+\_\+node@{\+\_\+node}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{\+\_\+node}{_node}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Task\+::\+\_\+node\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}{}\label{classrdf_1_1Task_ab505294f64848a3ee104c9efa45528b5}
+\hyperlink{classrdf_1_1Node}{Node} Number 
+
+Referenced by get\+Node(), operator==(), reduce(), serialize(), set\+Node(), show\+Task(), and Task().
+
+\index{rdf\+::\+Task@{rdf\+::\+Task}!\+\_\+rank@{\+\_\+rank}}
+\index{\+\_\+rank@{\+\_\+rank}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{\+\_\+rank}{_rank}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Task\+::\+\_\+rank\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}{}\label{classrdf_1_1Task_a66806490016907e1acd9ad771811e4d5}
+Number of process 
+
+Referenced by get\+Rank(), operator$<$(), reduce(), serialize(), set\+Rank(), show\+Task(), and Task().
+
+\index{rdf\+::\+Task@{rdf\+::\+Task}!\+\_\+status@{\+\_\+status}}
+\index{\+\_\+status@{\+\_\+status}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{\+\_\+status}{_status}}]{\setlength{\rightskip}{0pt plus 5cm}bool rdf\+::\+Task\+::\+\_\+status\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}{}\label{classrdf_1_1Task_a43face20dfc0d868ef400070d0fd43bb}
+Number of process 
+
+Referenced by is\+Status(), reduce(), serialize(), set\+Status(), show\+Task(), and Task().
+
+\index{rdf\+::\+Task@{rdf\+::\+Task}!\+\_\+tree@{\+\_\+tree}}
+\index{\+\_\+tree@{\+\_\+tree}!rdf\+::\+Task@{rdf\+::\+Task}}
+\subsubsection[{\texorpdfstring{\+\_\+tree}{_tree}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Task\+::\+\_\+tree\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}{}\label{classrdf_1_1Task_a3986abc1d8a8c79bde8d7525c6faa0bd}
+Tree Number 
+
+Referenced by get\+Tree(), operator==(), reduce(), serialize(), set\+Tree(), show\+Task(), and Task().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Task_8h}{Task.\+h}\item 
+\hyperlink{Task_8cpp}{Task.\+cpp}\end{DoxyCompactItemize}

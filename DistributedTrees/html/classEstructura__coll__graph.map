@@ -1,0 +1,5 @@
+<map id="Estructura" name="Estructura">
+<area shape="rect" id="node2" href="$structEstructura_1_1Node.html" title="{Estructura::Node\n|+ imageDepth\l+ imageLabel\l+ points\l+ treesAvailability\l+ tree\l+ node\l|+ getTotalSize()\l}" alt="" coords="5,27,132,178"/>
+<area shape="rect" id="node3" href="$structEstructura_1_1Pixel.html" title="{Estructura::Pixel\n|+ point\l+ ubicacion\l|}" alt="" coords="156,57,275,149"/>
+<area shape="rect" id="node4" href="$structEstructura_1_1DataMaster.html" title="{Estructura::DataMaster\n|+ type_Algorithm\l+ NumPoints\l+ height\l+ width\l+ NumTree\l+ startRead\l+ endRead\l+ tree\l+ node\l|}" alt="" coords="299,5,457,200"/>
+</map>

@@ -1,0 +1,673 @@
+\hypertarget{classrdf_1_1DistributionManager}{}\section{rdf\+:\+:Distribution\+Manager Class Reference}
+\label{classrdf_1_1DistributionManager}\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+
+
+{\ttfamily \#include $<$Distribution\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for rdf\+:\+:Distribution\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classrdf_1_1DistributionManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1DistributionManager_ad305a637e032d254c3884911294919e4}{Distribution\+Manager} ()
+\item 
+\hyperlink{classrdf_1_1DistributionManager_ab0df571638e2f1a645a6b10a46be43dc}{Distribution\+Manager} (const \hyperlink{classrdf_1_1DistributionManager}{Distribution\+Manager} \&orig)
+\item 
+virtual \hyperlink{classrdf_1_1DistributionManager_a5165d8567d99652270a892b576bc8d41}{$\sim$\+Distribution\+Manager} ()
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_ad030f06a725590893f186cf95df7ed19}{waiting\+Results} ()
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_aaa23849f108cf3199eb6a076c37a269c}{sending\+Results} ()
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_aee4c4143848ea57742d79f8ee137b4c7}{transfer\+Resources} ()
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_af601ca87a8a5b21632e5c70de253d8cb}{transfer\+Ranges} ()
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_ac98b0403d6311d00e7b95c03fa4aa0f3}{transfer\+Nodes} (\hyperlink{classrdf_1_1Task}{Task} \&p\+Task)
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_a16efc159bccc8c621d28d62310cfb2e0}{transfer\+Results} ()
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_a30ac28e002aebe633229c993a65437fd}{transfer\+Beacon} ()
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_a7430723023243687df8181b7575cb167}{transfer\+Train\+Start} (\hyperlink{classrdf_1_1ForestManager}{Forest\+Manager} \&p\+Forest)
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_ab28b3c19afaae2917fdac53f426b1835}{transfer\+Best\+Feature} (\hyperlink{classrdf_1_1bpc_1_1BestFeatureMsg}{rdf\+::bpc\+::\+Best\+Feature\+Msg} p\+Feature)
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_acc9fe7a5966360e5e82d916a0eed1712}{transfer\+Finish} ()
+\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \hyperlink{classrdf_1_1DistributionManager_a31ba2ded77d4addc0a245daf08e6a704}{get\+Image\+Ranges} () const 
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_a3545e401850b0263252d07c815220b13}{set\+Image\+Ranges} (std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \hyperlink{classrdf_1_1DistributionManager_a5f3f6245bed7bfcf34204fc16e655656}{\+\_\+image\+Ranges})
+\item 
+\hyperlink{classImageManager}{Image\+Manager} \hyperlink{classrdf_1_1DistributionManager_a264664d495909f826523699558d4f8e4}{get\+My\+Image\+Manager} () const 
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_aebde88548a718fc7b984ff356abebd27}{set\+My\+Image\+Manager} (\hyperlink{classImageManager}{Image\+Manager} \hyperlink{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}{\+\_\+my\+Image\+Manager})
+\item 
+pair$<$ int, int $>$ \hyperlink{classrdf_1_1DistributionManager_a5fcb2947236b8109c575215c15b55791}{get\+My\+Range} () const 
+\item 
+void \hyperlink{classrdf_1_1DistributionManager_a8c137d7196f9876c9079f7ef7a9dd8f5}{set\+My\+Range} (pair$<$ int, int $>$ \hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\+\_\+my\+Range})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+mpi\+::environment \hyperlink{classrdf_1_1DistributionManager_ab24e19df5707be063ee48ef9f41af13f}{\+\_\+env}
+\item 
+mpi\+::communicator \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\+\_\+world}
+\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \hyperlink{classrdf_1_1DistributionManager_a5f3f6245bed7bfcf34204fc16e655656}{\+\_\+image\+Ranges}
+\item 
+pair$<$ int, int $>$ \hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\+\_\+my\+Range}
+\item 
+\hyperlink{classImageManager}{Image\+Manager} \hyperlink{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}{\+\_\+my\+Image\+Manager}
+\item 
+\hyperlink{classrdf_1_1ForestManager}{rdf\+::\+Forest\+Manager} \hyperlink{classrdf_1_1DistributionManager_aba2daa8780c7915f9f1a5d871edb93c9}{\+\_\+forest\+Manager}
+\item 
+\hyperlink{classrdf_1_1ImageDispatcher}{rdf\+::\+Image\+Dispatcher} \hyperlink{classrdf_1_1DistributionManager_a43d6497690b1040281e7dfd64ed4dc65}{\+\_\+image\+Distpatcher}
+\item 
+\hyperlink{classScheduler}{Scheduler} \hyperlink{classrdf_1_1DistributionManager_a6a628c16669a4c94837597193fa95ecb}{\+\_\+scheduler}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that works on distribute all messages within M\+P\+I.\+B\+O\+O\+ST 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!Distribution\+Manager@{Distribution\+Manager}}
+\index{Distribution\+Manager@{Distribution\+Manager}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{Distribution\+Manager()}{DistributionManager()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Distribution\+Manager\+::\+Distribution\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_ad305a637e032d254c3884911294919e4}{}\label{classrdf_1_1DistributionManager_ad305a637e032d254c3884911294919e4}
+
+\begin{DoxyCode}
+22 \{\}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!Distribution\+Manager@{Distribution\+Manager}}
+\index{Distribution\+Manager@{Distribution\+Manager}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{Distribution\+Manager(const Distribution\+Manager \&orig)}{DistributionManager(const DistributionManager &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Distribution\+Manager\+::\+Distribution\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Distribution\+Manager} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_ab0df571638e2f1a645a6b10a46be43dc}{}\label{classrdf_1_1DistributionManager_ab0df571638e2f1a645a6b10a46be43dc}
+
+
+References \+\_\+image\+Ranges, \+\_\+my\+Image\+Manager, and \+\_\+my\+Range.
+
+
+\begin{DoxyCode}
+23                                                                            \{
+24     \hyperlink{classrdf_1_1DistributionManager_a5f3f6245bed7bfcf34204fc16e655656}{\_imageRanges}    = orig.\_imageRanges;
+25     \hyperlink{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}{\_myImageManager} = orig.\_myImageManager;
+26     \hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\_myRange}        = orig.\_myRange;        
+27 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!````~Distribution\+Manager@{$\sim$\+Distribution\+Manager}}
+\index{````~Distribution\+Manager@{$\sim$\+Distribution\+Manager}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{$\sim$\+Distribution\+Manager()}{~DistributionManager()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Distribution\+Manager\+::$\sim$\+Distribution\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1DistributionManager_a5165d8567d99652270a892b576bc8d41}{}\label{classrdf_1_1DistributionManager_a5165d8567d99652270a892b576bc8d41}
+
+\begin{DoxyCode}
+28 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!get\+Image\+Ranges@{get\+Image\+Ranges}}
+\index{get\+Image\+Ranges@{get\+Image\+Ranges}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Image\+Ranges() const }{getImageRanges() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$int, int$>$ $>$ rdf\+::\+Distribution\+Manager\+::get\+Image\+Ranges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1DistributionManager_a31ba2ded77d4addc0a245daf08e6a704}{}\label{classrdf_1_1DistributionManager_a31ba2ded77d4addc0a245daf08e6a704}
+G\+E\+T\+T\+E\+RS A\+ND S\+E\+T\+T\+E\+RS F\+OR M\+A\+IN V\+A\+R\+I\+A\+B\+L\+ES 
+
+References \+\_\+image\+Ranges.
+
+
+\begin{DoxyCode}
+89                                                              \{
+90             \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1DistributionManager_a5f3f6245bed7bfcf34204fc16e655656}{\_imageRanges};
+91         \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!get\+My\+Image\+Manager@{get\+My\+Image\+Manager}}
+\index{get\+My\+Image\+Manager@{get\+My\+Image\+Manager}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{get\+My\+Image\+Manager() const }{getMyImageManager() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image\+Manager} rdf\+::\+Distribution\+Manager\+::get\+My\+Image\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1DistributionManager_a264664d495909f826523699558d4f8e4}{}\label{classrdf_1_1DistributionManager_a264664d495909f826523699558d4f8e4}
+
+
+References \+\_\+my\+Image\+Manager.
+
+
+\begin{DoxyCode}
+96                                                \{
+97             \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}{\_myImageManager};
+98         \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!get\+My\+Range@{get\+My\+Range}}
+\index{get\+My\+Range@{get\+My\+Range}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{get\+My\+Range() const }{getMyRange() const }}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$int, int$>$ rdf\+::\+Distribution\+Manager\+::get\+My\+Range (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1DistributionManager_a5fcb2947236b8109c575215c15b55791}{}\label{classrdf_1_1DistributionManager_a5fcb2947236b8109c575215c15b55791}
+
+
+References \+\_\+my\+Range.
+
+
+\begin{DoxyCode}
+104                                           \{
+105             \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\_myRange};
+106         \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!sending\+Results@{sending\+Results}}
+\index{sending\+Results@{sending\+Results}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{sending\+Results()}{sendingResults()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::sending\+Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_aaa23849f108cf3199eb6a076c37a269c}{}\label{classrdf_1_1DistributionManager_aaa23849f108cf3199eb6a076c37a269c}
+
+
+References \+\_\+scheduler, \+\_\+world, and Scheduler\+::get\+Results().
+
+
+
+Referenced by transfer\+Results().
+
+
+\begin{DoxyCode}
+42                                             \{
+43     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{
+44         
+45         \textcolor{keywordflow}{if}(!\hyperlink{classrdf_1_1DistributionManager_a6a628c16669a4c94837597193fa95ecb}{\_scheduler}.\hyperlink{classScheduler_a8864f6b658cf4d2a6d9d78a84c6d81f7}{getResults}().empty()) \{
+46             std::cout << \textcolor{stringliteral}{"SENDING THREAD \(\backslash\)n"};
+47             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.send(0, 2,\hyperlink{classrdf_1_1DistributionManager_a6a628c16669a4c94837597193fa95ecb}{\_scheduler}.\hyperlink{classScheduler_a8864f6b658cf4d2a6d9d78a84c6d81f7}{getResults}().front()) ; 
+48             \hyperlink{classrdf_1_1DistributionManager_a6a628c16669a4c94837597193fa95ecb}{\_scheduler}.\hyperlink{classScheduler_a8864f6b658cf4d2a6d9d78a84c6d81f7}{getResults}().pop();
+49             
+50         \}
+51     \}
+52 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!set\+Image\+Ranges@{set\+Image\+Ranges}}
+\index{set\+Image\+Ranges@{set\+Image\+Ranges}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Image\+Ranges(std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \+\_\+image\+Ranges)}{setImageRanges(std::vector< std::pair< int, int > > _imageRanges)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::set\+Image\+Ranges (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$}]{\+\_\+image\+Ranges}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1DistributionManager_a3545e401850b0263252d07c815220b13}{}\label{classrdf_1_1DistributionManager_a3545e401850b0263252d07c815220b13}
+
+
+References \+\_\+image\+Ranges.
+
+
+\begin{DoxyCode}
+93                                                                         \{
+94             this->\hyperlink{classrdf_1_1DistributionManager_a5f3f6245bed7bfcf34204fc16e655656}{\_imageRanges} = \hyperlink{classrdf_1_1DistributionManager_a5f3f6245bed7bfcf34204fc16e655656}{\_imageRanges};
+95         \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!set\+My\+Image\+Manager@{set\+My\+Image\+Manager}}
+\index{set\+My\+Image\+Manager@{set\+My\+Image\+Manager}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{set\+My\+Image\+Manager(\+Image\+Manager \+\_\+my\+Image\+Manager)}{setMyImageManager(ImageManager _myImageManager)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::set\+My\+Image\+Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Manager}}]{\+\_\+my\+Image\+Manager}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1DistributionManager_aebde88548a718fc7b984ff356abebd27}{}\label{classrdf_1_1DistributionManager_aebde88548a718fc7b984ff356abebd27}
+
+
+References \+\_\+my\+Image\+Manager.
+
+
+\begin{DoxyCode}
+100                                                              \{
+101             this->\_myImageManager = \hyperlink{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}{\_myImageManager};
+102         \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!set\+My\+Range@{set\+My\+Range}}
+\index{set\+My\+Range@{set\+My\+Range}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{set\+My\+Range(pair$<$ int, int $>$ \+\_\+my\+Range)}{setMyRange(pair< int, int > _myRange)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::set\+My\+Range (
+\begin{DoxyParamCaption}
+\item[{pair$<$ int, int $>$}]{\+\_\+my\+Range}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1DistributionManager_a8c137d7196f9876c9079f7ef7a9dd8f5}{}\label{classrdf_1_1DistributionManager_a8c137d7196f9876c9079f7ef7a9dd8f5}
+
+
+References \+\_\+my\+Range.
+
+
+\begin{DoxyCode}
+108                                                  \{
+109             this->\hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\_myRange} = \hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\_myRange};
+110         \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!transfer\+Beacon@{transfer\+Beacon}}
+\index{transfer\+Beacon@{transfer\+Beacon}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{transfer\+Beacon()}{transferBeacon()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::transfer\+Beacon (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_a30ac28e002aebe633229c993a65437fd}{}\label{classrdf_1_1DistributionManager_a30ac28e002aebe633229c993a65437fd}
+This messages is to ensure that all the process are running alive. 
+
+References \+\_\+world.
+
+
+\begin{DoxyCode}
+160                                             \{
+161     \textcolor{keywordflow}{if} (\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size() <= 1) \{
+162     std::cout << \textcolor{stringliteral}{"Need more than 1 processes to play around."} << std::endl;
+163     \}
+164     \textcolor{keywordflow}{else} \{ 
+165         \textcolor{keywordflow}{if}(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank() == 0)\{                                         \textcolor{comment}{// MASTER PROCESS}
+166             std::string log = \textcolor{stringliteral}{"logInfo"};                               
+167             broadcast(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}, log, 0);                                  \textcolor{comment}{// Send the task to every
+       process in the cluster}
+168             std::cout << \textcolor{stringliteral}{"Master asking for log info log\(\backslash\)n"};
+169             std::string response;
+170             \textcolor{keywordtype}{int} i = 1;
+171             \textcolor{keywordflow}{do} \{                                                        \textcolor{comment}{// Wait all the responses }
+172                 \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.recv(boost::mpi::any\_source, boost::mpi::any\_tag,response);
+173                 std::cout << \textcolor{stringliteral}{"Master Receive log information "} << response  << \textcolor{stringliteral}{"\(\backslash\)n"};
+174                 i++;
+175             \}\textcolor{keywordflow}{while}(i<\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size()); 
+176         \}    
+177         \textcolor{keywordflow}{else} \{
+178             std::string logInfo;
+179             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.recv(boost::mpi::any\_source, boost::mpi::any\_tag, logInfo);
+180             std::string response = \textcolor{stringliteral}{"LOG\_"} + std::to\_string(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank());
+181             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.send(0,0,response);
+182         \}
+183     \}
+184 
+185 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!transfer\+Best\+Feature@{transfer\+Best\+Feature}}
+\index{transfer\+Best\+Feature@{transfer\+Best\+Feature}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{transfer\+Best\+Feature(rdf\+::bpc\+::\+Best\+Feature\+Msg p\+Feature)}{transferBestFeature(rdf::bpc::BestFeatureMsg pFeature)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::transfer\+Best\+Feature (
+\begin{DoxyParamCaption}
+\item[{{\bf rdf\+::bpc\+::\+Best\+Feature\+Msg}}]{p\+Feature}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_ab28b3c19afaae2917fdac53f426b1835}{}\label{classrdf_1_1DistributionManager_ab28b3c19afaae2917fdac53f426b1835}
+This function allows to send the best feature in order to classify images. 
+\begin{DoxyParams}{Parameters}
+{\em feature} & \\
+\hline
+{\em vector1} & \\
+\hline
+{\em vector2} & \\
+\hline
+\end{DoxyParams}
+
+
+References \+\_\+world.
+
+
+\begin{DoxyCode}
+214                                                                               \{
+215      \textcolor{keywordflow}{if} (\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size() <= 1) \{
+216     std::cout << \textcolor{stringliteral}{"Need more than 1 processes to play around."} << std::endl;
+217     \}
+218     \textcolor{keywordflow}{else} \{ 
+219         \textcolor{keywordflow}{if}(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank() == 0)\{
+220             \hyperlink{classrdf_1_1bpc_1_1BestFeatureMsg}{rdf::bpc::BestFeatureMsg} \_bestFeature;
+221             broadcast(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}, \_bestFeature, 0);
+222             std::cout << \textcolor{stringliteral}{"Master is sending best feature\(\backslash\)n"};
+223         \}    
+224         \textcolor{keywordflow}{else} \{
+225              \hyperlink{classrdf_1_1bpc_1_1BestFeatureMsg}{rdf::bpc::BestFeatureMsg} \_bestFeature;
+226             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.recv(boost::mpi::any\_source, boost::mpi::any\_tag, \_bestFeature);
+227 
+228         \}
+229     \}
+230 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!transfer\+Finish@{transfer\+Finish}}
+\index{transfer\+Finish@{transfer\+Finish}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{transfer\+Finish()}{transferFinish()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::transfer\+Finish (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_acc9fe7a5966360e5e82d916a0eed1712}{}\label{classrdf_1_1DistributionManager_acc9fe7a5966360e5e82d916a0eed1712}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!transfer\+Nodes@{transfer\+Nodes}}
+\index{transfer\+Nodes@{transfer\+Nodes}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{transfer\+Nodes(\+Task \&p\+Task)}{transferNodes(Task &pTask)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::transfer\+Nodes (
+\begin{DoxyParamCaption}
+\item[{{\bf Task} \&}]{p\+Task}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_ac98b0403d6311d00e7b95c03fa4aa0f3}{}\label{classrdf_1_1DistributionManager_ac98b0403d6311d00e7b95c03fa4aa0f3}
+This function allows to send a \hyperlink{classrdf_1_1Task}{Task} that will be process by every cluster node. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Task} & // \hyperlink{classrdf_1_1Task}{Task} to process include (Rank,Tree, \hyperlink{classrdf_1_1Node}{Node}, Status, Feature\+Matrix) \\
+\hline
+\end{DoxyParams}
+
+
+References \+\_\+world, rdf\+::\+Task\+::get\+Node(), rdf\+::\+Task\+::get\+Rank(), rdf\+::\+Task\+::get\+Tree(), and rdf\+::\+Task\+::is\+Status().
+
+
+
+Referenced by main().
+
+
+\begin{DoxyCode}
+122                                                       \{
+123     \textcolor{keywordflow}{if} (\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size() <= 1) \{
+124     std::cout << \textcolor{stringliteral}{"Need more than 1 processes to play around."} << std::endl;
+125     \}
+126     \textcolor{keywordflow}{else} \{ 
+127         \textcolor{keywordflow}{if}(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank() == 0)\{                                           \textcolor{comment}{// MASTER PROCESS}
+128             broadcast(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}, pTask, 0);                                  \textcolor{comment}{// Send the task to every
+       process in the cluster}
+129             std::cout << \textcolor{stringliteral}{"Master Send ("} << pTask.getRank() << \textcolor{stringliteral}{","} << pTask.getTree() <<\textcolor{stringliteral}{","}
+130                     << pTask.getNode() << \textcolor{stringliteral}{","} << pTask.isStatus()<< \textcolor{stringliteral}{"] \(\backslash\)n"} ;
+131                         \textcolor{keywordtype}{int} i = 0;
+132                         std::string response;
+133                         \textcolor{keywordflow}{do} \{
+134                             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.recv(boost::mpi::any\_source, boost::mpi::any\_tag,response); \textcolor{comment}{//
+       Ensure that slave receive the node}
+135                             std::cout << \textcolor{stringliteral}{"Master Received Confirmations "} << response  << \textcolor{stringliteral}{"\(\backslash\)n"};
+136                             \textcolor{comment}{//\_clusterResourses.push\_back(response);}
+137                             i++;
+138                         \} \textcolor{keywordflow}{while}(i<\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size()-1); 
+139         \}   
+140         \textcolor{keywordflow}{else} \{                                                          \textcolor{comment}{// SLAVE PROCESS}
+141             Task toProcess;                                             \textcolor{comment}{// Each slave receive the task;}
+142             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.recv(boost::mpi::any\_source, boost::mpi::any\_tag, toProcess);
+143             std::cout << \textcolor{stringliteral}{"Process #"} << \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank() << \textcolor{stringliteral}{" node to process ("} 
+144             << toProcess.getRank() << \textcolor{stringliteral}{","} << toProcess.getTree() << \textcolor{stringliteral}{","}
+145             << toProcess.getNode() << \textcolor{stringliteral}{","} << toProcess.isStatus()<< \textcolor{stringliteral}{"] \(\backslash\)n"} ;
+146             std::string response = \textcolor{stringliteral}{"OK\_"} + std::to\_string(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank()); \textcolor{comment}{// Confirmation Message for
+       master node}
+147             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.send(0,0,response);                                    \textcolor{comment}{// Send confirmation about
+       received node}
+148             \textcolor{comment}{//PROCESAR TAREA; }
+149            \textcolor{comment}{// \_scheduler.assingTask(\_myImageManager.getStructure(),toProcess);}
+150             
+151             \textcolor{keywordtype}{int} time = rand() % 1000000 + 10000;
+152             usleep(time);
+153         \}
+154     \}
+155 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!transfer\+Ranges@{transfer\+Ranges}}
+\index{transfer\+Ranges@{transfer\+Ranges}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{transfer\+Ranges()}{transferRanges()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::transfer\+Ranges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_af601ca87a8a5b21632e5c70de253d8cb}{}\label{classrdf_1_1DistributionManager_af601ca87a8a5b21632e5c70de253d8cb}
+This function send and receive messages about image ranges 
+
+References \+\_\+image\+Distpatcher, \+\_\+my\+Image\+Manager, \+\_\+my\+Range, \+\_\+world, rdf\+::\+Image\+Dispatcher\+::get\+Images\+Ranges(), Image\+Manager\+::load\+Images(), and Image\+Manager\+::set\+Range().
+
+
+
+Referenced by rdf\+::\+Train\+Manager\+::init\+Platform(), and main().
+
+
+\begin{DoxyCode}
+95                                             \{
+96 
+97     \textcolor{keywordflow}{if} (\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size() <= 1) \{
+98         std::cout << \textcolor{stringliteral}{"Need more than 1 processes to play around."} << std::endl;
+99     \}
+100     \textcolor{keywordflow}{else} \{ 
+101         \textcolor{keywordflow}{if}(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank()==0)\{                                           \textcolor{comment}{// MASTER PROCESS}
+102             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 1; i<\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size(); i++)\{
+103                 \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.send(i,0,\hyperlink{classrdf_1_1DistributionManager_a43d6497690b1040281e7dfd64ed4dc65}{\_imageDistpatcher}.
+      \hyperlink{classrdf_1_1ImageDispatcher_a1044b93dabc737e15045fc5c62970e7b}{getImagesRanges}().at(i-1)); \textcolor{comment}{// Send specific rank to each process.}
+104             \}
+105         \}
+106         \textcolor{keywordflow}{else}\{                                                           \textcolor{comment}{// SLAVE PROCESS                   
+          }
+107             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.recv(0, 0, \hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\_myRange});                                \textcolor{comment}{// Receive  message
+       from master }
+108             std::cout << \textcolor{stringliteral}{"Process #"} << \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank() << \textcolor{stringliteral}{" will work with ["} << 
+      \hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\_myRange}.first << \textcolor{stringliteral}{","} << \hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\_myRange}.second<< \textcolor{stringliteral}{"] \(\backslash\)n"} ;
+109             \hyperlink{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}{\_myImageManager}.\hyperlink{classImageManager_a21627e8230428f3a4bf7ec99703448e6}{setRange}(\hyperlink{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{\_myRange});                         \textcolor{comment}{//
+       Set range to imageManager}
+110             \textcolor{keyword}{const} clock\_t begin\_time = clock();
+111             \hyperlink{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}{\_myImageManager}.\hyperlink{classImageManager_abbec13f7f949d5ea3b34fb52bd812e68}{loadImages}(); 
+112             std::cout << \textcolor{stringliteral}{"Time loading images  Slave"} << \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank() << \textcolor{stringliteral}{" : "}  << float( clock () -
+       begin\_time ) /double(CLOCKS\_PER\_SEC) << \textcolor{stringliteral}{" seconds\(\backslash\)n"};                        
+113             \textcolor{comment}{//\_myImageManager.showStructure(false);                        // Muestra el contenido de la
+       estructura (0: pixeles, 1: C\_Imagenes)}
+114         \}
+115     \}
+116 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!transfer\+Resources@{transfer\+Resources}}
+\index{transfer\+Resources@{transfer\+Resources}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{transfer\+Resources()}{transferResources()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::transfer\+Resources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_aee4c4143848ea57742d79f8ee137b4c7}{}\label{classrdf_1_1DistributionManager_aee4c4143848ea57742d79f8ee137b4c7}
+This function send and receive messages about node resources 
+
+References \+\_\+image\+Distpatcher, \+\_\+world, rdf\+::\+Image\+Dispatcher\+::add\+Resource(), rdf\+::\+Image\+Dispatcher\+::assign\+Ranges(), Resources\+::create\+Objet(), rdf\+::\+Resource\+::display\+Resource(), Resources\+::get\+Resources(), and rdf\+::\+Image\+Dispatcher\+::show\+Ranges().
+
+
+
+Referenced by rdf\+::\+Train\+Manager\+::init\+Platform(), and main().
+
+
+\begin{DoxyCode}
+57                                                \{
+58     
+59     \textcolor{keywordflow}{if} (\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size() <= 1) \{
+60         std::cout << \textcolor{stringliteral}{"Need more than 1 processes to play around."} << std::endl;
+61     \}
+62     \textcolor{keywordflow}{else} \{ 
+63         \textcolor{keywordflow}{if}(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank() != 0)\{             \textcolor{comment}{// MASTER PROCESS}
+64            \textcolor{comment}{// CREATING RESOURCES RESPONSE (WILL) }
+65             \hyperlink{classResources}{Resources} \_resource;
+66             std::vector<std::string> \_vector;
+67             \_resource.\hyperlink{classResources_a9dfd1c5bb25dfe6d8d3fbb1d3b913bac}{getResources}(\_vector);
+68             \hyperlink{classrdf_1_1Resource}{rdf::Resource} \_node;
+69             \_resource.\hyperlink{classResources_ac1c8e38749088e3fc4211d9e3d72d18c}{createObjet}(\_vector,\_node);
+70             \_node.\hyperlink{classrdf_1_1Resource_a494a37b398f88c9180215f7d2a56104a}{displayResource}();
+71             \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.send(0,0,\_node);  
+72             std::cout << \textcolor{stringliteral}{"Slave "}<<\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank()<< \textcolor{stringliteral}{" have send resources \(\backslash\)n"};
+73         \}
+74         \textcolor{keywordflow}{else} \{                             \textcolor{comment}{// SLAVE PROCESS}
+75 
+76             Resource \_nodeInfo;
+77             std::string response; 
+78             \textcolor{keywordtype}{int} i = 1;
+79             \textcolor{keywordflow}{do} \{                            \textcolor{comment}{// receive all responses all resourc}
+80                 \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.recv(boost::mpi::any\_source, boost::mpi::any\_tag,\_nodeInfo);
+81                 std::cout << \textcolor{stringliteral}{"Master Received Resources \(\backslash\)n"};
+82                 \_nodeInfo.displayResource();
+83                 \hyperlink{classrdf_1_1DistributionManager_a43d6497690b1040281e7dfd64ed4dc65}{\_imageDistpatcher}.\hyperlink{classrdf_1_1ImageDispatcher_a900b639d7be2ac5e4e48b5a7aa879182}{addResource}(\_nodeInfo);
+84                 \textcolor{comment}{//\_clusterResourses.push\_back(response);}
+85                 i++;
+86             \}\textcolor{keywordflow}{while}(i<\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size());
+87             \hyperlink{classrdf_1_1DistributionManager_a43d6497690b1040281e7dfd64ed4dc65}{\_imageDistpatcher}.\hyperlink{classrdf_1_1ImageDispatcher_a10e89cb9630fe93877a23f485d2a1213}{assignRanges}(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size()-1,\textcolor{keyword}{false}); \textcolor{comment}{//
+       Assign ranges according with number of process.}
+88             \hyperlink{classrdf_1_1DistributionManager_a43d6497690b1040281e7dfd64ed4dc65}{\_imageDistpatcher}.\hyperlink{classrdf_1_1ImageDispatcher_ac78db12cfd581737ad8077e0af974c2b}{showRanges}();
+89         \}
+90     \}
+91 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!transfer\+Results@{transfer\+Results}}
+\index{transfer\+Results@{transfer\+Results}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{transfer\+Results()}{transferResults()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::transfer\+Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_a16efc159bccc8c621d28d62310cfb2e0}{}\label{classrdf_1_1DistributionManager_a16efc159bccc8c621d28d62310cfb2e0}
+This function allows to send the results to the master node. 
+\begin{DoxyParams}{Parameters}
+{\em p\+Result} & \\
+\hline
+{\em p\+Forest} & \\
+\hline
+\end{DoxyParams}
+
+
+References \+\_\+world, sending\+Results(), and waiting\+Results().
+
+
+\begin{DoxyCode}
+191                                              \{
+192     \textcolor{keywordflow}{if} (\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size() > 1) \{
+193         \textcolor{keywordflow}{if}(\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.rank() != 0)\{
+194             std::thread t1(&\hyperlink{classrdf_1_1DistributionManager_aaa23849f108cf3199eb6a076c37a269c}{rdf::DistributionManager::sendingResults}
+      , \hyperlink{classrdf_1_1DistributionManager}{rdf::DistributionManager}());
+195             t1.detach();
+196             
+197         \}
+198         \textcolor{keywordflow}{else}\{  
+199             std::thread t2(&\hyperlink{classrdf_1_1DistributionManager_ad030f06a725590893f186cf95df7ed19}{rdf::DistributionManager::waitingResults}
+      , \hyperlink{classrdf_1_1DistributionManager}{rdf::DistributionManager}());
+200             t2.detach();
+201         \}
+202     \}
+203     \textcolor{keywordflow}{else} \{ 
+204         std::cout << \textcolor{stringliteral}{"Need more than 1 processes to play around."} << std::endl;
+205     \}
+206 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!transfer\+Train\+Start@{transfer\+Train\+Start}}
+\index{transfer\+Train\+Start@{transfer\+Train\+Start}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{transfer\+Train\+Start(\+Forest\+Manager \&p\+Forest)}{transferTrainStart(ForestManager &pForest)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::transfer\+Train\+Start (
+\begin{DoxyParamCaption}
+\item[{{\bf Forest\+Manager} \&}]{p\+Forest}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_a7430723023243687df8181b7575cb167}{}\label{classrdf_1_1DistributionManager_a7430723023243687df8181b7575cb167}
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Forest} & \\
+\hline
+\end{DoxyParams}
+
+
+References \+\_\+world.
+
+
+\begin{DoxyCode}
+236                                                                        \{
+237     \textcolor{keywordflow}{if} (\hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.size() <= 1) \{
+238     std::cout << \textcolor{stringliteral}{"Need more than 1 processes to play around."} << std::endl;
+239     \}
+240     \textcolor{keywordflow}{else} \{ 
+241         \textcolor{comment}{//if(\_world.rank() != 0)\{}
+242             \textcolor{comment}{//START WILL PROCESS }
+243             
+244         \}
+245        \textcolor{comment}{// else\{}
+246             \textcolor{comment}{//ACTIVATE FLAG OR SHT}
+247             
+248             
+249             
+250        \textcolor{comment}{// \} }
+251     \textcolor{comment}{//\}}
+252     
+253 \}
+\end{DoxyCode}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!waiting\+Results@{waiting\+Results}}
+\index{waiting\+Results@{waiting\+Results}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{waiting\+Results()}{waitingResults()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Distribution\+Manager\+::waiting\+Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1DistributionManager_ad030f06a725590893f186cf95df7ed19}{}\label{classrdf_1_1DistributionManager_ad030f06a725590893f186cf95df7ed19}
+A\+LL T\+H\+IS F\+U\+N\+C\+T\+I\+O\+NS A\+RE F\+OR S\+E\+N\+D\+I\+NG M\+E\+S\+S\+A\+G\+ES B\+E\+T\+W\+E\+EN S\+L\+A\+VE N\+O\+D\+ES A\+ND M\+A\+S\+T\+ER N\+O\+DE All documentation about it is in \hyperlink{DistributionManager_8cpp}{Distribution\+Manager.\+cpp} 
+
+References \+\_\+forest\+Manager, \+\_\+world, rdf\+::\+Forest\+Manager\+::add\+Resuld(), rdf\+::\+Node\+Result\+::get\+Task(), rdf\+::\+Forest\+Manager\+::show\+Queue(), and rdf\+::\+Task\+::show\+Task().
+
+
+
+Referenced by transfer\+Results().
+
+
+\begin{DoxyCode}
+30                                             \{
+31     \textcolor{keywordflow}{while}(\textcolor{keyword}{true})\{
+32         std::cout << \textcolor{stringliteral}{"WAITING THREAD \(\backslash\)n"};
+33         \hyperlink{classrdf_1_1NodeResult}{rdf::NodeResult} newResult;
+34         \hyperlink{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{\_world}.recv(boost::mpi::any\_source, 2, newResult); 
+35         newResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_aed5f96455f9684078a5fa8fce849d197}{showTask}();
+36         \hyperlink{classrdf_1_1DistributionManager_aba2daa8780c7915f9f1a5d871edb93c9}{\_forestManager}.\hyperlink{classrdf_1_1ForestManager_a1399d029371b213523492ea8397199b6}{addResuld}(newResult);            
+37         \hyperlink{classrdf_1_1DistributionManager_aba2daa8780c7915f9f1a5d871edb93c9}{\_forestManager}.\hyperlink{classrdf_1_1ForestManager_af8975e5a2ea89cf3477241ebf7915ebe}{showQueue}();
+38         
+39     \}
+40 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!\+\_\+env@{\+\_\+env}}
+\index{\+\_\+env@{\+\_\+env}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+env}{_env}}]{\setlength{\rightskip}{0pt plus 5cm}mpi\+::environment rdf\+::\+Distribution\+Manager\+::\+\_\+env\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1DistributionManager_ab24e19df5707be063ee48ef9f41af13f}{}\label{classrdf_1_1DistributionManager_ab24e19df5707be063ee48ef9f41af13f}
+Mpi variable to manage the enviroment \index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!\+\_\+forest\+Manager@{\+\_\+forest\+Manager}}
+\index{\+\_\+forest\+Manager@{\+\_\+forest\+Manager}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+forest\+Manager}{_forestManager}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rdf\+::\+Forest\+Manager} rdf\+::\+Distribution\+Manager\+::\+\_\+forest\+Manager\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1DistributionManager_aba2daa8780c7915f9f1a5d871edb93c9}{}\label{classrdf_1_1DistributionManager_aba2daa8780c7915f9f1a5d871edb93c9}
+
+
+Referenced by waiting\+Results().
+
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!\+\_\+image\+Distpatcher@{\+\_\+image\+Distpatcher}}
+\index{\+\_\+image\+Distpatcher@{\+\_\+image\+Distpatcher}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+image\+Distpatcher}{_imageDistpatcher}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rdf\+::\+Image\+Dispatcher} rdf\+::\+Distribution\+Manager\+::\+\_\+image\+Distpatcher\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1DistributionManager_a43d6497690b1040281e7dfd64ed4dc65}{}\label{classrdf_1_1DistributionManager_a43d6497690b1040281e7dfd64ed4dc65}
+
+
+Referenced by transfer\+Ranges(), and transfer\+Resources().
+
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!\+\_\+image\+Ranges@{\+\_\+image\+Ranges}}
+\index{\+\_\+image\+Ranges@{\+\_\+image\+Ranges}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+image\+Ranges}{_imageRanges}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$int,int$>$ $>$ rdf\+::\+Distribution\+Manager\+::\+\_\+image\+Ranges\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1DistributionManager_a5f3f6245bed7bfcf34204fc16e655656}{}\label{classrdf_1_1DistributionManager_a5f3f6245bed7bfcf34204fc16e655656}
+Vector that includes ranges for each process 
+
+Referenced by Distribution\+Manager(), get\+Image\+Ranges(), and set\+Image\+Ranges().
+
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!\+\_\+my\+Image\+Manager@{\+\_\+my\+Image\+Manager}}
+\index{\+\_\+my\+Image\+Manager@{\+\_\+my\+Image\+Manager}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+my\+Image\+Manager}{_myImageManager}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image\+Manager} rdf\+::\+Distribution\+Manager\+::\+\_\+my\+Image\+Manager\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}{}\label{classrdf_1_1DistributionManager_aa265ab894795aa960fdcc67f0934934f}
+It allows to get images from memory in the range 
+
+Referenced by Distribution\+Manager(), get\+My\+Image\+Manager(), set\+My\+Image\+Manager(), and transfer\+Ranges().
+
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!\+\_\+my\+Range@{\+\_\+my\+Range}}
+\index{\+\_\+my\+Range@{\+\_\+my\+Range}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+my\+Range}{_myRange}}]{\setlength{\rightskip}{0pt plus 5cm}pair$<$int,int$>$ rdf\+::\+Distribution\+Manager\+::\+\_\+my\+Range\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}{}\label{classrdf_1_1DistributionManager_ac6e764a519add6afff6ba14e09e45cfa}
+Pair that allows ideantify the range by the process 
+
+Referenced by Distribution\+Manager(), get\+My\+Range(), set\+My\+Range(), and transfer\+Ranges().
+
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!\+\_\+scheduler@{\+\_\+scheduler}}
+\index{\+\_\+scheduler@{\+\_\+scheduler}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+scheduler}{_scheduler}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scheduler} rdf\+::\+Distribution\+Manager\+::\+\_\+scheduler\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1DistributionManager_a6a628c16669a4c94837597193fa95ecb}{}\label{classrdf_1_1DistributionManager_a6a628c16669a4c94837597193fa95ecb}
+
+
+Referenced by sending\+Results().
+
+\index{rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}!\+\_\+world@{\+\_\+world}}
+\index{\+\_\+world@{\+\_\+world}!rdf\+::\+Distribution\+Manager@{rdf\+::\+Distribution\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+world}{_world}}]{\setlength{\rightskip}{0pt plus 5cm}mpi\+::communicator rdf\+::\+Distribution\+Manager\+::\+\_\+world\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}{}\label{classrdf_1_1DistributionManager_ac8a061176717baf96b2913cd22dcbf20}
+Mpi variable to identify the world of process 
+
+Referenced by sending\+Results(), transfer\+Beacon(), transfer\+Best\+Feature(), transfer\+Nodes(), transfer\+Ranges(), transfer\+Resources(), transfer\+Results(), transfer\+Train\+Start(), and waiting\+Results().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DistributionManager_8h}{Distribution\+Manager.\+h}\item 
+\hyperlink{DistributionManager_8cpp}{Distribution\+Manager.\+cpp}\end{DoxyCompactItemize}

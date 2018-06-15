@@ -1,0 +1,380 @@
+\hypertarget{classMatrixBPCFeatures}{}\section{Matrix\+B\+P\+C\+Features$<$ T $>$ Class Template Reference}
+\label{classMatrixBPCFeatures}\index{Matrix\+B\+P\+C\+Features$<$ T $>$@{Matrix\+B\+P\+C\+Features$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Matrix\+B\+P\+C\+Features.\+h$>$}
+
+
+
+Collaboration diagram for Matrix\+B\+P\+C\+Features$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classMatrixBPCFeatures__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrixBPCFeatures_a72c1b182fac4397958ab20e37b58921e}{Matrix\+B\+P\+C\+Features} ()
+\item 
+\hyperlink{classMatrixBPCFeatures_afd6954e98b99e3ab09ad81082b9095d6}{Matrix\+B\+P\+C\+Features} (int fn, T fh, T fl, int tn, T th, T tl)
+\item 
+\hyperlink{classMatrixBPCFeatures_ad2bcf448da611be1417c6284b26b28ba}{Matrix\+B\+P\+C\+Features} (const \hyperlink{classMatrixBPCFeatures}{Matrix\+B\+P\+C\+Features} \&orig)
+\item 
+void \hyperlink{classMatrixBPCFeatures_ab26e57f5800162202aeaa38b719e9737}{Set\+Num\+Thresholds} (int)
+\item 
+void \hyperlink{classMatrixBPCFeatures_afd55350772c55d9608b8203734573b95}{Set\+Num\+Features} (int)
+\item 
+void \hyperlink{classMatrixBPCFeatures_a877df38950e5b68116e7ee8cdce764b2}{Set\+Thresholds\+Num\+Range} (T h, T l)
+\item 
+void \hyperlink{classMatrixBPCFeatures_a318a3a2a849eeb7e90b0be2454a61f61}{Set\+Features\+Num\+Range} (T h, T l)
+\item 
+void \hyperlink{classMatrixBPCFeatures_a912356bafe600e5625e21513d6f6ff71}{Generate\+Thresholds\+Vector} ()
+\item 
+void \hyperlink{classMatrixBPCFeatures_a25ae483a38966da88fd505f0536aa693}{Generate\+Features\+Vector} ()
+\item 
+void \hyperlink{classMatrixBPCFeatures_a710350735d6a54c8f936c9a3cb63db65}{Generate\+Vectors} ()
+\item 
+void \hyperlink{classMatrixBPCFeatures_a71ae3c997966a51917be4ca2f62f2e3e}{Print} ()
+\item 
+virtual \hyperlink{classMatrixBPCFeatures_a9d32e56c43b148b02ba325fd95479a1e}{$\sim$\+Matrix\+B\+P\+C\+Features} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ T $>$ \hyperlink{classMatrixBPCFeatures_a34418b525a7ceb5b2ec203415c46f066}{thresholds\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{MatrixBPCFeatures_8h_ab023c08b6db726ae7e0acc935755cfe6}{Features}$<$ T $>$ $>$ \hyperlink{classMatrixBPCFeatures_ad6ce34b650ac55b5d857a322cb239132}{features\+\_\+}
+\item 
+int \hyperlink{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}{num\+Features\+\_\+}
+\item 
+int \hyperlink{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}{num\+Thresholds\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classMatrixBPCFeatures_ac1c62b0776f9a2f22f69b7debf86ecce}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}{thresholds\+Low\+Range\+\_\+}
+\item 
+T \hyperlink{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}{thresholds\+High\+Range\+\_\+}
+\item 
+T \hyperlink{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}{features\+Low\+Range\+\_\+}
+\item 
+T \hyperlink{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}{features\+High\+Range\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::mt19937 \hyperlink{classMatrixBPCFeatures_aaf2ce60f69f7d3bbb85c4f4bc8b66383}{mt\+\_\+} = \hyperlink{MatrixBPCFeatures_8cpp_acd8f02610f7d92f49cfc5c5e0ad4c0da}{init2}()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classMatrixBPCFeatures_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Matrix\+B\+P\+C\+Features()}{MatrixBPCFeatures()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::{\bf Matrix\+B\+P\+C\+Features} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_a72c1b182fac4397958ab20e37b58921e}{}\label{classMatrixBPCFeatures_a72c1b182fac4397958ab20e37b58921e}
+
+\begin{DoxyCode}
+28                                         \{
+29   \hyperlink{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}{numFeatures\_} = 0;
+30   \hyperlink{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}{numThresholds\_} = 0;
+31   \hyperlink{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}{featuresHighRange\_} = 0;
+32   \hyperlink{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}{featuresLowRange\_} = 0;
+33   \hyperlink{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}{thresholdsHighRange\_} =  0;
+34   \hyperlink{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}{thresholdsLowRange\_} = 0;
+35 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Matrix\+B\+P\+C\+Features(int fn, T fh, T fl, int tn, T th, T tl)}{MatrixBPCFeatures(int fn, T fh, T fl, int tn, T th, T tl)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::{\bf Matrix\+B\+P\+C\+Features} (
+\begin{DoxyParamCaption}
+\item[{int}]{fn, }
+\item[{T}]{fh, }
+\item[{T}]{fl, }
+\item[{int}]{tn, }
+\item[{T}]{th, }
+\item[{T}]{tl}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_afd6954e98b99e3ab09ad81082b9095d6}{}\label{classMatrixBPCFeatures_afd6954e98b99e3ab09ad81082b9095d6}
+
+\begin{DoxyCode}
+39                                                                        \{
+40     \hyperlink{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}{numFeatures\_} = numFeatures;
+41     \hyperlink{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}{numThresholds\_} = numThresholds;
+42     \hyperlink{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}{featuresHighRange\_} = featuresHigh;
+43     \hyperlink{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}{featuresLowRange\_} = featuresLow;
+44     \hyperlink{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}{thresholdsHighRange\_} =  thresholdsHigh;
+45     \hyperlink{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}{thresholdsLowRange\_} = thresholdsLow;
+46 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Matrix\+B\+P\+C\+Features(const Matrix\+B\+P\+C\+Features \&orig)}{MatrixBPCFeatures(const MatrixBPCFeatures &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::{\bf Matrix\+B\+P\+C\+Features} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$ \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_ad2bcf448da611be1417c6284b26b28ba}{}\label{classMatrixBPCFeatures_ad2bcf448da611be1417c6284b26b28ba}
+
+\begin{DoxyCode}
+50                                                                      \{
+51 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!````~Matrix\+B\+P\+C\+Features@{$\sim$\+Matrix\+B\+P\+C\+Features}}
+\index{````~Matrix\+B\+P\+C\+Features@{$\sim$\+Matrix\+B\+P\+C\+Features}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{$\sim$\+Matrix\+B\+P\+C\+Features()}{~MatrixBPCFeatures()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::$\sim${\bf Matrix\+B\+P\+C\+Features} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classMatrixBPCFeatures_a9d32e56c43b148b02ba325fd95479a1e}{}\label{classMatrixBPCFeatures_a9d32e56c43b148b02ba325fd95479a1e}
+
+\begin{DoxyCode}
+119                                          \{
+120 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Generate\+Features\+Vector@{Generate\+Features\+Vector}}
+\index{Generate\+Features\+Vector@{Generate\+Features\+Vector}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Generate\+Features\+Vector()}{GenerateFeaturesVector()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::Generate\+Features\+Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_a25ae483a38966da88fd505f0536aa693}{}\label{classMatrixBPCFeatures_a25ae483a38966da88fd505f0536aa693}
+
+\begin{DoxyCode}
+90                                                   \{
+91     assert(\hyperlink{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}{numFeatures\_} > 0);
+92     assert(\hyperlink{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}{featuresHighRange\_} > \hyperlink{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}{featuresLowRange\_});
+93     std::uniform\_real\_distribution<T> features\_dist(\hyperlink{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}{featuresLowRange\_}, 
+      \hyperlink{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}{featuresHighRange\_});
+94     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}{numFeatures\_}; i++) \{
+95         T randomFeature1 = features\_dist(\hyperlink{classMatrixBPCFeatures_aaf2ce60f69f7d3bbb85c4f4bc8b66383}{mt\_});
+96         T randomFeature2 = features\_dist(\hyperlink{classMatrixBPCFeatures_aaf2ce60f69f7d3bbb85c4f4bc8b66383}{mt\_});
+97         \hyperlink{MatrixBPCFeatures_8h_ab023c08b6db726ae7e0acc935755cfe6}{Features<T>} featuresPair = std::make\_pair(randomFeature1, randomFeature2);
+98         \textcolor{comment}{// std::cout << "i-" << i << " F1: " << randomFeature1 << std::endl;}
+99         \textcolor{comment}{// std::cout << "i-" << i << " F2: " << randomFeature2 << std::endl;}
+100         \hyperlink{classMatrixBPCFeatures_ad6ce34b650ac55b5d857a322cb239132}{features\_}.push\_back(featuresPair);
+101     \}
+102 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Generate\+Thresholds\+Vector@{Generate\+Thresholds\+Vector}}
+\index{Generate\+Thresholds\+Vector@{Generate\+Thresholds\+Vector}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Generate\+Thresholds\+Vector()}{GenerateThresholdsVector()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::Generate\+Thresholds\+Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_a912356bafe600e5625e21513d6f6ff71}{}\label{classMatrixBPCFeatures_a912356bafe600e5625e21513d6f6ff71}
+
+\begin{DoxyCode}
+77                                                     \{
+78   assert(\hyperlink{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}{numThresholds\_} > 0);
+79     assert(\hyperlink{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}{thresholdsHighRange\_} > \hyperlink{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}{thresholdsLowRange\_});
+80     std::uniform\_real\_distribution<T> threshold\_dist(\hyperlink{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}{thresholdsLowRange\_}, 
+      \hyperlink{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}{thresholdsHighRange\_});
+81     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}{numThresholds\_}; i++) \{
+82         T randomThreshold = threshold\_dist(\hyperlink{classMatrixBPCFeatures_aaf2ce60f69f7d3bbb85c4f4bc8b66383}{mt\_});
+83         \hyperlink{classMatrixBPCFeatures_a34418b525a7ceb5b2ec203415c46f066}{thresholds\_}.push\_back(randomThreshold);
+84         \textcolor{comment}{// std::cout << "i-" << i << " T: " << thresholds\_[i] << std::endl;}
+85     \}
+86 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Generate\+Vectors@{Generate\+Vectors}}
+\index{Generate\+Vectors@{Generate\+Vectors}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Generate\+Vectors()}{GenerateVectors()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::Generate\+Vectors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_a710350735d6a54c8f936c9a3cb63db65}{}\label{classMatrixBPCFeatures_a710350735d6a54c8f936c9a3cb63db65}
+
+\begin{DoxyCode}
+105                                           \{
+106   \hyperlink{classMatrixBPCFeatures_a912356bafe600e5625e21513d6f6ff71}{GenerateThresholdsVector}();
+107   \hyperlink{classMatrixBPCFeatures_a25ae483a38966da88fd505f0536aa693}{GenerateFeaturesVector}();
+108 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Print@{Print}}
+\index{Print@{Print}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Print()}{Print()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_a71ae3c997966a51917be4ca2f62f2e3e}{}\label{classMatrixBPCFeatures_a71ae3c997966a51917be4ca2f62f2e3e}
+
+\begin{DoxyCode}
+111                                 \{
+112   \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0;  i < \hyperlink{classMatrixBPCFeatures_a34418b525a7ceb5b2ec203415c46f066}{thresholds\_}.size() ; i++) \{
+113     \textcolor{comment}{// std::cerr << "Printing T[" << i << "]: " << thresholds\_.at(i) << std::endl;}
+114   \}
+115 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!serialize@{serialize}}
+\index{serialize@{serialize}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{serialize(\+Archive \&ar, const unsigned int version)}{serialize(Archive &ar, const unsigned int version)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ template$<$class Archive $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classMatrixBPCFeatures_ac1c62b0776f9a2f22f69b7debf86ecce}{}\label{classMatrixBPCFeatures_ac1c62b0776f9a2f22f69b7debf86ecce}
+
+
+References Matrix\+B\+P\+C\+Features$<$ T $>$\+::features\+\_\+, Matrix\+B\+P\+C\+Features$<$ T $>$\+::features\+High\+Range\+\_\+, Matrix\+B\+P\+C\+Features$<$ T $>$\+::features\+Low\+Range\+\_\+, Matrix\+B\+P\+C\+Features$<$ T $>$\+::num\+Features\+\_\+, Matrix\+B\+P\+C\+Features$<$ T $>$\+::num\+Thresholds\+\_\+, Matrix\+B\+P\+C\+Features$<$ T $>$\+::thresholds\+\_\+, Matrix\+B\+P\+C\+Features$<$ T $>$\+::thresholds\+High\+Range\+\_\+, and Matrix\+B\+P\+C\+Features$<$ T $>$\+::thresholds\+Low\+Range\+\_\+.
+
+
+\begin{DoxyCode}
+73     \{
+74         ar & \hyperlink{classMatrixBPCFeatures_a34418b525a7ceb5b2ec203415c46f066}{thresholds\_};
+75         ar & \hyperlink{classMatrixBPCFeatures_ad6ce34b650ac55b5d857a322cb239132}{features\_};
+76         ar & \hyperlink{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}{numFeatures\_};
+77         ar & \hyperlink{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}{numThresholds\_};
+78         ar & \hyperlink{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}{thresholdsLowRange\_};
+79         ar & \hyperlink{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}{thresholdsHighRange\_};
+80         ar & \hyperlink{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}{featuresLowRange\_};
+81         ar & \hyperlink{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}{featuresHighRange\_};
+82     \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Set\+Features\+Num\+Range@{Set\+Features\+Num\+Range}}
+\index{Set\+Features\+Num\+Range@{Set\+Features\+Num\+Range}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Set\+Features\+Num\+Range(\+T h, T l)}{SetFeaturesNumRange(T h, T l)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::Set\+Features\+Num\+Range (
+\begin{DoxyParamCaption}
+\item[{T}]{h, }
+\item[{T}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_a318a3a2a849eeb7e90b0be2454a61f61}{}\label{classMatrixBPCFeatures_a318a3a2a849eeb7e90b0be2454a61f61}
+
+\begin{DoxyCode}
+71                                                             \{
+72   \hyperlink{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}{featuresHighRange\_} = high;
+73     \hyperlink{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}{featuresLowRange\_} = low;
+74 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Set\+Num\+Features@{Set\+Num\+Features}}
+\index{Set\+Num\+Features@{Set\+Num\+Features}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Set\+Num\+Features(int)}{SetNumFeatures(int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::Set\+Num\+Features (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Features}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_afd55350772c55d9608b8203734573b95}{}\label{classMatrixBPCFeatures_afd55350772c55d9608b8203734573b95}
+
+\begin{DoxyCode}
+59                                                         \{
+60   \hyperlink{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}{numFeatures\_} = numFeatures;
+61 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Set\+Num\+Thresholds@{Set\+Num\+Thresholds}}
+\index{Set\+Num\+Thresholds@{Set\+Num\+Thresholds}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Set\+Num\+Thresholds(int)}{SetNumThresholds(int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::Set\+Num\+Thresholds (
+\begin{DoxyParamCaption}
+\item[{int}]{num\+Thresholds}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_ab26e57f5800162202aeaa38b719e9737}{}\label{classMatrixBPCFeatures_ab26e57f5800162202aeaa38b719e9737}
+
+\begin{DoxyCode}
+54                                                             \{
+55   \hyperlink{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}{numThresholds\_} = numThresholds;
+56 \}
+\end{DoxyCode}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!Set\+Thresholds\+Num\+Range@{Set\+Thresholds\+Num\+Range}}
+\index{Set\+Thresholds\+Num\+Range@{Set\+Thresholds\+Num\+Range}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{Set\+Thresholds\+Num\+Range(\+T h, T l)}{SetThresholdsNumRange(T h, T l)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::Set\+Thresholds\+Num\+Range (
+\begin{DoxyParamCaption}
+\item[{T}]{h, }
+\item[{T}]{l}
+\end{DoxyParamCaption}
+)}\hypertarget{classMatrixBPCFeatures_a877df38950e5b68116e7ee8cdce764b2}{}\label{classMatrixBPCFeatures_a877df38950e5b68116e7ee8cdce764b2}
+
+\begin{DoxyCode}
+64                                                              \{
+65   \hyperlink{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}{thresholdsHighRange\_} = high;
+66   \hyperlink{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}{thresholdsLowRange\_} = low;
+67 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!boost\+::serialization\+::access@{boost\+::serialization\+::access}}
+\index{boost\+::serialization\+::access@{boost\+::serialization\+::access}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{boost\+::serialization\+::access}{boost::serialization::access}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classMatrixBPCFeatures_ac98d07dd8f7b70e16ccb9a01abf56b9c}{}\label{classMatrixBPCFeatures_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+\subsection{Member Data Documentation}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!features\+\_\+@{features\+\_\+}}
+\index{features\+\_\+@{features\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{features\+\_\+}{features_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::vector$<${\bf Features}$<$T$>$ $>$ {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::features\+\_\+}\hypertarget{classMatrixBPCFeatures_ad6ce34b650ac55b5d857a322cb239132}{}\label{classMatrixBPCFeatures_ad6ce34b650ac55b5d857a322cb239132}
+
+
+Referenced by Matrix\+B\+P\+C\+Features$<$ T $>$\+::serialize().
+
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!features\+High\+Range\+\_\+@{features\+High\+Range\+\_\+}}
+\index{features\+High\+Range\+\_\+@{features\+High\+Range\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{features\+High\+Range\+\_\+}{featuresHighRange_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::features\+High\+Range\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}{}\label{classMatrixBPCFeatures_a35acee240ac781db0390c068c782437d}
+
+
+Referenced by Matrix\+B\+P\+C\+Features$<$ T $>$\+::serialize().
+
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!features\+Low\+Range\+\_\+@{features\+Low\+Range\+\_\+}}
+\index{features\+Low\+Range\+\_\+@{features\+Low\+Range\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{features\+Low\+Range\+\_\+}{featuresLowRange_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::features\+Low\+Range\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}{}\label{classMatrixBPCFeatures_a973ec0283a77495339d330c482e73782}
+
+
+Referenced by Matrix\+B\+P\+C\+Features$<$ T $>$\+::serialize().
+
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!mt\+\_\+@{mt\+\_\+}}
+\index{mt\+\_\+@{mt\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{mt\+\_\+}{mt_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::mt19937 {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::mt\+\_\+ = {\bf init2}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classMatrixBPCFeatures_aaf2ce60f69f7d3bbb85c4f4bc8b66383}{}\label{classMatrixBPCFeatures_aaf2ce60f69f7d3bbb85c4f4bc8b66383}
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!num\+Features\+\_\+@{num\+Features\+\_\+}}
+\index{num\+Features\+\_\+@{num\+Features\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{num\+Features\+\_\+}{numFeatures_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ int {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::num\+Features\+\_\+}\hypertarget{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}{}\label{classMatrixBPCFeatures_ad3a5bf17a1666bbecf520f68d109b460}
+
+
+Referenced by Matrix\+B\+P\+C\+Features$<$ T $>$\+::serialize().
+
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!num\+Thresholds\+\_\+@{num\+Thresholds\+\_\+}}
+\index{num\+Thresholds\+\_\+@{num\+Thresholds\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{num\+Thresholds\+\_\+}{numThresholds_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ int {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::num\+Thresholds\+\_\+}\hypertarget{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}{}\label{classMatrixBPCFeatures_adcdf00f112691ab61c3d305a3a9cbe89}
+
+
+Referenced by Matrix\+B\+P\+C\+Features$<$ T $>$\+::serialize().
+
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!thresholds\+\_\+@{thresholds\+\_\+}}
+\index{thresholds\+\_\+@{thresholds\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{thresholds\+\_\+}{thresholds_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ std\+::vector$<$T$>$ {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::thresholds\+\_\+}\hypertarget{classMatrixBPCFeatures_a34418b525a7ceb5b2ec203415c46f066}{}\label{classMatrixBPCFeatures_a34418b525a7ceb5b2ec203415c46f066}
+
+
+Referenced by Matrix\+B\+P\+C\+Features$<$ T $>$\+::serialize().
+
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!thresholds\+High\+Range\+\_\+@{thresholds\+High\+Range\+\_\+}}
+\index{thresholds\+High\+Range\+\_\+@{thresholds\+High\+Range\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{thresholds\+High\+Range\+\_\+}{thresholdsHighRange_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::thresholds\+High\+Range\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}{}\label{classMatrixBPCFeatures_ae8a6cffe3353dfd370fb0b4e5d2385ca}
+
+
+Referenced by Matrix\+B\+P\+C\+Features$<$ T $>$\+::serialize().
+
+\index{Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}!thresholds\+Low\+Range\+\_\+@{thresholds\+Low\+Range\+\_\+}}
+\index{thresholds\+Low\+Range\+\_\+@{thresholds\+Low\+Range\+\_\+}!Matrix\+B\+P\+C\+Features@{Matrix\+B\+P\+C\+Features}}
+\subsubsection[{\texorpdfstring{thresholds\+Low\+Range\+\_\+}{thresholdsLowRange_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Matrix\+B\+P\+C\+Features}$<$ T $>$\+::thresholds\+Low\+Range\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}{}\label{classMatrixBPCFeatures_a3b26efde265078abd546a45ea443bf6d}
+
+
+Referenced by Matrix\+B\+P\+C\+Features$<$ T $>$\+::serialize().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{MatrixBPCFeatures_8h}{Matrix\+B\+P\+C\+Features.\+h}\item 
+\hyperlink{MatrixBPCFeatures_8cpp}{Matrix\+B\+P\+C\+Features.\+cpp}\end{DoxyCompactItemize}

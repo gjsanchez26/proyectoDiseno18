@@ -23,10 +23,10 @@ int main()
     _manager.transferRanges();
     
     rdf::Task _task;
-    _task.setRank(420);
+    _task.setRank(1);
     _task.setTree(1);
     _task.setNode(2);
-    _task.setStatus(3);
+    _task.setStatus(0);
          
     _manager.transferNodes(_task);
 

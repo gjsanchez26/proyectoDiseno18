@@ -1,0 +1,284 @@
+\hypertarget{classrdf_1_1bpc_1_1Features}{}\section{rdf\+:\+:bpc\+:\+:Features Class Reference}
+\label{classrdf_1_1bpc_1_1Features}\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+
+
+{\ttfamily \#include $<$Features.\+h$>$}
+
+
+
+Collaboration diagram for rdf\+:\+:bpc\+:\+:Features\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classrdf_1_1bpc_1_1Features__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Features_abfca82d68cea9e637d0b601395d6da6f}{Features} ()
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Features_a47d8976ae88c7c3dc1445d1437eba66c}{Features} (float, float, float, float)
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Features_a9055f349ed663508478dbe1e92dcdceb}{Features} (const \hyperlink{classrdf_1_1bpc_1_1Features}{Features} \&orig)
+\item 
+virtual \hyperlink{classrdf_1_1bpc_1_1Features_a24752e0df868197b2225abc369a374e7}{$\sim$\+Features} ()
+\item 
+std\+::pair$<$ \hyperlink{namespacerdf_1_1bpc_a507d4ac6b23164245625d13196e564bc}{Feature}, \hyperlink{namespacerdf_1_1bpc_a507d4ac6b23164245625d13196e564bc}{Feature} $>$ \hyperlink{classrdf_1_1bpc_1_1Features_aadc3584d493974a48a3ec633eb49bbda}{Get\+Features} ()
+\item 
+\hyperlink{namespacerdf_1_1bpc_a507d4ac6b23164245625d13196e564bc}{Feature} \hyperlink{classrdf_1_1bpc_1_1Features_add4c2edfb1f05b59662e9f2ebafafdd2}{Set\+Feature1} (float x, float y)
+\item 
+\hyperlink{namespacerdf_1_1bpc_a507d4ac6b23164245625d13196e564bc}{Feature} \hyperlink{classrdf_1_1bpc_1_1Features_a0091e0dd9ba651e146a12562e8ecaa0e}{Set\+Feature2} (float x, float y)
+\item 
+\hyperlink{namespacerdf_1_1bpc_a507d4ac6b23164245625d13196e564bc}{Feature} \hyperlink{classrdf_1_1bpc_1_1Features_a2e893eccf388415169cd08b45d9d1964}{Get\+Feature1} ()
+\item 
+\hyperlink{namespacerdf_1_1bpc_a507d4ac6b23164245625d13196e564bc}{Feature} \hyperlink{classrdf_1_1bpc_1_1Features_a4a9aae0520825d9f9bee370449632522}{Get\+Feature2} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacerdf_1_1bpc_a507d4ac6b23164245625d13196e564bc}{Feature} \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\+\_\+}
+\item 
+\hyperlink{namespacerdf_1_1bpc_a507d4ac6b23164245625d13196e564bc}{Feature} \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classrdf_1_1bpc_1_1Features_abd95abc6646db661d105c9bb0317ad7f}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrdf_1_1bpc_1_1Features_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!Features@{Features}}
+\index{Features@{Features}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{Features()}{Features()}}]{\setlength{\rightskip}{0pt plus 5cm}Features\+::\+Features (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Features_abfca82d68cea9e637d0b601395d6da6f}{}\label{classrdf_1_1bpc_1_1Features_abfca82d68cea9e637d0b601395d6da6f}
+
+
+References feature1\+\_\+, and feature2\+\_\+.
+
+
+\begin{DoxyCode}
+30                    \{
+31   \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_}.x = 0;
+32   \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_}.y = 0;
+33   \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_}.x = 0;
+34   \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_}.y = 0;
+35 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!Features@{Features}}
+\index{Features@{Features}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{Features(float, float, float, float)}{Features(float, float, float, float)}}]{\setlength{\rightskip}{0pt plus 5cm}Features\+::\+Features (
+\begin{DoxyParamCaption}
+\item[{float}]{feat1\+\_\+x, }
+\item[{float}]{feat1\+\_\+y, }
+\item[{float}]{feat2\+\_\+x, }
+\item[{float}]{feat2\+\_\+y}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Features_a47d8976ae88c7c3dc1445d1437eba66c}{}\label{classrdf_1_1bpc_1_1Features_a47d8976ae88c7c3dc1445d1437eba66c}
+
+
+References feature1\+\_\+, and feature2\+\_\+.
+
+
+\begin{DoxyCode}
+37                                                                              \{
+38   \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_}.x = feat1\_x;
+39   \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_}.y = feat1\_y;
+40   \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_}.x = feat2\_x;
+41   \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_}.y = feat2\_y;
+42 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!Features@{Features}}
+\index{Features@{Features}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{Features(const Features \&orig)}{Features(const Features &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Features\+::\+Features (
+\begin{DoxyParamCaption}
+\item[{const {\bf Features} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Features_a9055f349ed663508478dbe1e92dcdceb}{}\label{classrdf_1_1bpc_1_1Features_a9055f349ed663508478dbe1e92dcdceb}
+
+
+References feature1\+\_\+, and feature2\+\_\+.
+
+
+\begin{DoxyCode}
+65                                        \{
+66   \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_} = orig.\hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_};
+67   \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_} = orig.\hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_};
+68 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!````~Features@{$\sim$\+Features}}
+\index{````~Features@{$\sim$\+Features}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{$\sim$\+Features()}{~Features()}}]{\setlength{\rightskip}{0pt plus 5cm}Features\+::$\sim$\+Features (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1bpc_1_1Features_a24752e0df868197b2225abc369a374e7}{}\label{classrdf_1_1bpc_1_1Features_a24752e0df868197b2225abc369a374e7}
+
+\begin{DoxyCode}
+70                     \{
+71 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!Get\+Feature1@{Get\+Feature1}}
+\index{Get\+Feature1@{Get\+Feature1}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{Get\+Feature1()}{GetFeature1()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature} Features\+::\+Get\+Feature1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Features_a2e893eccf388415169cd08b45d9d1964}{}\label{classrdf_1_1bpc_1_1Features_a2e893eccf388415169cd08b45d9d1964}
+
+
+References feature1\+\_\+.
+
+
+
+Referenced by rdf\+::bpc\+::\+Features\+Mat\+::\+Print().
+
+
+\begin{DoxyCode}
+57                              \{
+58   \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_};
+59 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!Get\+Feature2@{Get\+Feature2}}
+\index{Get\+Feature2@{Get\+Feature2}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{Get\+Feature2()}{GetFeature2()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature} Features\+::\+Get\+Feature2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Features_a4a9aae0520825d9f9bee370449632522}{}\label{classrdf_1_1bpc_1_1Features_a4a9aae0520825d9f9bee370449632522}
+
+
+References feature2\+\_\+.
+
+
+
+Referenced by rdf\+::bpc\+::\+Features\+Mat\+::\+Print().
+
+
+\begin{DoxyCode}
+61                              \{
+62   \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_};
+63 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!Get\+Features@{Get\+Features}}
+\index{Get\+Features@{Get\+Features}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{Get\+Features()}{GetFeatures()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<${\bf Feature}, {\bf Feature}$>$ rdf\+::bpc\+::\+Features\+::\+Get\+Features (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1bpc_1_1Features_aadc3584d493974a48a3ec633eb49bbda}{}\label{classrdf_1_1bpc_1_1Features_aadc3584d493974a48a3ec633eb49bbda}
+
+
+References feature1\+\_\+.
+
+
+\begin{DoxyCode}
+48 \{\}; \textcolor{comment}{//TODO}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!serialize@{serialize}}
+\index{serialize@{serialize}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{serialize(\+Archive \&ar, const unsigned int version)}{serialize(Archive &ar, const unsigned int version)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void rdf\+::bpc\+::\+Features\+::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Features_abd95abc6646db661d105c9bb0317ad7f}{}\label{classrdf_1_1bpc_1_1Features_abd95abc6646db661d105c9bb0317ad7f}
+
+\begin{DoxyCode}
+63           \{
+64             ar & \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_}.x;
+65             ar & \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_}.y;
+66             ar & \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_}.x;
+67             ar & \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_}.y;
+68           \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!Set\+Feature1@{Set\+Feature1}}
+\index{Set\+Feature1@{Set\+Feature1}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{Set\+Feature1(float x, float y)}{SetFeature1(float x, float y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature} Features\+::\+Set\+Feature1 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Features_add4c2edfb1f05b59662e9f2ebafafdd2}{}\label{classrdf_1_1bpc_1_1Features_add4c2edfb1f05b59662e9f2ebafafdd2}
+
+
+References feature1\+\_\+.
+
+
+
+Referenced by rdf\+::bpc\+::\+Features\+Mat\+::\+Generate\+Features\+Vector().
+
+
+\begin{DoxyCode}
+45                                              \{
+46   \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_}.x = x;
+47   \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_}.y = y;
+48   \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{feature1\_};
+49 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!Set\+Feature2@{Set\+Feature2}}
+\index{Set\+Feature2@{Set\+Feature2}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{Set\+Feature2(float x, float y)}{SetFeature2(float x, float y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature} Features\+::\+Set\+Feature2 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Features_a0091e0dd9ba651e146a12562e8ecaa0e}{}\label{classrdf_1_1bpc_1_1Features_a0091e0dd9ba651e146a12562e8ecaa0e}
+
+
+References feature2\+\_\+.
+
+
+
+Referenced by rdf\+::bpc\+::\+Features\+Mat\+::\+Generate\+Features\+Vector().
+
+
+\begin{DoxyCode}
+51                                              \{
+52   \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_}.x = x;
+53   \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_}.y = y;
+54   \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{feature2\_};
+55 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!boost\+::serialization\+::access@{boost\+::serialization\+::access}}
+\index{boost\+::serialization\+::access@{boost\+::serialization\+::access}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{boost\+::serialization\+::access}{boost::serialization::access}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classrdf_1_1bpc_1_1Features_ac98d07dd8f7b70e16ccb9a01abf56b9c}{}\label{classrdf_1_1bpc_1_1Features_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!feature1\+\_\+@{feature1\+\_\+}}
+\index{feature1\+\_\+@{feature1\+\_\+}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{feature1\+\_\+}{feature1_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature} rdf\+::bpc\+::\+Features\+::feature1\+\_\+}\hypertarget{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}{}\label{classrdf_1_1bpc_1_1Features_a01f4d6cb79311da3b39f82882112bbcb}
+
+
+Referenced by Features(), Get\+Feature1(), Get\+Features(), rdf\+::\+Node\+Result\+::reduce(), and Set\+Feature1().
+
+\index{rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}!feature2\+\_\+@{feature2\+\_\+}}
+\index{feature2\+\_\+@{feature2\+\_\+}!rdf\+::bpc\+::\+Features@{rdf\+::bpc\+::\+Features}}
+\subsubsection[{\texorpdfstring{feature2\+\_\+}{feature2_}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Feature} rdf\+::bpc\+::\+Features\+::feature2\+\_\+}\hypertarget{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}{}\label{classrdf_1_1bpc_1_1Features_a563e43877615b6967a5ec9049bab4b65}
+
+
+Referenced by Features(), Get\+Feature2(), rdf\+::\+Node\+Result\+::reduce(), and Set\+Feature2().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Features_8h}{Features.\+h}\item 
+\hyperlink{Features_8cpp}{Features.\+cpp}\end{DoxyCompactItemize}

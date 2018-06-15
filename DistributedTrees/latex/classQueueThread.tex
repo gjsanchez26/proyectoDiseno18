@@ -1,0 +1,267 @@
+\hypertarget{classQueueThread}{}\section{Queue\+Thread Class Reference}
+\label{classQueueThread}\index{Queue\+Thread@{Queue\+Thread}}
+
+
+{\ttfamily \#include $<$Queue\+Thread.\+h$>$}
+
+
+
+Collaboration diagram for Queue\+Thread\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classQueueThread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQueueThread_a67e91d4fedd650255e9389c50b4e6749}{Queue\+Thread} ()
+\item 
+\hyperlink{classQueueThread_a4a48439ac971b82fa1dd1b63138a4d2b}{Queue\+Thread} (const \hyperlink{classQueueThread}{Queue\+Thread} \&orig)
+\item 
+virtual \hyperlink{classQueueThread_aeca7000eb51c2f4d2ec33352c8e08ec3}{$\sim$\+Queue\+Thread} ()
+\item 
+void \hyperlink{classQueueThread_a73db1449c750aab9c973592a69f12e85}{run} ()
+\item 
+void \hyperlink{classQueueThread_a873d5d9edf446f44467518c8fbde1800}{connect} (std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ \hyperlink{classQueueThread_ab591bae3315c80df7fa723db66e763fa}{structure}, \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} \hyperlink{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{task}, std\+::priority\+\_\+queue$<$ \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} $>$ \hyperlink{classQueueThread_a8e8f59dccfcb4a213db1b42aec0e4f4d}{tasks}, \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} \&\hyperlink{classQueueThread_aa775f99b02ff36d5336212ae53bd12b4}{node\+Result})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::thread \hyperlink{classQueueThread_a91bdd16de58d62287968b80f68620033}{thread}
+\item 
+std\+::mutex \hyperlink{classQueueThread_a7bf4df2e118ced2e8fbbac3af8992d79}{mtx}
+\item 
+std\+::condition\+\_\+variable \hyperlink{classQueueThread_a51fdcc17ea346cf6bbc51467d49e9696}{cv}
+\item 
+bool \hyperlink{classQueueThread_a26f11295bff95a8a44bb75a58168d611}{ready} = false
+\item 
+std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ \hyperlink{classQueueThread_ab591bae3315c80df7fa723db66e763fa}{structure}
+\item 
+\hyperlink{classrdf_1_1Task}{rdf\+::\+Task} \hyperlink{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{task}
+\item 
+std\+::priority\+\_\+queue$<$ \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} $>$ \hyperlink{classQueueThread_a8e8f59dccfcb4a213db1b42aec0e4f4d}{tasks}
+\item 
+\hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} \hyperlink{classQueueThread_aa775f99b02ff36d5336212ae53bd12b4}{node\+Result}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classQueueThread_a64de2e4292b32cd5f1c74a66102945ed}{sync} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Queue\+Thread@{Queue\+Thread}!Queue\+Thread@{Queue\+Thread}}
+\index{Queue\+Thread@{Queue\+Thread}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{Queue\+Thread()}{QueueThread()}}]{\setlength{\rightskip}{0pt plus 5cm}Queue\+Thread\+::\+Queue\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueThread_a67e91d4fedd650255e9389c50b4e6749}{}\label{classQueueThread_a67e91d4fedd650255e9389c50b4e6749}
+
+\begin{DoxyCode}
+21                          \{
+22 \}
+\end{DoxyCode}
+\index{Queue\+Thread@{Queue\+Thread}!Queue\+Thread@{Queue\+Thread}}
+\index{Queue\+Thread@{Queue\+Thread}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{Queue\+Thread(const Queue\+Thread \&orig)}{QueueThread(const QueueThread &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Queue\+Thread\+::\+Queue\+Thread (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue\+Thread} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueThread_a4a48439ac971b82fa1dd1b63138a4d2b}{}\label{classQueueThread_a4a48439ac971b82fa1dd1b63138a4d2b}
+
+\begin{DoxyCode}
+24                                                 \{
+25 \}
+\end{DoxyCode}
+\index{Queue\+Thread@{Queue\+Thread}!````~Queue\+Thread@{$\sim$\+Queue\+Thread}}
+\index{````~Queue\+Thread@{$\sim$\+Queue\+Thread}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{$\sim$\+Queue\+Thread()}{~QueueThread()}}]{\setlength{\rightskip}{0pt plus 5cm}Queue\+Thread\+::$\sim$\+Queue\+Thread (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classQueueThread_aeca7000eb51c2f4d2ec33352c8e08ec3}{}\label{classQueueThread_aeca7000eb51c2f4d2ec33352c8e08ec3}
+
+\begin{DoxyCode}
+27                           \{
+28 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Queue\+Thread@{Queue\+Thread}!connect@{connect}}
+\index{connect@{connect}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{connect(std\+::vector$<$ Estructura\+::\+Node $>$ structure, rdf\+::\+Task task, std\+::priority\+\_\+queue$<$ rdf\+::\+Task $>$ tasks, rdf\+::\+Node\+Result \&node\+Result)}{connect(std::vector< Estructura::Node > structure, rdf::Task task, std::priority_queue< rdf::Task > tasks, rdf::NodeResult &nodeResult)}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Thread\+::connect (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Estructura\+::\+Node} $>$}]{structure, }
+\item[{{\bf rdf\+::\+Task}}]{task, }
+\item[{std\+::priority\+\_\+queue$<$ {\bf rdf\+::\+Task} $>$}]{tasks, }
+\item[{{\bf rdf\+::\+Node\+Result} \&}]{node\+Result}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueThread_a873d5d9edf446f44467518c8fbde1800}{}\label{classQueueThread_a873d5d9edf446f44467518c8fbde1800}
+
+
+References run(), structure, sync(), task, and tasks.
+
+
+
+Referenced by Scheduler\+::check\+Queues().
+
+
+\begin{DoxyCode}
+86                                                              \{
+87     \hyperlink{classQueueThread_ab591bae3315c80df7fa723db66e763fa}{QueueThread::structure} = \hyperlink{classQueueThread_ab591bae3315c80df7fa723db66e763fa}{structure};
+88     \hyperlink{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{QueueThread::task} = \hyperlink{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{task};
+89     \hyperlink{classQueueThread_a8e8f59dccfcb4a213db1b42aec0e4f4d}{QueueThread::tasks} = \hyperlink{classQueueThread_a8e8f59dccfcb4a213db1b42aec0e4f4d}{tasks};;
+90 
+91     
+92     
+93     \hyperlink{classQueueThread_a64de2e4292b32cd5f1c74a66102945ed}{sync}();
+94     \hyperlink{classQueueThread_a73db1449c750aab9c973592a69f12e85}{run}();
+95 
+96 \}
+\end{DoxyCode}
+\index{Queue\+Thread@{Queue\+Thread}!run@{run}}
+\index{run@{run}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{run()}{run()}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Thread\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueThread_a73db1449c750aab9c973592a69f12e85}{}\label{classQueueThread_a73db1449c750aab9c973592a69f12e85}
+
+
+References cv, rdf\+::\+Task\+::get\+Feature\+Matrix(), rdf\+::bpc\+::\+Node\+Trainee$<$ T $>$\+::\+Get\+Matrix(), rdf\+::\+Task\+::get\+Node(), rdf\+::\+Task\+::get\+Tree(), init(), mtx, node\+Result, ready, rdf\+::bpc\+::\+Node\+Trainee$<$ T $>$\+::\+Set\+Node\+Id(), rdf\+::bpc\+::\+Node\+Trainee$<$ T $>$\+::\+Set\+Tree\+Id(), structure, task, and thread.
+
+
+
+Referenced by connect().
+
+
+\begin{DoxyCode}
+51                       \{
+52     std::unique\_lock<std::mutex> lck(\hyperlink{classQueueThread_a7bf4df2e118ced2e8fbbac3af8992d79}{mtx});
+53     
+54     
+55     \hyperlink{classrdf_1_1bpc_1_1NodeTrainee}{rdf::bpc::NodeTrainee<rdf::bpc::Cell>}   \_node;
+56     \_node.\hyperlink{classrdf_1_1bpc_1_1NodeTrainee_af7bb9c9df89101c4911fe9713ed6aff5}{SetTreeId}(\hyperlink{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{task}.\hyperlink{classrdf_1_1Task_a942297717d39a25db9ed8636ef72dca1}{getTree}());
+57     \_node.\hyperlink{classrdf_1_1bpc_1_1NodeTrainee_a6c42d9a2911c014addb9c5021a484085}{SetNodeId}(\hyperlink{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{task}.\hyperlink{classrdf_1_1Task_abed5b1d313483299a04f0ccb63901c54}{getNode}());
+58     \_node.\hyperlink{classrdf_1_1bpc_1_1NodeTrainee_ab1ae16941f52a5f38e438b13ed3cee53}{GetMatrix}().AddFeaturesMat(\hyperlink{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{task}.\hyperlink{classrdf_1_1Task_a2c122a98bbf1eed3f957314b77d4d127}{getFeatureMatrix}());
+59     
+60     
+61     \textcolor{comment}{//while (1) \{}
+62     \textcolor{comment}{//lck.lock();}
+63 
+64     \textcolor{keywordflow}{while} (!\hyperlink{classQueueThread_a26f11295bff95a8a44bb75a58168d611}{ready}) \{
+65         \textcolor{comment}{/*if (!tasks.empty()) \{}
+66 \textcolor{comment}{            sync();}
+67 \textcolor{comment}{        \}*/}
+68         \hyperlink{classQueueThread_a51fdcc17ea346cf6bbc51467d49e9696}{cv}.wait(lck);
+69         \textcolor{comment}{//lck.lock();}
+70     \}
+71     \hyperlink{classQueueThread_a26f11295bff95a8a44bb75a58168d611}{ready} = \textcolor{keyword}{false};
+72     
+73     \hyperlink{classQueueThread_a91bdd16de58d62287968b80f68620033}{thread} = std::thread(\hyperlink{QueueThread_8cpp_ac480b53bc8702e647e634be6ff7334f0}{init}, std::ref(\hyperlink{classQueueThread_ab591bae3315c80df7fa723db66e763fa}{structure}), std::ref(
+      \hyperlink{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{task}), std::ref(\hyperlink{classQueueThread_aa775f99b02ff36d5336212ae53bd12b4}{nodeResult}));
+74     \textcolor{keywordflow}{if} (\hyperlink{classQueueThread_a91bdd16de58d62287968b80f68620033}{QueueThread::thread}.joinable()) \{
+75         \textcolor{comment}{//Scheduler scheduler;}
+76         \textcolor{comment}{//scheduler.addThreadQueue(*this);}
+77         \hyperlink{classQueueThread_a91bdd16de58d62287968b80f68620033}{QueueThread::thread}.join();
+78 
+79     \}
+80 
+81 
+82     \textcolor{comment}{//\}}
+83 \}
+\end{DoxyCode}
+\index{Queue\+Thread@{Queue\+Thread}!sync@{sync}}
+\index{sync@{sync}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{sync()}{sync()}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Thread\+::sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classQueueThread_a64de2e4292b32cd5f1c74a66102945ed}{}\label{classQueueThread_a64de2e4292b32cd5f1c74a66102945ed}
+
+
+References cv, mtx, and ready.
+
+
+
+Referenced by connect().
+
+
+\begin{DoxyCode}
+98                        \{
+99     std::unique\_lock<std::mutex> lck(\hyperlink{classQueueThread_a7bf4df2e118ced2e8fbbac3af8992d79}{mtx});
+100     \hyperlink{classQueueThread_a26f11295bff95a8a44bb75a58168d611}{ready} = \textcolor{keyword}{true};
+101     lck.unlock();
+102     \hyperlink{classQueueThread_a51fdcc17ea346cf6bbc51467d49e9696}{cv}.notify\_one();
+103 \}\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Queue\+Thread@{Queue\+Thread}!cv@{cv}}
+\index{cv@{cv}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{cv}{cv}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::condition\+\_\+variable Queue\+Thread\+::cv}\hypertarget{classQueueThread_a51fdcc17ea346cf6bbc51467d49e9696}{}\label{classQueueThread_a51fdcc17ea346cf6bbc51467d49e9696}
+
+
+Referenced by run(), and sync().
+
+\index{Queue\+Thread@{Queue\+Thread}!mtx@{mtx}}
+\index{mtx@{mtx}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{mtx}{mtx}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex Queue\+Thread\+::mtx}\hypertarget{classQueueThread_a7bf4df2e118ced2e8fbbac3af8992d79}{}\label{classQueueThread_a7bf4df2e118ced2e8fbbac3af8992d79}
+
+
+Referenced by run(), and sync().
+
+\index{Queue\+Thread@{Queue\+Thread}!node\+Result@{node\+Result}}
+\index{node\+Result@{node\+Result}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{node\+Result}{nodeResult}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rdf\+::\+Node\+Result} Queue\+Thread\+::node\+Result}\hypertarget{classQueueThread_aa775f99b02ff36d5336212ae53bd12b4}{}\label{classQueueThread_aa775f99b02ff36d5336212ae53bd12b4}
+
+
+Referenced by run().
+
+\index{Queue\+Thread@{Queue\+Thread}!ready@{ready}}
+\index{ready@{ready}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{ready}{ready}}]{\setlength{\rightskip}{0pt plus 5cm}bool Queue\+Thread\+::ready = false}\hypertarget{classQueueThread_a26f11295bff95a8a44bb75a58168d611}{}\label{classQueueThread_a26f11295bff95a8a44bb75a58168d611}
+
+
+Referenced by run(), and sync().
+
+\index{Queue\+Thread@{Queue\+Thread}!structure@{structure}}
+\index{structure@{structure}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{structure}{structure}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Estructura\+::\+Node}$>$ Queue\+Thread\+::structure}\hypertarget{classQueueThread_ab591bae3315c80df7fa723db66e763fa}{}\label{classQueueThread_ab591bae3315c80df7fa723db66e763fa}
+
+
+Referenced by connect(), and run().
+
+\index{Queue\+Thread@{Queue\+Thread}!task@{task}}
+\index{task@{task}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{task}{task}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rdf\+::\+Task} Queue\+Thread\+::task}\hypertarget{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}{}\label{classQueueThread_a4cf069642e3f67ff759a2163fa2ef3ce}
+
+
+Referenced by connect(), and run().
+
+\index{Queue\+Thread@{Queue\+Thread}!tasks@{tasks}}
+\index{tasks@{tasks}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{tasks}{tasks}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::priority\+\_\+queue$<${\bf rdf\+::\+Task}$>$ Queue\+Thread\+::tasks}\hypertarget{classQueueThread_a8e8f59dccfcb4a213db1b42aec0e4f4d}{}\label{classQueueThread_a8e8f59dccfcb4a213db1b42aec0e4f4d}
+
+
+Referenced by connect().
+
+\index{Queue\+Thread@{Queue\+Thread}!thread@{thread}}
+\index{thread@{thread}!Queue\+Thread@{Queue\+Thread}}
+\subsubsection[{\texorpdfstring{thread}{thread}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::thread Queue\+Thread\+::thread}\hypertarget{classQueueThread_a91bdd16de58d62287968b80f68620033}{}\label{classQueueThread_a91bdd16de58d62287968b80f68620033}
+
+
+Referenced by run().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{QueueThread_8h}{Queue\+Thread.\+h}\item 
+\hyperlink{QueueThread_8cpp}{Queue\+Thread.\+cpp}\end{DoxyCompactItemize}

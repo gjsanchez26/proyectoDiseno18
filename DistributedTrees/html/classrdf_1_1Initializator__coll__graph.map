@@ -1,0 +1,4 @@
+<map id="rdf::Initializator" name="rdf::Initializator">
+<area shape="rect" id="node2" href="$classConfigValidationInterface.html" title="{ConfigValidationInterface\n||+ validateConfiguration()\l+ ~ConfigValidationInterface()\l}" alt="" coords="5,181,201,273"/>
+<area shape="rect" id="node3" href="$classConfigData.html" title="{ConfigData\n|&#45; _vectorAmount\l&#45; _thresholdAmount\l&#45; _treeAmount\l&#45; _testImageAmount\l&#45; _trainImageAmount\l&#45; _logVerbosity\l&#45; _noticeTime\l&#45; _threadAmount\l&#45; _trainningMethod\l&#45; _stopMethod\l&#45; _selectionMethod\l|+ ConfigData()\l+ ConfigData()\l+ ConfigData()\l+ ~ConfigData()\l+ printData()\l+ GetLogVerbosity()\l+ GetNoticeTime()\l+ GetSelectionMethod()\l+ GetStopMethod()\l+ GetTestImageAmount()\l+ GetThreadAmount()\l+ GetThresholdAmount()\l+ GetTrainImageAmount()\l+ GetTrainningMethod()\l+ GetTreeAmount()\l+ GetVectorAmount()\l}" alt="" coords="226,5,399,449"/>
+</map>

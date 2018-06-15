@@ -1,0 +1,408 @@
+\hypertarget{classrdf_1_1ForestManager}{}\section{rdf\+:\+:Forest\+Manager Class Reference}
+\label{classrdf_1_1ForestManager}\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+
+
+{\ttfamily \#include $<$Forest\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for rdf\+:\+:Forest\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classrdf_1_1ForestManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1ForestManager_a91a1f9806518ed82227b382bc4427c56}{Forest\+Manager} ()
+\item 
+\hyperlink{classrdf_1_1ForestManager_a5ca6326452d58bd367459b00bf893eae}{Forest\+Manager} (const \hyperlink{classrdf_1_1ForestManager}{Forest\+Manager} \&orig)
+\item 
+virtual \hyperlink{classrdf_1_1ForestManager_a99e383aec1205f1f664047a9e6e22a10}{$\sim$\+Forest\+Manager} ()
+\item 
+void \hyperlink{classrdf_1_1ForestManager_abfc6d077d99b06b8d135d114f477ad5f}{initialize\+Forest} ()
+\item 
+void \hyperlink{classrdf_1_1ForestManager_af8975e5a2ea89cf3477241ebf7915ebe}{show\+Queue} ()
+\item 
+\hyperlink{classrdf_1_1Task}{Task} \& \hyperlink{classrdf_1_1ForestManager_a7531fb627d10ebcf471237449864317e}{get\+Next\+Task} ()
+\item 
+bool \hyperlink{classrdf_1_1ForestManager_a1399d029371b213523492ea8397199b6}{add\+Resuld} (\hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} \&p\+Result)
+\item 
+std\+::map$<$ \hyperlink{classrdf_1_1Task}{Task}, \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ \hyperlink{classrdf_1_1ForestManager_aaacb6fcbb2b7a71f017fa49e4b0f813c}{get\+Result\+Map} () const 
+\item 
+void \hyperlink{classrdf_1_1ForestManager_ab88e04c863d4b6565670a65fe5b06435}{set\+Result\+Map} (std\+::map$<$ \hyperlink{classrdf_1_1Task}{Task}, \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ \hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\+\_\+result\+Map})
+\item 
+vector$<$ \hyperlink{classrdf_1_1Task}{Task} $>$ \hyperlink{classrdf_1_1ForestManager_a6ff0f37f87dab897d449aa453e559926}{get\+Matrix\+Steps} () const 
+\item 
+void \hyperlink{classrdf_1_1ForestManager_a99315a804dfb3d3a70f0163eb9a245d8}{set\+Matrix\+Steps} (vector$<$ \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} $>$ \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\+\_\+matrix\+Steps})
+\item 
+\hyperlink{classrdf_1_1Task}{rdf\+::\+Task} \hyperlink{classrdf_1_1ForestManager_a6de8eeda582a53feee2127d1bf71b975}{get\+Result} () const 
+\item 
+void \hyperlink{classrdf_1_1ForestManager_af54eefeab5a70439d23ebf43fc549e6d}{set\+Result} (\hyperlink{classrdf_1_1Task}{rdf\+::\+Task} \hyperlink{classrdf_1_1ForestManager_ae2ba9a9f403d88f6343cf374d69f8a17}{\+\_\+result})
+\item 
+vector$<$ vector$<$ \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ $>$ \hyperlink{classrdf_1_1ForestManager_a009d3210babe33268dcf5e5698cfaeca}{get\+Results} () const 
+\item 
+void \hyperlink{classrdf_1_1ForestManager_a2e03f8ee1756620a2f528c28be13009b}{set\+Results} (vector$<$ vector$<$ \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ $>$ \hyperlink{classrdf_1_1ForestManager_a818d29de52bed7f09084c71d687ddd4f}{\+\_\+results})
+\item 
+bool \hyperlink{classrdf_1_1ForestManager_a90ec517ef47983b2d8998a8eafe46ecc}{is\+Status} () const 
+\item 
+void \hyperlink{classrdf_1_1ForestManager_af141b0f89158084ff1e777141dae69f2}{set\+Status} (bool \hyperlink{classrdf_1_1ForestManager_a8aa48a6543d83bf43be3b0bc8a8ab253}{\+\_\+status})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} $>$ \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\+\_\+matrix\+Steps}
+\item 
+vector$<$ vector$<$ \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ $>$ \hyperlink{classrdf_1_1ForestManager_a818d29de52bed7f09084c71d687ddd4f}{\+\_\+results}
+\item 
+bool \hyperlink{classrdf_1_1ForestManager_a8aa48a6543d83bf43be3b0bc8a8ab253}{\+\_\+status}
+\item 
+\hyperlink{classrdf_1_1Task}{Task} \hyperlink{classrdf_1_1ForestManager_ae2ba9a9f403d88f6343cf374d69f8a17}{\+\_\+result}
+\item 
+std\+::map$<$ \hyperlink{classrdf_1_1Task}{Task}, \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ \hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\+\_\+result\+Map}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Thisclass allow manage train nodes, trees. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!Forest\+Manager@{Forest\+Manager}}
+\index{Forest\+Manager@{Forest\+Manager}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{Forest\+Manager()}{ForestManager()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Forest\+Manager\+::\+Forest\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ForestManager_a91a1f9806518ed82227b382bc4427c56}{}\label{classrdf_1_1ForestManager_a91a1f9806518ed82227b382bc4427c56}
+
+
+References \+\_\+status.
+
+
+\begin{DoxyCode}
+16                                 \{
+17     \hyperlink{classrdf_1_1ForestManager_a8aa48a6543d83bf43be3b0bc8a8ab253}{\_status}=\textcolor{keyword}{false};
+18 \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!Forest\+Manager@{Forest\+Manager}}
+\index{Forest\+Manager@{Forest\+Manager}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{Forest\+Manager(const Forest\+Manager \&orig)}{ForestManager(const ForestManager &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Forest\+Manager\+::\+Forest\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Forest\+Manager} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ForestManager_a5ca6326452d58bd367459b00bf893eae}{}\label{classrdf_1_1ForestManager_a5ca6326452d58bd367459b00bf893eae}
+
+\begin{DoxyCode}
+20                                                          \{
+21 \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!````~Forest\+Manager@{$\sim$\+Forest\+Manager}}
+\index{````~Forest\+Manager@{$\sim$\+Forest\+Manager}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{$\sim$\+Forest\+Manager()}{~ForestManager()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Forest\+Manager\+::$\sim$\+Forest\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1ForestManager_a99e383aec1205f1f664047a9e6e22a10}{}\label{classrdf_1_1ForestManager_a99e383aec1205f1f664047a9e6e22a10}
+
+\begin{DoxyCode}
+23                                  \{
+24 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!add\+Resuld@{add\+Resuld}}
+\index{add\+Resuld@{add\+Resuld}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{add\+Resuld(rdf\+::\+Node\+Result \&p\+Result)}{addResuld(rdf::NodeResult &pResult)}}]{\setlength{\rightskip}{0pt plus 5cm}bool rdf\+::\+Forest\+Manager\+::add\+Resuld (
+\begin{DoxyParamCaption}
+\item[{{\bf rdf\+::\+Node\+Result} \&}]{p\+Result}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ForestManager_a1399d029371b213523492ea8397199b6}{}\label{classrdf_1_1ForestManager_a1399d029371b213523492ea8397199b6}
+
+
+References \+\_\+matrix\+Steps, \+\_\+result\+Map, rdf\+::\+Task\+::get\+Node(), rdf\+::\+Task\+::get\+Rank(), rdf\+::\+Node\+Result\+::get\+Result\+Size(), rdf\+::\+Node\+Result\+::get\+Task(), rdf\+::\+Task\+::get\+Tree(), rdf\+::\+Task\+::is\+Status(), rdf\+::\+Task\+::set\+Node(), rdf\+::\+Task\+::set\+Rank(), rdf\+::\+Task\+::set\+Status(), and rdf\+::\+Task\+::set\+Tree().
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::waiting\+Results().
+
+
+\begin{DoxyCode}
+53                                                     \{
+54     std::cout<<\textcolor{stringliteral}{"REDUCE: "} << pResult.\hyperlink{classrdf_1_1NodeResult_a47e07daae11352e753629f2fca98d526}{getResultSize}() << \textcolor{stringliteral}{"\(\backslash\)n"};
+55 
+56     \hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\_resultMap}.find(pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}())->second.reduce(pResult);
+57     \textcolor{comment}{//\_result.reduce(pResult);}
+58     \textcolor{comment}{//\_result.showTask();}
+59     
+60     Task leftChild; 
+61     Task rightChild;
+62     
+63     
+64     leftChild.setRank(pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_ab1bcd01480e2c381541b6346f15cf4b7}{getRank}());
+65     leftChild.setTree(pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_a942297717d39a25db9ed8636ef72dca1}{getTree}());
+66     leftChild.setNode(2 * pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_abed5b1d313483299a04f0ccb63901c54}{getNode}());
+67     leftChild.setStatus(pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_a2d78d32594b0c8f76a599cc3883211c7}{isStatus}());
+68     
+69     rightChild.setRank(pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_ab1bcd01480e2c381541b6346f15cf4b7}{getRank}());
+70     rightChild.setTree(pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_a942297717d39a25db9ed8636ef72dca1}{getTree}());
+71     rightChild.setNode(2 * pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_abed5b1d313483299a04f0ccb63901c54}{getNode}()-1);
+72     rightChild.setStatus(pResult.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_a2d78d32594b0c8f76a599cc3883211c7}{isStatus}());
+73     
+74     \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps}.push\_back(leftChild);
+75     \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps}.push\_back(rightChild);
+76     std::cout<< \textcolor{stringliteral}{"Adding child nodes, size: "}<<\hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps}.size()<<\textcolor{stringliteral}{"\(\backslash\)n"};
+77     NodeResult result;
+78     
+79     \hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\_resultMap}.insert(std::make\_pair(leftChild,result));
+80     \hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\_resultMap}.insert(std::make\_pair(leftChild,result));
+81     
+82     \textcolor{comment}{//leftChild.showTask();}
+83     \textcolor{comment}{//rightChild.showTask();}
+84     
+85     
+86     
+87 
+88     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+89 
+90 \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!get\+Matrix\+Steps@{get\+Matrix\+Steps}}
+\index{get\+Matrix\+Steps@{get\+Matrix\+Steps}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Matrix\+Steps() const }{getMatrixSteps() const }}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Task}$>$ rdf\+::\+Forest\+Manager\+::get\+Matrix\+Steps (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_a6ff0f37f87dab897d449aa453e559926}{}\label{classrdf_1_1ForestManager_a6ff0f37f87dab897d449aa453e559926}
+
+\begin{DoxyCode}
+60                                                 \{
+61                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps};
+62             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!get\+Next\+Task@{get\+Next\+Task}}
+\index{get\+Next\+Task@{get\+Next\+Task}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Next\+Task()}{getNextTask()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rdf\+::\+Task} \& rdf\+::\+Forest\+Manager\+::get\+Next\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ForestManager_a7531fb627d10ebcf471237449864317e}{}\label{classrdf_1_1ForestManager_a7531fb627d10ebcf471237449864317e}
+
+
+References \+\_\+matrix\+Steps.
+
+
+\begin{DoxyCode}
+46                                         \{
+47     std::cout << \textcolor{stringliteral}{"Queue Size: "} << \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps}.size()<< \textcolor{stringliteral}{"\(\backslash\)n"};
+48     \hyperlink{classrdf_1_1Task}{rdf::Task} &test = \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps}[0];
+49     \textcolor{comment}{//\_matrixSteps.erase(\_matrixSteps.begin());}
+50     \textcolor{keywordflow}{return} test;
+51 \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Result() const }{getResult() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf rdf\+::\+Task} rdf\+::\+Forest\+Manager\+::get\+Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_a6de8eeda582a53feee2127d1bf71b975}{}\label{classrdf_1_1ForestManager_a6de8eeda582a53feee2127d1bf71b975}
+
+\begin{DoxyCode}
+69                                       \{
+70                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1ForestManager_ae2ba9a9f403d88f6343cf374d69f8a17}{\_result};
+71             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!get\+Result\+Map@{get\+Result\+Map}}
+\index{get\+Result\+Map@{get\+Result\+Map}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Result\+Map() const }{getResultMap() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<${\bf Task}, {\bf rdf\+::\+Node\+Result}$>$ rdf\+::\+Forest\+Manager\+::get\+Result\+Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_aaacb6fcbb2b7a71f017fa49e4b0f813c}{}\label{classrdf_1_1ForestManager_aaacb6fcbb2b7a71f017fa49e4b0f813c}
+
+\begin{DoxyCode}
+52                                                              \{
+53                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\_resultMap};
+54             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!get\+Results@{get\+Results}}
+\index{get\+Results@{get\+Results}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Results() const }{getResults() const }}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<${\bf rdf\+::\+Node\+Result}$>$ $>$ rdf\+::\+Forest\+Manager\+::get\+Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_a009d3210babe33268dcf5e5698cfaeca}{}\label{classrdf_1_1ForestManager_a009d3210babe33268dcf5e5698cfaeca}
+
+\begin{DoxyCode}
+75                                                               \{
+76                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1ForestManager_a818d29de52bed7f09084c71d687ddd4f}{\_results};
+77             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!initialize\+Forest@{initialize\+Forest}}
+\index{initialize\+Forest@{initialize\+Forest}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{initialize\+Forest()}{initializeForest()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Forest\+Manager\+::initialize\+Forest (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ForestManager_abfc6d077d99b06b8d135d114f477ad5f}{}\label{classrdf_1_1ForestManager_abfc6d077d99b06b8d135d114f477ad5f}
+
+
+References \+\_\+matrix\+Steps, \+\_\+result\+Map, rdf\+::\+Task\+::set\+Node(), rdf\+::\+Task\+::set\+Rank(), rdf\+::\+Task\+::set\+Status(), rdf\+::\+Task\+::set\+Tree(), and T\+R\+E\+E\+\_\+\+A\+M\+O\+U\+NT.
+
+
+\begin{DoxyCode}
+26                                         \{
+27     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \hyperlink{Config_8h_a534cdc6cb39fa1f6fc95a92491cab5fb}{TREE\_AMOUNT}; i++)\{
+28         \hyperlink{classrdf_1_1Task}{rdf::Task} newTask;
+29         newTask.\hyperlink{classrdf_1_1Task_aa55d27b31ed812e31e21fa5676208f1b}{setRank}(0);
+30         newTask.\hyperlink{classrdf_1_1Task_ad7948910883a02524a0975d47c1827a7}{setTree}(i);
+31         newTask.\hyperlink{classrdf_1_1Task_aa7667e08b39f5b6cae63aa0abeb4c412}{setNode}(1);
+32         newTask.\hyperlink{classrdf_1_1Task_af030aac32a3943f2cd0fb22c8e964071}{setStatus}(\textcolor{keyword}{false}); 
+33         \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps}.push\_back(newTask);
+34         \hyperlink{classrdf_1_1NodeResult}{rdf::NodeResult} \hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node}; 
+35         \hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\_resultMap}.insert(std::make\_pair(newTask,node));
+36     \} 
+37 \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!is\+Status@{is\+Status}}
+\index{is\+Status@{is\+Status}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{is\+Status() const }{isStatus() const }}]{\setlength{\rightskip}{0pt plus 5cm}bool rdf\+::\+Forest\+Manager\+::is\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_a90ec517ef47983b2d8998a8eafe46ecc}{}\label{classrdf_1_1ForestManager_a90ec517ef47983b2d8998a8eafe46ecc}
+
+\begin{DoxyCode}
+83                                   \{
+84                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1ForestManager_a8aa48a6543d83bf43be3b0bc8a8ab253}{\_status};
+85             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!set\+Matrix\+Steps@{set\+Matrix\+Steps}}
+\index{set\+Matrix\+Steps@{set\+Matrix\+Steps}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Matrix\+Steps(vector$<$ rdf\+::\+Task $>$ \+\_\+matrix\+Steps)}{setMatrixSteps(vector< rdf::Task > _matrixSteps)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Forest\+Manager\+::set\+Matrix\+Steps (
+\begin{DoxyParamCaption}
+\item[{vector$<$ {\bf rdf\+::\+Task} $>$}]{\+\_\+matrix\+Steps}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_a99315a804dfb3d3a70f0163eb9a245d8}{}\label{classrdf_1_1ForestManager_a99315a804dfb3d3a70f0163eb9a245d8}
+
+\begin{DoxyCode}
+64                                                               \{
+65                 this->\hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps} = \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps};
+66             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!set\+Result@{set\+Result}}
+\index{set\+Result@{set\+Result}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Result(rdf\+::\+Task \+\_\+result)}{setResult(rdf::Task _result)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Forest\+Manager\+::set\+Result (
+\begin{DoxyParamCaption}
+\item[{{\bf rdf\+::\+Task}}]{\+\_\+result}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_af54eefeab5a70439d23ebf43fc549e6d}{}\label{classrdf_1_1ForestManager_af54eefeab5a70439d23ebf43fc549e6d}
+
+\begin{DoxyCode}
+72                                             \{
+73                 this->\_result = \hyperlink{classrdf_1_1ForestManager_ae2ba9a9f403d88f6343cf374d69f8a17}{\_result};
+74             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!set\+Result\+Map@{set\+Result\+Map}}
+\index{set\+Result\+Map@{set\+Result\+Map}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Result\+Map(std\+::map$<$ Task, rdf\+::\+Node\+Result $>$ \+\_\+result\+Map)}{setResultMap(std::map< Task, rdf::NodeResult > _resultMap)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Forest\+Manager\+::set\+Result\+Map (
+\begin{DoxyParamCaption}
+\item[{std\+::map$<$ {\bf Task}, {\bf rdf\+::\+Node\+Result} $>$}]{\+\_\+result\+Map}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_ab88e04c863d4b6565670a65fe5b06435}{}\label{classrdf_1_1ForestManager_ab88e04c863d4b6565670a65fe5b06435}
+
+\begin{DoxyCode}
+56                                                                       \{
+57                 this->\hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\_resultMap} = \hyperlink{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{\_resultMap};
+58             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!set\+Results@{set\+Results}}
+\index{set\+Results@{set\+Results}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Results(vector$<$ vector$<$ rdf\+::\+Node\+Result $>$ $>$ \+\_\+results)}{setResults(vector< vector< rdf::NodeResult > > _results)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Forest\+Manager\+::set\+Results (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector$<$ {\bf rdf\+::\+Node\+Result} $>$ $>$}]{\+\_\+results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_a2e03f8ee1756620a2f528c28be13009b}{}\label{classrdf_1_1ForestManager_a2e03f8ee1756620a2f528c28be13009b}
+
+\begin{DoxyCode}
+79                                                                      \{
+80                 this->\hyperlink{classrdf_1_1ForestManager_a818d29de52bed7f09084c71d687ddd4f}{\_results} = \hyperlink{classrdf_1_1ForestManager_a818d29de52bed7f09084c71d687ddd4f}{\_results};
+81             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!set\+Status@{set\+Status}}
+\index{set\+Status@{set\+Status}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Status(bool \+\_\+status)}{setStatus(bool _status)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Forest\+Manager\+::set\+Status (
+\begin{DoxyParamCaption}
+\item[{bool}]{\+\_\+status}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ForestManager_af141b0f89158084ff1e777141dae69f2}{}\label{classrdf_1_1ForestManager_af141b0f89158084ff1e777141dae69f2}
+
+\begin{DoxyCode}
+87                                          \{
+88                 this->\hyperlink{classrdf_1_1ForestManager_a8aa48a6543d83bf43be3b0bc8a8ab253}{\_status} = \hyperlink{classrdf_1_1ForestManager_a8aa48a6543d83bf43be3b0bc8a8ab253}{\_status};
+89             \}
+\end{DoxyCode}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!show\+Queue@{show\+Queue}}
+\index{show\+Queue@{show\+Queue}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{show\+Queue()}{showQueue()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Forest\+Manager\+::show\+Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ForestManager_af8975e5a2ea89cf3477241ebf7915ebe}{}\label{classrdf_1_1ForestManager_af8975e5a2ea89cf3477241ebf7915ebe}
+
+
+References \+\_\+matrix\+Steps, and rdf\+::\+Task\+::show\+Task().
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::waiting\+Results().
+
+
+\begin{DoxyCode}
+39                                  \{
+40     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0; i<\hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps}.size(); i++)\{
+41         \hyperlink{classrdf_1_1Task}{rdf::Task} temp = \hyperlink{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{\_matrixSteps}[i];
+42         temp.\hyperlink{classrdf_1_1Task_aed5f96455f9684078a5fa8fce849d197}{showTask}();
+43     \}
+44 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!\+\_\+matrix\+Steps@{\+\_\+matrix\+Steps}}
+\index{\+\_\+matrix\+Steps@{\+\_\+matrix\+Steps}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+matrix\+Steps}{_matrixSteps}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf rdf\+::\+Task}$>$ rdf\+::\+Forest\+Manager\+::\+\_\+matrix\+Steps\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}{}\label{classrdf_1_1ForestManager_a34fac652fc47cf8af5f7b292219d85ed}
+
+
+Referenced by add\+Resuld(), get\+Next\+Task(), initialize\+Forest(), and show\+Queue().
+
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!\+\_\+result@{\+\_\+result}}
+\index{\+\_\+result@{\+\_\+result}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+result}{_result}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Task} rdf\+::\+Forest\+Manager\+::\+\_\+result\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1ForestManager_ae2ba9a9f403d88f6343cf374d69f8a17}{}\label{classrdf_1_1ForestManager_ae2ba9a9f403d88f6343cf374d69f8a17}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!\+\_\+result\+Map@{\+\_\+result\+Map}}
+\index{\+\_\+result\+Map@{\+\_\+result\+Map}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+result\+Map}{_resultMap}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::map$<${\bf Task},{\bf rdf\+::\+Node\+Result}$>$ rdf\+::\+Forest\+Manager\+::\+\_\+result\+Map\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}{}\label{classrdf_1_1ForestManager_ad764e01a338ea42ad8b2eaf360971875}
+
+
+Referenced by add\+Resuld(), and initialize\+Forest().
+
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!\+\_\+results@{\+\_\+results}}
+\index{\+\_\+results@{\+\_\+results}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+results}{_results}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<${\bf rdf\+::\+Node\+Result}$>$ $>$ rdf\+::\+Forest\+Manager\+::\+\_\+results\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1ForestManager_a818d29de52bed7f09084c71d687ddd4f}{}\label{classrdf_1_1ForestManager_a818d29de52bed7f09084c71d687ddd4f}
+\index{rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}!\+\_\+status@{\+\_\+status}}
+\index{\+\_\+status@{\+\_\+status}!rdf\+::\+Forest\+Manager@{rdf\+::\+Forest\+Manager}}
+\subsubsection[{\texorpdfstring{\+\_\+status}{_status}}]{\setlength{\rightskip}{0pt plus 5cm}bool rdf\+::\+Forest\+Manager\+::\+\_\+status\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1ForestManager_a8aa48a6543d83bf43be3b0bc8a8ab253}{}\label{classrdf_1_1ForestManager_a8aa48a6543d83bf43be3b0bc8a8ab253}
+
+
+Referenced by Forest\+Manager().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ForestManager_8h}{Forest\+Manager.\+h}\item 
+\hyperlink{ForestManager_8cpp}{Forest\+Manager.\+cpp}\end{DoxyCompactItemize}

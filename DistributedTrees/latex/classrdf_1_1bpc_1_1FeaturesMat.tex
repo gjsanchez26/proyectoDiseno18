@@ -1,0 +1,494 @@
+\hypertarget{classrdf_1_1bpc_1_1FeaturesMat}{}\section{rdf\+:\+:bpc\+:\+:Features\+Mat Class Reference}
+\label{classrdf_1_1bpc_1_1FeaturesMat}\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+
+
+{\ttfamily \#include $<$Features\+Mat.\+h$>$}
+
+
+
+Collaboration diagram for rdf\+:\+:bpc\+:\+:Features\+Mat\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{classrdf_1_1bpc_1_1FeaturesMat__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a97d121d34349bf2c59b94c2048cf8543}{Features\+Mat} ()
+\item 
+\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_abc3e95ccbc49b66cd506496985ca8fb0}{Features\+Mat} (const \hyperlink{classrdf_1_1bpc_1_1FeaturesMat}{Features\+Mat} \&orig)
+\item 
+\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a4656343c72c85949ef2e13d01f4b0bbf}{Features\+Mat} (int fn, float fh, float fl, int tn, float th, float tl)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a14292e637f99011c2f519f938acf89c6}{Set\+Matrix\+Size} (int x, int y)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a4d975d667769356abb6ef91a379fbe38}{Set\+Num\+Thresholds} (int)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_abb8b176b7082837f435b66e79802114d}{Set\+Num\+Features} (int)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a03f0951ab28c3f8056eafb5c76412519}{Set\+Thresholds\+Num\+Range} (float high, float low)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a46e93bc1f4714aa57bee42d7e1da35fd}{Set\+Features\+Num\+Range} (float high, float low)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aafcb6a653e6f4e161ca91b22710ff226}{Generate\+Vectors} ()
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a1c8094aad67feee40dfb71d325310e98}{Print} ()
+\item 
+virtual \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a5e01733c2446354d4dea3b149d74ce2a}{$\sim$\+Features\+Mat} ()
+\item 
+float \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a254007ddad6b1c1f1f91582b69a1957c}{Get\+Threshold\+At} (int x)
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Features}{Features} \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a98330606d445ea0a8733ee308756e42f}{Get\+Features\+At} (int x)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a58963a1543309ade81bb5aeaf2508e14}{Generate\+Thresholds\+Vector} ()
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a53eb814797bbd35eedc0d98cedcb4952}{Generate\+Features\+Vector} ()
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_ad1dcd821565ad3a3dea0dd5953e6f678}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\+\_\+}
+\item 
+std\+::vector$<$ \hyperlink{classrdf_1_1bpc_1_1Features}{Features} $>$ \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\+\_\+}
+\item 
+int \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{num\+Features\+\_\+}
+\item 
+int \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{num\+Thresholds\+\_\+}
+\item 
+float \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a9b44bbd98c5850168c4c33054d6e5ed2}{thresholds\+Low\+Range\+\_\+}
+\item 
+float \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a0458cdc2eafc76455938ab3d54fcb762}{thresholds\+High\+Range\+\_\+}
+\item 
+float \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a77e4d847ce04f626964fe361d7bee1a5}{features\+Low\+Range\+\_\+}
+\item 
+float \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a3c6a55c571fac002562a59b67f681719}{features\+High\+Range\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::mt19937 \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_ae4222f4a5e1a75b6bacd6f03108a2095}{mt\+\_\+} = \hyperlink{FeaturesMat_8cpp_a0c2f708dd4e06898c274c468e8f281c2}{Initialize\+Random\+Device}()
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\class \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a6216d6f816a4e3b1567b5b11487815d8}{Matrix}
+\item 
+class \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Features\+Mat@{Features\+Mat}}
+\index{Features\+Mat@{Features\+Mat}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Features\+Mat()}{FeaturesMat()}}]{\setlength{\rightskip}{0pt plus 5cm}Features\+Mat\+::\+Features\+Mat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a97d121d34349bf2c59b94c2048cf8543}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a97d121d34349bf2c59b94c2048cf8543}
+
+\begin{DoxyCode}
+30                          \{
+31   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a9b44bbd98c5850168c4c33054d6e5ed2}{thresholdsLowRange\_} = 0;
+32   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a0458cdc2eafc76455938ab3d54fcb762}{thresholdsHighRange\_} = 0;
+33   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a77e4d847ce04f626964fe361d7bee1a5}{featuresLowRange\_} = 0;
+34   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a3c6a55c571fac002562a59b67f681719}{featuresHighRange\_} = 0;
+35   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{numFeatures\_} = 0;
+36   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{numThresholds\_} = 0;
+37 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Features\+Mat@{Features\+Mat}}
+\index{Features\+Mat@{Features\+Mat}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Features\+Mat(const Features\+Mat \&orig)}{FeaturesMat(const FeaturesMat &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Features\+Mat\+::\+Features\+Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Features\+Mat} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_abc3e95ccbc49b66cd506496985ca8fb0}{}\label{classrdf_1_1bpc_1_1FeaturesMat_abc3e95ccbc49b66cd506496985ca8fb0}
+
+
+References features\+\_\+, num\+Features\+\_\+, num\+Thresholds\+\_\+, and thresholds\+\_\+.
+
+
+\begin{DoxyCode}
+47                                                 \{
+48   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a14292e637f99011c2f519f938acf89c6}{SetMatrixSize}( orig.\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{numFeatures\_}, orig.\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{numThresholds\_});
+49   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\_} =  orig.\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\_};
+50   \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\_}=  orig.\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\_};
+51 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Features\+Mat@{Features\+Mat}}
+\index{Features\+Mat@{Features\+Mat}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Features\+Mat(int fn, float fh, float fl, int tn, float th, float tl)}{FeaturesMat(int fn, float fh, float fl, int tn, float th, float tl)}}]{\setlength{\rightskip}{0pt plus 5cm}Features\+Mat\+::\+Features\+Mat (
+\begin{DoxyParamCaption}
+\item[{int}]{fn, }
+\item[{float}]{fh, }
+\item[{float}]{fl, }
+\item[{int}]{tn, }
+\item[{float}]{th, }
+\item[{float}]{tl}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a4656343c72c85949ef2e13d01f4b0bbf}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a4656343c72c85949ef2e13d01f4b0bbf}
+
+\begin{DoxyCode}
+40                                                                                          \{
+41 
+42     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a14292e637f99011c2f519f938acf89c6}{SetMatrixSize}(numFeatures, numThresholds);
+43     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a03f0951ab28c3f8056eafb5c76412519}{SetThresholdsNumRange}(thresholdsHigh,thresholdsLow);
+44     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a46e93bc1f4714aa57bee42d7e1da35fd}{SetFeaturesNumRange}(featuresHigh, featuresLow);
+45 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!````~Features\+Mat@{$\sim$\+Features\+Mat}}
+\index{````~Features\+Mat@{$\sim$\+Features\+Mat}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{$\sim$\+Features\+Mat()}{~FeaturesMat()}}]{\setlength{\rightskip}{0pt plus 5cm}Features\+Mat\+::$\sim$\+Features\+Mat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a5e01733c2446354d4dea3b149d74ce2a}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a5e01733c2446354d4dea3b149d74ce2a}
+
+\begin{DoxyCode}
+53                           \{
+54 
+55 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Generate\+Features\+Vector@{Generate\+Features\+Vector}}
+\index{Generate\+Features\+Vector@{Generate\+Features\+Vector}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Generate\+Features\+Vector()}{GenerateFeaturesVector()}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Generate\+Features\+Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a53eb814797bbd35eedc0d98cedcb4952}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a53eb814797bbd35eedc0d98cedcb4952}
+
+
+References rdf\+::bpc\+::\+Features\+::\+Set\+Feature1(), and rdf\+::bpc\+::\+Features\+::\+Set\+Feature2().
+
+
+\begin{DoxyCode}
+93                                          \{
+94     \textcolor{keywordtype}{float} randomFeature1X, randomFeature1Y, randomFeature2X, randomFeature2Y;
+95     \hyperlink{classrdf_1_1bpc_1_1Features}{Features} myFeature;
+96     std::uniform\_real\_distribution<float> features\_dist(\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a77e4d847ce04f626964fe361d7bee1a5}{featuresLowRange\_}, 
+      \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a3c6a55c571fac002562a59b67f681719}{featuresHighRange\_});
+97     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{numFeatures\_}; i++) \{
+98         randomFeature1X = features\_dist(\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_ae4222f4a5e1a75b6bacd6f03108a2095}{mt\_});
+99         randomFeature1Y = features\_dist(\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_ae4222f4a5e1a75b6bacd6f03108a2095}{mt\_});
+100         randomFeature2X = features\_dist(\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_ae4222f4a5e1a75b6bacd6f03108a2095}{mt\_});
+101         randomFeature2Y = features\_dist(\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_ae4222f4a5e1a75b6bacd6f03108a2095}{mt\_});
+102         myFeature.\hyperlink{classrdf_1_1bpc_1_1Features_add4c2edfb1f05b59662e9f2ebafafdd2}{SetFeature1}(randomFeature1X, randomFeature1Y);
+103         myFeature.\hyperlink{classrdf_1_1bpc_1_1Features_a0091e0dd9ba651e146a12562e8ecaa0e}{SetFeature2}(randomFeature2X, randomFeature2Y);
+104         \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\_}[i] = myFeature;
+105     \}
+106 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Generate\+Thresholds\+Vector@{Generate\+Thresholds\+Vector}}
+\index{Generate\+Thresholds\+Vector@{Generate\+Thresholds\+Vector}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Generate\+Thresholds\+Vector()}{GenerateThresholdsVector()}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Generate\+Thresholds\+Vector (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a58963a1543309ade81bb5aeaf2508e14}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a58963a1543309ade81bb5aeaf2508e14}
+
+\begin{DoxyCode}
+84                                            \{
+85     \textcolor{keywordtype}{float} randomThreshold;
+86     std::uniform\_real\_distribution<float> threshold\_dist(\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a9b44bbd98c5850168c4c33054d6e5ed2}{thresholdsLowRange\_}, 
+      \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a0458cdc2eafc76455938ab3d54fcb762}{thresholdsHighRange\_});
+87     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{numThresholds\_}; i++) \{
+88         randomThreshold = threshold\_dist(\hyperlink{classrdf_1_1bpc_1_1FeaturesMat_ae4222f4a5e1a75b6bacd6f03108a2095}{mt\_});
+89         \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\_}[i] = randomThreshold;
+90     \}
+91 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Generate\+Vectors@{Generate\+Vectors}}
+\index{Generate\+Vectors@{Generate\+Vectors}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Generate\+Vectors()}{GenerateVectors()}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Generate\+Vectors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_aafcb6a653e6f4e161ca91b22710ff226}{}\label{classrdf_1_1bpc_1_1FeaturesMat_aafcb6a653e6f4e161ca91b22710ff226}
+
+
+Referenced by rdf\+::\+Task\+::\+Task().
+
+
+\begin{DoxyCode}
+108                                   \{
+109     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a58963a1543309ade81bb5aeaf2508e14}{GenerateThresholdsVector}();
+110     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a53eb814797bbd35eedc0d98cedcb4952}{GenerateFeaturesVector}();
+111 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Get\+Features\+At@{Get\+Features\+At}}
+\index{Get\+Features\+At@{Get\+Features\+At}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Get\+Features\+At(int x)}{GetFeaturesAt(int x)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Features} rdf\+::bpc\+::\+Features\+Mat\+::\+Get\+Features\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a98330606d445ea0a8733ee308756e42f}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a98330606d445ea0a8733ee308756e42f}
+
+
+References features\+\_\+.
+
+
+
+Referenced by rdf\+::\+Node\+Result\+::reduce().
+
+
+\begin{DoxyCode}
+70                                           \{
+71         \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\_}[x];
+72       \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Get\+Threshold\+At@{Get\+Threshold\+At}}
+\index{Get\+Threshold\+At@{Get\+Threshold\+At}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Get\+Threshold\+At(int x)}{GetThresholdAt(int x)}}]{\setlength{\rightskip}{0pt plus 5cm}float rdf\+::bpc\+::\+Features\+Mat\+::\+Get\+Threshold\+At (
+\begin{DoxyParamCaption}
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a254007ddad6b1c1f1f91582b69a1957c}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a254007ddad6b1c1f1f91582b69a1957c}
+
+
+References thresholds\+\_\+.
+
+
+
+Referenced by rdf\+::\+Node\+Result\+::reduce().
+
+
+\begin{DoxyCode}
+67                                         \{
+68         \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\_}[x];
+69       \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Print@{Print}}
+\index{Print@{Print}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Print()}{Print()}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a1c8094aad67feee40dfb71d325310e98}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a1c8094aad67feee40dfb71d325310e98}
+
+
+References rdf\+::bpc\+::\+Features\+::\+Get\+Feature1(), and rdf\+::bpc\+::\+Features\+::\+Get\+Feature2().
+
+
+\begin{DoxyCode}
+113                         \{
+114     \textcolor{keywordtype}{float} randomThreshold, randomFeature1X, randomFeature1Y, randomFeature2X, randomFeature2Y;
+115     \hyperlink{classrdf_1_1bpc_1_1Features}{Features} feat;
+116     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{numFeatures\_}; i++) \{
+117         feat = \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\_}[i];
+118         randomFeature1X = feat.\hyperlink{classrdf_1_1bpc_1_1Features_a2e893eccf388415169cd08b45d9d1964}{GetFeature1}().x;
+119         randomFeature1Y = feat.\hyperlink{classrdf_1_1bpc_1_1Features_a2e893eccf388415169cd08b45d9d1964}{GetFeature1}().y;
+120         randomFeature2X = feat.\hyperlink{classrdf_1_1bpc_1_1Features_a4a9aae0520825d9f9bee370449632522}{GetFeature2}().x;
+121         randomFeature2Y = feat.\hyperlink{classrdf_1_1bpc_1_1Features_a4a9aae0520825d9f9bee370449632522}{GetFeature2}().y;
+122         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{numThresholds\_}; j++) \{
+123             randomThreshold = \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\_}[j];
+124             cout << \textcolor{stringliteral}{"["} << i << \textcolor{stringliteral}{"]["} << j << \textcolor{stringliteral}{"]: T="} << randomThreshold
+125                     << \textcolor{stringliteral}{"\(\backslash\)tF1X="} << randomFeature1X << \textcolor{stringliteral}{"\(\backslash\)tF1Y="} << randomFeature1Y
+126                     << \textcolor{stringliteral}{"\(\backslash\)tF2X="} << randomFeature2X << \textcolor{stringliteral}{"\(\backslash\)tF2Y="} << randomFeature2Y << \textcolor{stringliteral}{"\(\backslash\)n"};
+127         \}
+128     \}
+129 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!serialize@{serialize}}
+\index{serialize@{serialize}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{serialize(\+Archive \&ar, const unsigned int version)}{serialize(Archive &ar, const unsigned int version)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void rdf\+::bpc\+::\+Features\+Mat\+::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_ad1dcd821565ad3a3dea0dd5953e6f678}{}\label{classrdf_1_1bpc_1_1FeaturesMat_ad1dcd821565ad3a3dea0dd5953e6f678}
+
+
+References features\+\_\+, features\+High\+Range\+\_\+, features\+Low\+Range\+\_\+, num\+Features\+\_\+, num\+Thresholds\+\_\+, thresholds\+\_\+, thresholds\+High\+Range\+\_\+, and thresholds\+Low\+Range\+\_\+.
+
+
+\begin{DoxyCode}
+81       \{
+82         ar & \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\_};
+83         ar & \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\_};
+84         ar & \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{numFeatures\_};
+85         ar & \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{numThresholds\_};
+86         ar & \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a9b44bbd98c5850168c4c33054d6e5ed2}{thresholdsLowRange\_};
+87         ar & \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a0458cdc2eafc76455938ab3d54fcb762}{thresholdsHighRange\_};
+88         ar & \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a77e4d847ce04f626964fe361d7bee1a5}{featuresLowRange\_};
+89         ar & \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a3c6a55c571fac002562a59b67f681719}{featuresHighRange\_};
+90       \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Set\+Features\+Num\+Range@{Set\+Features\+Num\+Range}}
+\index{Set\+Features\+Num\+Range@{Set\+Features\+Num\+Range}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Set\+Features\+Num\+Range(float high, float low)}{SetFeaturesNumRange(float high, float low)}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Set\+Features\+Num\+Range (
+\begin{DoxyParamCaption}
+\item[{float}]{high, }
+\item[{float}]{low}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a46e93bc1f4714aa57bee42d7e1da35fd}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a46e93bc1f4714aa57bee42d7e1da35fd}
+
+
+Referenced by rdf\+::\+Task\+::\+Task().
+
+
+\begin{DoxyCode}
+79                                                            \{
+80     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a77e4d847ce04f626964fe361d7bee1a5}{featuresLowRange\_} = low;
+81     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a3c6a55c571fac002562a59b67f681719}{featuresHighRange\_} = high;
+82 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Set\+Matrix\+Size@{Set\+Matrix\+Size}}
+\index{Set\+Matrix\+Size@{Set\+Matrix\+Size}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Set\+Matrix\+Size(int x, int y)}{SetMatrixSize(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Set\+Matrix\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a14292e637f99011c2f519f938acf89c6}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a14292e637f99011c2f519f938acf89c6}
+
+
+Referenced by rdf\+::\+Task\+::\+Task().
+
+
+\begin{DoxyCode}
+57                                             \{
+58     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{numFeatures\_} = x; \textcolor{comment}{//Matrix ROWS}
+59     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{numThresholds\_} = y; \textcolor{comment}{//Matrix COLS}
+60     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\_}.resize(x);
+61     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\_}.resize(y);
+62 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Set\+Num\+Features@{Set\+Num\+Features}}
+\index{Set\+Num\+Features@{Set\+Num\+Features}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Set\+Num\+Features(int)}{SetNumFeatures(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Set\+Num\+Features (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_abb8b176b7082837f435b66e79802114d}{}\label{classrdf_1_1bpc_1_1FeaturesMat_abb8b176b7082837f435b66e79802114d}
+
+\begin{DoxyCode}
+69                                       \{
+70     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{numFeatures\_} = n;
+71     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{features\_}.resize(n);
+72 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Set\+Num\+Thresholds@{Set\+Num\+Thresholds}}
+\index{Set\+Num\+Thresholds@{Set\+Num\+Thresholds}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Set\+Num\+Thresholds(int)}{SetNumThresholds(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Set\+Num\+Thresholds (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a4d975d667769356abb6ef91a379fbe38}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a4d975d667769356abb6ef91a379fbe38}
+
+\begin{DoxyCode}
+64                                         \{
+65     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{numThresholds\_} = n;
+66     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{thresholds\_}.resize(n);
+67 \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Set\+Thresholds\+Num\+Range@{Set\+Thresholds\+Num\+Range}}
+\index{Set\+Thresholds\+Num\+Range@{Set\+Thresholds\+Num\+Range}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Set\+Thresholds\+Num\+Range(float high, float low)}{SetThresholdsNumRange(float high, float low)}}]{\setlength{\rightskip}{0pt plus 5cm}void Features\+Mat\+::\+Set\+Thresholds\+Num\+Range (
+\begin{DoxyParamCaption}
+\item[{float}]{high, }
+\item[{float}]{low}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a03f0951ab28c3f8056eafb5c76412519}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a03f0951ab28c3f8056eafb5c76412519}
+
+
+Referenced by rdf\+::\+Task\+::\+Task().
+
+
+\begin{DoxyCode}
+74                                                              \{
+75     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a9b44bbd98c5850168c4c33054d6e5ed2}{thresholdsLowRange\_} = low;
+76     \hyperlink{classrdf_1_1bpc_1_1FeaturesMat_a0458cdc2eafc76455938ab3d54fcb762}{thresholdsHighRange\_} = high;
+77 \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!boost\+::serialization\+::access@{boost\+::serialization\+::access}}
+\index{boost\+::serialization\+::access@{boost\+::serialization\+::access}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{boost\+::serialization\+::access}{boost::serialization::access}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_ac98d07dd8f7b70e16ccb9a01abf56b9c}{}\label{classrdf_1_1bpc_1_1FeaturesMat_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{Matrix}{Matrix}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ friend class {\bf Matrix}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a6216d6f816a4e3b1567b5b11487815d8}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a6216d6f816a4e3b1567b5b11487815d8}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!features\+\_\+@{features\+\_\+}}
+\index{features\+\_\+@{features\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{features\+\_\+}{features_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Features}$>$ rdf\+::bpc\+::\+Features\+Mat\+::features\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a476cd5bf74e3808ea56e585db0083ceb}
+
+
+Referenced by Features\+Mat(), Get\+Features\+At(), and serialize().
+
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!features\+High\+Range\+\_\+@{features\+High\+Range\+\_\+}}
+\index{features\+High\+Range\+\_\+@{features\+High\+Range\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{features\+High\+Range\+\_\+}{featuresHighRange_}}]{\setlength{\rightskip}{0pt plus 5cm}float rdf\+::bpc\+::\+Features\+Mat\+::features\+High\+Range\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a3c6a55c571fac002562a59b67f681719}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a3c6a55c571fac002562a59b67f681719}
+
+
+Referenced by serialize().
+
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!features\+Low\+Range\+\_\+@{features\+Low\+Range\+\_\+}}
+\index{features\+Low\+Range\+\_\+@{features\+Low\+Range\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{features\+Low\+Range\+\_\+}{featuresLowRange_}}]{\setlength{\rightskip}{0pt plus 5cm}float rdf\+::bpc\+::\+Features\+Mat\+::features\+Low\+Range\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a77e4d847ce04f626964fe361d7bee1a5}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a77e4d847ce04f626964fe361d7bee1a5}
+
+
+Referenced by serialize().
+
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!mt\+\_\+@{mt\+\_\+}}
+\index{mt\+\_\+@{mt\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{mt\+\_\+}{mt_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mt19937 Features\+Mat\+::mt\+\_\+ = {\bf Initialize\+Random\+Device}()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_ae4222f4a5e1a75b6bacd6f03108a2095}{}\label{classrdf_1_1bpc_1_1FeaturesMat_ae4222f4a5e1a75b6bacd6f03108a2095}
+
+
+Referenced by Initialize\+Random\+Device().
+
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!num\+Features\+\_\+@{num\+Features\+\_\+}}
+\index{num\+Features\+\_\+@{num\+Features\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{num\+Features\+\_\+}{numFeatures_}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::bpc\+::\+Features\+Mat\+::num\+Features\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}{}\label{classrdf_1_1bpc_1_1FeaturesMat_acc84dd8b048451bbe7be60dce7c3417c}
+
+
+Referenced by Features\+Mat(), and serialize().
+
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!num\+Thresholds\+\_\+@{num\+Thresholds\+\_\+}}
+\index{num\+Thresholds\+\_\+@{num\+Thresholds\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{num\+Thresholds\+\_\+}{numThresholds_}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::bpc\+::\+Features\+Mat\+::num\+Thresholds\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}{}\label{classrdf_1_1bpc_1_1FeaturesMat_aeb9a1a867455c3bb26292ff63fe6aada}
+
+
+Referenced by Features\+Mat(), and serialize().
+
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!thresholds\+\_\+@{thresholds\+\_\+}}
+\index{thresholds\+\_\+@{thresholds\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{thresholds\+\_\+}{thresholds_}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ rdf\+::bpc\+::\+Features\+Mat\+::thresholds\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}{}\label{classrdf_1_1bpc_1_1FeaturesMat_af78d3fa0ca76bc3ec1102772fcbac819}
+
+
+Referenced by Features\+Mat(), Get\+Threshold\+At(), and serialize().
+
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!thresholds\+High\+Range\+\_\+@{thresholds\+High\+Range\+\_\+}}
+\index{thresholds\+High\+Range\+\_\+@{thresholds\+High\+Range\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{thresholds\+High\+Range\+\_\+}{thresholdsHighRange_}}]{\setlength{\rightskip}{0pt plus 5cm}float rdf\+::bpc\+::\+Features\+Mat\+::thresholds\+High\+Range\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a0458cdc2eafc76455938ab3d54fcb762}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a0458cdc2eafc76455938ab3d54fcb762}
+
+
+Referenced by serialize().
+
+\index{rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}!thresholds\+Low\+Range\+\_\+@{thresholds\+Low\+Range\+\_\+}}
+\index{thresholds\+Low\+Range\+\_\+@{thresholds\+Low\+Range\+\_\+}!rdf\+::bpc\+::\+Features\+Mat@{rdf\+::bpc\+::\+Features\+Mat}}
+\subsubsection[{\texorpdfstring{thresholds\+Low\+Range\+\_\+}{thresholdsLowRange_}}]{\setlength{\rightskip}{0pt plus 5cm}float rdf\+::bpc\+::\+Features\+Mat\+::thresholds\+Low\+Range\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1FeaturesMat_a9b44bbd98c5850168c4c33054d6e5ed2}{}\label{classrdf_1_1bpc_1_1FeaturesMat_a9b44bbd98c5850168c4c33054d6e5ed2}
+
+
+Referenced by serialize().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{FeaturesMat_8h}{Features\+Mat.\+h}\item 
+\hyperlink{FeaturesMat_8cpp}{Features\+Mat.\+cpp}\end{DoxyCompactItemize}

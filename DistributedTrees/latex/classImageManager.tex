@@ -1,0 +1,253 @@
+\hypertarget{classImageManager}{}\section{Image\+Manager Class Reference}
+\label{classImageManager}\index{Image\+Manager@{Image\+Manager}}
+
+
+{\ttfamily \#include $<$Image\+Manager.\+h$>$}
+
+
+
+Collaboration diagram for Image\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classImageManager__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImageManager_a8c856af0e3f0d23da7c765b0e33e585e}{Image\+Manager} ()
+\item 
+\hyperlink{classImageManager_a73c9c0419074956609f94dab2aacc183}{Image\+Manager} (const \hyperlink{classImageManager}{Image\+Manager} \&orig)
+\item 
+virtual \hyperlink{classImageManager_a3cad118fdf026d379641fb6b52cd1884}{$\sim$\+Image\+Manager} ()
+\item 
+void \hyperlink{classImageManager_a8b13aa8049b1294220d58b1c4749de9b}{show\+Structure} (bool show\+Images)
+\item 
+void \hyperlink{classImageManager_a21627e8230428f3a4bf7ec99703448e6}{set\+Range} (std\+::pair$<$ int, int $>$ p\+Range)
+\item 
+void \hyperlink{classImageManager_abbec13f7f949d5ea3b34fb52bd812e68}{load\+Images} ()
+\item 
+std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ \hyperlink{classImageManager_adbdf00be4cb90cfb260cdc208612cd8c}{get\+Structure} () const 
+\item 
+void \hyperlink{classImageManager_ada142feb7f1f5e99a102ff043aacc6b7}{set\+Structure} (std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ \hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImage}{Image} \hyperlink{classImageManager_a8a66a77f0bb0dc06c2d3d064f9f1e27f}{image}
+\item 
+\hyperlink{classEstructura}{Estructura} \hyperlink{classImageManager_a9d328384bb5a1e13d0a50aefea3680cf}{estructura}
+\item 
+cv\+::\+Mat \hyperlink{classImageManager_ae096d2db43b8d7efe508ff68b987e992}{img}
+\item 
+std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ \hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure}
+\item 
+\hyperlink{structEstructura_1_1DataMaster}{Estructura\+::\+Data\+Master} \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{data\+Master}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Image\+Manager@{Image\+Manager}!Image\+Manager@{Image\+Manager}}
+\index{Image\+Manager@{Image\+Manager}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{Image\+Manager()}{ImageManager()}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Manager\+::\+Image\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageManager_a8c856af0e3f0d23da7c765b0e33e585e}{}\label{classImageManager_a8c856af0e3f0d23da7c765b0e33e585e}
+
+
+References data\+Master, Estructura\+::\+Data\+Master\+::height, Estructura\+::\+Data\+Master\+::node, Estructura\+::\+Data\+Master\+::\+Num\+Points, Estructura\+::\+Data\+Master\+::\+Num\+Tree, Estructura\+::\+Data\+Master\+::tree, Estructura\+::\+Data\+Master\+::type\+\_\+\+Algorithm, and Estructura\+::\+Data\+Master\+::width.
+
+
+\begin{DoxyCode}
+16                            \{
+17     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_ad62760f62256a3fbd88481f720b81851}{NumPoints} = 15;
+18     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_a33df1604c867e22af955f29c453d6651}{height} = 240;
+19     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_a52e88b0d0d52d7e61880e3689ef2e638}{width} = 320;
+20     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_a950938f474870649fe7eceae940366fd}{NumTree} = 3;
+21     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_a766b1b437e0f242d3626a3759bef8b43}{tree} = 0;
+22     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_a5b7bf8e1c983ad0a64dd596d1bb4e31a}{node} = 0;
+23     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_accae7ba56def5fd845b33cb8cfb384fe}{type\_Algorithm} = \textcolor{stringliteral}{"shotton"};
+24 \}
+\end{DoxyCode}
+\index{Image\+Manager@{Image\+Manager}!Image\+Manager@{Image\+Manager}}
+\index{Image\+Manager@{Image\+Manager}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{Image\+Manager(const Image\+Manager \&orig)}{ImageManager(const ImageManager &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Manager\+::\+Image\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Manager} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageManager_a73c9c0419074956609f94dab2aacc183}{}\label{classImageManager_a73c9c0419074956609f94dab2aacc183}
+
+\begin{DoxyCode}
+26                                                    \{
+27 \}
+\end{DoxyCode}
+\index{Image\+Manager@{Image\+Manager}!````~Image\+Manager@{$\sim$\+Image\+Manager}}
+\index{````~Image\+Manager@{$\sim$\+Image\+Manager}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{$\sim$\+Image\+Manager()}{~ImageManager()}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Manager\+::$\sim$\+Image\+Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classImageManager_a3cad118fdf026d379641fb6b52cd1884}{}\label{classImageManager_a3cad118fdf026d379641fb6b52cd1884}
+
+\begin{DoxyCode}
+29                             \{
+30 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Image\+Manager@{Image\+Manager}!get\+Structure@{get\+Structure}}
+\index{get\+Structure@{get\+Structure}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{get\+Structure() const }{getStructure() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Estructura\+::\+Node}$>$ Image\+Manager\+::get\+Structure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageManager_adbdf00be4cb90cfb260cdc208612cd8c}{}\label{classImageManager_adbdf00be4cb90cfb260cdc208612cd8c}
+
+
+References structure.
+
+
+\begin{DoxyCode}
+44                                                    \{
+45         \textcolor{keywordflow}{return} \hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure};
+46     \}
+\end{DoxyCode}
+\index{Image\+Manager@{Image\+Manager}!load\+Images@{load\+Images}}
+\index{load\+Images@{load\+Images}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{load\+Images()}{loadImages()}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Manager\+::load\+Images (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageManager_abbec13f7f949d5ea3b34fb52bd812e68}{}\label{classImageManager_abbec13f7f949d5ea3b34fb52bd812e68}
+
+
+References data\+Master, Image\+::get\+Structura(), image, and structure.
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Ranges().
+
+
+\begin{DoxyCode}
+37                               \{
+38     \hyperlink{classImageManager_a8a66a77f0bb0dc06c2d3d064f9f1e27f}{image}.\hyperlink{classImage_ad5ed787922c9c8aad26e1e349bdc4018}{getStructura}(\hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure}, \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster});
+39     
+40 \}
+\end{DoxyCode}
+\index{Image\+Manager@{Image\+Manager}!set\+Range@{set\+Range}}
+\index{set\+Range@{set\+Range}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Range(std\+::pair$<$ int, int $>$ p\+Range)}{setRange(std::pair< int, int > pRange)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Manager\+::set\+Range (
+\begin{DoxyParamCaption}
+\item[{std\+::pair$<$ int, int $>$}]{p\+Range}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageManager_a21627e8230428f3a4bf7ec99703448e6}{}\label{classImageManager_a21627e8230428f3a4bf7ec99703448e6}
+
+
+References data\+Master, Estructura\+::\+Data\+Master\+::end\+Read, and Estructura\+::\+Data\+Master\+::start\+Read.
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Ranges().
+
+
+\begin{DoxyCode}
+32                                                     \{
+33     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_ada49eb1401a3715858043ebd2b61c10c}{startRead} = pRange.first;
+34     \hyperlink{classImageManager_aa07e129af2fa348547c99843c0058c2b}{dataMaster}.\hyperlink{structEstructura_1_1DataMaster_a787807eccc80c8e639d2409477f37f3a}{endRead} = pRange.second;
+35 \}
+\end{DoxyCode}
+\index{Image\+Manager@{Image\+Manager}!set\+Structure@{set\+Structure}}
+\index{set\+Structure@{set\+Structure}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{set\+Structure(std\+::vector$<$ Estructura\+::\+Node $>$ structure)}{setStructure(std::vector< Estructura::Node > structure)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Manager\+::set\+Structure (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Estructura\+::\+Node} $>$}]{structure}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classImageManager_ada142feb7f1f5e99a102ff043aacc6b7}{}\label{classImageManager_ada142feb7f1f5e99a102ff043aacc6b7}
+
+
+References structure.
+
+
+\begin{DoxyCode}
+48                                                            \{
+49         this->\hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure} = \hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure};
+50     \}
+\end{DoxyCode}
+\index{Image\+Manager@{Image\+Manager}!show\+Structure@{show\+Structure}}
+\index{show\+Structure@{show\+Structure}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{show\+Structure(bool show\+Images)}{showStructure(bool showImages)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Manager\+::show\+Structure (
+\begin{DoxyParamCaption}
+\item[{bool}]{show\+Images}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageManager_a8b13aa8049b1294220d58b1c4749de9b}{}\label{classImageManager_a8b13aa8049b1294220d58b1c4749de9b}
+
+
+References estructura, img, Estructura\+::see\+Image\+Depth(), Estructura\+::see\+Image\+Label(), and structure.
+
+
+\begin{DoxyCode}
+42                                                 \{
+43     \textcolor{comment}{//desmostracion de la estructura esta bien}
+44     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure}.size(); i++) \{
+45         \hyperlink{classImageManager_ae096d2db43b8d7efe508ff68b987e992}{img} = \hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure}[i].imageLabel;  
+46         std::vector<Estructura::Pixel> pixel = \hyperlink{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{structure}[i].points; 
+47         \textcolor{keywordflow}{if}(showImages)\{
+48             \hyperlink{classImageManager_a9d328384bb5a1e13d0a50aefea3680cf}{estructura}.\hyperlink{classEstructura_a4d6f678e0c5a5f2df96b50064304eec1}{seeImageLabel}(\hyperlink{classImageManager_ae096d2db43b8d7efe508ff68b987e992}{img});
+49             \hyperlink{classImageManager_a9d328384bb5a1e13d0a50aefea3680cf}{estructura}.\hyperlink{classEstructura_a64b30b9326081ddd31ea330c4036cf5a}{seeImageDepth}(240,320,\hyperlink{classImageManager_ae096d2db43b8d7efe508ff68b987e992}{img});
+50         \}
+51         \textcolor{keywordflow}{else} \{
+52             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < pixel.size(); j++) \{
+53                 std::cout <<  pixel[j].point<< \textcolor{stringliteral}{"\(\backslash\)n"};
+54             \}
+55         \}    
+56     \}
+57 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Image\+Manager@{Image\+Manager}!data\+Master@{data\+Master}}
+\index{data\+Master@{data\+Master}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{data\+Master}{dataMaster}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Estructura\+::\+Data\+Master} Image\+Manager\+::data\+Master\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageManager_aa07e129af2fa348547c99843c0058c2b}{}\label{classImageManager_aa07e129af2fa348547c99843c0058c2b}
+
+
+Referenced by Image\+Manager(), load\+Images(), and set\+Range().
+
+\index{Image\+Manager@{Image\+Manager}!estructura@{estructura}}
+\index{estructura@{estructura}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{estructura}{estructura}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Estructura} Image\+Manager\+::estructura\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageManager_a9d328384bb5a1e13d0a50aefea3680cf}{}\label{classImageManager_a9d328384bb5a1e13d0a50aefea3680cf}
+
+
+Referenced by show\+Structure().
+
+\index{Image\+Manager@{Image\+Manager}!image@{image}}
+\index{image@{image}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{image}{image}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image} Image\+Manager\+::image\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageManager_a8a66a77f0bb0dc06c2d3d064f9f1e27f}{}\label{classImageManager_a8a66a77f0bb0dc06c2d3d064f9f1e27f}
+
+
+Referenced by load\+Images().
+
+\index{Image\+Manager@{Image\+Manager}!img@{img}}
+\index{img@{img}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{img}{img}}]{\setlength{\rightskip}{0pt plus 5cm}cv\+::\+Mat Image\+Manager\+::img\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageManager_ae096d2db43b8d7efe508ff68b987e992}{}\label{classImageManager_ae096d2db43b8d7efe508ff68b987e992}
+
+
+Referenced by show\+Structure().
+
+\index{Image\+Manager@{Image\+Manager}!structure@{structure}}
+\index{structure@{structure}!Image\+Manager@{Image\+Manager}}
+\subsubsection[{\texorpdfstring{structure}{structure}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Estructura\+::\+Node}$>$ Image\+Manager\+::structure\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}{}\label{classImageManager_a9a2da56c0a4aa3d4cdebdea45d81cca7}
+
+
+Referenced by get\+Structure(), load\+Images(), set\+Structure(), and show\+Structure().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ImageManager_8h}{Image\+Manager.\+h}\item 
+\hyperlink{ImageManager_8cpp}{Image\+Manager.\+cpp}\end{DoxyCompactItemize}

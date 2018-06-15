@@ -1,0 +1,117 @@
+\hypertarget{classLabelImage}{}\section{Label\+Image Class Reference}
+\label{classLabelImage}\index{Label\+Image@{Label\+Image}}
+
+
+{\ttfamily \#include $<$Label\+Image.\+h$>$}
+
+
+
+Inheritance diagram for Label\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classLabelImage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Label\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classLabelImage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLabelImage_a5c8a6d9f33fb50ed07ee99ee32a25cba}{Label\+Image} ()
+\item 
+\hyperlink{classLabelImage_a257be8802854738e6baf60549f0dfec1}{Label\+Image} (const \hyperlink{classLabelImage}{Label\+Image} \&orig)
+\item 
+virtual \hyperlink{classLabelImage_a280e1bb74463571c35f26bf7002420f7}{$\sim$\+Label\+Image} ()
+\item 
+virtual void \hyperlink{classLabelImage_a1adf267dcf7b64f1ef085e434edae7a0}{read\+Image} (int height, int width, std\+::string direction, cv\+::\+Mat \&image)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Label\+Image@{Label\+Image}!Label\+Image@{Label\+Image}}
+\index{Label\+Image@{Label\+Image}!Label\+Image@{Label\+Image}}
+\subsubsection[{\texorpdfstring{Label\+Image()}{LabelImage()}}]{\setlength{\rightskip}{0pt plus 5cm}Label\+Image\+::\+Label\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classLabelImage_a5c8a6d9f33fb50ed07ee99ee32a25cba}{}\label{classLabelImage_a5c8a6d9f33fb50ed07ee99ee32a25cba}
+
+\begin{DoxyCode}
+16                        \{
+17 \}
+\end{DoxyCode}
+\index{Label\+Image@{Label\+Image}!Label\+Image@{Label\+Image}}
+\index{Label\+Image@{Label\+Image}!Label\+Image@{Label\+Image}}
+\subsubsection[{\texorpdfstring{Label\+Image(const Label\+Image \&orig)}{LabelImage(const LabelImage &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Label\+Image\+::\+Label\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf Label\+Image} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classLabelImage_a257be8802854738e6baf60549f0dfec1}{}\label{classLabelImage_a257be8802854738e6baf60549f0dfec1}
+
+\begin{DoxyCode}
+19                                              \{
+20 \}
+\end{DoxyCode}
+\index{Label\+Image@{Label\+Image}!````~Label\+Image@{$\sim$\+Label\+Image}}
+\index{````~Label\+Image@{$\sim$\+Label\+Image}!Label\+Image@{Label\+Image}}
+\subsubsection[{\texorpdfstring{$\sim$\+Label\+Image()}{~LabelImage()}}]{\setlength{\rightskip}{0pt plus 5cm}Label\+Image\+::$\sim$\+Label\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classLabelImage_a280e1bb74463571c35f26bf7002420f7}{}\label{classLabelImage_a280e1bb74463571c35f26bf7002420f7}
+
+\begin{DoxyCode}
+22                         \{
+23 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Label\+Image@{Label\+Image}!read\+Image@{read\+Image}}
+\index{read\+Image@{read\+Image}!Label\+Image@{Label\+Image}}
+\subsubsection[{\texorpdfstring{read\+Image(int height, int width, std\+::string direction, cv\+::\+Mat \&image)}{readImage(int height, int width, std::string direction, cv::Mat &image)}}]{\setlength{\rightskip}{0pt plus 5cm}void Label\+Image\+::read\+Image (
+\begin{DoxyParamCaption}
+\item[{int}]{height, }
+\item[{int}]{width, }
+\item[{std\+::string}]{direction, }
+\item[{cv\+::\+Mat \&}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classLabelImage_a1adf267dcf7b64f1ef085e434edae7a0}{}\label{classLabelImage_a1adf267dcf7b64f1ef085e434edae7a0}
+Funcion para la lectura de la imagen de etiquetas. 
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+{\em image\+Label} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classStrategyImage_aee857e79df483412f66b529417ddfd44}{Strategy\+Image}.
+
+
+\begin{DoxyCode}
+30                                                                                    \{
+31     cv::Mat imageLbl(height, width, CV\_8UC3);
+32     std::string rute = direction;
+33     imageLbl = cv::imread(rute.c\_str());
+34 
+35     image = imageLbl;
+36     
+37 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{LabelImage_8h}{Label\+Image.\+h}\item 
+\hyperlink{LabelImage_8cpp}{Label\+Image.\+cpp}\end{DoxyCompactItemize}

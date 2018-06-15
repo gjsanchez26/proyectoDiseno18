@@ -1,0 +1,24 @@
+<map id="DistributionManager.cpp" name="DistributionManager.cpp">
+<area shape="rect" id="node3" href="$DistributionManager_8h.html" title="DistributionManager.h" alt="" coords="1675,80,1824,107"/>
+<area shape="rect" id="node25" href="$Resource_8h.html" title="Resource.h" alt="" coords="1347,319,1437,345"/>
+<area shape="rect" id="node30" href="$MatrixBPC_8h.html" title="MatrixBPC.h" alt="" coords="2323,319,2421,345"/>
+<area shape="rect" id="node31" href="$Matrix_8h.html" title="Matrix.h" alt="" coords="2804,401,2873,427"/>
+<area shape="rect" id="node35" href="$CellBPC_8h.html" title="CellBPC.h" alt="" coords="2645,401,2729,427"/>
+<area shape="rect" id="node47" href="$BestFeatureMsg_8h.html" title="BestFeatureMsg.h" alt="" coords="1193,162,1322,189"/>
+<area shape="rect" id="node49" href="$Resources_8h.html" title="Resources.h" alt="" coords="915,244,1011,271"/>
+<area shape="rect" id="node11" href="$Task_8h.html" title="Task.h" alt="" coords="1953,319,2015,345"/>
+<area shape="rect" id="node23" href="$ImageDispatcher_8h.html" title="ImageDispatcher.h" alt="" coords="1398,244,1530,271"/>
+<area shape="rect" id="node26" href="$ForestManager_8h.html" title="ForestManager.h" alt="" coords="1885,162,2005,189"/>
+<area shape="rect" id="node29" href="$NodeResult_8h.html" title="NodeResult.h" alt="" coords="2221,244,2323,271"/>
+<area shape="rect" id="node38" href="$ImageManager_8h.html" title="ImageManager.h" alt="" coords="626,319,745,345"/>
+<area shape="rect" id="node48" href="$Scheduler_8h.html" title="Scheduler.h" alt="" coords="1643,162,1733,189"/>
+<area shape="rect" id="node13" href="$FeaturesMat_8h.html" title="FeaturesMat.h" alt="" coords="2176,401,2283,427"/>
+<area shape="rect" id="node19" href="$Config_8h.html" title="Config.h" alt="" coords="1726,401,1797,427"/>
+<area shape="rect" id="node17" href="$Features_8h.html" title="Features.h" alt="" coords="1966,490,2050,517"/>
+<area shape="rect" id="node24" href="$NodeResource_8h.html" title="NodeResource.h" alt="" coords="1461,319,1581,345"/>
+<area shape="rect" id="node32" href="$Cell_8h.html" title="Cell.h" alt="" coords="2721,490,2777,517"/>
+<area shape="rect" id="node43" href="$ImageGetter_8h.html" title="ImageGetter.h" alt="" coords="678,401,783,427"/>
+<area shape="rect" id="node44" href="$Collection_8h.html" title="Collection.h" alt="" coords="208,401,299,427"/>
+<area shape="rect" id="node45" href="$LabelImage_8h.html" title="LabelImage.h" alt="" coords="374,401,474,427"/>
+<area shape="rect" id="node46" href="$DepthImage_8h.html" title="DepthImage.h" alt="" coords="499,401,603,427"/>
+</map>

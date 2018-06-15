@@ -69,7 +69,7 @@ void rdf::DistributionManager::transferResources() {
             _resource.createObjet(_vector,_node);
             _node.displayResource();
             _world.send(0,0,_node);  
-            std::cout << "Slave "<<_world.rank()<<" have send resources \n";
+            std::cout << "Slave "<<_world.rank()<< " have send resources \n";
         }
         else {                             // SLAVE PROCESS
 
@@ -78,13 +78,13 @@ void rdf::DistributionManager::transferResources() {
             int i = 1;
             do {                            // receive all responses all resourc
                 _world.recv(boost::mpi::any_source, boost::mpi::any_tag,_nodeInfo);
-                std::cout << "Master Received Resources ";
+                std::cout << "Master Received Resources \n";
                 _nodeInfo.displayResource();
                 _imageDistpatcher.addResource(_nodeInfo);
                 //_clusterResourses.push_back(response);
                 i++;
             }while(i<_world.size());
-            _imageDistpatcher.assignRanges(_world.size()-1,true); // Assign ranges according with number of process.
+            _imageDistpatcher.assignRanges(_world.size()-1,false); // Assign ranges according with number of process.
             _imageDistpatcher.showRanges();
         }
     }
@@ -109,7 +109,7 @@ void rdf::DistributionManager::transferRanges() {
             _myImageManager.setRange(_myRange);                         // Set range to imageManager
             const clock_t begin_time = clock();
             _myImageManager.loadImages(); 
-            std::cout << "TIME: " << float( clock () - begin_time ) /double(CLOCKS_PER_SEC) << " seconds\n";                        
+            std::cout << "Time loading images  Slave" << _world.rank() << " : "  << float( clock () - begin_time ) /double(CLOCKS_PER_SEC) << " seconds\n";                        
             //_myImageManager.showStructure(false);                        // Muestra el contenido de la estructura (0: pixeles, 1: C_Imagenes)
         }
     }
@@ -146,7 +146,7 @@ void rdf::DistributionManager::transferNodes(Task& pTask) {
             std::string response = "OK_" + std::to_string(_world.rank()); // Confirmation Message for master node
             _world.send(0,0,response);                                    // Send confirmation about received node
             //PROCESAR TAREA; 
-            _scheduler.assingTask(_myImageManager.getStructure(),toProcess);
+           // _scheduler.assingTask(_myImageManager.getStructure(),toProcess);
             
             int time = rand() % 1000000 + 10000;
             usleep(time);

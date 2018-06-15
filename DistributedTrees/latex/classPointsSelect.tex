@@ -1,0 +1,148 @@
+\hypertarget{classPointsSelect}{}\section{Points\+Select Class Reference}
+\label{classPointsSelect}\index{Points\+Select@{Points\+Select}}
+
+
+{\ttfamily \#include $<$Points\+Select.\+h$>$}
+
+
+
+Collaboration diagram for Points\+Select\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=182pt]{classPointsSelect__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPointsSelect_add4419dcb7bd7cbe7d8cebbed3b224f5}{Points\+Select} ()
+\item 
+\hyperlink{classPointsSelect_a78613447513329afc720a9023fff3b03}{Points\+Select} (const \hyperlink{classPointsSelect}{Points\+Select} \&orig)
+\item 
+virtual \hyperlink{classPointsSelect_a017becb18c1d21eb01f6dc9ffd9461a5}{$\sim$\+Points\+Select} ()
+\item 
+void \hyperlink{classPointsSelect_a1c487676ff7dc9a8cfd7dbae206a04ae}{generated\+Points} (std\+::string type\+\_\+\+Algorithm, std\+::vector$<$ \hyperlink{structEstructura_1_1Pixel}{Estructura\+::\+Pixel} $>$ \&points, int Num\+Points, int height, int width, int Num\+Tree)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classPointsSelect_a5b0f15db86a3c16f0e8d6587099d0a9b}{generat\+Shoton} (std\+::vector$<$ \hyperlink{structEstructura_1_1Pixel}{Estructura\+::\+Pixel} $>$ \&points, int Num\+Points, int height, int width, int Num\+Tree)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Points\+Select@{Points\+Select}!Points\+Select@{Points\+Select}}
+\index{Points\+Select@{Points\+Select}!Points\+Select@{Points\+Select}}
+\subsubsection[{\texorpdfstring{Points\+Select()}{PointsSelect()}}]{\setlength{\rightskip}{0pt plus 5cm}Points\+Select\+::\+Points\+Select (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classPointsSelect_add4419dcb7bd7cbe7d8cebbed3b224f5}{}\label{classPointsSelect_add4419dcb7bd7cbe7d8cebbed3b224f5}
+
+\begin{DoxyCode}
+16                            \{
+17 \}
+\end{DoxyCode}
+\index{Points\+Select@{Points\+Select}!Points\+Select@{Points\+Select}}
+\index{Points\+Select@{Points\+Select}!Points\+Select@{Points\+Select}}
+\subsubsection[{\texorpdfstring{Points\+Select(const Points\+Select \&orig)}{PointsSelect(const PointsSelect &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Points\+Select\+::\+Points\+Select (
+\begin{DoxyParamCaption}
+\item[{const {\bf Points\+Select} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classPointsSelect_a78613447513329afc720a9023fff3b03}{}\label{classPointsSelect_a78613447513329afc720a9023fff3b03}
+
+\begin{DoxyCode}
+19                                                    \{
+20 \}
+\end{DoxyCode}
+\index{Points\+Select@{Points\+Select}!````~Points\+Select@{$\sim$\+Points\+Select}}
+\index{````~Points\+Select@{$\sim$\+Points\+Select}!Points\+Select@{Points\+Select}}
+\subsubsection[{\texorpdfstring{$\sim$\+Points\+Select()}{~PointsSelect()}}]{\setlength{\rightskip}{0pt plus 5cm}Points\+Select\+::$\sim$\+Points\+Select (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classPointsSelect_a017becb18c1d21eb01f6dc9ffd9461a5}{}\label{classPointsSelect_a017becb18c1d21eb01f6dc9ffd9461a5}
+
+\begin{DoxyCode}
+22                             \{
+23 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Points\+Select@{Points\+Select}!generated\+Points@{generated\+Points}}
+\index{generated\+Points@{generated\+Points}!Points\+Select@{Points\+Select}}
+\subsubsection[{\texorpdfstring{generated\+Points(std\+::string type\+\_\+\+Algorithm, std\+::vector$<$ Estructura\+::\+Pixel $>$ \&points, int Num\+Points, int height, int width, int Num\+Tree)}{generatedPoints(std::string type_Algorithm, std::vector< Estructura::Pixel > &points, int NumPoints, int height, int width, int NumTree)}}]{\setlength{\rightskip}{0pt plus 5cm}void Points\+Select\+::generated\+Points (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{type\+\_\+\+Algorithm, }
+\item[{std\+::vector$<$ {\bf Estructura\+::\+Pixel} $>$ \&}]{points, }
+\item[{int}]{Num\+Points, }
+\item[{int}]{height, }
+\item[{int}]{width, }
+\item[{int}]{Num\+Tree}
+\end{DoxyParamCaption}
+)}\hypertarget{classPointsSelect_a1c487676ff7dc9a8cfd7dbae206a04ae}{}\label{classPointsSelect_a1c487676ff7dc9a8cfd7dbae206a04ae}
+
+
+References generat\+Shoton().
+
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+
+\begin{DoxyCode}
+25                                                                                                            
+                                            \{
+26     
+27     std::vector<Estructura::Pixel> temporal;
+28     \textcolor{keywordflow}{if}(type\_Algorithm.compare(0,7,\textcolor{stringliteral}{"shotton"}) == 0)\{
+29         \hyperlink{classPointsSelect_a5b0f15db86a3c16f0e8d6587099d0a9b}{generatShoton}(temporal, NumPoints, height, width, NumTree);
+30         
+31     \}
+32     points = temporal;
+33 \}
+\end{DoxyCode}
+\index{Points\+Select@{Points\+Select}!generat\+Shoton@{generat\+Shoton}}
+\index{generat\+Shoton@{generat\+Shoton}!Points\+Select@{Points\+Select}}
+\subsubsection[{\texorpdfstring{generat\+Shoton(std\+::vector$<$ Estructura\+::\+Pixel $>$ \&points, int Num\+Points, int height, int width, int Num\+Tree)}{generatShoton(std::vector< Estructura::Pixel > &points, int NumPoints, int height, int width, int NumTree)}}]{\setlength{\rightskip}{0pt plus 5cm}void Points\+Select\+::generat\+Shoton (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Estructura\+::\+Pixel} $>$ \&}]{points, }
+\item[{int}]{Num\+Points, }
+\item[{int}]{height, }
+\item[{int}]{width, }
+\item[{int}]{Num\+Tree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classPointsSelect_a5b0f15db86a3c16f0e8d6587099d0a9b}{}\label{classPointsSelect_a5b0f15db86a3c16f0e8d6587099d0a9b}
+
+
+References Estructura\+::\+Pixel\+::point, and Estructura\+::\+Pixel\+::ubicacion.
+
+
+
+Referenced by generated\+Points().
+
+
+\begin{DoxyCode}
+35                                                                                                            
+                \{
+36     
+37     
+38     std::vector<int> start (NumTree,0);
+39     \hyperlink{structEstructura_1_1Pixel}{Estructura::Pixel} pixelTemp;
+40     
+41     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NumPoints; i++) \{
+42         pixelTemp.\hyperlink{structEstructura_1_1Pixel_af5a856559840e7f38fab3147aa576146}{point} = cv::Point((rand() % (height - 0)),((rand() % (width - 0))));
+43         pixelTemp.\hyperlink{structEstructura_1_1Pixel_ac4b5e1358658d9f712933cb20a77d297}{ubicacion} = start;
+44         points.push\_back(pixelTemp);
+45     \}
+46 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PointsSelect_8h}{Points\+Select.\+h}\item 
+\hyperlink{PointsSelect_8cpp}{Points\+Select.\+cpp}\end{DoxyCompactItemize}

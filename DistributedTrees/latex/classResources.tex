@@ -1,0 +1,433 @@
+\hypertarget{classResources}{}\section{Resources Class Reference}
+\label{classResources}\index{Resources@{Resources}}
+
+
+{\ttfamily \#include $<$Resources.\+h$>$}
+
+
+
+Collaboration diagram for Resources\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classResources__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classResources_ab09435991b8c485f92e0aa1fd00828b9}{Resources} ()
+\item 
+\hyperlink{classResources_a1167e3cc0cfb0208c15b111537924ad9}{Resources} (const \hyperlink{classResources}{Resources} \&orig)
+\item 
+virtual \hyperlink{classResources_a5b75a9c6c6f5530ef807cce41cef81ee}{$\sim$\+Resources} ()
+\item 
+void \hyperlink{classResources_a9dfd1c5bb25dfe6d8d3fbb1d3b913bac}{get\+Resources} (std\+::vector$<$ std\+::string $>$ \&info\+Nodo\+Cluster)
+\item 
+void \hyperlink{classResources_ac1c8e38749088e3fc4211d9e3d72d18c}{create\+Objet} (std\+::vector$<$ std\+::string $>$ info\+Nodo\+Cluster, \hyperlink{classrdf_1_1Resource}{rdf\+::\+Resource} \&resources\+Nodo)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classResources_a1fc069e463d47d270d4b1b66560db7dd}{create\+Documents} ()
+\item 
+void \hyperlink{classResources_aa7fe3243ae9083d1d6c3a94e74ba9d91}{load\+Documents} (std\+::ifstream \&meminfo, std\+::ifstream \&cpuinfo)
+\item 
+void \hyperlink{classResources_a47e30c1968a197e5881a0ee82a639b60}{read\+Document} (std\+::ifstream \&file, std\+::string \&text, int tipo)
+\item 
+void \hyperlink{classResources_af5bb6af7ea6b20a4f6205146097aacee}{write\+Document} (std\+::string final)
+\item 
+void \hyperlink{classResources_a3e38b1670c66344d77dbae43071a3138}{delete\+Document} ()
+\item 
+void \hyperlink{classResources_a2bddda93d467f03795b4c8697c5a654a}{read\+Document\+End} (std\+::vector$<$ std\+::string $>$ \&vector)
+\item 
+void \hyperlink{classResources_adc6ae6012e41d5cadfefeaadafdd37d3}{convetir} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Resources@{Resources}!Resources@{Resources}}
+\index{Resources@{Resources}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{Resources()}{Resources()}}]{\setlength{\rightskip}{0pt plus 5cm}Resources\+::\+Resources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classResources_ab09435991b8c485f92e0aa1fd00828b9}{}\label{classResources_ab09435991b8c485f92e0aa1fd00828b9}
+
+\begin{DoxyCode}
+19                      \{
+20 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!Resources@{Resources}}
+\index{Resources@{Resources}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{Resources(const Resources \&orig)}{Resources(const Resources &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Resources\+::\+Resources (
+\begin{DoxyParamCaption}
+\item[{const {\bf Resources} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classResources_a1167e3cc0cfb0208c15b111537924ad9}{}\label{classResources_a1167e3cc0cfb0208c15b111537924ad9}
+
+\begin{DoxyCode}
+22                                           \{
+23 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!````~Resources@{$\sim$\+Resources}}
+\index{````~Resources@{$\sim$\+Resources}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{$\sim$\+Resources()}{~Resources()}}]{\setlength{\rightskip}{0pt plus 5cm}Resources\+::$\sim$\+Resources (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classResources_a5b75a9c6c6f5530ef807cce41cef81ee}{}\label{classResources_a5b75a9c6c6f5530ef807cce41cef81ee}
+
+\begin{DoxyCode}
+25                       \{
+26 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Resources@{Resources}!convetir@{convetir}}
+\index{convetir@{convetir}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{convetir()}{convetir()}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::convetir (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classResources_adc6ae6012e41d5cadfefeaadafdd37d3}{}\label{classResources_adc6ae6012e41d5cadfefeaadafdd37d3}
+
+
+Referenced by get\+Resources().
+
+
+\begin{DoxyCode}
+51                          \{
+52     std::ifstream meminfo, cpuinfo;
+53     meminfo.open(\textcolor{stringliteral}{"meminfo.txt"});
+54     cpuinfo.open(\textcolor{stringliteral}{"cpuinfo.txt"});
+55     std::string mem, cpu;
+56 
+57     \textcolor{keywordtype}{char} c;
+58     \textcolor{keywordflow}{if} (meminfo.is\_open()) \{
+59         \textcolor{keywordflow}{while} (!meminfo.eof()) \{
+60             meminfo >> c;
+61             \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'$'}) \{
+62                 mem.append(\textcolor{stringliteral}{"\(\backslash\)n"});
+63             \} \textcolor{keywordflow}{else} \{
+64                 mem += c;
+65             \}
+66         \}
+67     \}
+68 
+69     \textcolor{keywordflow}{if} (cpuinfo.is\_open()) \{
+70         \textcolor{keywordflow}{while} (!cpuinfo.eof()) \{
+71             cpuinfo >> c;
+72             \textcolor{keywordflow}{if} (c == \textcolor{charliteral}{'$'}) \{
+73                 cpu.append(\textcolor{stringliteral}{"\(\backslash\)n"});
+74             \} \textcolor{keywordflow}{else} \{
+75                 cpu += c;
+76             \}
+77         \}
+78     \}
+79     
+80     meminfo.close();
+81     cpuinfo.close();
+82     
+83     std::ofstream omeminfo, ocpuinfo;
+84     omeminfo.open(\textcolor{stringliteral}{"meminfo.txt"});
+85     ocpuinfo.open(\textcolor{stringliteral}{"cpuinfo.txt"});
+86     
+87     omeminfo << mem;
+88     ocpuinfo << cpu;
+89     
+90     omeminfo.close();
+91     ocpuinfo.close();
+92 
+93 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!create\+Documents@{create\+Documents}}
+\index{create\+Documents@{create\+Documents}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{create\+Documents()}{createDocuments()}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::create\+Documents (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classResources_a1fc069e463d47d270d4b1b66560db7dd}{}\label{classResources_a1fc069e463d47d270d4b1b66560db7dd}
+
+
+Referenced by get\+Resources().
+
+
+\begin{DoxyCode}
+95                                 \{
+96     system(\textcolor{stringliteral}{"echo $(cat -E /proc/meminfo) >meminfo.txt"});
+97     system(\textcolor{stringliteral}{"echo $(cat -E /proc/cpuinfo) >cpuinfo.txt"});
+98 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!create\+Objet@{create\+Objet}}
+\index{create\+Objet@{create\+Objet}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{create\+Objet(std\+::vector$<$ std\+::string $>$ info\+Nodo\+Cluster, rdf\+::\+Resource \&resources\+Nodo)}{createObjet(std::vector< std::string > infoNodoCluster, rdf::Resource &resourcesNodo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::create\+Objet (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$}]{info\+Nodo\+Cluster, }
+\item[{{\bf rdf\+::\+Resource} \&}]{resources\+Nodo}
+\end{DoxyParamCaption}
+)}\hypertarget{classResources_ac1c8e38749088e3fc4211d9e3d72d18c}{}\label{classResources_ac1c8e38749088e3fc4211d9e3d72d18c}
+
+
+References rdf\+::\+Resource\+::set\+C\+P\+Us(), rdf\+::\+Resource\+::set\+Frequency(), rdf\+::\+Resource\+::set\+Mem\+Free(), and rdf\+::\+Resource\+::set\+Mem\+Total().
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Resources().
+
+
+\begin{DoxyCode}
+168                                                                                            \{
+169     
+170     std::string memtotal = infoNodoCluster[1];
+171     std::string valueMemTotal = \textcolor{stringliteral}{""};
+172     \textcolor{keywordtype}{bool} readValueTotal = \textcolor{keyword}{false};
+173     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < memtotal.size(); i++) \{
+174         \textcolor{keywordflow}{if}(memtotal[i] == \textcolor{charliteral}{'k'})\{
+175             readValueTotal = \textcolor{keyword}{false};
+176         \}
+177         \textcolor{keywordflow}{if} (readValueTotal) \{ 
+178             valueMemTotal = valueMemTotal + memtotal[i]; 
+179         \}
+180         \textcolor{keywordflow}{if}(memtotal[i] == \textcolor{charliteral}{':'})\{
+181             readValueTotal = \textcolor{keyword}{true};
+182         \}
+183 
+184     \}
+185 
+186     std::string memfree = infoNodoCluster[2];
+187     std::string valueMemFree = \textcolor{stringliteral}{""};
+188     \textcolor{keywordtype}{bool} readValueFree = \textcolor{keyword}{false};
+189     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < memfree.size(); i++) \{
+190         \textcolor{keywordflow}{if}(memfree[i] == \textcolor{charliteral}{'k'})\{
+191             readValueFree = \textcolor{keyword}{false};
+192         \}
+193         \textcolor{keywordflow}{if} (readValueFree) \{ 
+194             valueMemFree = valueMemFree + memfree[i]; 
+195         \}
+196         \textcolor{keywordflow}{if}(memfree[i] == \textcolor{charliteral}{':'})\{
+197             readValueFree = \textcolor{keyword}{true};
+198         \}
+199     \}
+200     
+201     
+202     
+203     std::string frequency = infoNodoCluster[5];
+204     std::string valueFrequency = \textcolor{stringliteral}{""};
+205     \textcolor{keywordtype}{bool} readValueFrequency = \textcolor{keyword}{false};
+206     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < frequency.size(); i++) \{
+207         \textcolor{keywordflow}{if}(frequency[i] == \textcolor{charliteral}{'k'})\{
+208             readValueFrequency = \textcolor{keyword}{false};
+209         \}
+210         \textcolor{keywordflow}{if} (readValueFrequency) \{ 
+211             valueFrequency = valueFrequency + frequency[i]; 
+212         \}
+213         \textcolor{keywordflow}{if}(frequency[i] == \textcolor{charliteral}{':'})\{
+214             readValueFrequency = \textcolor{keyword}{true};
+215         \}
+216     \}
+217     
+218     
+219     
+220     \textcolor{keywordtype}{int} cpus = 0; 
+221     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 3; i < infoNodoCluster.size(); i++) \{
+222         std::string valor = infoNodoCluster[i];
+223         \textcolor{keywordflow}{if}(!valor.compare(0,9,\textcolor{stringliteral}{"processor"}))\{
+224             cpus += 1;
+225         \}
+226     \}
+227     
+228     resourcesNodo.\hyperlink{classrdf_1_1Resource_acde532c88486296bea5ae2420a981364}{setCPUs}      (cpus);
+229     resourcesNodo.\hyperlink{classrdf_1_1Resource_a41df357db31501e5dbc0e78d347efc3e}{setFrequency} (atoi(valueFrequency.c\_str()));
+230     resourcesNodo.\hyperlink{classrdf_1_1Resource_a91e688e3f3ea4ccd462887b687f7b14c}{setMemFree}   (atoi(valueMemFree.c\_str()));
+231     resourcesNodo.\hyperlink{classrdf_1_1Resource_a316a34c2dd6758f3125e7f424b3f35ba}{setMemTotal}  (atoi(valueMemTotal.c\_str()));
+232     
+233     
+234     
+235     
+236 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!delete\+Document@{delete\+Document}}
+\index{delete\+Document@{delete\+Document}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{delete\+Document()}{deleteDocument()}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::delete\+Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classResources_a3e38b1670c66344d77dbae43071a3138}{}\label{classResources_a3e38b1670c66344d77dbae43071a3138}
+
+
+Referenced by get\+Resources().
+
+
+\begin{DoxyCode}
+152                                \{
+153     \textcolor{keyword}{remove}(\textcolor{stringliteral}{"meminfo.txt"});
+154     \textcolor{keyword}{remove}(\textcolor{stringliteral}{"cpuinfo.txt"});
+155 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!get\+Resources@{get\+Resources}}
+\index{get\+Resources@{get\+Resources}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{get\+Resources(std\+::vector$<$ std\+::string $>$ \&info\+Nodo\+Cluster)}{getResources(std::vector< std::string > &infoNodoCluster)}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::get\+Resources (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{info\+Nodo\+Cluster}
+\end{DoxyParamCaption}
+)}\hypertarget{classResources_a9dfd1c5bb25dfe6d8d3fbb1d3b913bac}{}\label{classResources_a9dfd1c5bb25dfe6d8d3fbb1d3b913bac}
+
+
+References convetir(), create\+Documents(), delete\+Document(), load\+Documents(), read\+Document(), read\+Document\+End(), and write\+Document().
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Resources().
+
+
+\begin{DoxyCode}
+28                                                                   \{
+29     std::ifstream meminfo, cpuinfo;
+30     std::string all = \textcolor{stringliteral}{""};
+31     std::vector<std::string> infoNodoClusterTemp;
+32     \hyperlink{classResources_a1fc069e463d47d270d4b1b66560db7dd}{createDocuments}();
+33     \hyperlink{classResources_adc6ae6012e41d5cadfefeaadafdd37d3}{convetir}();
+34 
+35     \hyperlink{classResources_aa7fe3243ae9083d1d6c3a94e74ba9d91}{loadDocuments}(meminfo, cpuinfo);
+36 
+37     \hyperlink{classResources_a47e30c1968a197e5881a0ee82a639b60}{readDocument}(meminfo, all, 0);
+38     \hyperlink{classResources_a47e30c1968a197e5881a0ee82a639b60}{readDocument}(cpuinfo, all, 1);
+39     
+40     meminfo.close();
+41     cpuinfo.close();
+42     \hyperlink{classResources_af5bb6af7ea6b20a4f6205146097aacee}{writeDocument}(all);
+43 
+44     \hyperlink{classResources_a3e38b1670c66344d77dbae43071a3138}{deleteDocument}();
+45 
+46     \hyperlink{classResources_a2bddda93d467f03795b4c8697c5a654a}{readDocumentEnd}(infoNodoClusterTemp);
+47 
+48     infoNodoCluster = infoNodoClusterTemp;
+49 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!load\+Documents@{load\+Documents}}
+\index{load\+Documents@{load\+Documents}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{load\+Documents(std\+::ifstream \&meminfo, std\+::ifstream \&cpuinfo)}{loadDocuments(std::ifstream &meminfo, std::ifstream &cpuinfo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::load\+Documents (
+\begin{DoxyParamCaption}
+\item[{std\+::ifstream \&}]{meminfo, }
+\item[{std\+::ifstream \&}]{cpuinfo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classResources_aa7fe3243ae9083d1d6c3a94e74ba9d91}{}\label{classResources_aa7fe3243ae9083d1d6c3a94e74ba9d91}
+
+
+Referenced by get\+Resources().
+
+
+\begin{DoxyCode}
+100                                                                         \{
+101     meminfo.open(\textcolor{stringliteral}{"meminfo.txt"});
+102     cpuinfo.open(\textcolor{stringliteral}{"cpuinfo.txt"});
+103 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!read\+Document@{read\+Document}}
+\index{read\+Document@{read\+Document}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{read\+Document(std\+::ifstream \&file, std\+::string \&text, int tipo)}{readDocument(std::ifstream &file, std::string &text, int tipo)}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::read\+Document (
+\begin{DoxyParamCaption}
+\item[{std\+::ifstream \&}]{file, }
+\item[{std\+::string \&}]{text, }
+\item[{int}]{tipo}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classResources_a47e30c1968a197e5881a0ee82a639b60}{}\label{classResources_a47e30c1968a197e5881a0ee82a639b60}
+
+
+Referenced by get\+Resources().
+
+
+\begin{DoxyCode}
+105                                                                          \{
+106     std::string line;
+107     std::string temporal = \textcolor{stringliteral}{""};
+108     \textcolor{keywordflow}{if} (tipo == 0) \{
+109         temporal = \textcolor{stringliteral}{"Memory\_info\(\backslash\)n"};
+110         \textcolor{keywordflow}{while} (!file.eof()) \{
+111             getline(file, line); \textcolor{comment}{//Lee la linea}
+112             std::string value;
+113             std::stringstream check1(line);
+114             \textcolor{keywordflow}{while} (getline(check1, value, \textcolor{charliteral}{' '})) \{
+115                 \textcolor{keywordflow}{if} (value.compare(0,9,\textcolor{stringliteral}{"MemTotal:"}) == 0) \{ \textcolor{comment}{//value == "MemTotal:"}
+116                     temporal += line + \textcolor{charliteral}{'\(\backslash\)n'};
+117                     
+118                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (value.compare(0,8,\textcolor{stringliteral}{"MemFree:"})== 0) \{
+119                     temporal += line + \textcolor{charliteral}{'\(\backslash\)n'};
+120                     
+121                 \}
+122             \}
+123         \}
+124     \} \textcolor{keywordflow}{else} \{
+125         temporal += \textcolor{stringliteral}{"CPU\_info\(\backslash\)n"};
+126         \textcolor{keywordflow}{while} (!file.eof()) \{
+127             getline(file, line); \textcolor{comment}{//Lee la linea}
+128             std::string value;
+129             std::stringstream check1(line);
+130             
+131             \textcolor{keywordflow}{while} (getline(check1, value, \textcolor{charliteral}{' '})) \{
+132                 \textcolor{keywordflow}{if} (value.compare(0,9,\textcolor{stringliteral}{"processor"}) == 0) \{
+133                     temporal += line + \textcolor{charliteral}{'\(\backslash\)n'}; 
+134                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (value.compare(0,6,\textcolor{stringliteral}{"cpuMHz"}) == 0) \{
+135                     temporal += line + \textcolor{charliteral}{'\(\backslash\)n'};
+136                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (value.compare(0,8,\textcolor{stringliteral}{"cpucores"}) == 0) \{
+137                     temporal += line + \textcolor{charliteral}{'\(\backslash\)n'};
+138                 \}
+139             \}
+140         \}
+141     \}
+142     text += temporal;
+143 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!read\+Document\+End@{read\+Document\+End}}
+\index{read\+Document\+End@{read\+Document\+End}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{read\+Document\+End(std\+::vector$<$ std\+::string $>$ \&vector)}{readDocumentEnd(std::vector< std::string > &vector)}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::read\+Document\+End (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{vector}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classResources_a2bddda93d467f03795b4c8697c5a654a}{}\label{classResources_a2bddda93d467f03795b4c8697c5a654a}
+
+
+Referenced by get\+Resources().
+
+
+\begin{DoxyCode}
+157                                                             \{
+158     std::ifstream file;
+159     std::string line;
+160     file.open(\textcolor{stringliteral}{"Resources.txt"}, std::ifstream::in);
+161     \textcolor{comment}{//Leer el archivo hasta que termine.}
+162     \textcolor{keywordflow}{while} (!file.eof()) \{
+163         getline(file, line); \textcolor{comment}{//Lee la linea}
+164         vector.push\_back(line); \textcolor{comment}{//agrega la linea al vector}
+165     \}
+166 \}
+\end{DoxyCode}
+\index{Resources@{Resources}!write\+Document@{write\+Document}}
+\index{write\+Document@{write\+Document}!Resources@{Resources}}
+\subsubsection[{\texorpdfstring{write\+Document(std\+::string final)}{writeDocument(std::string final)}}]{\setlength{\rightskip}{0pt plus 5cm}void Resources\+::write\+Document (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{final}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classResources_af5bb6af7ea6b20a4f6205146097aacee}{}\label{classResources_af5bb6af7ea6b20a4f6205146097aacee}
+
+
+Referenced by get\+Resources().
+
+
+\begin{DoxyCode}
+145                                              \{
+146     std::ofstream file;
+147     file.open(\textcolor{stringliteral}{"Resources.txt"});
+148     file << \textcolor{keyword}{final};
+149     file.close();
+150 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Resources_8h}{Resources.\+h}\item 
+\hyperlink{Resources_8cpp}{Resources.\+cpp}\end{DoxyCompactItemize}

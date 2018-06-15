@@ -1,0 +1,18 @@
+<map id="StrategyImage.h" name="StrategyImage.h">
+<area shape="rect" id="node2" href="$Collection_8h.html" title="Collection.h" alt="" coords="190,80,281,107"/>
+<area shape="rect" id="node13" href="$DepthImage_8h.html" title="DepthImage.h" alt="" coords="573,80,677,107"/>
+<area shape="rect" id="node15" href="$LabelImage_8h.html" title="LabelImage.h" alt="" coords="439,80,539,107"/>
+<area shape="rect" id="node17" href="$StrategyImage_8cpp.html" title="StrategyImage.cpp" alt="" coords="701,80,833,107"/>
+<area shape="rect" id="node3" href="$Collection_8cpp.html" title="Collection.cpp" alt="" coords="5,155,111,181"/>
+<area shape="rect" id="node4" href="$ImageManager_8h.html" title="ImageManager.h" alt="" coords="479,229,597,256"/>
+<area shape="rect" id="node7" href="$TrainManager_8h.html" title="TrainManager.h" alt="" coords="333,379,445,405"/>
+<area shape="rect" id="node11" href="$Image_8h.html" title="Image.h" alt="" coords="237,155,306,181"/>
+<area shape="rect" id="node12" href="$Image_8cpp.html" title="Image.cpp" alt="" coords="195,229,278,256"/>
+<area shape="rect" id="node5" href="$DistributionManager_8h.html" title="DistributionManager.h" alt="" coords="583,304,733,331"/>
+<area shape="rect" id="node10" href="$ImageManager_8cpp.html" title="ImageManager.cpp" alt="" coords="426,304,559,331"/>
+<area shape="rect" id="node6" href="$DistributionManager_8cpp.html" title="DistributionManager.cpp" alt="" coords="577,379,739,405"/>
+<area shape="rect" id="node8" href="$main_8cpp.html" title="main.cpp" alt="" coords="289,453,363,480"/>
+<area shape="rect" id="node9" href="$TrainManager_8cpp.html" title="TrainManager.cpp" alt="" coords="388,453,515,480"/>
+<area shape="rect" id="node14" href="$DepthImage_8cpp.html" title="DepthImage.cpp" alt="" coords="808,155,927,181"/>
+<area shape="rect" id="node16" href="$LabelImage_8cpp.html" title="LabelImage.cpp" alt="" coords="431,155,546,181"/>
+</map>

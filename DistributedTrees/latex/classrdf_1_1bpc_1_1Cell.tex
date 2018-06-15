@@ -1,0 +1,358 @@
+\hypertarget{classrdf_1_1bpc_1_1Cell}{}\section{rdf\+:\+:bpc\+:\+:Cell Class Reference}
+\label{classrdf_1_1bpc_1_1Cell}\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+
+
+{\ttfamily \#include $<$Cell\+B\+P\+C.\+h$>$}
+
+
+
+Inheritance diagram for rdf\+:\+:bpc\+:\+:Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classrdf_1_1bpc_1_1Cell__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rdf\+:\+:bpc\+:\+:Cell\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classrdf_1_1bpc_1_1Cell__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Cell_a4e55c973f2869d6145b2e4598f73d915}{Cell} ()
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Cell_afd3bd26a7eaa27e1842a90ee01560833}{Cell} (const \hyperlink{classrdf_1_1bpc_1_1Cell}{Cell} \&orig)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Cell_a163b21f78c2cd0319926292773b68269}{Reduce} (const \hyperlink{classrdf_1_1bpc_1_1Cell}{Cell} \&other)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Cell_a8867ff9846fcd8e0ae6ca0cd754230d1}{Sum\+By\+Index} (int to\+Left, int index, float val)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Cell_a23a09c0ba4e7b6e52176276d464eb982}{Sum\+By\+Body\+Part} (int to\+Left, std\+::string body\+Part, float val)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Cell_ad4ed0c5ddb5690a2a4ea21bb1d897072}{Init\+Values} (float left\+Vals, float right\+Vals)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Cell_ab493e3da763f35681744705d05518412}{Average\+Values} (int num)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Cell_afbdaa564c364a52d937f4474cb37c99a}{Print} ()
+\item 
+virtual \hyperlink{classrdf_1_1bpc_1_1Cell_a6e00e0aeaca79249ce8d21bee8ca0b62}{$\sim$\+Cell} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}
+\item 
+std\+::vector$<$ float $>$ \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classrdf_1_1bpc_1_1Cell_a2ff77bef68243ee1b3f87ba3d841a07e}{serialize} (Archive \&ar, const unsigned int version)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Cell_a6263cc208881c9795837fdebf10592e7}{Print} (int i)
+\item 
+int \hyperlink{classrdf_1_1bpc_1_1Cell_a00bde32e84e23b71d83a6e5e62d45e6d}{Body\+Part\+To\+Index} (std\+::string body\+Part)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrdf_1_1bpc_1_1Cell_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Cell()}{Cell()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::bpc\+::\+Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Cell_a4e55c973f2869d6145b2e4598f73d915}{}\label{classrdf_1_1bpc_1_1Cell_a4e55c973f2869d6145b2e4598f73d915}
+
+
+References B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+S\+\_\+\+N\+UM, left, and right.
+
+
+\begin{DoxyCode}
+29                \{
+30       \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}.resize(\hyperlink{CellBPC_8h_ae850b88fe99c39799aca5022cde5f295}{BODY\_PARTS\_NUM}, 8.0);
+31       \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}.resize(\hyperlink{CellBPC_8h_ae850b88fe99c39799aca5022cde5f295}{BODY\_PARTS\_NUM}, 1.0);
+32     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Cell@{Cell}}
+\index{Cell@{Cell}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Cell(const Cell \&orig)}{Cell(const Cell &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::bpc\+::\+Cell\+::\+Cell (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cell} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Cell_afd3bd26a7eaa27e1842a90ee01560833}{}\label{classrdf_1_1bpc_1_1Cell_afd3bd26a7eaa27e1842a90ee01560833}
+
+
+References left, and right.
+
+
+\begin{DoxyCode}
+34                                \{
+35       \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left} = orig.left;
+36       \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right} = orig.right;
+37     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!````~Cell@{$\sim$\+Cell}}
+\index{````~Cell@{$\sim$\+Cell}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{$\sim$\+Cell()}{~Cell()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::bpc\+::\+Cell\+::$\sim$\+Cell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1bpc_1_1Cell_a6e00e0aeaca79249ce8d21bee8ca0b62}{}\label{classrdf_1_1bpc_1_1Cell_a6e00e0aeaca79249ce8d21bee8ca0b62}
+
+
+Reimplemented from \hyperlink{classrdf_1_1Cell_a25a097dcee67ea115326ec0aaeea8e4a}{rdf\+::\+Cell}.
+
+
+\begin{DoxyCode}
+106                 \{
+107 
+108     \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Average\+Values@{Average\+Values}}
+\index{Average\+Values@{Average\+Values}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Average\+Values(int num)}{AverageValues(int num)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::bpc\+::\+Cell\+::\+Average\+Values (
+\begin{DoxyParamCaption}
+\item[{int}]{num}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Cell_ab493e3da763f35681744705d05518412}{}\label{classrdf_1_1bpc_1_1Cell_ab493e3da763f35681744705d05518412}
+
+
+References B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+S\+\_\+\+N\+UM, left, and right.
+
+
+\begin{DoxyCode}
+67                                    \{
+68       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{CellBPC_8h_ae850b88fe99c39799aca5022cde5f295}{BODY\_PARTS\_NUM}; i++) \{
+69         \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}[i] = \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}[i] / num;
+70         \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}[i] = \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}[i] / num;
+71       \}
+72     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Body\+Part\+To\+Index@{Body\+Part\+To\+Index}}
+\index{Body\+Part\+To\+Index@{Body\+Part\+To\+Index}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Body\+Part\+To\+Index(std\+::string body\+Part)}{BodyPartToIndex(std::string bodyPart)}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::bpc\+::\+Cell\+::\+Body\+Part\+To\+Index (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{body\+Part}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Cell_a00bde32e84e23b71d83a6e5e62d45e6d}{}\label{classrdf_1_1bpc_1_1Cell_a00bde32e84e23b71d83a6e5e62d45e6d}
+
+
+Referenced by serialize(), and Sum\+By\+Body\+Part().
+
+
+\begin{DoxyCode}
+75                                                \{
+76       \textcolor{keywordflow}{if} (bodyPart == \textcolor{stringliteral}{"brazo"})\{
+77         \textcolor{keywordflow}{return} 0;
+78       \}
+79       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bodyPart == \textcolor{stringliteral}{"dedo"})\{
+80         \textcolor{keywordflow}{return} 1;
+81       \}
+82       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bodyPart == \textcolor{stringliteral}{"mano"})\{
+83         \textcolor{keywordflow}{return} 2;
+84       \}
+85       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bodyPart == \textcolor{stringliteral}{"cabeza"})\{
+86         \textcolor{keywordflow}{return} 3;
+87       \}
+88       \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (bodyPart == \textcolor{stringliteral}{"pecho"})\{
+89         \textcolor{keywordflow}{return} 4;
+90       \}
+91 
+92       \textcolor{comment}{/* etc..... */}
+93     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Init\+Values@{Init\+Values}}
+\index{Init\+Values@{Init\+Values}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Init\+Values(float left\+Vals, float right\+Vals)}{InitValues(float leftVals, float rightVals)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::bpc\+::\+Cell\+::\+Init\+Values (
+\begin{DoxyParamCaption}
+\item[{float}]{left\+Vals, }
+\item[{float}]{right\+Vals}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Cell_ad4ed0c5ddb5690a2a4ea21bb1d897072}{}\label{classrdf_1_1bpc_1_1Cell_ad4ed0c5ddb5690a2a4ea21bb1d897072}
+
+
+References B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+S\+\_\+\+N\+UM, left, and right.
+
+
+\begin{DoxyCode}
+50                                                             \{
+51       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{CellBPC_8h_ae850b88fe99c39799aca5022cde5f295}{BODY\_PARTS\_NUM}; i++) \{
+52         \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}[i] = leftValues;
+53         \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}[i] = rightValues;
+54       \}
+55     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Print@{Print}}
+\index{Print@{Print}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Print()}{Print()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::bpc\+::\+Cell\+::\+Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Cell_afbdaa564c364a52d937f4474cb37c99a}{}\label{classrdf_1_1bpc_1_1Cell_afbdaa564c364a52d937f4474cb37c99a}
+
+
+References B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+S\+\_\+\+N\+UM, left, and right.
+
+
+
+Referenced by serialize().
+
+
+\begin{DoxyCode}
+96                     \{
+97       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{CellBPC_8h_ae850b88fe99c39799aca5022cde5f295}{BODY\_PARTS\_NUM}; i++) \{
+98         std::cout << \textcolor{stringliteral}{"Left: "} << \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}[i] << \textcolor{stringliteral}{"\(\backslash\)tRight: "} << \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}[i] << std::endl;
+99       \}
+100     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Print@{Print}}
+\index{Print@{Print}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Print(int i)}{Print(int i)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::bpc\+::\+Cell\+::\+Print (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Cell_a6263cc208881c9795837fdebf10592e7}{}\label{classrdf_1_1bpc_1_1Cell_a6263cc208881c9795837fdebf10592e7}
+
+
+References left, and right.
+
+
+\begin{DoxyCode}
+102                          \{
+103         std::cout << \textcolor{stringliteral}{"i["} << i << \textcolor{stringliteral}{"]"} <<\textcolor{stringliteral}{"Left: "} << \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}[i] << \textcolor{stringliteral}{"\(\backslash\)tRight: "} << 
+      \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}[i] << std::endl;
+104     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Reduce@{Reduce}}
+\index{Reduce@{Reduce}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Reduce(const Cell \&other)}{Reduce(const Cell &other)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::bpc\+::\+Cell\+::\+Reduce (
+\begin{DoxyParamCaption}
+\item[{const {\bf Cell} \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Cell_a163b21f78c2cd0319926292773b68269}{}\label{classrdf_1_1bpc_1_1Cell_a163b21f78c2cd0319926292773b68269}
+
+
+References B\+O\+D\+Y\+\_\+\+P\+A\+R\+T\+S\+\_\+\+N\+UM, left, and right.
+
+
+\begin{DoxyCode}
+39                                        \{
+40       \textcolor{keywordtype}{float} otherLeft, otherRight;
+41       \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{CellBPC_8h_ae850b88fe99c39799aca5022cde5f295}{BODY\_PARTS\_NUM}; i++) \{
+42         otherLeft = other.left[i];
+43         otherRight = other.right[i];
+44         \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}[i] = \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}[i] + otherLeft;
+45         \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}[i] = \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}[i] + otherRight;
+46       \}
+47       \textcolor{comment}{// return *this;}
+48     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!serialize@{serialize}}
+\index{serialize@{serialize}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{serialize(\+Archive \&ar, const unsigned int version)}{serialize(Archive &ar, const unsigned int version)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void rdf\+::bpc\+::\+Cell\+::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Cell_a2ff77bef68243ee1b3f87ba3d841a07e}{}\label{classrdf_1_1bpc_1_1Cell_a2ff77bef68243ee1b3f87ba3d841a07e}
+
+
+References Body\+Part\+To\+Index(), left, Print(), and right.
+
+
+\begin{DoxyCode}
+67           \{
+68             ar & \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left};
+69             ar & \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right};
+70           \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Sum\+By\+Body\+Part@{Sum\+By\+Body\+Part}}
+\index{Sum\+By\+Body\+Part@{Sum\+By\+Body\+Part}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Sum\+By\+Body\+Part(int to\+Left, std\+::string body\+Part, float val)}{SumByBodyPart(int toLeft, std::string bodyPart, float val)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::bpc\+::\+Cell\+::\+Sum\+By\+Body\+Part (
+\begin{DoxyParamCaption}
+\item[{int}]{to\+Left, }
+\item[{std\+::string}]{body\+Part, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Cell_a23a09c0ba4e7b6e52176276d464eb982}{}\label{classrdf_1_1bpc_1_1Cell_a23a09c0ba4e7b6e52176276d464eb982}
+
+
+References Body\+Part\+To\+Index(), and Sum\+By\+Index().
+
+
+\begin{DoxyCode}
+61                                                                      \{
+62       \textcolor{keywordtype}{int} index = \hyperlink{classrdf_1_1bpc_1_1Cell_a00bde32e84e23b71d83a6e5e62d45e6d}{BodyPartToIndex}(bodyPart);
+63       \hyperlink{classrdf_1_1bpc_1_1Cell_a8867ff9846fcd8e0ae6ca0cd754230d1}{SumByIndex}(toLeft, index, val);
+64 
+65     \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!Sum\+By\+Index@{Sum\+By\+Index}}
+\index{Sum\+By\+Index@{Sum\+By\+Index}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{Sum\+By\+Index(int to\+Left, int index, float val)}{SumByIndex(int toLeft, int index, float val)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::bpc\+::\+Cell\+::\+Sum\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{to\+Left, }
+\item[{int}]{index, }
+\item[{float}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Cell_a8867ff9846fcd8e0ae6ca0cd754230d1}{}\label{classrdf_1_1bpc_1_1Cell_a8867ff9846fcd8e0ae6ca0cd754230d1}
+
+
+References left, and right.
+
+
+
+Referenced by Sum\+By\+Body\+Part().
+
+
+\begin{DoxyCode}
+57                                                            \{
+58       (toLeft) ? \hyperlink{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{left}[index] += value : \hyperlink{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{right}[index] += value;
+59     \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!boost\+::serialization\+::access@{boost\+::serialization\+::access}}
+\index{boost\+::serialization\+::access@{boost\+::serialization\+::access}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{boost\+::serialization\+::access}{boost::serialization::access}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classrdf_1_1bpc_1_1Cell_ac98d07dd8f7b70e16ccb9a01abf56b9c}{}\label{classrdf_1_1bpc_1_1Cell_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!left@{left}}
+\index{left@{left}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{left}{left}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ rdf\+::bpc\+::\+Cell\+::left}\hypertarget{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}{}\label{classrdf_1_1bpc_1_1Cell_acca5eb5901f629ff44710f56934dfba2}
+
+
+Referenced by Average\+Values(), Cell(), Init\+Values(), Print(), Reduce(), serialize(), and Sum\+By\+Index().
+
+\index{rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}!right@{right}}
+\index{right@{right}!rdf\+::bpc\+::\+Cell@{rdf\+::bpc\+::\+Cell}}
+\subsubsection[{\texorpdfstring{right}{right}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$float$>$ rdf\+::bpc\+::\+Cell\+::right}\hypertarget{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}{}\label{classrdf_1_1bpc_1_1Cell_a2d7be4deab042275199ade765509fcea}
+
+
+Referenced by Average\+Values(), Cell(), Init\+Values(), Print(), Reduce(), serialize(), and Sum\+By\+Index().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{CellBPC_8h}{Cell\+B\+P\+C.\+h}\item 
+\hyperlink{CellBPC_8cpp}{Cell\+B\+P\+C.\+cpp}\end{DoxyCompactItemize}

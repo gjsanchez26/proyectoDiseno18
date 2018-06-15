@@ -1,0 +1,23 @@
+<map id="DistributionManager.h" name="DistributionManager.h">
+<area shape="rect" id="node9" href="$Task_8h.html" title="Task.h" alt="" coords="890,319,953,345"/>
+<area shape="rect" id="node23" href="$ImageDispatcher_8h.html" title="ImageDispatcher.h" alt="" coords="387,244,519,271"/>
+<area shape="rect" id="node26" href="$ForestManager_8h.html" title="ForestManager.h" alt="" coords="825,169,945,196"/>
+<area shape="rect" id="node29" href="$NodeResult_8h.html" title="NodeResult.h" alt="" coords="1378,244,1481,271"/>
+<area shape="rect" id="node32" href="$ImageManager_8h.html" title="ImageManager.h" alt="" coords="2499,244,2618,271"/>
+<area shape="rect" id="node44" href="$BestFeatureMsg_8h.html" title="BestFeatureMsg.h" alt="" coords="361,169,490,196"/>
+<area shape="rect" id="node45" href="$Scheduler_8h.html" title="Scheduler.h" alt="" coords="1641,87,1732,114"/>
+<area shape="rect" id="node11" href="$FeaturesMat_8h.html" title="FeaturesMat.h" alt="" coords="637,401,744,427"/>
+<area shape="rect" id="node19" href="$Config_8h.html" title="Config.h" alt="" coords="542,401,613,427"/>
+<area shape="rect" id="node17" href="$Features_8h.html" title="Features.h" alt="" coords="550,490,634,517"/>
+<area shape="rect" id="node24" href="$NodeResource_8h.html" title="NodeResource.h" alt="" coords="491,319,611,345"/>
+<area shape="rect" id="node25" href="$Resource_8h.html" title="Resource.h" alt="" coords="777,319,866,345"/>
+<area shape="rect" id="node30" href="$MatrixBPC_8h.html" title="MatrixBPC.h" alt="" coords="1234,319,1331,345"/>
+<area shape="rect" id="node37" href="$ImageGetter_8h.html" title="ImageGetter.h" alt="" coords="2690,401,2795,427"/>
+<area shape="rect" id="node38" href="$Collection_8h.html" title="Collection.h" alt="" coords="3023,401,3113,427"/>
+<area shape="rect" id="node39" href="$LabelImage_8h.html" title="LabelImage.h" alt="" coords="2463,401,2563,427"/>
+<area shape="rect" id="node40" href="$DepthImage_8h.html" title="DepthImage.h" alt="" coords="2335,401,2439,427"/>
+<area shape="rect" id="node41" href="$Estructura_8h.html" title="Estructura.h" alt="" coords="2065,401,2159,427"/>
+<area shape="rect" id="node42" href="$PointsSelect_8h.html" title="PointsSelect.h" alt="" coords="1951,319,2057,345"/>
+<area shape="rect" id="node43" href="$Image_8h.html" title="Image.h" alt="" coords="2452,319,2521,345"/>
+<area shape="rect" id="node50" href="$QueueThread_8h.html" title="QueueThread.h" alt="" coords="1795,169,1906,196"/>
+</map>

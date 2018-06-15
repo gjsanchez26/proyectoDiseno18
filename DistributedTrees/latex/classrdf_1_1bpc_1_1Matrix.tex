@@ -1,0 +1,297 @@
+\hypertarget{classrdf_1_1bpc_1_1Matrix}{}\section{rdf\+:\+:bpc\+:\+:Matrix$<$ T $>$ Class Template Reference}
+\label{classrdf_1_1bpc_1_1Matrix}\index{rdf\+::bpc\+::\+Matrix$<$ T $>$@{rdf\+::bpc\+::\+Matrix$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Features\+Mat.\+h$>$}
+
+
+
+Inheritance diagram for rdf\+:\+:bpc\+:\+:Matrix$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classrdf_1_1bpc_1_1Matrix__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rdf\+:\+:bpc\+:\+:Matrix$<$ T $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classrdf_1_1bpc_1_1Matrix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Matrix_ade45ad0ebe3b9c850608a4f5abb19420}{Matrix} ()
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Matrix_a2bc9d43380289047df29a49cbbda1067}{Matrix} (const \hyperlink{classrdf_1_1bpc_1_1FeaturesMat}{Features\+Mat} \&)
+\item 
+\hyperlink{classrdf_1_1bpc_1_1Matrix_a2ec31b288ce0fbdacf2310446f3ace38}{Matrix} (const \hyperlink{classrdf_1_1bpc_1_1Matrix}{Matrix} \&orig)
+\item 
+virtual \hyperlink{classrdf_1_1bpc_1_1Matrix_ab7cf40ce5404d7727a0a656e8c739140}{$\sim$\+Matrix} ()
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Matrix_a937666077b21230acd1afe126f84a7b4}{Add\+Features\+Mat} (const \hyperlink{classrdf_1_1bpc_1_1FeaturesMat}{Features\+Mat} \&mat)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Matrix_ac90210cef7b4b102b3ec19d78a38631d}{Allocate\+Cells} ()
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Matrix_a45f64dbd9f56ee67d906aa08961bbae9}{Reduce} (\hyperlink{classrdf_1_1bpc_1_1Matrix}{Matrix} \&other)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Matrix_a480cb47beacfcc5809503893fc38b968}{Average} (int average)
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Matrix_acb261eb27775f1ed974349f7ceb6c1c3}{Print} ()
+\item 
+void \hyperlink{classrdf_1_1bpc_1_1Matrix_a05799bd5cff0c7c1d1c4f6fa19dce22b}{Evaluate\+Point\+In\+Matrix} (int point)
+\item 
+float \hyperlink{classrdf_1_1bpc_1_1Matrix_a3884af4b2109a2d80b2dc2778bd71a8e}{Calculate\+Feature\+Response} (int, int, int)
+\item 
+bool \hyperlink{classrdf_1_1bpc_1_1Matrix_a81c5040bdc90a4548ebedc0e3027d666}{Evaluate\+Feature\+Response\+For\+Threshold} (float, int)
+\item 
+T \hyperlink{classrdf_1_1bpc_1_1Matrix_a950b7d0d97347c41047d8e5631552e58}{operator()} (int i, int j)
+\item 
+std\+::pair$<$ int, int $>$ \hyperlink{classrdf_1_1bpc_1_1Matrix_ab6cf5e854c06f976908b4f53462b6bd3}{Find\+Best\+Pair} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1bpc_1_1FeaturesMat}{Features\+Mat} \hyperlink{classrdf_1_1bpc_1_1Matrix_a635849575c43df7969d5328cede7a040}{features\+Matrix\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classrdf_1_1bpc_1_1Matrix_a6c3808d393e218a29df6ff1bbdfbe8ea}{save} (Archive \&ar, const unsigned int version) const 
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classrdf_1_1bpc_1_1Matrix_a87e3e793dc7e2fa499aaba37bf825510}{load} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classrdf_1_1bpc_1_1Matrix_a594473393d0fb508cf68714062f65256}{rows\+\_\+}
+\item 
+int \hyperlink{classrdf_1_1bpc_1_1Matrix_a2a15ca3ef49e2f0c7724e5c556878b3c}{cols\+\_\+}
+\item 
+T $\ast$ \hyperlink{classrdf_1_1bpc_1_1Matrix_adebf06eb7c44da98fd103edfb17988f1}{cells\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrdf_1_1bpc_1_1Matrix_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Matrix()}{Matrix()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_ade45ad0ebe3b9c850608a4f5abb19420}{}\label{classrdf_1_1bpc_1_1Matrix_ade45ad0ebe3b9c850608a4f5abb19420}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Matrix(const Features\+Mat \&)}{Matrix(const FeaturesMat &)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Features\+Mat} \&}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_a2bc9d43380289047df29a49cbbda1067}{}\label{classrdf_1_1bpc_1_1Matrix_a2bc9d43380289047df29a49cbbda1067}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Matrix@{Matrix}}
+\index{Matrix@{Matrix}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Matrix(const Matrix \&orig)}{Matrix(const Matrix &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::{\bf Matrix} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Matrix}$<$ T $>$ \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_a2ec31b288ce0fbdacf2310446f3ace38}{}\label{classrdf_1_1bpc_1_1Matrix_a2ec31b288ce0fbdacf2310446f3ace38}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!````~Matrix@{$\sim$\+Matrix}}
+\index{````~Matrix@{$\sim$\+Matrix}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{$\sim$\+Matrix()}{~Matrix()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ virtual {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::$\sim${\bf Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_ab7cf40ce5404d7727a0a656e8c739140}{}\label{classrdf_1_1bpc_1_1Matrix_ab7cf40ce5404d7727a0a656e8c739140}
+
+
+Reimplemented from \hyperlink{classrdf_1_1Matrix_a03f03cfa4c03e106714e2975ecafb892}{rdf\+::\+Matrix$<$ T $>$}.
+
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Add\+Features\+Mat@{Add\+Features\+Mat}}
+\index{Add\+Features\+Mat@{Add\+Features\+Mat}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Add\+Features\+Mat(const Features\+Mat \&mat)}{AddFeaturesMat(const FeaturesMat &mat)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Add\+Features\+Mat (
+\begin{DoxyParamCaption}
+\item[{const {\bf Features\+Mat} \&}]{mat}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_a937666077b21230acd1afe126f84a7b4}{}\label{classrdf_1_1bpc_1_1Matrix_a937666077b21230acd1afe126f84a7b4}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Allocate\+Cells@{Allocate\+Cells}}
+\index{Allocate\+Cells@{Allocate\+Cells}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Allocate\+Cells()}{AllocateCells()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Allocate\+Cells (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_ac90210cef7b4b102b3ec19d78a38631d}{}\label{classrdf_1_1bpc_1_1Matrix_ac90210cef7b4b102b3ec19d78a38631d}
+
+
+Referenced by rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::load().
+
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Average@{Average}}
+\index{Average@{Average}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Average(int average)}{Average(int average)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Average (
+\begin{DoxyParamCaption}
+\item[{int}]{average}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_a480cb47beacfcc5809503893fc38b968}{}\label{classrdf_1_1bpc_1_1Matrix_a480cb47beacfcc5809503893fc38b968}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Calculate\+Feature\+Response@{Calculate\+Feature\+Response}}
+\index{Calculate\+Feature\+Response@{Calculate\+Feature\+Response}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Calculate\+Feature\+Response(int, int, int)}{CalculateFeatureResponse(int, int, int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ float {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Calculate\+Feature\+Response (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_a3884af4b2109a2d80b2dc2778bd71a8e}{}\label{classrdf_1_1bpc_1_1Matrix_a3884af4b2109a2d80b2dc2778bd71a8e}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Evaluate\+Feature\+Response\+For\+Threshold@{Evaluate\+Feature\+Response\+For\+Threshold}}
+\index{Evaluate\+Feature\+Response\+For\+Threshold@{Evaluate\+Feature\+Response\+For\+Threshold}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Evaluate\+Feature\+Response\+For\+Threshold(float, int)}{EvaluateFeatureResponseForThreshold(float, int)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Evaluate\+Feature\+Response\+For\+Threshold (
+\begin{DoxyParamCaption}
+\item[{float}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_a81c5040bdc90a4548ebedc0e3027d666}{}\label{classrdf_1_1bpc_1_1Matrix_a81c5040bdc90a4548ebedc0e3027d666}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Evaluate\+Point\+In\+Matrix@{Evaluate\+Point\+In\+Matrix}}
+\index{Evaluate\+Point\+In\+Matrix@{Evaluate\+Point\+In\+Matrix}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Evaluate\+Point\+In\+Matrix(int point)}{EvaluatePointInMatrix(int point)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Evaluate\+Point\+In\+Matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{point}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_a05799bd5cff0c7c1d1c4f6fa19dce22b}{}\label{classrdf_1_1bpc_1_1Matrix_a05799bd5cff0c7c1d1c4f6fa19dce22b}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Find\+Best\+Pair@{Find\+Best\+Pair}}
+\index{Find\+Best\+Pair@{Find\+Best\+Pair}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Find\+Best\+Pair()}{FindBestPair()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ std\+::pair$<$int,int$>$ {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Find\+Best\+Pair (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_ab6cf5e854c06f976908b4f53462b6bd3}{}\label{classrdf_1_1bpc_1_1Matrix_ab6cf5e854c06f976908b4f53462b6bd3}
+
+\begin{DoxyCode}
+61                                        \{
+62            \textcolor{keywordflow}{return} std::make\_pair(2,3);
+63          \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!load@{load}}
+\index{load@{load}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{load(\+Archive \&ar, const unsigned int version)}{load(Archive &ar, const unsigned int version)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$class Archive $>$ void {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::load (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_a87e3e793dc7e2fa499aaba37bf825510}{}\label{classrdf_1_1bpc_1_1Matrix_a87e3e793dc7e2fa499aaba37bf825510}
+
+\begin{DoxyCode}
+90       \{
+91         ar & \hyperlink{classrdf_1_1bpc_1_1Matrix_a635849575c43df7969d5328cede7a040}{featuresMatrix\_};
+92         ar & \hyperlink{classrdf_1_1bpc_1_1Matrix_a594473393d0fb508cf68714062f65256}{rows\_};
+93         ar & \hyperlink{classrdf_1_1bpc_1_1Matrix_a2a15ca3ef49e2f0c7724e5c556878b3c}{cols\_};
+94         \hyperlink{classrdf_1_1bpc_1_1Matrix_ac90210cef7b4b102b3ec19d78a38631d}{AllocateCells}();
+95         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classrdf_1_1bpc_1_1Matrix_a594473393d0fb508cf68714062f65256}{rows\_}; i++) \{
+96           \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < \hyperlink{classrdf_1_1bpc_1_1Matrix_a2a15ca3ef49e2f0c7724e5c556878b3c}{cols\_}; j++) \{
+97             ar & \hyperlink{classrdf_1_1bpc_1_1Matrix_adebf06eb7c44da98fd103edfb17988f1}{cells\_}[i * rows\_ + j];
+98           \}
+99         \}
+100       \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{operator()(int i, int j)}{operator()(int i, int j)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_a950b7d0d97347c41047d8e5631552e58}{}\label{classrdf_1_1bpc_1_1Matrix_a950b7d0d97347c41047d8e5631552e58}
+
+\begin{DoxyCode}
+58                                     \{
+59              \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1bpc_1_1Matrix_adebf06eb7c44da98fd103edfb17988f1}{cells\_}[i * this->\hyperlink{classrdf_1_1bpc_1_1Matrix_a594473393d0fb508cf68714062f65256}{rows\_} + j];
+60          \}
+\end{DoxyCode}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Print@{Print}}
+\index{Print@{Print}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Print()}{Print()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_acb261eb27775f1ed974349f7ceb6c1c3}{}\label{classrdf_1_1bpc_1_1Matrix_acb261eb27775f1ed974349f7ceb6c1c3}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!Reduce@{Reduce}}
+\index{Reduce@{Reduce}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{Reduce(\+Matrix \&other)}{Reduce(Matrix &other)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::Reduce (
+\begin{DoxyParamCaption}
+\item[{{\bf Matrix}$<$ T $>$ \&}]{other}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1bpc_1_1Matrix_a45f64dbd9f56ee67d906aa08961bbae9}{}\label{classrdf_1_1bpc_1_1Matrix_a45f64dbd9f56ee67d906aa08961bbae9}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!save@{save}}
+\index{save@{save}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{save(\+Archive \&ar, const unsigned int version) const }{save(Archive &ar, const unsigned int version) const }}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ template$<$class Archive $>$ void {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::save (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_a6c3808d393e218a29df6ff1bbdfbe8ea}{}\label{classrdf_1_1bpc_1_1Matrix_a6c3808d393e218a29df6ff1bbdfbe8ea}
+
+\begin{DoxyCode}
+78    \{
+79      ar & \hyperlink{classrdf_1_1bpc_1_1Matrix_a635849575c43df7969d5328cede7a040}{featuresMatrix\_};
+80      ar & \hyperlink{classrdf_1_1bpc_1_1Matrix_a594473393d0fb508cf68714062f65256}{rows\_};
+81      ar & \hyperlink{classrdf_1_1bpc_1_1Matrix_a2a15ca3ef49e2f0c7724e5c556878b3c}{cols\_};
+82      \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \hyperlink{classrdf_1_1bpc_1_1Matrix_a594473393d0fb508cf68714062f65256}{rows\_}; i++) \{
+83        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < \hyperlink{classrdf_1_1bpc_1_1Matrix_a2a15ca3ef49e2f0c7724e5c556878b3c}{cols\_}; j++) \{
+84          ar & \hyperlink{classrdf_1_1bpc_1_1Matrix_adebf06eb7c44da98fd103edfb17988f1}{cells\_}[i * rows\_ + j];
+85        \}
+86      \}
+87    \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!boost\+::serialization\+::access@{boost\+::serialization\+::access}}
+\index{boost\+::serialization\+::access@{boost\+::serialization\+::access}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{boost\+::serialization\+::access}{boost::serialization::access}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_ac98d07dd8f7b70e16ccb9a01abf56b9c}{}\label{classrdf_1_1bpc_1_1Matrix_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!cells\+\_\+@{cells\+\_\+}}
+\index{cells\+\_\+@{cells\+\_\+}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{cells\+\_\+}{cells_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ T$\ast$ {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::cells\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_adebf06eb7c44da98fd103edfb17988f1}{}\label{classrdf_1_1bpc_1_1Matrix_adebf06eb7c44da98fd103edfb17988f1}
+
+
+Referenced by rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::operator()().
+
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!cols\+\_\+@{cols\+\_\+}}
+\index{cols\+\_\+@{cols\+\_\+}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{cols\+\_\+}{cols_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::cols\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_a2a15ca3ef49e2f0c7724e5c556878b3c}{}\label{classrdf_1_1bpc_1_1Matrix_a2a15ca3ef49e2f0c7724e5c556878b3c}
+
+
+Referenced by rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::load(), and rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::save().
+
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!features\+Matrix\+\_\+@{features\+Matrix\+\_\+}}
+\index{features\+Matrix\+\_\+@{features\+Matrix\+\_\+}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{features\+Matrix\+\_\+}{featuresMatrix_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Features\+Mat} {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::features\+Matrix\+\_\+}\hypertarget{classrdf_1_1bpc_1_1Matrix_a635849575c43df7969d5328cede7a040}{}\label{classrdf_1_1bpc_1_1Matrix_a635849575c43df7969d5328cede7a040}
+
+
+Referenced by rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::load(), and rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::save().
+
+\index{rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}!rows\+\_\+@{rows\+\_\+}}
+\index{rows\+\_\+@{rows\+\_\+}!rdf\+::bpc\+::\+Matrix@{rdf\+::bpc\+::\+Matrix}}
+\subsubsection[{\texorpdfstring{rows\+\_\+}{rows_}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ int {\bf rdf\+::bpc\+::\+Matrix}$<$ T $>$\+::rows\+\_\+\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1bpc_1_1Matrix_a594473393d0fb508cf68714062f65256}{}\label{classrdf_1_1bpc_1_1Matrix_a594473393d0fb508cf68714062f65256}
+
+
+Referenced by rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::load(), rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::operator()(), and rdf\+::bpc\+::\+Matrix$<$ rdf\+::bpc\+::rdf\+::\+Cell $>$\+::save().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{FeaturesMat_8h}{Features\+Mat.\+h}\item 
+\hyperlink{MatrixBPC_8h}{Matrix\+B\+P\+C.\+h}\end{DoxyCompactItemize}

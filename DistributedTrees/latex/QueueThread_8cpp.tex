@@ -1,0 +1,63 @@
+\hypertarget{QueueThread_8cpp}{}\section{Queue\+Thread.\+cpp File Reference}
+\label{QueueThread_8cpp}\index{Queue\+Thread.\+cpp@{Queue\+Thread.\+cpp}}
+{\ttfamily \#include $<$exception$>$}\\*
+{\ttfamily \#include \char`\"{}Queue\+Thread.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Scheduler.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Node\+Trainee\+B\+P\+C.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Trainer\+B\+P\+C.\+h\char`\"{}}\\*
+Include dependency graph for Queue\+Thread.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{QueueThread_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{QueueThread_8cpp_ac480b53bc8702e647e634be6ff7334f0}{init} (std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ \&structure, \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} \&task, \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} \&node\+Result)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Queue\+Thread.\+cpp@{Queue\+Thread.\+cpp}!init@{init}}
+\index{init@{init}!Queue\+Thread.\+cpp@{Queue\+Thread.\+cpp}}
+\subsubsection[{\texorpdfstring{init(std\+::vector$<$ Estructura\+::\+Node $>$ \&structure, rdf\+::\+Task \&task, rdf\+::\+Node\+Result \&node\+Result)}{init(std::vector< Estructura::Node > &structure, rdf::Task &task, rdf::NodeResult &nodeResult)}}]{\setlength{\rightskip}{0pt plus 5cm}void init (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Estructura\+::\+Node} $>$ \&}]{structure, }
+\item[{{\bf rdf\+::\+Task} \&}]{task, }
+\item[{{\bf rdf\+::\+Node\+Result} \&}]{node\+Result}
+\end{DoxyParamCaption}
+)}\hypertarget{QueueThread_8cpp_ac480b53bc8702e647e634be6ff7334f0}{}\label{QueueThread_8cpp_ac480b53bc8702e647e634be6ff7334f0}
+
+
+References rdf\+::\+Task\+::get\+Feature\+Matrix(), rdf\+::bpc\+::\+Node\+Trainee$<$ T $>$\+::\+Get\+Matrix(), rdf\+::\+Task\+::get\+Node(), rdf\+::\+Task\+::get\+Rank(), rdf\+::\+Task\+::get\+Tree(), rdf\+::bpc\+::\+Node\+Trainee$<$ T $>$\+::\+Set\+Node\+Id(), rdf\+::bpc\+::\+Node\+Trainee$<$ T $>$\+::\+Set\+Tree\+Id(), and rdf\+::bpc\+::\+Trainer\+::\+Train().
+
+
+
+Referenced by Queue\+Thread\+::run().
+
+
+\begin{DoxyCode}
+31                                                                                            \{
+32     std::cout << \textcolor{stringliteral}{"********************************************** SLAVE "} << task.
+      \hyperlink{classrdf_1_1Task_ab1bcd01480e2c381541b6346f15cf4b7}{getRank}() << \textcolor{stringliteral}{" is TRAINNING *************************************\(\backslash\)n"};
+33     \hyperlink{classrdf_1_1bpc_1_1NodeTrainee}{rdf::bpc::NodeTrainee<rdf::bpc::Cell>}   \_node;
+34     \hyperlink{classrdf_1_1NodeResult}{rdf::NodeResult} *nodeResultTemp = \textcolor{keyword}{new} \hyperlink{classrdf_1_1NodeResult}{rdf::NodeResult}();
+35     \_node.\hyperlink{classrdf_1_1bpc_1_1NodeTrainee_af7bb9c9df89101c4911fe9713ed6aff5}{SetTreeId}(task.\hyperlink{classrdf_1_1Task_a942297717d39a25db9ed8636ef72dca1}{getTree}());
+36     \_node.\hyperlink{classrdf_1_1bpc_1_1NodeTrainee_a6c42d9a2911c014addb9c5021a484085}{SetNodeId}(task.\hyperlink{classrdf_1_1Task_abed5b1d313483299a04f0ccb63901c54}{getNode}());
+37     \_node.\hyperlink{classrdf_1_1bpc_1_1NodeTrainee_ab1ae16941f52a5f38e438b13ed3cee53}{GetMatrix}().AddFeaturesMat(task.\hyperlink{classrdf_1_1Task_a2c122a98bbf1eed3f957314b77d4d127}{getFeatureMatrix}());
+38     \textcolor{comment}{//std::cout << "SIZE " << structure.size() <<"\(\backslash\)n";}
+39     
+40     cv::Mat img = structure[0].imageLabel;
+41     
+42     
+43     \hyperlink{classrdf_1_1bpc_1_1Trainer}{rdf::bpc::Trainer} trainer;
+44     trainer.\hyperlink{classrdf_1_1bpc_1_1Trainer_a473a782275d1ee33fc6450e0fc960997}{Train}(&\_node,structure, nodeResult); \textcolor{comment}{// cambiar para meter nodeResult}
+45     
+46 \textcolor{comment}{//    nodeResult = nodeResultTemp;}
+47     \textcolor{comment}{//std::cout << "        SIZE " << img<< "\(\backslash\)n"; }
+48     
+49 \}
+\end{DoxyCode}

@@ -1,0 +1,139 @@
+\hypertarget{classCollection}{}\section{Collection Class Reference}
+\label{classCollection}\index{Collection@{Collection}}
+
+
+{\ttfamily \#include $<$Collection.\+h$>$}
+
+
+
+Collaboration diagram for Collection\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classCollection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classCollection_a1fda66d6a2ff4fcecc74fba63abbf52f}{Collection} ()
+\item 
+\hyperlink{classCollection_ab42c1cfe26f486bd060cbbe215c374f0}{Collection} (const \hyperlink{classCollection}{Collection} \&orig)
+\item 
+virtual \hyperlink{classCollection_a017dd492156e6b570a21f58a07dd73f5}{$\sim$\+Collection} ()
+\item 
+void \hyperlink{classCollection_a57290652c3cf6fc744c5614e0bf49d15}{set\+Image} (\hyperlink{classStrategyImage}{Strategy\+Image} $\ast$Type\+Image)
+\item 
+void \hyperlink{classCollection_a251f7033e22c16a7b12dde94d9a7021e}{read\+Image} (int height, int width, std\+::string direction, cv\+::\+Mat \&image)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStrategyImage}{Strategy\+Image} $\ast$ \hyperlink{classCollection_a0831c53adfb080139a54b8c7a98bdf25}{st\+Image}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Collection@{Collection}!Collection@{Collection}}
+\index{Collection@{Collection}!Collection@{Collection}}
+\subsubsection[{\texorpdfstring{Collection()}{Collection()}}]{\setlength{\rightskip}{0pt plus 5cm}Collection\+::\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classCollection_a1fda66d6a2ff4fcecc74fba63abbf52f}{}\label{classCollection_a1fda66d6a2ff4fcecc74fba63abbf52f}
+
+\begin{DoxyCode}
+16                        \{
+17 \}
+\end{DoxyCode}
+\index{Collection@{Collection}!Collection@{Collection}}
+\index{Collection@{Collection}!Collection@{Collection}}
+\subsubsection[{\texorpdfstring{Collection(const Collection \&orig)}{Collection(const Collection &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Collection\+::\+Collection (
+\begin{DoxyParamCaption}
+\item[{const {\bf Collection} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classCollection_ab42c1cfe26f486bd060cbbe215c374f0}{}\label{classCollection_ab42c1cfe26f486bd060cbbe215c374f0}
+
+\begin{DoxyCode}
+19                                              \{
+20 \}
+\end{DoxyCode}
+\index{Collection@{Collection}!````~Collection@{$\sim$\+Collection}}
+\index{````~Collection@{$\sim$\+Collection}!Collection@{Collection}}
+\subsubsection[{\texorpdfstring{$\sim$\+Collection()}{~Collection()}}]{\setlength{\rightskip}{0pt plus 5cm}Collection\+::$\sim$\+Collection (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classCollection_a017dd492156e6b570a21f58a07dd73f5}{}\label{classCollection_a017dd492156e6b570a21f58a07dd73f5}
+
+\begin{DoxyCode}
+22                         \{
+23 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Collection@{Collection}!read\+Image@{read\+Image}}
+\index{read\+Image@{read\+Image}!Collection@{Collection}}
+\subsubsection[{\texorpdfstring{read\+Image(int height, int width, std\+::string direction, cv\+::\+Mat \&image)}{readImage(int height, int width, std::string direction, cv::Mat &image)}}]{\setlength{\rightskip}{0pt plus 5cm}void Collection\+::read\+Image (
+\begin{DoxyParamCaption}
+\item[{int}]{height, }
+\item[{int}]{width, }
+\item[{std\+::string}]{direction, }
+\item[{cv\+::\+Mat \&}]{image}
+\end{DoxyParamCaption}
+)}\hypertarget{classCollection_a251f7033e22c16a7b12dde94d9a7021e}{}\label{classCollection_a251f7033e22c16a7b12dde94d9a7021e}
+
+
+References Strategy\+Image\+::read\+Image(), and st\+Image.
+
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+
+\begin{DoxyCode}
+30                                                                                   \{
+31     cv::Mat imageTem;
+32     \hyperlink{classCollection_a0831c53adfb080139a54b8c7a98bdf25}{Collection::stImage}->\hyperlink{classStrategyImage_aee857e79df483412f66b529417ddfd44}{readImage}(height,width,direction,imageTem);
+33     image = imageTem;
+34     
+35 \}\end{DoxyCode}
+\index{Collection@{Collection}!set\+Image@{set\+Image}}
+\index{set\+Image@{set\+Image}!Collection@{Collection}}
+\subsubsection[{\texorpdfstring{set\+Image(\+Strategy\+Image $\ast$\+Type\+Image)}{setImage(StrategyImage *TypeImage)}}]{\setlength{\rightskip}{0pt plus 5cm}void Collection\+::set\+Image (
+\begin{DoxyParamCaption}
+\item[{{\bf Strategy\+Image} $\ast$}]{Type\+Image}
+\end{DoxyParamCaption}
+)}\hypertarget{classCollection_a57290652c3cf6fc744c5614e0bf49d15}{}\label{classCollection_a57290652c3cf6fc744c5614e0bf49d15}
+
+
+References st\+Image.
+
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+
+\begin{DoxyCode}
+26                                                  \{
+27     \hyperlink{classCollection_a0831c53adfb080139a54b8c7a98bdf25}{Collection::stImage} = TypeImage;
+28 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Collection@{Collection}!st\+Image@{st\+Image}}
+\index{st\+Image@{st\+Image}!Collection@{Collection}}
+\subsubsection[{\texorpdfstring{st\+Image}{stImage}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Strategy\+Image}$\ast$ Collection\+::st\+Image\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classCollection_a0831c53adfb080139a54b8c7a98bdf25}{}\label{classCollection_a0831c53adfb080139a54b8c7a98bdf25}
+
+
+Referenced by read\+Image(), and set\+Image().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Collection_8h}{Collection.\+h}\item 
+\hyperlink{Collection_8cpp}{Collection.\+cpp}\end{DoxyCompactItemize}

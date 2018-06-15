@@ -1,0 +1,354 @@
+\hypertarget{classQueueTask}{}\section{Queue\+Task Class Reference}
+\label{classQueueTask}\index{Queue\+Task@{Queue\+Task}}
+
+
+{\ttfamily \#include $<$Queue\+Task.\+h$>$}
+
+
+
+Collaboration diagram for Queue\+Task\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classQueueTask__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structQueueTask_1_1Queue}{Queue}
+\item 
+struct \hyperlink{structQueueTask_1_1TaskStruct}{Task\+Struct}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classQueueTask_aa9b9477fcb1242fc8b357b3f7416752c}{Queue\+Task} ()
+\item 
+\hyperlink{classQueueTask_a326a20304f894ef5cec9e0a275496ce7}{Queue\+Task} (const \hyperlink{classQueueTask}{Queue\+Task} \&orig)
+\item 
+virtual \hyperlink{classQueueTask_a9ed7eebd0806d5de8b977c7e8d40dee7}{$\sim$\+Queue\+Task} ()
+\item 
+void \hyperlink{classQueueTask_a37f73c5339ef2c9d1266430b8f741999}{display\+Queue\+Tasks} (struct \hyperlink{structQueueTask_1_1Queue}{Queue} tasks)
+\item 
+void \hyperlink{classQueueTask_a5cb3f2197e8ca06187ca3c3afcc95e2b}{add} (struct \hyperlink{structQueueTask_1_1Queue}{Queue} \&tasks, int rank, int tree, int node)
+\item 
+void \hyperlink{classQueueTask_a32187b71e7fc4b94c029bfa3183440a6}{is\+Empty} (struct \hyperlink{structQueueTask_1_1Queue}{Queue} tasks, bool \&empty)
+\item 
+void \hyperlink{classQueueTask_a95870b68177d6b6cdd36cec23f80811c}{pop} (struct \hyperlink{structQueueTask_1_1Queue}{Queue} \&tasks, struct \hyperlink{structQueueTask_1_1TaskStruct}{Task\+Struct} \&task)
+\item 
+void \hyperlink{classQueueTask_a798f3e860e39a4c9ce4aaa3bca64b63f}{get\+Number\+Elements} (struct \hyperlink{structQueueTask_1_1Queue}{Queue} \&tasks, int \&number\+Elements)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structQueueTask_1_1TaskStruct}{Queue\+Task\+::\+Task\+Struct} \hyperlink{classQueueTask_aa62b59622aa85704f0adedfd9a56ece2}{task\+Struct}
+\item 
+struct \hyperlink{structQueueTask_1_1Queue}{Queue\+Task\+::\+Queue} \hyperlink{classQueueTask_a5dcac92fbafbc338f87bcf5f2b5b2919}{queue}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structQueueTask_1_1TaskStruct}{Task\+Struct} $\ast$ \hyperlink{classQueueTask_a84998ffe350640959aa186a9f283320c}{create\+Task} (int rank, int tree, int node)
+\item 
+void \hyperlink{classQueueTask_a4c2692a068505a40559bf101a0ad64cb}{sort\+Priority} (struct \hyperlink{structQueueTask_1_1Queue}{Queue} \&tasks)
+\item 
+void \hyperlink{classQueueTask_ad32628f249dc718ec9342d7e043371ee}{add\+Queue} (struct \hyperlink{structQueueTask_1_1Queue}{Queue} \&tasks, int rank, int tree, int node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Queue\+Task@{Queue\+Task}!Queue\+Task@{Queue\+Task}}
+\index{Queue\+Task@{Queue\+Task}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{Queue\+Task()}{QueueTask()}}]{\setlength{\rightskip}{0pt plus 5cm}Queue\+Task\+::\+Queue\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueTask_aa9b9477fcb1242fc8b357b3f7416752c}{}\label{classQueueTask_aa9b9477fcb1242fc8b357b3f7416752c}
+
+\begin{DoxyCode}
+17                      \{
+18 
+19 \}
+\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!Queue\+Task@{Queue\+Task}}
+\index{Queue\+Task@{Queue\+Task}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{Queue\+Task(const Queue\+Task \&orig)}{QueueTask(const QueueTask &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Queue\+Task\+::\+Queue\+Task (
+\begin{DoxyParamCaption}
+\item[{const {\bf Queue\+Task} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueTask_a326a20304f894ef5cec9e0a275496ce7}{}\label{classQueueTask_a326a20304f894ef5cec9e0a275496ce7}
+
+\begin{DoxyCode}
+21                                           \{
+22 \}
+\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!````~Queue\+Task@{$\sim$\+Queue\+Task}}
+\index{````~Queue\+Task@{$\sim$\+Queue\+Task}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{$\sim$\+Queue\+Task()}{~QueueTask()}}]{\setlength{\rightskip}{0pt plus 5cm}Queue\+Task\+::$\sim$\+Queue\+Task (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classQueueTask_a9ed7eebd0806d5de8b977c7e8d40dee7}{}\label{classQueueTask_a9ed7eebd0806d5de8b977c7e8d40dee7}
+
+\begin{DoxyCode}
+24                       \{
+25 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Queue\+Task@{Queue\+Task}!add@{add}}
+\index{add@{add}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{add(struct Queue \&tasks, int rank, int tree, int node)}{add(struct Queue &tasks, int rank, int tree, int node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Task\+::add (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Queue} \&}]{tasks, }
+\item[{int}]{rank, }
+\item[{int}]{tree, }
+\item[{int}]{node}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueTask_a5cb3f2197e8ca06187ca3c3afcc95e2b}{}\label{classQueueTask_a5cb3f2197e8ca06187ca3c3afcc95e2b}
+
+
+References add\+Queue(), and sort\+Priority().
+
+
+\begin{DoxyCode}
+104                                                               \{
+105     \hyperlink{classQueueTask_ad32628f249dc718ec9342d7e043371ee}{addQueue}(tasks, rank, tree, node);
+106     \hyperlink{classQueueTask_a4c2692a068505a40559bf101a0ad64cb}{sortPriority}(tasks);
+107 \}
+\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!add\+Queue@{add\+Queue}}
+\index{add\+Queue@{add\+Queue}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{add\+Queue(struct Queue \&tasks, int rank, int tree, int node)}{addQueue(struct Queue &tasks, int rank, int tree, int node)}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Task\+::add\+Queue (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Queue} \&}]{tasks, }
+\item[{int}]{rank, }
+\item[{int}]{tree, }
+\item[{int}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classQueueTask_ad32628f249dc718ec9342d7e043371ee}{}\label{classQueueTask_ad32628f249dc718ec9342d7e043371ee}
+
+
+References create\+Task(), Queue\+Task\+::\+Queue\+::first, Queue\+Task\+::\+Queue\+::last, and Queue\+Task\+::\+Task\+Struct\+::next.
+
+
+
+Referenced by add().
+
+
+\begin{DoxyCode}
+43                                                                    \{
+44     \textcolor{keyword}{struct }\hyperlink{structQueueTask_1_1TaskStruct}{QueueTask::TaskStruct} *aux = \hyperlink{classQueueTask_a84998ffe350640959aa186a9f283320c}{createTask}(
+      \hyperlink{structQueueTask_1_1TaskStruct_af9877fb064cb899ac88ffef431d98f47}{rank}, \hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree}, \hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node});
+45     aux->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next} = 0;
+46 
+47     \textcolor{keywordflow}{if} (tasks.first == NULL) \{
+48         tasks.first = aux;
+49     \} \textcolor{keywordflow}{else} \{
+50         tasks.last->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next} = aux;
+51     \}
+52 
+53     tasks.last = aux;
+54 \}
+\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!create\+Task@{create\+Task}}
+\index{create\+Task@{create\+Task}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{create\+Task(int rank, int tree, int node)}{createTask(int rank, int tree, int node)}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Queue\+Task\+::\+Task\+Struct} $\ast$ Queue\+Task\+::create\+Task (
+\begin{DoxyParamCaption}
+\item[{int}]{rank, }
+\item[{int}]{tree, }
+\item[{int}]{node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classQueueTask_a84998ffe350640959aa186a9f283320c}{}\label{classQueueTask_a84998ffe350640959aa186a9f283320c}
+
+
+References Queue\+Task\+::\+Task\+Struct\+::node, Queue\+Task\+::\+Task\+Struct\+::rank, and Queue\+Task\+::\+Task\+Struct\+::tree.
+
+
+
+Referenced by add\+Queue().
+
+
+\begin{DoxyCode}
+35                                                                               \{
+36     \textcolor{keyword}{struct }\hyperlink{structQueueTask_1_1TaskStruct}{QueueTask::TaskStruct} *newTask = \textcolor{keyword}{new} (\textcolor{keyword}{struct }
+      \hyperlink{structQueueTask_1_1TaskStruct}{QueueTask::TaskStruct});
+37     newTask->\hyperlink{structQueueTask_1_1TaskStruct_af9877fb064cb899ac88ffef431d98f47}{rank} = \hyperlink{structQueueTask_1_1TaskStruct_af9877fb064cb899ac88ffef431d98f47}{rank};
+38     newTask->\hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node} = \hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node};
+39     newTask->\hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree} = \hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree};
+40     \textcolor{keywordflow}{return} newTask;
+41 \}
+\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!display\+Queue\+Tasks@{display\+Queue\+Tasks}}
+\index{display\+Queue\+Tasks@{display\+Queue\+Tasks}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{display\+Queue\+Tasks(struct Queue tasks)}{displayQueueTasks(struct Queue tasks)}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Task\+::display\+Queue\+Tasks (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Queue}}]{tasks}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueTask_a37f73c5339ef2c9d1266430b8f741999}{}\label{classQueueTask_a37f73c5339ef2c9d1266430b8f741999}
+
+
+References Queue\+Task\+::\+Queue\+::first, Queue\+Task\+::\+Task\+Struct\+::next, Queue\+Task\+::\+Task\+Struct\+::node, Queue\+Task\+::\+Task\+Struct\+::rank, and Queue\+Task\+::\+Task\+Struct\+::tree.
+
+
+\begin{DoxyCode}
+56                                              \{
+57     \textcolor{keyword}{struct }\hyperlink{structQueueTask_1_1TaskStruct}{QueueTask::TaskStruct} *aux;
+58 
+59     aux = tasks.first;
+60     std::cout << \textcolor{stringliteral}{"Las tareas son: "} << \textcolor{stringliteral}{"\(\backslash\)n"};
+61     std::cout << \textcolor{stringliteral}{"****************"} << \textcolor{stringliteral}{"\(\backslash\)n"};
+62 
+63     \textcolor{keywordflow}{while} (aux != NULL) \{
+64         std::cout << \textcolor{stringliteral}{"Tree:  "} << aux->\hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree} << \textcolor{stringliteral}{" Node:   "} << aux->\hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node} << \textcolor{stringliteral}{" Rank:   "} << aux->
+      \hyperlink{structQueueTask_1_1TaskStruct_af9877fb064cb899ac88ffef431d98f47}{rank} << std::endl;
+65         aux = aux->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next};
+66     \}
+67 \}
+\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!get\+Number\+Elements@{get\+Number\+Elements}}
+\index{get\+Number\+Elements@{get\+Number\+Elements}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{get\+Number\+Elements(struct Queue \&tasks, int \&number\+Elements)}{getNumberElements(struct Queue &tasks, int &numberElements)}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Task\+::get\+Number\+Elements (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Queue} \&}]{tasks, }
+\item[{int \&}]{number\+Elements}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueTask_a798f3e860e39a4c9ce4aaa3bca64b63f}{}\label{classQueueTask_a798f3e860e39a4c9ce4aaa3bca64b63f}
+
+
+References Queue\+Task\+::\+Queue\+::first, and Queue\+Task\+::\+Task\+Struct\+::next.
+
+
+\begin{DoxyCode}
+133                                                                   \{
+134     \textcolor{keyword}{struct }\hyperlink{structQueueTask_1_1TaskStruct}{QueueTask::TaskStruct} *aux;
+135 
+136     aux = tasks.first;
+137     numberElements = 0;
+138     \textcolor{keywordflow}{while} (aux != NULL) \{
+139         aux = aux->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next};
+140         numberElements +=1;
+141     \}
+142 \}\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{is\+Empty(struct Queue tasks, bool \&empty)}{isEmpty(struct Queue tasks, bool &empty)}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Task\+::is\+Empty (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Queue}}]{tasks, }
+\item[{bool \&}]{empty}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueTask_a32187b71e7fc4b94c029bfa3183440a6}{}\label{classQueueTask_a32187b71e7fc4b94c029bfa3183440a6}
+
+
+References Queue\+Task\+::\+Queue\+::first.
+
+
+\begin{DoxyCode}
+109                                                 \{
+110 
+111     \textcolor{keywordflow}{if} (tasks.first == NULL) \{
+112         empty = \textcolor{keyword}{true};
+113     \} \textcolor{keywordflow}{else} \{
+114         empty = \textcolor{keyword}{false};
+115     \}
+116 \}
+\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!pop@{pop}}
+\index{pop@{pop}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{pop(struct Queue \&tasks, struct Task\+Struct \&task)}{pop(struct Queue &tasks, struct TaskStruct &task)}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Task\+::pop (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Queue} \&}]{tasks, }
+\item[{struct {\bf Task\+Struct} \&}]{task}
+\end{DoxyParamCaption}
+)}\hypertarget{classQueueTask_a95870b68177d6b6cdd36cec23f80811c}{}\label{classQueueTask_a95870b68177d6b6cdd36cec23f80811c}
+
+
+References Queue\+Task\+::\+Queue\+::first, and Queue\+Task\+::\+Task\+Struct\+::next.
+
+
+\begin{DoxyCode}
+118                                                                 \{
+119     \textcolor{keyword}{struct }\hyperlink{structQueueTask_1_1TaskStruct}{QueueTask::TaskStruct} *aux;
+120     aux = tasks.first;
+121 
+122     \textcolor{keywordflow}{if} (tasks.first != NULL) \{
+123         tasks.first = aux->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next};
+124         aux->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next} = NULL;
+125 
+126     \} \textcolor{keywordflow}{else} \{
+127         std::cout << \textcolor{stringliteral}{"La lista esta vacia"} << \textcolor{stringliteral}{"\(\backslash\)n"};
+128     \}
+129     task = *aux;
+130     \textcolor{keyword}{delete} aux;
+131 \}
+\end{DoxyCode}
+\index{Queue\+Task@{Queue\+Task}!sort\+Priority@{sort\+Priority}}
+\index{sort\+Priority@{sort\+Priority}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{sort\+Priority(struct Queue \&tasks)}{sortPriority(struct Queue &tasks)}}]{\setlength{\rightskip}{0pt plus 5cm}void Queue\+Task\+::sort\+Priority (
+\begin{DoxyParamCaption}
+\item[{struct {\bf Queue} \&}]{tasks}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classQueueTask_a4c2692a068505a40559bf101a0ad64cb}{}\label{classQueueTask_a4c2692a068505a40559bf101a0ad64cb}
+
+
+References Queue\+Task\+::\+Queue\+::first, Queue\+Task\+::\+Task\+Struct\+::next, Queue\+Task\+::\+Task\+Struct\+::node, Queue\+Task\+::\+Task\+Struct\+::rank, and Queue\+Task\+::\+Task\+Struct\+::tree.
+
+
+
+Referenced by add().
+
+
+\begin{DoxyCode}
+69                                          \{
+70     \textcolor{keyword}{struct }\hyperlink{structQueueTask_1_1TaskStruct}{QueueTask::TaskStruct} *aux1, *aux2;
+71     \textcolor{keywordtype}{int} treeAux;
+72     \textcolor{keywordtype}{int} nodeAux;
+73     \textcolor{keywordtype}{int} rankAux;
+74 
+75     aux1 = tasks.first;
+76 
+77     \textcolor{keywordflow}{while} (aux1->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next} != NULL) \{
+78         aux2 = aux1->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next};
+79 
+80         \textcolor{keywordflow}{while} (aux2 != NULL) \{
+81             \textcolor{keywordflow}{if} (aux1->\hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree} >= aux2->\hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree}) \{
+82 
+83                 \textcolor{keywordflow}{if} (aux1->\hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node} > aux2->\hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node}) \{
+84                     treeAux = aux1->\hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree};
+85                     nodeAux = aux1->\hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node};
+86                     rankAux = aux1->\hyperlink{structQueueTask_1_1TaskStruct_af9877fb064cb899ac88ffef431d98f47}{rank};
+87 
+88                     aux1->\hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree} = aux2->\hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree};
+89                     aux1->\hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node} = aux2->\hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node};
+90                     aux1->\hyperlink{structQueueTask_1_1TaskStruct_af9877fb064cb899ac88ffef431d98f47}{rank} = aux2->\hyperlink{structQueueTask_1_1TaskStruct_af9877fb064cb899ac88ffef431d98f47}{rank};
+91 
+92                     aux2->\hyperlink{structQueueTask_1_1TaskStruct_a6b1c9ba8e5b30acfa78e61c95c7cb897}{tree} = treeAux;
+93                     aux2->\hyperlink{structQueueTask_1_1TaskStruct_a22eb8e22f500809266c4983897b9af7f}{node} = nodeAux;
+94                     aux2->\hyperlink{structQueueTask_1_1TaskStruct_af9877fb064cb899ac88ffef431d98f47}{rank} = rankAux;
+95                 \}
+96             \}
+97 
+98             aux2 = aux2->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next};
+99         \}
+100         aux1 = aux1->\hyperlink{structQueueTask_1_1TaskStruct_aff77873a32e938c956c84deb01f98e65}{next};
+101     \}
+102 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Queue\+Task@{Queue\+Task}!queue@{queue}}
+\index{queue@{queue}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{queue}{queue}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Queue\+Task\+::\+Queue}  Queue\+Task\+::queue}\hypertarget{classQueueTask_a5dcac92fbafbc338f87bcf5f2b5b2919}{}\label{classQueueTask_a5dcac92fbafbc338f87bcf5f2b5b2919}
+\index{Queue\+Task@{Queue\+Task}!task\+Struct@{task\+Struct}}
+\index{task\+Struct@{task\+Struct}!Queue\+Task@{Queue\+Task}}
+\subsubsection[{\texorpdfstring{task\+Struct}{taskStruct}}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf Queue\+Task\+::\+Task\+Struct}  Queue\+Task\+::task\+Struct}\hypertarget{classQueueTask_aa62b59622aa85704f0adedfd9a56ece2}{}\label{classQueueTask_aa62b59622aa85704f0adedfd9a56ece2}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{QueueTask_8h}{Queue\+Task.\+h}\item 
+\hyperlink{QueueTask_8cpp}{Queue\+Task.\+cpp}\end{DoxyCompactItemize}

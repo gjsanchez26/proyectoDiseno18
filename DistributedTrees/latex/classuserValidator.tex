@@ -1,0 +1,93 @@
+\hypertarget{classuserValidator}{}\section{user\+Validator Class Reference}
+\label{classuserValidator}\index{user\+Validator@{user\+Validator}}
+
+
+{\ttfamily \#include $<$user\+Validator.\+h$>$}
+
+
+
+Inheritance diagram for user\+Validator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classuserValidator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for user\+Validator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classuserValidator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classuserValidator_ad496e5a1c1c183fb9ab04ac70f7d7b05}{validate\+Configuration} (\hyperlink{classConfigData}{Config\+Data} \&p\+Data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{user\+Validator@{user\+Validator}!validate\+Configuration@{validate\+Configuration}}
+\index{validate\+Configuration@{validate\+Configuration}!user\+Validator@{user\+Validator}}
+\subsubsection[{\texorpdfstring{validate\+Configuration(\+Config\+Data \&p\+Data)}{validateConfiguration(ConfigData &pData)}}]{\setlength{\rightskip}{0pt plus 5cm}bool user\+Validator\+::validate\+Configuration (
+\begin{DoxyParamCaption}
+\item[{{\bf Config\+Data} \&}]{p\+Data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classuserValidator_ad496e5a1c1c183fb9ab04ac70f7d7b05}{}\label{classuserValidator_ad496e5a1c1c183fb9ab04ac70f7d7b05}
+
+
+Implements \hyperlink{classConfigValidationInterface_a9f500c653a7b4b4559f920d499d7b96d}{Config\+Validation\+Interface}.
+
+
+
+References Config\+Data\+::\+Get\+Trainning\+Method(), and Config\+Data\+::print\+Data().
+
+
+\begin{DoxyCode}
+16                                                           \{
+17     \textcolor{comment}{/*  WRITE YOUR CODE HERE}
+18 \textcolor{comment}{     * USER WAY TO VALIDATE CONFIGURATION}
+19 \textcolor{comment}{     * }
+20 \textcolor{comment}{     */}
+21     cout << \textcolor{stringliteral}{"User concrete validation with: \(\backslash\)n"} ;
+22     pData.\hyperlink{classConfigData_acf8c34f47f52ee33edbb758f795ba5a3}{printData}();
+23     
+24     \textcolor{keywordflow}{switch}( pData.\hyperlink{classConfigData_a41a99ccfad14823c0e269c5a77573ddb}{GetTrainningMethod}())\{
+25         \textcolor{keywordflow}{case} 0: \{
+26             cout << \textcolor{stringliteral}{"BPC METHOD VALIDATION \(\backslash\)n"};
+27             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+28             \textcolor{keywordflow}{break};
+29         \}
+30         \textcolor{keywordflow}{case} 1: \{
+31             cout << \textcolor{stringliteral}{"OJR METHOD VALIDATION\(\backslash\)n"};
+32             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+33 
+34             \textcolor{keywordflow}{break};
+35         \}
+36         \textcolor{keywordflow}{case} 2: \{
+37             cout << \textcolor{stringliteral}{"LATENT METHOD VALIDATION\(\backslash\)n"};
+38             \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+39             \textcolor{keywordflow}{break};
+40         \}
+41         \textcolor{keywordflow}{default}: \{
+42             cout << \textcolor{stringliteral}{"CHOOSE METHOD"};
+43             \textcolor{keywordflow}{return} \textcolor{keyword}{false};
+44             \textcolor{keywordflow}{break};
+45         \}
+46             
+47     
+48     \}
+49 
+50 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{userValidator_8h}{user\+Validator.\+h}\item 
+\hyperlink{userValidator_8cpp}{user\+Validator.\+cpp}\end{DoxyCompactItemize}

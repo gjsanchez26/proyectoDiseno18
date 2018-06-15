@@ -1,0 +1,369 @@
+\hypertarget{classrdf_1_1Resource}{}\section{rdf\+:\+:Resource Class Reference}
+\label{classrdf_1_1Resource}\index{rdf\+::\+Resource@{rdf\+::\+Resource}}
+
+
+{\ttfamily \#include $<$Resource.\+h$>$}
+
+
+
+Collaboration diagram for rdf\+:\+:Resource\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classrdf_1_1Resource__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1Resource_a6429643c9dc30ee324e10230203bfc19}{Resource} ()
+\item 
+\hyperlink{classrdf_1_1Resource_a05795b56fdd9f7850faaa26db68da378}{Resource} (const \hyperlink{classrdf_1_1Resource}{Resource} \&orig)
+\item 
+virtual \hyperlink{classrdf_1_1Resource_a1172ca19c641a1cdef69dadfbd71e135}{$\sim$\+Resource} ()
+\item 
+void \hyperlink{classrdf_1_1Resource_a494a37b398f88c9180215f7d2a56104a}{display\+Resource} ()
+\item 
+int \hyperlink{classrdf_1_1Resource_ad1d552c80195c2d60054bcb7aed1c3a0}{get\+C\+P\+Us} () const 
+\item 
+void \hyperlink{classrdf_1_1Resource_acde532c88486296bea5ae2420a981364}{set\+C\+P\+Us} (int \hyperlink{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{C\+P\+Us})
+\item 
+int \hyperlink{classrdf_1_1Resource_adf18e6ac1a7707277a3dbc322acd082a}{get\+Frequency} () const 
+\item 
+void \hyperlink{classrdf_1_1Resource_a41df357db31501e5dbc0e78d347efc3e}{set\+Frequency} (int \hyperlink{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{Frequency})
+\item 
+int \hyperlink{classrdf_1_1Resource_a776692d45e08c13c1d3cbd8ef7ce9c5b}{get\+Mem\+Free} () const 
+\item 
+void \hyperlink{classrdf_1_1Resource_a91e688e3f3ea4ccd462887b687f7b14c}{set\+Mem\+Free} (int \hyperlink{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{Mem\+Free})
+\item 
+int \hyperlink{classrdf_1_1Resource_a6b082c36d255a097879d81ee347145a5}{get\+Mem\+Total} () const 
+\item 
+void \hyperlink{classrdf_1_1Resource_a316a34c2dd6758f3125e7f424b3f35ba}{set\+Mem\+Total} (int \hyperlink{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{Mem\+Total})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Archive $>$ }\\void \hyperlink{classrdf_1_1Resource_adfedf0fbbd8025004e21d87d46dc7abf}{serialize} (Archive \&ar, const unsigned int version)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{Mem\+Total}
+\item 
+int \hyperlink{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{Mem\+Free}
+\item 
+int \hyperlink{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{C\+P\+Us}
+\item 
+int \hyperlink{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{Frequency}
+\item 
+int \hyperlink{classrdf_1_1Resource_abbff4961e68af1fe21b676b5d6d82146}{rank}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrdf_1_1Resource_ac98d07dd8f7b70e16ccb9a01abf56b9c}{boost\+::serialization\+::access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!Resource@{Resource}}
+\index{Resource@{Resource}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{Resource()}{Resource()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Resource\+::\+Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Resource_a6429643c9dc30ee324e10230203bfc19}{}\label{classrdf_1_1Resource_a6429643c9dc30ee324e10230203bfc19}
+
+\begin{DoxyCode}
+16                       \{
+17 \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!Resource@{Resource}}
+\index{Resource@{Resource}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{Resource(const Resource \&orig)}{Resource(const Resource &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Resource\+::\+Resource (
+\begin{DoxyParamCaption}
+\item[{const {\bf Resource} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Resource_a05795b56fdd9f7850faaa26db68da378}{}\label{classrdf_1_1Resource_a05795b56fdd9f7850faaa26db68da378}
+
+
+References C\+P\+Us, Frequency, Mem\+Free, and Mem\+Total.
+
+
+\begin{DoxyCode}
+19                                           \{
+20     \hyperlink{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{MemFree}     =   orig.MemFree;
+21     \hyperlink{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{MemTotal}    =   orig.MemTotal;
+22     \hyperlink{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{Frequency}   =   orig.Frequency;
+23     \hyperlink{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{CPUs}        =   orig.CPUs;
+24     
+25 \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!````~Resource@{$\sim$\+Resource}}
+\index{````~Resource@{$\sim$\+Resource}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{$\sim$\+Resource()}{~Resource()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Resource\+::$\sim$\+Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1Resource_a1172ca19c641a1cdef69dadfbd71e135}{}\label{classrdf_1_1Resource_a1172ca19c641a1cdef69dadfbd71e135}
+
+\begin{DoxyCode}
+27                        \{
+28 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!display\+Resource@{display\+Resource}}
+\index{display\+Resource@{display\+Resource}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{display\+Resource()}{displayResource()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Resource\+::display\+Resource (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1Resource_a494a37b398f88c9180215f7d2a56104a}{}\label{classrdf_1_1Resource_a494a37b398f88c9180215f7d2a56104a}
+
+
+References C\+P\+Us, Frequency, Mem\+Free, and Mem\+Total.
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Resources().
+
+
+\begin{DoxyCode}
+31                                  \{
+32     std::cout << \textcolor{stringliteral}{"Memoria total: "}  <<  \hyperlink{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{rdf::Resource::MemTotal} << \textcolor{stringliteral}{"\(\backslash\)n"};
+33     std::cout << \textcolor{stringliteral}{"Memoria libre: "}  <<  \hyperlink{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{rdf::Resource::MemFree} << \textcolor{stringliteral}{"\(\backslash\)n"};
+34     std::cout << \textcolor{stringliteral}{"Frecuencia: "}     <<  \hyperlink{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{rdf::Resource::Frequency} << \textcolor{stringliteral}{"\(\backslash\)n"};
+35     std::cout << \textcolor{stringliteral}{"Numero de CPUs: "} <<  \hyperlink{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{rdf::Resource::CPUs} << \textcolor{stringliteral}{"\(\backslash\)n"};
+36 \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!get\+C\+P\+Us@{get\+C\+P\+Us}}
+\index{get\+C\+P\+Us@{get\+C\+P\+Us}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{get\+C\+P\+Us() const }{getCPUs() const }}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::get\+C\+P\+Us (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Resource_ad1d552c80195c2d60054bcb7aed1c3a0}{}\label{classrdf_1_1Resource_ad1d552c80195c2d60054bcb7aed1c3a0}
+
+
+References C\+P\+Us.
+
+
+\begin{DoxyCode}
+47                                 \{
+48                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{CPUs};
+49             \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!get\+Frequency@{get\+Frequency}}
+\index{get\+Frequency@{get\+Frequency}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{get\+Frequency() const }{getFrequency() const }}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::get\+Frequency (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Resource_adf18e6ac1a7707277a3dbc322acd082a}{}\label{classrdf_1_1Resource_adf18e6ac1a7707277a3dbc322acd082a}
+
+
+References Frequency.
+
+
+\begin{DoxyCode}
+55                                      \{
+56                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{Frequency};
+57             \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!get\+Mem\+Free@{get\+Mem\+Free}}
+\index{get\+Mem\+Free@{get\+Mem\+Free}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{get\+Mem\+Free() const }{getMemFree() const }}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::get\+Mem\+Free (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Resource_a776692d45e08c13c1d3cbd8ef7ce9c5b}{}\label{classrdf_1_1Resource_a776692d45e08c13c1d3cbd8ef7ce9c5b}
+
+
+References Mem\+Free.
+
+
+
+Referenced by rdf\+::\+Image\+Dispatcher\+::analyze\+Resource().
+
+
+\begin{DoxyCode}
+63                                    \{
+64                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{MemFree};
+65             \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!get\+Mem\+Total@{get\+Mem\+Total}}
+\index{get\+Mem\+Total@{get\+Mem\+Total}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{get\+Mem\+Total() const }{getMemTotal() const }}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::get\+Mem\+Total (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Resource_a6b082c36d255a097879d81ee347145a5}{}\label{classrdf_1_1Resource_a6b082c36d255a097879d81ee347145a5}
+
+
+References Mem\+Total.
+
+
+\begin{DoxyCode}
+71                                     \{
+72                 \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{MemTotal};
+73             \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!serialize@{serialize}}
+\index{serialize@{serialize}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{serialize(\+Archive \&ar, const unsigned int version)}{serialize(Archive &ar, const unsigned int version)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Archive $>$ void rdf\+::\+Resource\+::serialize (
+\begin{DoxyParamCaption}
+\item[{Archive \&}]{ar, }
+\item[{const unsigned int}]{version}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}\hypertarget{classrdf_1_1Resource_adfedf0fbbd8025004e21d87d46dc7abf}{}\label{classrdf_1_1Resource_adfedf0fbbd8025004e21d87d46dc7abf}
+
+
+References C\+P\+Us, Frequency, Mem\+Free, Mem\+Total, and rank.
+
+
+\begin{DoxyCode}
+27                 \{
+28                     ar & \hyperlink{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{MemTotal};
+29                     ar & \hyperlink{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{MemFree};
+30                     ar & \hyperlink{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{CPUs};
+31                     ar & \hyperlink{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{Frequency};
+32                     ar & \hyperlink{classrdf_1_1Resource_abbff4961e68af1fe21b676b5d6d82146}{rank};
+33             \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!set\+C\+P\+Us@{set\+C\+P\+Us}}
+\index{set\+C\+P\+Us@{set\+C\+P\+Us}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{set\+C\+P\+Us(int C\+P\+Us)}{setCPUs(int CPUs)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Resource\+::set\+C\+P\+Us (
+\begin{DoxyParamCaption}
+\item[{int}]{C\+P\+Us}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Resource_acde532c88486296bea5ae2420a981364}{}\label{classrdf_1_1Resource_acde532c88486296bea5ae2420a981364}
+
+
+References C\+P\+Us.
+
+
+
+Referenced by Resources\+::create\+Objet().
+
+
+\begin{DoxyCode}
+51                                    \{
+52                 this->\hyperlink{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{CPUs} = \hyperlink{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{CPUs};
+53             \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!set\+Frequency@{set\+Frequency}}
+\index{set\+Frequency@{set\+Frequency}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{set\+Frequency(int Frequency)}{setFrequency(int Frequency)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Resource\+::set\+Frequency (
+\begin{DoxyParamCaption}
+\item[{int}]{Frequency}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Resource_a41df357db31501e5dbc0e78d347efc3e}{}\label{classrdf_1_1Resource_a41df357db31501e5dbc0e78d347efc3e}
+
+
+References Frequency.
+
+
+
+Referenced by Resources\+::create\+Objet().
+
+
+\begin{DoxyCode}
+59                                              \{
+60                 this->\hyperlink{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{Frequency} = \hyperlink{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{Frequency};
+61             \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!set\+Mem\+Free@{set\+Mem\+Free}}
+\index{set\+Mem\+Free@{set\+Mem\+Free}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{set\+Mem\+Free(int Mem\+Free)}{setMemFree(int MemFree)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Resource\+::set\+Mem\+Free (
+\begin{DoxyParamCaption}
+\item[{int}]{Mem\+Free}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Resource_a91e688e3f3ea4ccd462887b687f7b14c}{}\label{classrdf_1_1Resource_a91e688e3f3ea4ccd462887b687f7b14c}
+
+
+References Mem\+Free.
+
+
+
+Referenced by Resources\+::create\+Objet().
+
+
+\begin{DoxyCode}
+67                                          \{
+68                 this->\hyperlink{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{MemFree} = \hyperlink{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{MemFree};
+69             \}
+\end{DoxyCode}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!set\+Mem\+Total@{set\+Mem\+Total}}
+\index{set\+Mem\+Total@{set\+Mem\+Total}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{set\+Mem\+Total(int Mem\+Total)}{setMemTotal(int MemTotal)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Resource\+::set\+Mem\+Total (
+\begin{DoxyParamCaption}
+\item[{int}]{Mem\+Total}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1Resource_a316a34c2dd6758f3125e7f424b3f35ba}{}\label{classrdf_1_1Resource_a316a34c2dd6758f3125e7f424b3f35ba}
+
+
+References Mem\+Total.
+
+
+
+Referenced by Resources\+::create\+Objet().
+
+
+\begin{DoxyCode}
+75                                            \{
+76                 this->\hyperlink{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{MemTotal} = \hyperlink{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{MemTotal};
+77             \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!boost\+::serialization\+::access@{boost\+::serialization\+::access}}
+\index{boost\+::serialization\+::access@{boost\+::serialization\+::access}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{boost\+::serialization\+::access}{boost::serialization::access}}]{\setlength{\rightskip}{0pt plus 5cm}friend class boost\+::serialization\+::access\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classrdf_1_1Resource_ac98d07dd8f7b70e16ccb9a01abf56b9c}{}\label{classrdf_1_1Resource_ac98d07dd8f7b70e16ccb9a01abf56b9c}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!C\+P\+Us@{C\+P\+Us}}
+\index{C\+P\+Us@{C\+P\+Us}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{C\+P\+Us}{CPUs}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::\+C\+P\+Us\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}{}\label{classrdf_1_1Resource_aa26913be707d9845b9c3ba180febe043}
+
+
+Referenced by display\+Resource(), get\+C\+P\+Us(), Resource(), serialize(), and set\+C\+P\+Us().
+
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!Frequency@{Frequency}}
+\index{Frequency@{Frequency}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{Frequency}{Frequency}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::\+Frequency\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}{}\label{classrdf_1_1Resource_ab5f7c94360292b32006f95e4a718decb}
+
+
+Referenced by display\+Resource(), get\+Frequency(), Resource(), serialize(), and set\+Frequency().
+
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!Mem\+Free@{Mem\+Free}}
+\index{Mem\+Free@{Mem\+Free}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{Mem\+Free}{MemFree}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::\+Mem\+Free\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}{}\label{classrdf_1_1Resource_a6fa4758d8e1cbc6315073e204bfcae7a}
+
+
+Referenced by display\+Resource(), get\+Mem\+Free(), Resource(), serialize(), and set\+Mem\+Free().
+
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!Mem\+Total@{Mem\+Total}}
+\index{Mem\+Total@{Mem\+Total}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{Mem\+Total}{MemTotal}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::\+Mem\+Total\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}{}\label{classrdf_1_1Resource_a37ff1f3b7071c2cdd5dcfa39ed0c7174}
+
+
+Referenced by display\+Resource(), get\+Mem\+Total(), Resource(), serialize(), and set\+Mem\+Total().
+
+\index{rdf\+::\+Resource@{rdf\+::\+Resource}!rank@{rank}}
+\index{rank@{rank}!rdf\+::\+Resource@{rdf\+::\+Resource}}
+\subsubsection[{\texorpdfstring{rank}{rank}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Resource\+::rank\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1Resource_abbff4961e68af1fe21b676b5d6d82146}{}\label{classrdf_1_1Resource_abbff4961e68af1fe21b676b5d6d82146}
+
+
+Referenced by serialize().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Resource_8h}{Resource.\+h}\item 
+\hyperlink{Resource_8cpp}{Resource.\+cpp}\end{DoxyCompactItemize}

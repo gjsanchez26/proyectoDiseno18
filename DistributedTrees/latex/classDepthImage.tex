@@ -1,0 +1,115 @@
+\hypertarget{classDepthImage}{}\section{Depth\+Image Class Reference}
+\label{classDepthImage}\index{Depth\+Image@{Depth\+Image}}
+
+
+{\ttfamily \#include $<$Depth\+Image.\+h$>$}
+
+
+
+Inheritance diagram for Depth\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classDepthImage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Depth\+Image\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classDepthImage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDepthImage_a3a391f24f9fa8480026b5c6e75ea8ae0}{Depth\+Image} ()
+\item 
+\hyperlink{classDepthImage_ae7b2b3cb66c4ee32426718d1034117f3}{Depth\+Image} (const \hyperlink{classDepthImage}{Depth\+Image} \&orig)
+\item 
+virtual \hyperlink{classDepthImage_aef27b02feac32d27dade770bd9a6638c}{$\sim$\+Depth\+Image} ()
+\item 
+virtual void \hyperlink{classDepthImage_a07e7b06393e869a1cc3c5b39d2dcdad0}{read\+Image} (int height, int width, std\+::string direction, cv\+::\+Mat \&image)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Depth\+Image@{Depth\+Image}!Depth\+Image@{Depth\+Image}}
+\index{Depth\+Image@{Depth\+Image}!Depth\+Image@{Depth\+Image}}
+\subsubsection[{\texorpdfstring{Depth\+Image()}{DepthImage()}}]{\setlength{\rightskip}{0pt plus 5cm}Depth\+Image\+::\+Depth\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classDepthImage_a3a391f24f9fa8480026b5c6e75ea8ae0}{}\label{classDepthImage_a3a391f24f9fa8480026b5c6e75ea8ae0}
+
+\begin{DoxyCode}
+16                        \{
+17 \}
+\end{DoxyCode}
+\index{Depth\+Image@{Depth\+Image}!Depth\+Image@{Depth\+Image}}
+\index{Depth\+Image@{Depth\+Image}!Depth\+Image@{Depth\+Image}}
+\subsubsection[{\texorpdfstring{Depth\+Image(const Depth\+Image \&orig)}{DepthImage(const DepthImage &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Depth\+Image\+::\+Depth\+Image (
+\begin{DoxyParamCaption}
+\item[{const {\bf Depth\+Image} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classDepthImage_ae7b2b3cb66c4ee32426718d1034117f3}{}\label{classDepthImage_ae7b2b3cb66c4ee32426718d1034117f3}
+
+\begin{DoxyCode}
+19                                              \{
+20 \}
+\end{DoxyCode}
+\index{Depth\+Image@{Depth\+Image}!````~Depth\+Image@{$\sim$\+Depth\+Image}}
+\index{````~Depth\+Image@{$\sim$\+Depth\+Image}!Depth\+Image@{Depth\+Image}}
+\subsubsection[{\texorpdfstring{$\sim$\+Depth\+Image()}{~DepthImage()}}]{\setlength{\rightskip}{0pt plus 5cm}Depth\+Image\+::$\sim$\+Depth\+Image (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classDepthImage_aef27b02feac32d27dade770bd9a6638c}{}\label{classDepthImage_aef27b02feac32d27dade770bd9a6638c}
+
+\begin{DoxyCode}
+22                         \{
+23 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Depth\+Image@{Depth\+Image}!read\+Image@{read\+Image}}
+\index{read\+Image@{read\+Image}!Depth\+Image@{Depth\+Image}}
+\subsubsection[{\texorpdfstring{read\+Image(int height, int width, std\+::string direction, cv\+::\+Mat \&image)}{readImage(int height, int width, std::string direction, cv::Mat &image)}}]{\setlength{\rightskip}{0pt plus 5cm}void Depth\+Image\+::read\+Image (
+\begin{DoxyParamCaption}
+\item[{int}]{height, }
+\item[{int}]{width, }
+\item[{std\+::string}]{direction, }
+\item[{cv\+::\+Mat \&}]{image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classDepthImage_a07e7b06393e869a1cc3c5b39d2dcdad0}{}\label{classDepthImage_a07e7b06393e869a1cc3c5b39d2dcdad0}
+Funcion para la lectura de la imagen de profundidad. 
+\begin{DoxyParams}{Parameters}
+{\em direction} & \\
+\hline
+{\em image\+Label} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classStrategyImage_aee857e79df483412f66b529417ddfd44}{Strategy\+Image}.
+
+
+\begin{DoxyCode}
+29                                                                                    \{
+30     cv::Mat imegeDepth;
+31     imegeDepth = cv::Mat(height, width, CV\_16UC1, cv::Scalar(0));
+32     std::string rute = direction;
+33     imegeDepth = cv::imread(rute.c\_str(),CV\_16UC1);
+34     image = imegeDepth;
+35 \}\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DepthImage_8h}{Depth\+Image.\+h}\item 
+\hyperlink{DepthImage_8cpp}{Depth\+Image.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,125 @@
+\hypertarget{classImageGetter}{}\section{Image\+Getter Class Reference}
+\label{classImageGetter}\index{Image\+Getter@{Image\+Getter}}
+
+
+{\ttfamily \#include $<$Image\+Getter.\+h$>$}
+
+
+
+Collaboration diagram for Image\+Getter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classImageGetter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImageGetter_a799e38d342c813f0402310e1deaefff0}{Image\+Getter} ()
+\item 
+\hyperlink{classImageGetter_a4c302f858d6577426c1ec92ab2902675}{Image\+Getter} (const \hyperlink{classImageGetter}{Image\+Getter} \&orig)
+\item 
+virtual \hyperlink{classImageGetter_a7193a143aaddc4d82ed6f4901968dcc8}{$\sim$\+Image\+Getter} ()
+\item 
+void \hyperlink{classImageGetter_a92cd05c7e86df5bf83ee9f428a805fb3}{read\+Path} (std\+::vector$<$ std\+::string $>$ \&directiones, int \&cont, std\+::string path, int start\+Read, int end\+Read)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Image\+Getter@{Image\+Getter}!Image\+Getter@{Image\+Getter}}
+\index{Image\+Getter@{Image\+Getter}!Image\+Getter@{Image\+Getter}}
+\subsubsection[{\texorpdfstring{Image\+Getter()}{ImageGetter()}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Getter\+::\+Image\+Getter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageGetter_a799e38d342c813f0402310e1deaefff0}{}\label{classImageGetter_a799e38d342c813f0402310e1deaefff0}
+
+\begin{DoxyCode}
+19                          \{
+20 \}
+\end{DoxyCode}
+\index{Image\+Getter@{Image\+Getter}!Image\+Getter@{Image\+Getter}}
+\index{Image\+Getter@{Image\+Getter}!Image\+Getter@{Image\+Getter}}
+\subsubsection[{\texorpdfstring{Image\+Getter(const Image\+Getter \&orig)}{ImageGetter(const ImageGetter &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Getter\+::\+Image\+Getter (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Getter} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageGetter_a4c302f858d6577426c1ec92ab2902675}{}\label{classImageGetter_a4c302f858d6577426c1ec92ab2902675}
+
+\begin{DoxyCode}
+22                                                 \{
+23 \}
+\end{DoxyCode}
+\index{Image\+Getter@{Image\+Getter}!````~Image\+Getter@{$\sim$\+Image\+Getter}}
+\index{````~Image\+Getter@{$\sim$\+Image\+Getter}!Image\+Getter@{Image\+Getter}}
+\subsubsection[{\texorpdfstring{$\sim$\+Image\+Getter()}{~ImageGetter()}}]{\setlength{\rightskip}{0pt plus 5cm}Image\+Getter\+::$\sim$\+Image\+Getter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classImageGetter_a7193a143aaddc4d82ed6f4901968dcc8}{}\label{classImageGetter_a7193a143aaddc4d82ed6f4901968dcc8}
+
+\begin{DoxyCode}
+25                           \{
+26 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Image\+Getter@{Image\+Getter}!read\+Path@{read\+Path}}
+\index{read\+Path@{read\+Path}!Image\+Getter@{Image\+Getter}}
+\subsubsection[{\texorpdfstring{read\+Path(std\+::vector$<$ std\+::string $>$ \&directiones, int \&cont, std\+::string path, int start\+Read, int end\+Read)}{readPath(std::vector< std::string > &directiones, int &cont, std::string path, int startRead, int endRead)}}]{\setlength{\rightskip}{0pt plus 5cm}void Image\+Getter\+::read\+Path (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::string $>$ \&}]{directiones, }
+\item[{int \&}]{cont, }
+\item[{std\+::string}]{path, }
+\item[{int}]{start\+Read, }
+\item[{int}]{end\+Read}
+\end{DoxyParamCaption}
+)}\hypertarget{classImageGetter_a92cd05c7e86df5bf83ee9f428a805fb3}{}\label{classImageGetter_a92cd05c7e86df5bf83ee9f428a805fb3}
+Funcion para leer el archivo que contiene la direccion de todas las imagenes en la base de datos 
+\begin{DoxyParams}{Parameters}
+{\em directiones} & \\
+\hline
+{\em cont} & \\
+\hline
+\end{DoxyParams}
+
+
+Referenced by Image\+::generated\+Structure\+Shotton().
+
+
+\begin{DoxyCode}
+33                                                                                                            
+              \{
+34     std::ifstream file;
+35     std::string line;
+36     \textcolor{keywordtype}{int} numeroLinea = 0;
+37     \textcolor{comment}{//int cont = 0;}
+38     file.open(path.c\_str(), std::ifstream::in);
+39     
+40     \textcolor{comment}{//Leer el archivo hasta que termine.}
+41     \textcolor{keywordflow}{while} (!file.eof()) \{
+42         
+43         \textcolor{keywordflow}{if}(numeroLinea >= startRead && numeroLinea<endRead)\{
+44             getline(file, line); \textcolor{comment}{//Lee la linea}
+45             directiones.push\_back(line); \textcolor{comment}{//agrega la linea al vector}
+46         \}\textcolor{keywordflow}{else}\{
+47             getline(file, line); \textcolor{comment}{//Lee la linea}
+48         \}
+49         \textcolor{keywordflow}{if}(numeroLinea == endRead)\{
+50             \textcolor{keywordflow}{break};
+51         \}
+52         numeroLinea++;
+53     \}
+54     
+55 
+56     
+57 \}\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ImageGetter_8h}{Image\+Getter.\+h}\item 
+\hyperlink{ImageGetter_8cpp}{Image\+Getter.\+cpp}\end{DoxyCompactItemize}

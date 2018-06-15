@@ -1,0 +1,34 @@
+\hypertarget{MatrixBPCFeatures_8cpp}{}\section{Matrix\+B\+P\+C\+Features.\+cpp File Reference}
+\label{MatrixBPCFeatures_8cpp}\index{Matrix\+B\+P\+C\+Features.\+cpp@{Matrix\+B\+P\+C\+Features.\+cpp}}
+{\ttfamily \#include \char`\"{}Matrix\+B\+P\+C\+Features.\+h\char`\"{}}\\*
+Include dependency graph for Matrix\+B\+P\+C\+Features.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{MatrixBPCFeatures_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mt19937 \hyperlink{MatrixBPCFeatures_8cpp_acd8f02610f7d92f49cfc5c5e0ad4c0da}{init2} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Matrix\+B\+P\+C\+Features.\+cpp@{Matrix\+B\+P\+C\+Features.\+cpp}!init2@{init2}}
+\index{init2@{init2}!Matrix\+B\+P\+C\+Features.\+cpp@{Matrix\+B\+P\+C\+Features.\+cpp}}
+\subsubsection[{\texorpdfstring{init2()}{init2()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mt19937 init2 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{MatrixBPCFeatures_8cpp_acd8f02610f7d92f49cfc5c5e0ad4c0da}{}\label{MatrixBPCFeatures_8cpp_acd8f02610f7d92f49cfc5c5e0ad4c0da}
+
+\begin{DoxyCode}
+122                    \{
+123     std::random\_device rd;
+124     std::mt19937 mt(rd());
+125     \textcolor{keywordflow}{return} mt;
+126 \}
+\end{DoxyCode}

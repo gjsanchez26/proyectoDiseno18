@@ -1,0 +1,438 @@
+\hypertarget{classScheduler}{}\section{Scheduler Class Reference}
+\label{classScheduler}\index{Scheduler@{Scheduler}}
+
+
+{\ttfamily \#include $<$Scheduler.\+h$>$}
+
+
+
+Collaboration diagram for Scheduler\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classScheduler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classScheduler_a3b61aac11466cd45ae42ab8c2b0013f6}{Scheduler} ()
+\item 
+\hyperlink{classScheduler_ae42ce9b6724e40c750ef6619bb35bee3}{Scheduler} (const \hyperlink{classScheduler}{Scheduler} \&orig)
+\item 
+virtual \hyperlink{classScheduler_afc8187779b46f64039d3ffa58f0dbe51}{$\sim$\+Scheduler} ()
+\item 
+void \hyperlink{classScheduler_a67fd277bb0cf15c2aa437cd1f7ed6e0a}{assing\+Task} (std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ structure, \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} \&task)
+\item 
+void \hyperlink{classScheduler_abc04c3760251ca922019db0cec5f0d50}{add\+Thread\+Queue} (\hyperlink{classQueueThread}{Queue\+Thread} thread)
+\item 
+void \hyperlink{classScheduler_a63a264c69136bace160286ef30ed0c11}{start} ()
+\item 
+void \hyperlink{classScheduler_a200281a389579bc17faf446f52efc801}{get\+Result} (std\+::queue$<$ \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ \&\hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results})
+\item 
+void \hyperlink{classScheduler_a0f1e295c22d686d6888a22ebdc57869f}{clean\+Queue\+Result} ()
+\item 
+std\+::queue$<$ \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ \hyperlink{classScheduler_a8864f6b658cf4d2a6d9d78a84c6d81f7}{get\+Results} () const 
+\item 
+void \hyperlink{classScheduler_a9e9839fbddf57961b055e32144db7d9a}{set\+Results} (std\+::queue$<$ \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results})
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classScheduler_a903ad54edab99f678aef0f79e2b426f8}{lock} ()
+\item 
+void \hyperlink{classScheduler_a157e2d59b776d904c07c81d47af5d3df}{check\+Queues} (std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ structure, std\+::priority\+\_\+queue$<$ \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} $>$ \hyperlink{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{tasks})
+\item 
+void \hyperlink{classScheduler_a6f86da54c4ec3f2566ce7251d59c8302}{sync} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::queue$<$ \hyperlink{classrdf_1_1NodeResult}{rdf\+::\+Node\+Result} $>$ \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results}
+\item 
+std\+::queue$<$ \hyperlink{classQueueThread}{Queue\+Thread} $>$ \hyperlink{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}{threads}
+\item 
+std\+::priority\+\_\+queue$<$ \hyperlink{classrdf_1_1Task}{rdf\+::\+Task} $>$ \hyperlink{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{tasks}
+\item 
+std\+::vector$<$ \hyperlink{structEstructura_1_1Node}{Estructura\+::\+Node} $>$ \hyperlink{classScheduler_a0603b1b04040b5e71cf3a945a1ec09b9}{structure\+Temp}
+\item 
+std\+::mutex \hyperlink{classScheduler_a19d05f87e9815e222ec52bcbfa81e435}{mtx}
+\item 
+std\+::condition\+\_\+variable \hyperlink{classScheduler_ac0bfe3868a5c8ba5205a8a50f6459083}{cv}
+\item 
+bool \hyperlink{classScheduler_a9a7edcef4b80171f8bb4b2802a3bc31f}{ready} = false
+\item 
+std\+::thread \hyperlink{classScheduler_ad1cbfa2210145f7d50c2648845707e68}{thread\+Manager}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Scheduler@{Scheduler}!Scheduler@{Scheduler}}
+\index{Scheduler@{Scheduler}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{Scheduler()}{Scheduler()}}]{\setlength{\rightskip}{0pt plus 5cm}Scheduler\+::\+Scheduler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classScheduler_a3b61aac11466cd45ae42ab8c2b0013f6}{}\label{classScheduler_a3b61aac11466cd45ae42ab8c2b0013f6}
+
+
+References threads.
+
+
+\begin{DoxyCode}
+18                      \{
+19 
+20     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 8; i++) \{
+21         \hyperlink{classQueueThread}{QueueThread} thread;
+22         \hyperlink{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}{Scheduler::threads}.push(thread);
+23     \}
+24 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!Scheduler@{Scheduler}}
+\index{Scheduler@{Scheduler}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{Scheduler(const Scheduler \&orig)}{Scheduler(const Scheduler &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}Scheduler\+::\+Scheduler (
+\begin{DoxyParamCaption}
+\item[{const {\bf Scheduler} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classScheduler_ae42ce9b6724e40c750ef6619bb35bee3}{}\label{classScheduler_ae42ce9b6724e40c750ef6619bb35bee3}
+
+\begin{DoxyCode}
+26                                           \{
+27 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!````~Scheduler@{$\sim$\+Scheduler}}
+\index{````~Scheduler@{$\sim$\+Scheduler}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{$\sim$\+Scheduler()}{~Scheduler()}}]{\setlength{\rightskip}{0pt plus 5cm}Scheduler\+::$\sim$\+Scheduler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classScheduler_afc8187779b46f64039d3ffa58f0dbe51}{}\label{classScheduler_afc8187779b46f64039d3ffa58f0dbe51}
+
+\begin{DoxyCode}
+29                       \{
+30 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{Scheduler@{Scheduler}!add\+Thread\+Queue@{add\+Thread\+Queue}}
+\index{add\+Thread\+Queue@{add\+Thread\+Queue}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{add\+Thread\+Queue(\+Queue\+Thread thread)}{addThreadQueue(QueueThread thread)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::add\+Thread\+Queue (
+\begin{DoxyParamCaption}
+\item[{{\bf Queue\+Thread}}]{thread}
+\end{DoxyParamCaption}
+)}\hypertarget{classScheduler_abc04c3760251ca922019db0cec5f0d50}{}\label{classScheduler_abc04c3760251ca922019db0cec5f0d50}
+
+
+References threads.
+
+
+
+Referenced by check\+Queues().
+
+
+\begin{DoxyCode}
+117                                                  \{
+118     \hyperlink{classQueueThread}{QueueThread} threadTem;
+119     \hyperlink{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}{Scheduler::threads}.push(thread);
+120 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!assing\+Task@{assing\+Task}}
+\index{assing\+Task@{assing\+Task}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{assing\+Task(std\+::vector$<$ Estructura\+::\+Node $>$ structure, rdf\+::\+Task \&task)}{assingTask(std::vector< Estructura::Node > structure, rdf::Task &task)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::assing\+Task (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Estructura\+::\+Node} $>$}]{structure, }
+\item[{{\bf rdf\+::\+Task} \&}]{task}
+\end{DoxyParamCaption}
+)}\hypertarget{classScheduler_a67fd277bb0cf15c2aa437cd1f7ed6e0a}{}\label{classScheduler_a67fd277bb0cf15c2aa437cd1f7ed6e0a}
+
+
+References check\+Queues(), and tasks.
+
+
+\begin{DoxyCode}
+38                                                                              \{
+39 
+40     \textcolor{comment}{//structureTemp = structure;}
+41     \hyperlink{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{tasks}.push(task);
+42     \hyperlink{classScheduler_a157e2d59b776d904c07c81d47af5d3df}{checkQueues}(structure, \hyperlink{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{tasks});
+43 
+44 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!check\+Queues@{check\+Queues}}
+\index{check\+Queues@{check\+Queues}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{check\+Queues(std\+::vector$<$ Estructura\+::\+Node $>$ structure, std\+::priority\+\_\+queue$<$ rdf\+::\+Task $>$ tasks)}{checkQueues(std::vector< Estructura::Node > structure, std::priority_queue< rdf::Task > tasks)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::check\+Queues (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Estructura\+::\+Node} $>$}]{structure, }
+\item[{std\+::priority\+\_\+queue$<$ {\bf rdf\+::\+Task} $>$}]{tasks}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_a157e2d59b776d904c07c81d47af5d3df}{}\label{classScheduler_a157e2d59b776d904c07c81d47af5d3df}
+
+
+References add\+Thread\+Queue(), Queue\+Thread\+::connect(), rdf\+::\+Node\+Result\+::get\+Matrix\+Results(), rdf\+::\+Node\+Result\+::get\+Task(), rdf\+::\+Node\+Result\+::is\+Status(), lock(), ready, results, rdf\+::\+Node\+Result\+::set\+Status(), rdf\+::\+Node\+Result\+::set\+Task(), rdf\+::\+Task\+::show\+Task(), sync(), tasks, thread\+Manager, and threads.
+
+
+
+Referenced by assing\+Task().
+
+
+\begin{DoxyCode}
+46                                                                                                  \{
+47 
+48     \textcolor{keywordflow}{if} (!\hyperlink{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{tasks}.empty()) \{
+49 
+50         \hyperlink{classrdf_1_1Task}{rdf::Task} task = \hyperlink{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{Scheduler::tasks}.top();
+51         \hyperlink{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{Scheduler::tasks}.pop();
+52         \hyperlink{classScheduler_a6f86da54c4ec3f2566ce7251d59c8302}{sync}();
+53 
+54 
+55 
+56         \textcolor{keywordflow}{if} (\hyperlink{classScheduler_a9a7edcef4b80171f8bb4b2802a3bc31f}{ready} && \hyperlink{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}{threads}.size() > 0) \{
+57 
+58             \textcolor{comment}{//objeto node result}
+59             \hyperlink{classrdf_1_1NodeResult}{rdf::NodeResult} *nodeResult  = \textcolor{keyword}{new} \hyperlink{classrdf_1_1NodeResult}{rdf::NodeResult}();
+60             \textcolor{comment}{//rdf::NodeResult nodeResultTemp;}
+61             nodeResult->\hyperlink{classrdf_1_1NodeResult_a29f9794788bb251bccddb5377bb78eba}{setTask}(task);
+62             \hyperlink{classQueueThread}{QueueThread} thread = \hyperlink{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}{Scheduler::threads}.front();
+63             \hyperlink{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}{Scheduler::threads}.pop();
+64             \hyperlink{classScheduler_ad1cbfa2210145f7d50c2648845707e68}{threadManager} = std::thread(&\hyperlink{classQueueThread_a873d5d9edf446f44467518c8fbde1800}{QueueThread::connect}, 
+      \hyperlink{classQueueThread}{QueueThread}(), structure, task, \hyperlink{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{tasks}, std::ref(*nodeResult));
+65             \textcolor{keywordflow}{if} (\hyperlink{classScheduler_ad1cbfa2210145f7d50c2648845707e68}{threadManager}.joinable())
+66                 \hyperlink{classScheduler_ad1cbfa2210145f7d50c2648845707e68}{threadManager}.join();
+67             \hyperlink{classScheduler_a9a7edcef4b80171f8bb4b2802a3bc31f}{ready} = \textcolor{keyword}{false};
+68             \hyperlink{classScheduler_abc04c3760251ca922019db0cec5f0d50}{addThreadQueue}(thread);
+69             std::cout << \textcolor{stringliteral}{"Task: "};
+70             nodeResult->\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_aed5f96455f9684078a5fa8fce849d197}{showTask}();
+71             std::cout << \textcolor{stringliteral}{"Results: \(\backslash\)n"};
+72             nodeResult->\hyperlink{classrdf_1_1NodeResult_ab0d07def4def30c0875602c5e3dde208}{getMatrixResults}().Print();
+73             nodeResult->\hyperlink{classrdf_1_1NodeResult_a52df0a39fb56beec66feacf802639b2c}{setStatus}(0);
+74             \textcolor{comment}{//nodeResult.setMatrixResults(nodeResultTemp.getMatrixResults());}
+75             \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results}.push(*nodeResult);
+76             
+77             std::cout << \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results}.size() << \textcolor{stringliteral}{" \(\backslash\)n"};
+78             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results}.size(); i++) \{
+79                  \hyperlink{classrdf_1_1NodeResult}{rdf::NodeResult} nodetemp = \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results}.front();
+80                  \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results}.pop();
+81                  nodetemp.\hyperlink{classrdf_1_1NodeResult_a564d581492a48333ed9796f6fd4b8c6a}{getTask}().\hyperlink{classrdf_1_1Task_aed5f96455f9684078a5fa8fce849d197}{showTask}();
+82                  
+83                  std::cout << \textcolor{stringliteral}{"
+      \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ \(\backslash\)n "};
+84                  nodetemp.\hyperlink{classrdf_1_1NodeResult_ab0d07def4def30c0875602c5e3dde208}{getMatrixResults}().Print();
+85                  std::cout << \textcolor{stringliteral}{"CE: "} << nodetemp.\hyperlink{classrdf_1_1NodeResult_a09ad0a96c0591976f73ef288eff195c7}{isStatus}() << \textcolor{stringliteral}{"\(\backslash\)n"};
+86                  std::cout << \textcolor{stringliteral}{"
+      \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_****************\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\(\backslash\)n "};
+87 
+88             \}
+89 
+90             \textcolor{comment}{//nodeResult.getMatrixResults().Print();}
+91             \textcolor{comment}{//results.push(nodeResult);}
+92 
+93         \} \textcolor{keywordflow}{else} \{
+94             \hyperlink{classScheduler_a903ad54edab99f678aef0f79e2b426f8}{lock}();
+95         \}
+96 
+97     \} \textcolor{keywordflow}{else} \{
+98 
+99         \textcolor{keywordflow}{if} (\hyperlink{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}{threads}.size() != 0) \{
+100         \}
+101     \}
+102 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!clean\+Queue\+Result@{clean\+Queue\+Result}}
+\index{clean\+Queue\+Result@{clean\+Queue\+Result}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{clean\+Queue\+Result()}{cleanQueueResult()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::clean\+Queue\+Result (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classScheduler_a0f1e295c22d686d6888a22ebdc57869f}{}\label{classScheduler_a0f1e295c22d686d6888a22ebdc57869f}
+
+
+References results.
+
+
+\begin{DoxyCode}
+126                                 \{
+127     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results}.size(); i++) \{
+128         \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results}.pop();
+129     \}
+130 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{get\+Result(std\+::queue$<$ rdf\+::\+Node\+Result $>$ \&results)}{getResult(std::queue< rdf::NodeResult > &results)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::get\+Result (
+\begin{DoxyParamCaption}
+\item[{std\+::queue$<$ {\bf rdf\+::\+Node\+Result} $>$ \&}]{results}
+\end{DoxyParamCaption}
+)}\hypertarget{classScheduler_a200281a389579bc17faf446f52efc801}{}\label{classScheduler_a200281a389579bc17faf446f52efc801}
+
+
+References results.
+
+
+\begin{DoxyCode}
+122                                                          \{
+123     \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results} = \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{Scheduler::results};
+124 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!get\+Results@{get\+Results}}
+\index{get\+Results@{get\+Results}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{get\+Results() const }{getResults() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::queue$<${\bf rdf\+::\+Node\+Result}$>$ Scheduler\+::get\+Results (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classScheduler_a8864f6b658cf4d2a6d9d78a84c6d81f7}{}\label{classScheduler_a8864f6b658cf4d2a6d9d78a84c6d81f7}
+
+
+References results.
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::sending\+Results().
+
+
+\begin{DoxyCode}
+51                                                \{
+52         \textcolor{keywordflow}{return} \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results};
+53     \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!lock@{lock}}
+\index{lock@{lock}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{lock()}{lock()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_a903ad54edab99f678aef0f79e2b426f8}{}\label{classScheduler_a903ad54edab99f678aef0f79e2b426f8}
+
+
+References cv, mtx, and ready.
+
+
+
+Referenced by check\+Queues().
+
+
+\begin{DoxyCode}
+110                      \{
+111     std::unique\_lock<std::mutex> lck(\hyperlink{classScheduler_a19d05f87e9815e222ec52bcbfa81e435}{mtx});
+112     \textcolor{keywordflow}{while} (!\hyperlink{classScheduler_a9a7edcef4b80171f8bb4b2802a3bc31f}{ready}) \{
+113         \hyperlink{classScheduler_ac0bfe3868a5c8ba5205a8a50f6459083}{cv}.wait(lck);
+114     \}
+115 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!set\+Results@{set\+Results}}
+\index{set\+Results@{set\+Results}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{set\+Results(std\+::queue$<$ rdf\+::\+Node\+Result $>$ results)}{setResults(std::queue< rdf::NodeResult > results)}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::set\+Results (
+\begin{DoxyParamCaption}
+\item[{std\+::queue$<$ {\bf rdf\+::\+Node\+Result} $>$}]{results}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classScheduler_a9e9839fbddf57961b055e32144db7d9a}{}\label{classScheduler_a9e9839fbddf57961b055e32144db7d9a}
+
+
+References results.
+
+
+\begin{DoxyCode}
+55                                                      \{
+56         this->\hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results} = \hyperlink{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{results};
+57     \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!start@{start}}
+\index{start@{start}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{start()}{start()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classScheduler_a63a264c69136bace160286ef30ed0c11}{}\label{classScheduler_a63a264c69136bace160286ef30ed0c11}
+
+\begin{DoxyCode}
+32                       \{
+33     \textcolor{comment}{//threadManager = std::thread(&Scheduler::checkQueues, this, structureTemp, tasks);}
+34     \textcolor{comment}{//rdf::Task task;}
+35     \textcolor{comment}{//threadManager = std::thread(&QueueThread::connect,QueueThread(), structureTemp, task, tasks);}
+36 \}
+\end{DoxyCode}
+\index{Scheduler@{Scheduler}!sync@{sync}}
+\index{sync@{sync}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{sync()}{sync()}}]{\setlength{\rightskip}{0pt plus 5cm}void Scheduler\+::sync (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_a6f86da54c4ec3f2566ce7251d59c8302}{}\label{classScheduler_a6f86da54c4ec3f2566ce7251d59c8302}
+
+
+References cv, mtx, and ready.
+
+
+
+Referenced by check\+Queues().
+
+
+\begin{DoxyCode}
+104                      \{
+105     std::unique\_lock<std::mutex> lck(\hyperlink{classScheduler_a19d05f87e9815e222ec52bcbfa81e435}{mtx});
+106     \hyperlink{classScheduler_a9a7edcef4b80171f8bb4b2802a3bc31f}{ready} = \textcolor{keyword}{true};
+107     \hyperlink{classScheduler_ac0bfe3868a5c8ba5205a8a50f6459083}{cv}.notify\_one();
+108 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{Scheduler@{Scheduler}!cv@{cv}}
+\index{cv@{cv}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{cv}{cv}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::condition\+\_\+variable Scheduler\+::cv\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_ac0bfe3868a5c8ba5205a8a50f6459083}{}\label{classScheduler_ac0bfe3868a5c8ba5205a8a50f6459083}
+
+
+Referenced by lock(), and sync().
+
+\index{Scheduler@{Scheduler}!mtx@{mtx}}
+\index{mtx@{mtx}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{mtx}{mtx}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::mutex Scheduler\+::mtx\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_a19d05f87e9815e222ec52bcbfa81e435}{}\label{classScheduler_a19d05f87e9815e222ec52bcbfa81e435}
+
+
+Referenced by lock(), and sync().
+
+\index{Scheduler@{Scheduler}!ready@{ready}}
+\index{ready@{ready}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{ready}{ready}}]{\setlength{\rightskip}{0pt plus 5cm}bool Scheduler\+::ready = false\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_a9a7edcef4b80171f8bb4b2802a3bc31f}{}\label{classScheduler_a9a7edcef4b80171f8bb4b2802a3bc31f}
+
+
+Referenced by check\+Queues(), lock(), and sync().
+
+\index{Scheduler@{Scheduler}!results@{results}}
+\index{results@{results}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{results}{results}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::queue$<${\bf rdf\+::\+Node\+Result}$>$ Scheduler\+::results\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}{}\label{classScheduler_a93faf0df4ed95016cdb5224bd2725c3f}
+
+
+Referenced by check\+Queues(), clean\+Queue\+Result(), get\+Result(), get\+Results(), and set\+Results().
+
+\index{Scheduler@{Scheduler}!structure\+Temp@{structure\+Temp}}
+\index{structure\+Temp@{structure\+Temp}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{structure\+Temp}{structureTemp}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf Estructura\+::\+Node}$>$ Scheduler\+::structure\+Temp\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_a0603b1b04040b5e71cf3a945a1ec09b9}{}\label{classScheduler_a0603b1b04040b5e71cf3a945a1ec09b9}
+\index{Scheduler@{Scheduler}!tasks@{tasks}}
+\index{tasks@{tasks}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{tasks}{tasks}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::priority\+\_\+queue$<${\bf rdf\+::\+Task}$>$ Scheduler\+::tasks\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}{}\label{classScheduler_adbcdf6edd31a2e8e088eb5bc91b4465e}
+
+
+Referenced by assing\+Task(), and check\+Queues().
+
+\index{Scheduler@{Scheduler}!thread\+Manager@{thread\+Manager}}
+\index{thread\+Manager@{thread\+Manager}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{thread\+Manager}{threadManager}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::thread Scheduler\+::thread\+Manager\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_ad1cbfa2210145f7d50c2648845707e68}{}\label{classScheduler_ad1cbfa2210145f7d50c2648845707e68}
+
+
+Referenced by check\+Queues().
+
+\index{Scheduler@{Scheduler}!threads@{threads}}
+\index{threads@{threads}!Scheduler@{Scheduler}}
+\subsubsection[{\texorpdfstring{threads}{threads}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::queue$<${\bf Queue\+Thread}$>$ Scheduler\+::threads\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}{}\label{classScheduler_a99f7fcd7cb3977cb7e76232a01aceffe}
+
+
+Referenced by add\+Thread\+Queue(), check\+Queues(), and Scheduler().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Scheduler_8h}{Scheduler.\+h}\item 
+\hyperlink{Scheduler_8cpp}{Scheduler.\+cpp}\end{DoxyCompactItemize}

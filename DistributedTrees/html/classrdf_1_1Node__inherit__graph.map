@@ -1,0 +1,4 @@
+<map id="rdf::Node" name="rdf::Node">
+<area shape="rect" id="node2" href="$classrdf_1_1NodeTrainee.html" title="{rdf::NodeTrainee\n||+ NodeTrainee()\l+ NodeTrainee()\l+ ~NodeTrainee()\l}" alt="" coords="33,189,157,296"/>
+<area shape="rect" id="node3" href="$classrdf_1_1bpc_1_1NodeTrainee.html" title="{rdf::bpc::NodeTrainee\&lt; T \&gt;\n|+ nodeId_\l+ treeId_\l&#45; matrix_\l|+ NodeTrainee()\l+ NodeTrainee()\l+ GetMatrix()\l+ ~NodeTrainee()\l+ GetLeft()\l+ GetRight()\l+ GetParentId()\l+ GetLevel()\l+ SetTreeId()\l+ SetNodeId()\l+ GetNodeMatrix()\l}" alt="" coords="5,344,185,597"/>
+</map>

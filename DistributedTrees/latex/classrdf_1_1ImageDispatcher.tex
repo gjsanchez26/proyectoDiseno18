@@ -1,0 +1,301 @@
+\hypertarget{classrdf_1_1ImageDispatcher}{}\section{rdf\+:\+:Image\+Dispatcher Class Reference}
+\label{classrdf_1_1ImageDispatcher}\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+
+
+{\ttfamily \#include $<$Image\+Dispatcher.\+h$>$}
+
+
+
+Collaboration diagram for rdf\+:\+:Image\+Dispatcher\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classrdf_1_1ImageDispatcher__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrdf_1_1ImageDispatcher_a32ca43231de0932370b3b5a98f76f5b5}{Image\+Dispatcher} ()
+\item 
+\hyperlink{classrdf_1_1ImageDispatcher_a75d599869487a60fcaf0269f77f2c049}{Image\+Dispatcher} (const \hyperlink{classrdf_1_1ImageDispatcher}{Image\+Dispatcher} \&orig)
+\item 
+virtual \hyperlink{classrdf_1_1ImageDispatcher_ab7a10dc991075876919a0d657251c808}{$\sim$\+Image\+Dispatcher} ()
+\item 
+int \hyperlink{classrdf_1_1ImageDispatcher_a0fe89ed7467fd34e1e24984b87d6d3bc}{analyze\+Resource} (\hyperlink{classrdf_1_1Resource}{rdf\+::\+Resource} \&p\+Resource)
+\item 
+void \hyperlink{classrdf_1_1ImageDispatcher_a10e89cb9630fe93877a23f485d2a1213}{assign\+Ranges} (int p\+Intervals, bool p\+Flag)
+\item 
+void \hyperlink{classrdf_1_1ImageDispatcher_a900b639d7be2ac5e4e48b5a7aa879182}{add\+Resource} (\hyperlink{classrdf_1_1Resource}{rdf\+::\+Resource} \&p\+Resource)
+\item 
+void \hyperlink{classrdf_1_1ImageDispatcher_ac78db12cfd581737ad8077e0af974c2b}{show\+Ranges} ()
+\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \hyperlink{classrdf_1_1ImageDispatcher_a1044b93dabc737e15045fc5c62970e7b}{get\+Images\+Ranges} () const 
+\item 
+void \hyperlink{classrdf_1_1ImageDispatcher_a989c61bb935fa54a0838bd2d49a51133}{set\+Images\+Ranges} (std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\+\_\+images\+Ranges})
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\+\_\+images\+Ranges}
+\item 
+std\+::vector$<$ \hyperlink{classrdf_1_1Resource}{rdf\+::\+Resource} $>$ \hyperlink{classrdf_1_1ImageDispatcher_aee49acec382a35bd2043e14f56dce8b1}{\+\_\+resource\+Vector}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\textquotesingle{} This class identify resources from all different nodes and say how many images this node can load to the memory 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!Image\+Dispatcher@{Image\+Dispatcher}}
+\index{Image\+Dispatcher@{Image\+Dispatcher}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{Image\+Dispatcher()}{ImageDispatcher()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Image\+Dispatcher\+::\+Image\+Dispatcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ImageDispatcher_a32ca43231de0932370b3b5a98f76f5b5}{}\label{classrdf_1_1ImageDispatcher_a32ca43231de0932370b3b5a98f76f5b5}
+
+\begin{DoxyCode}
+19                                     \{
+20 \}
+\end{DoxyCode}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!Image\+Dispatcher@{Image\+Dispatcher}}
+\index{Image\+Dispatcher@{Image\+Dispatcher}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{Image\+Dispatcher(const Image\+Dispatcher \&orig)}{ImageDispatcher(const ImageDispatcher &orig)}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Image\+Dispatcher\+::\+Image\+Dispatcher (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Dispatcher} \&}]{orig}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ImageDispatcher_a75d599869487a60fcaf0269f77f2c049}{}\label{classrdf_1_1ImageDispatcher_a75d599869487a60fcaf0269f77f2c049}
+
+
+References \+\_\+images\+Ranges.
+
+
+\begin{DoxyCode}
+22                                                                \{
+23     \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges} = orig.\_imagesRanges;
+24 
+25 \}
+\end{DoxyCode}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!````~Image\+Dispatcher@{$\sim$\+Image\+Dispatcher}}
+\index{````~Image\+Dispatcher@{$\sim$\+Image\+Dispatcher}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{$\sim$\+Image\+Dispatcher()}{~ImageDispatcher()}}]{\setlength{\rightskip}{0pt plus 5cm}rdf\+::\+Image\+Dispatcher\+::$\sim$\+Image\+Dispatcher (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classrdf_1_1ImageDispatcher_ab7a10dc991075876919a0d657251c808}{}\label{classrdf_1_1ImageDispatcher_ab7a10dc991075876919a0d657251c808}
+
+\begin{DoxyCode}
+26 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!add\+Resource@{add\+Resource}}
+\index{add\+Resource@{add\+Resource}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{add\+Resource(rdf\+::\+Resource \&p\+Resource)}{addResource(rdf::Resource &pResource)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Image\+Dispatcher\+::add\+Resource (
+\begin{DoxyParamCaption}
+\item[{{\bf rdf\+::\+Resource} \&}]{p\+Resource}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ImageDispatcher_a900b639d7be2ac5e4e48b5a7aa879182}{}\label{classrdf_1_1ImageDispatcher_a900b639d7be2ac5e4e48b5a7aa879182}
+
+
+References \+\_\+resource\+Vector.
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Resources().
+
+
+\begin{DoxyCode}
+94                                                            \{
+95     \hyperlink{classrdf_1_1ImageDispatcher_aee49acec382a35bd2043e14f56dce8b1}{\_resourceVector}.push\_back(pResource);
+96     
+97 
+98 \}
+\end{DoxyCode}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!analyze\+Resource@{analyze\+Resource}}
+\index{analyze\+Resource@{analyze\+Resource}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{analyze\+Resource(rdf\+::\+Resource \&p\+Resource)}{analyzeResource(rdf::Resource &pResource)}}]{\setlength{\rightskip}{0pt plus 5cm}int rdf\+::\+Image\+Dispatcher\+::analyze\+Resource (
+\begin{DoxyParamCaption}
+\item[{{\bf rdf\+::\+Resource} \&}]{p\+Resource}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ImageDispatcher_a0fe89ed7467fd34e1e24984b87d6d3bc}{}\label{classrdf_1_1ImageDispatcher_a0fe89ed7467fd34e1e24984b87d6d3bc}
+This function intents analyze resource from each nodes in order to determinate how many images can charge 
+\begin{DoxyParams}{Parameters}
+{\em p\+Resource} & \+: object that contains information about available memory in the node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: it is the number of images that can charge. 
+\end{DoxyReturn}
+
+
+References rdf\+::\+Resource\+::get\+Mem\+Free().
+
+
+
+Referenced by assign\+Ranges().
+
+
+\begin{DoxyCode}
+33                                                               \{
+34     \textcolor{comment}{// SOME KIND OF ANALYSIS OVER THE RESOURCE TO RETURN AN AMOUN NUMBER OF IMAGES}
+35     
+36     \textcolor{keywordtype}{int} memAvaibale = pResource.\hyperlink{classrdf_1_1Resource_a776692d45e08c13c1d3cbd8ef7ce9c5b}{getMemFree}(); \textcolor{comment}{// KB}
+37     \textcolor{keywordtype}{int} imageSize   = 10000;   \textcolor{comment}{// KB}
+38     \textcolor{keywordflow}{return} memAvaibale / imageSize;
+39 
+40 \}
+\end{DoxyCode}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!assign\+Ranges@{assign\+Ranges}}
+\index{assign\+Ranges@{assign\+Ranges}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{assign\+Ranges(int p\+Intervals, bool p\+Flag)}{assignRanges(int pIntervals, bool pFlag)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Image\+Dispatcher\+::assign\+Ranges (
+\begin{DoxyParamCaption}
+\item[{int}]{p\+Intervals, }
+\item[{bool}]{p\+Flag}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ImageDispatcher_a10e89cb9630fe93877a23f485d2a1213}{}\label{classrdf_1_1ImageDispatcher_a10e89cb9630fe93877a23f485d2a1213}
+This function assing the same number of images for each process and save them in a vector with a std\+::pair object 
+\begin{DoxyParams}{Parameters}
+{\em p\+Intervals} & \+: how many process or intervals. \\
+\hline
+\end{DoxyParams}
+
+
+References \+\_\+images\+Ranges, \+\_\+resource\+Vector, analyze\+Resource(), and T\+R\+A\+I\+N\+\_\+\+I\+M\+A\+G\+E\+S\+\_\+\+A\+M\+O\+U\+NT.
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Resources().
+
+
+\begin{DoxyCode}
+46                                                                \{
+47     \textcolor{keywordflow}{if}(pFlag)\{
+48             \textcolor{keywordtype}{int} multiple = \hyperlink{Config_8h_a2f82dae94103cd6733842f0fed0aeb62}{TRAIN\_IMAGES\_AMOUNT}/pIntervals;
+49             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0 ; i < \hyperlink{Config_8h_a2f82dae94103cd6733842f0fed0aeb62}{TRAIN\_IMAGES\_AMOUNT}; i++)\{
+50                 \textcolor{keywordflow}{if}(i%multiple == 0)\{
+51                     \textcolor{keywordtype}{int} a = i;
+52                     \textcolor{keywordtype}{int} b = i + multiple-1;
+53                     std::pair<int,int> range(a,b);
+54                     \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges}.push\_back(range);
+55                 \}   
+56             \}
+57     \}
+58     
+59     \textcolor{keywordflow}{else} \{
+60         \textcolor{keywordtype}{int} imageSum = 0;
+61         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i< \hyperlink{classrdf_1_1ImageDispatcher_aee49acec382a35bd2043e14f56dce8b1}{\_resourceVector}.size(); i++)\{
+62             Resource temp = \hyperlink{classrdf_1_1ImageDispatcher_aee49acec382a35bd2043e14f56dce8b1}{\_resourceVector}[i];
+63             
+64             \textcolor{keywordflow}{if}(i==0)\{
+65                 \textcolor{keywordtype}{int} imageAmount = \hyperlink{classrdf_1_1ImageDispatcher_a0fe89ed7467fd34e1e24984b87d6d3bc}{analyzeResource}(temp);
+66                 \textcolor{keywordtype}{int}    a = i;
+67                 \textcolor{keywordtype}{int}    b = i + imageAmount - 1;
+68                 imageSum = imageAmount  + imageAmount;
+69                 std::pair<int,int> range(a,b);
+70                 \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges}.push\_back(range);
+71             \}
+72             \textcolor{keywordflow}{else} \{
+73                 \textcolor{keywordtype}{int} imageAmount = \hyperlink{classrdf_1_1ImageDispatcher_a0fe89ed7467fd34e1e24984b87d6d3bc}{analyzeResource}(temp);
+74                 std::pair<int,int> lastRange;
+75                 lastRange = \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges}.back();
+76                 \textcolor{keywordtype}{int} a = lastRange.second+1;
+77                 \textcolor{keywordtype}{int} b = lastRange.second + imageAmount-1;
+78                 imageSum = imageAmount  + imageAmount;
+79                 std::pair<int,int> range(a,b);
+80                 \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges}.push\_back(range);
+81                 
+82             \}
+83             
+84         \} 
+85     \}
+86 \}
+\end{DoxyCode}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!get\+Images\+Ranges@{get\+Images\+Ranges}}
+\index{get\+Images\+Ranges@{get\+Images\+Ranges}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{get\+Images\+Ranges() const }{getImagesRanges() const }}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$int, int$>$ $>$ rdf\+::\+Image\+Dispatcher\+::get\+Images\+Ranges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ImageDispatcher_a1044b93dabc737e15045fc5c62970e7b}{}\label{classrdf_1_1ImageDispatcher_a1044b93dabc737e15045fc5c62970e7b}
+
+
+References \+\_\+images\+Ranges.
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Ranges().
+
+
+\begin{DoxyCode}
+37                                                               \{
+38             \textcolor{keywordflow}{return} \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges};
+39         \}
+\end{DoxyCode}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!set\+Images\+Ranges@{set\+Images\+Ranges}}
+\index{set\+Images\+Ranges@{set\+Images\+Ranges}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{set\+Images\+Ranges(std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \+\_\+images\+Ranges)}{setImagesRanges(std::vector< std::pair< int, int > > _imagesRanges)}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Image\+Dispatcher\+::set\+Images\+Ranges (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$}]{\+\_\+images\+Ranges}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classrdf_1_1ImageDispatcher_a989c61bb935fa54a0838bd2d49a51133}{}\label{classrdf_1_1ImageDispatcher_a989c61bb935fa54a0838bd2d49a51133}
+
+
+References \+\_\+images\+Ranges.
+
+
+\begin{DoxyCode}
+40                                                                           \{
+41             this->\hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges} = \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges};
+42         \}
+\end{DoxyCode}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!show\+Ranges@{show\+Ranges}}
+\index{show\+Ranges@{show\+Ranges}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{show\+Ranges()}{showRanges()}}]{\setlength{\rightskip}{0pt plus 5cm}void rdf\+::\+Image\+Dispatcher\+::show\+Ranges (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classrdf_1_1ImageDispatcher_ac78db12cfd581737ad8077e0af974c2b}{}\label{classrdf_1_1ImageDispatcher_ac78db12cfd581737ad8077e0af974c2b}
+
+
+References \+\_\+images\+Ranges.
+
+
+
+Referenced by rdf\+::\+Distribution\+Manager\+::transfer\+Resources().
+
+
+\begin{DoxyCode}
+88                                     \{
+89     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0 ; i < \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges}.size(); i++)\{
+90         std::cout << \textcolor{stringliteral}{"Node "} << i+1 << \textcolor{stringliteral}{": ["} <<\hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges}[i].first <<\textcolor{stringliteral}{","} << 
+      \hyperlink{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{\_imagesRanges}[i].second << \textcolor{stringliteral}{"] \(\backslash\)n"};
+91     \}
+92 \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!\+\_\+images\+Ranges@{\+\_\+images\+Ranges}}
+\index{\+\_\+images\+Ranges@{\+\_\+images\+Ranges}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{\+\_\+images\+Ranges}{_imagesRanges}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$std\+::pair$<$int,int$>$ $>$ rdf\+::\+Image\+Dispatcher\+::\+\_\+images\+Ranges\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}{}\label{classrdf_1_1ImageDispatcher_a090ae3aa3b2e08ebc0432314ef519ae6}
+Allow to save assigned image ranges 
+
+Referenced by assign\+Ranges(), get\+Images\+Ranges(), Image\+Dispatcher(), set\+Images\+Ranges(), and show\+Ranges().
+
+\index{rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}!\+\_\+resource\+Vector@{\+\_\+resource\+Vector}}
+\index{\+\_\+resource\+Vector@{\+\_\+resource\+Vector}!rdf\+::\+Image\+Dispatcher@{rdf\+::\+Image\+Dispatcher}}
+\subsubsection[{\texorpdfstring{\+\_\+resource\+Vector}{_resourceVector}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<${\bf rdf\+::\+Resource}$>$ rdf\+::\+Image\+Dispatcher\+::\+\_\+resource\+Vector\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{classrdf_1_1ImageDispatcher_aee49acec382a35bd2043e14f56dce8b1}{}\label{classrdf_1_1ImageDispatcher_aee49acec382a35bd2043e14f56dce8b1}
+
+
+Referenced by add\+Resource(), and assign\+Ranges().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ImageDispatcher_8h}{Image\+Dispatcher.\+h}\item 
+\hyperlink{ImageDispatcher_8cpp}{Image\+Dispatcher.\+cpp}\end{DoxyCompactItemize}

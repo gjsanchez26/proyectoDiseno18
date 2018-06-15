@@ -1,0 +1,7 @@
+<map id="ImageManager" name="ImageManager">
+<area shape="rect" id="node2" href="$structEstructura_1_1DataMaster.html" title="{Estructura::DataMaster\n|+ type_Algorithm\l+ NumPoints\l+ height\l+ width\l+ NumTree\l+ startRead\l+ endRead\l+ tree\l+ node\l|}" alt="" coords="5,5,164,200"/>
+<area shape="rect" id="node4" href="$classEstructura.html" title="{Estructura\n||+ Estructura()\l+ Estructura()\l+ ~Estructura()\l+ seeImageDepth()\l+ seeImageLabel()\l}" alt="" coords="183,263,317,399"/>
+<area shape="rect" id="node3" href="$classImage.html" title="{Image\n||+ Image()\l+ Image()\l+ ~Image()\l+ getStructura()\l&#45; generatedStructureShotton()\l}" alt="" coords="341,263,535,399"/>
+<area shape="rect" id="node5" href="$structEstructura_1_1Node.html" title="{Estructura::Node\n|+ imageDepth\l+ imageLabel\l+ points\l+ treesAvailability\l+ tree\l+ node\l|+ getTotalSize()\l}" alt="" coords="188,27,315,178"/>
+<area shape="rect" id="node6" href="$structEstructura_1_1Pixel.html" title="{Estructura::Pixel\n|+ point\l+ ubicacion\l|}" alt="" coords="339,57,457,149"/>
+</map>

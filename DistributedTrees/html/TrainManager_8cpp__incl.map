@@ -1,0 +1,26 @@
+<map id="TrainManager.cpp" name="TrainManager.cpp">
+<area shape="rect" id="node2" href="$TrainManager_8h.html" title="TrainManager.h" alt="" coords="1444,80,1556,107"/>
+<area shape="rect" id="node6" href="$Task_8h.html" title="Task.h" alt="" coords="2617,393,2679,420"/>
+<area shape="rect" id="node22" href="$DistributionManager_8h.html" title="DistributionManager.h" alt="" coords="2517,155,2667,181"/>
+<area shape="rect" id="node27" href="$ForestManager_8h.html" title="ForestManager.h" alt="" coords="2920,237,3040,263"/>
+<area shape="rect" id="node37" href="$ImageGetter_8h.html" title="ImageGetter.h" alt="" coords="1049,475,1154,502"/>
+<area shape="rect" id="node38" href="$Collection_8h.html" title="Collection.h" alt="" coords="376,393,467,420"/>
+<area shape="rect" id="node40" href="$LabelImage_8h.html" title="LabelImage.h" alt="" coords="721,393,821,420"/>
+<area shape="rect" id="node41" href="$DepthImage_8h.html" title="DepthImage.h" alt="" coords="592,393,696,420"/>
+<area shape="rect" id="node42" href="$Estructura_8h.html" title="Estructura.h" alt="" coords="1483,475,1576,502"/>
+<area shape="rect" id="node43" href="$PointsSelect_8h.html" title="PointsSelect.h" alt="" coords="1219,393,1325,420"/>
+<area shape="rect" id="node44" href="$Image_8h.html" title="Image.h" alt="" coords="635,319,704,345"/>
+<area shape="rect" id="node47" href="$Initializator_8h.html" title="Initializator.h" alt="" coords="1955,237,2051,263"/>
+<area shape="rect" id="node8" href="$FeaturesMat_8h.html" title="FeaturesMat.h" alt="" coords="2689,475,2796,502"/>
+<area shape="rect" id="node18" href="$Config_8h.html" title="Config.h" alt="" coords="2543,475,2614,502"/>
+<area shape="rect" id="node16" href="$Features_8h.html" title="Features.h" alt="" coords="2785,565,2869,591"/>
+<area shape="rect" id="node26" href="$ImageDispatcher_8h.html" title="ImageDispatcher.h" alt="" coords="3022,393,3154,420"/>
+<area shape="rect" id="node30" href="$NodeResult_8h.html" title="NodeResult.h" alt="" coords="2497,319,2599,345"/>
+<area shape="rect" id="node31" href="$ImageManager_8h.html" title="ImageManager.h" alt="" coords="1189,237,1307,263"/>
+<area shape="rect" id="node45" href="$BestFeatureMsg_8h.html" title="BestFeatureMsg.h" alt="" coords="3178,393,3307,420"/>
+<area shape="rect" id="node46" href="$Scheduler_8h.html" title="Scheduler.h" alt="" coords="2505,237,2596,263"/>
+<area shape="rect" id="node39" href="$StrategyImage_8h.html" title="StrategyImage.h" alt="" coords="601,475,719,502"/>
+<area shape="rect" id="node48" href="$ConfigData_8h.html" title="ConfigData.h" alt="" coords="2037,475,2136,502"/>
+<area shape="rect" id="node49" href="$ConfigValidationInterface_8h.html" title="ConfigValidationInterface.h" alt="" coords="2160,393,2339,420"/>
+<area shape="rect" id="node50" href="$userValidator_8h.html" title="userValidator.h" alt="" coords="2109,319,2219,345"/>
+</map>

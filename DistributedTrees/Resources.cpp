@@ -1,36 +1,29 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   Resources.cpp
- * Author: will
- * 
- * Created on 1 de mayo de 2018, 02:45 PM
- */
-
 #include <cstring>
 #include <string>
 
 #include "Resources.h"
 
-Resources::Resources() {
+using namespace rdf;
+
+rdf::Resources::Resources() {
 }
 
-Resources::Resources(const Resources& orig) {
+rdf::Resources::Resources(const Resources& orig) {
 }
 
-Resources::~Resources() {
+rdf::Resources::~Resources() {
 }
 
-void Resources::getResources(std::vector<std::string>& infoNodoCluster) {
+/**
+ * This method get to general information of cluster node
+ * @param infoNodoCluster
+ */
+void rdf::Resources::getResources(std::vector<std::string>& infoNodoCluster) {
     std::ifstream meminfo, cpuinfo;
     std::string all = "";
     std::vector<std::string> infoNodoClusterTemp;
     createDocuments();
-    convetir();
+    convert();
 
     loadDocuments(meminfo, cpuinfo);
 
@@ -48,7 +41,11 @@ void Resources::getResources(std::vector<std::string>& infoNodoCluster) {
     infoNodoCluster = infoNodoClusterTemp;
 }
 
-void Resources::convetir() {
+/**
+ * This method convert the files general to files with 
+ * the all information a 2 files only with the information specify
+ */
+void rdf::Resources::convert() {
     std::ifstream meminfo, cpuinfo;
     meminfo.open("meminfo.txt");
     cpuinfo.open("cpuinfo.txt");
@@ -92,17 +89,31 @@ void Resources::convetir() {
 
 }
 
-void Resources::createDocuments() {
+/**
+ * This method create to files with the imformation of cluster node
+ */
+void rdf::Resources::createDocuments() {
     system("echo $(cat -E /proc/meminfo) >meminfo.txt");
     system("echo $(cat -E /proc/cpuinfo) >cpuinfo.txt");
 }
 
-void Resources::loadDocuments(std::ifstream& meminfo, std::ifstream& cpuinfo) {
+/**
+ * This method load files with the information
+ * @param meminfo
+ * @param cpuinfo
+ */
+void rdf::Resources::loadDocuments(std::ifstream& meminfo, std::ifstream& cpuinfo) {
     meminfo.open("meminfo.txt");
     cpuinfo.open("cpuinfo.txt");
 }
 
-void Resources::readDocument(std::ifstream& file, std::string& text, int tipo) {
+/**
+ * This method read files with information for is to process
+ * @param file
+ * @param text
+ * @param tipo
+ */
+void rdf::Resources::readDocument(std::ifstream& file, std::string& text, int tipo) {
     std::string line;
     std::string temporal = "";
     if (tipo == 0) {
@@ -142,19 +153,30 @@ void Resources::readDocument(std::ifstream& file, std::string& text, int tipo) {
     text += temporal;
 }
 
-void Resources::writeDocument(std::string final) {
+/**
+ * This method write only file with information necessary
+ * @param final
+ */
+void rdf::Resources::writeDocument(std::string final) {
     std::ofstream file;
     file.open("Resources.txt");
     file << final;
     file.close();
 }
 
-void Resources::deleteDocument() {
+/**
+ * This method delete the previous files created for get information
+ */
+void rdf::Resources::deleteDocument() {
     remove("meminfo.txt");
     remove("cpuinfo.txt");
 }
 
-void Resources::readDocumentEnd(std::vector<std::string>& vector) {
+/**
+ * This method read file with information necesary for send to cluster nodo master 
+ * @param vector
+ */
+void rdf::Resources::readDocumentEnd(std::vector<std::string>& vector) {
     std::ifstream file;
     std::string line;
     file.open("Resources.txt", std::ifstream::in);
@@ -165,7 +187,12 @@ void Resources::readDocumentEnd(std::vector<std::string>& vector) {
     }
 }
 
-void Resources::createObjet(std::vector<std::string> infoNodoCluster, rdf::Resource& resourcesNodo){
+/**
+ * This method create object with the information necessary
+ * @param infoNodoCluster
+ * @param resourcesNodo
+ */
+void rdf::Resources::createObjet(std::vector<std::string> infoNodoCluster, Resource& resourcesNodo){
     
     std::string memtotal = infoNodoCluster[1];
     std::string valueMemTotal = "";
@@ -225,12 +252,10 @@ void Resources::createObjet(std::vector<std::string> infoNodoCluster, rdf::Resou
         }
     }
     
-    resourcesNodo.setCPUs      (cpus);
-    resourcesNodo.setFrequency (atoi(valueFrequency.c_str()));
-    resourcesNodo.setMemFree   (atoi(valueMemFree.c_str()));
-    resourcesNodo.setMemTotal  (atoi(valueMemTotal.c_str()));
-    
-    
-    
+    resourcesNodo.CPUs = cpus;
+    resourcesNodo.Frequency = atoi(valueFrequency.c_str());
+    resourcesNodo.MemFree = atoi(valueMemFree.c_str());
+    resourcesNodo.MemTotal = atoi(valueMemTotal.c_str());
     
 }
+

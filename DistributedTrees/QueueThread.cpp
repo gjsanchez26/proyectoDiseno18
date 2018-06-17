@@ -1,22 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   QueueThread.cpp
- * Author: will
- * 
- * Created on 22 de mayo de 2018, 09:03 AM
- */
-
 #include <exception>
 
 #include "QueueThread.h"
 #include "Scheduler.h"
 #include "NodeTraineeBPC.h"
 #include "TrainerBPC.h"
+
+using namespace rdf;
 
 QueueThread::QueueThread() {
 }
@@ -27,7 +16,12 @@ QueueThread::QueueThread(const QueueThread& orig) {
 QueueThread::~QueueThread() {
 }
 
-
+/**
+ * This method start to training with the structure, task.
+ * @param structure
+ * @param task
+ * @param nodeResult
+ */
 void init(std::vector<Estructura::Node> &structure, rdf::Task& task, rdf::NodeResult & nodeResult) {
     std::cout << "********************************************** SLAVE " << task.getRank() << " is TRAINNING *************************************\n";
     rdf::bpc::NodeTrainee<rdf::bpc::Cell>   _node;
@@ -48,6 +42,9 @@ void init(std::vector<Estructura::Node> &structure, rdf::Task& task, rdf::NodeRe
     
 }
 
+/**
+ * This funtion execute the thread
+ */
 void QueueThread::run() {
     std::unique_lock<std::mutex> lck(mtx);
     
@@ -82,6 +79,12 @@ void QueueThread::run() {
     //}
 }
 
+/**
+ * This funtion make to conection whit the parameters to thread
+ * @param structure
+ * @param task
+ * @param tasks
+ */
 void QueueThread::connect(std::vector<Estructura::Node> structure, rdf::Task task, 
 std::priority_queue<rdf::Task> tasks, rdf::NodeResult &nodeResult) {
     QueueThread::structure = structure;
@@ -95,6 +98,9 @@ std::priority_queue<rdf::Task> tasks, rdf::NodeResult &nodeResult) {
 
 }
 
+/**
+ * This funtion make the synchronization
+ */
 void QueueThread::sync() {
     std::unique_lock<std::mutex> lck(mtx);
     ready = true;

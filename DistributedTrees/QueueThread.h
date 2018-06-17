@@ -26,35 +26,41 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-class QueueThread {
-public:
-    QueueThread();
-    QueueThread(const QueueThread& orig);
-    virtual ~QueueThread();
-    std::thread thread;
-    std::mutex mtx;
-    std::condition_variable cv;
-    bool ready = false;
-    std::vector<Estructura::Node> structure;
-    rdf::Task task;
-    std::priority_queue<rdf::Task> tasks;
-    rdf::NodeResult nodeResult;
+namespace rdf {
+    
+    /*
+     * This class control to each thread with its respective task
+     */
+    class QueueThread {
+    public:
+        QueueThread();
+        QueueThread(const QueueThread& orig);
+        virtual ~QueueThread();
+        std::thread thread;
+        std::mutex mtx;
+        std::condition_variable cv;
+        bool ready = false;
+        std::vector<Estructura::Node> structure;
+        rdf::Task task;
+        std::priority_queue<rdf::Task> tasks;
+        rdf::NodeResult nodeResult;
 
 
-    void run();
-    
-    void connect(std::vector<Estructura::Node> structure,  rdf::Task task, std::priority_queue<rdf::Task> tasks,
-            rdf::NodeResult &nodeResult);
-    
-    
-    
-    
+        void run();
 
-private:
-    
-    void sync();
+        void connect(std::vector<Estructura::Node> structure,  rdf::Task task, std::priority_queue<rdf::Task> tasks,
+                rdf::NodeResult &nodeResult);
 
-};
+
+
+
+
+    private:
+
+        void sync();
+
+    };
+}
 
 #endif /* QUEUETHREAD_H */
 

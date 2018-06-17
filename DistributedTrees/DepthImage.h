@@ -1,14 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   DepthImage.h
- * Author: will
+ * Authors: 
+ * Gabriel Sanchez
+ * Alejandro Gonzalez
+ * Wilberth Varela
  *
- * Created on 1 de mayo de 2018, 09:20 PM
  */
 
 #ifndef DEPTHIMAGE_H
@@ -20,14 +16,20 @@
 #include <opencv2/highgui/highgui.hpp>
 #include "StrategyImage.h"
 
-class DepthImage: public StrategyImage {
-public:
-    DepthImage();
-    DepthImage(const DepthImage& orig);
-    virtual ~DepthImage();
-    virtual void readImage(int height, int width, std::string direction, cv::Mat& image);
-private:
+namespace rdf {
 
-};
+    /**
+     * This class works to read depth image 
+     */
+    class DepthImage : public StrategyImage {
+    public:
+        DepthImage();
+        DepthImage(const DepthImage& orig);
+        virtual ~DepthImage();
+        virtual void readImage(int height, int width, std::string direction, cv::Mat& image);
+    private:
+
+    };
+}
 
 #endif /* DEPTHIMAGE_H */

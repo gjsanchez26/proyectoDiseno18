@@ -1,28 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   ImageGetter.cpp
- * Author: will
- * 
- * Created on 29 de abril de 2018, 10:10 PM
- */
-
 #include "ImageGetter.h"
 
 
+using namespace rdf;
 
-
-ImageGetter::ImageGetter() {
+rdf::ImageGetter::ImageGetter() {
 }
 
-ImageGetter::ImageGetter(const ImageGetter& orig) {
+rdf::ImageGetter::ImageGetter(const ImageGetter& orig) {
 }
 
-ImageGetter::~ImageGetter() {
+rdf::ImageGetter::~ImageGetter() {
 }
 
 /**
@@ -30,7 +17,7 @@ ImageGetter::~ImageGetter() {
  * @param directiones
  * @param cont
  */
-void ImageGetter::readPath(std::vector<std::string>& directiones, int& cont, std::string path, int startRead, int endRead) {
+void rdf::ImageGetter::readPath(std::vector<std::string>& directiones, int& cont, std::string path, int startRead, int endRead) {
     std::ifstream file;
     std::string line;
     int numeroLinea = 0;
@@ -51,7 +38,5 @@ void ImageGetter::readPath(std::vector<std::string>& directiones, int& cont, std
         }
         numeroLinea++;
     }
-    
-
     
 }

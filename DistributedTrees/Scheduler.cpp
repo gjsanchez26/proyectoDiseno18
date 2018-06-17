@@ -15,6 +15,8 @@
 #include "QueueTask.h"
 #include "NodeResource.h"
 
+using namespace rdf;
+
 Scheduler::Scheduler() {
 
     for (int i = 0; i < 8; i++) {
@@ -35,6 +37,11 @@ void Scheduler::start() {
     //threadManager = std::thread(&QueueThread::connect,QueueThread(), structureTemp, task, tasks);
 }
 
+/**
+ * This method add to task a the queue of the tasks
+ * @param structure
+ * @param task
+ */
 void Scheduler::assingTask(std::vector<Estructura::Node> structure, rdf::Task &task) {
 
     //structureTemp = structure;
@@ -43,6 +50,11 @@ void Scheduler::assingTask(std::vector<Estructura::Node> structure, rdf::Task &t
 
 }
 
+/**
+ * This method check the queues of the tasks and threds and assing a task a thread
+ * @param structure
+ * @param tasks
+ */
 void Scheduler::checkQueues(std::vector<Estructura::Node> structure, std::priority_queue<rdf::Task> tasks) {
 
     if (!tasks.empty()) {
@@ -101,12 +113,18 @@ void Scheduler::checkQueues(std::vector<Estructura::Node> structure, std::priori
     }
 }
 
+/**
+ * This funtion make the synchronization
+ */
 void Scheduler::sync() {
     std::unique_lock<std::mutex> lck(mtx);
     ready = true;
     cv.notify_one();
 }
 
+/**
+ * This funtion lock the threads queue 
+ */
 void Scheduler::lock() {
     std::unique_lock<std::mutex> lck(mtx);
     while (!ready) {
@@ -114,15 +132,26 @@ void Scheduler::lock() {
     }
 }
 
+/**
+ * This method add a thread a to threads queue
+ * @param thread
+ */
 void Scheduler::addThreadQueue(QueueThread thread) {
     QueueThread threadTem;
     Scheduler::threads.push(thread);
 }
 
+/**
+ * This method get nodes results
+ * @param results
+ */
 void Scheduler::getResult(std::queue<rdf::NodeResult> &results){
     results = Scheduler::results;
 }
 
+/**
+ * This method clean the queue of results
+ */
 void Scheduler::cleanQueueResult(){
     for (int i = 0; i < results.size(); i++) {
         results.pop();

@@ -1,17 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   PointsSelect.cpp
- * Author: will
- * 
- * Created on 8 de mayo de 2018, 06:14 PM
- */
-
 #include "PointsSelect.h"
+
+using namespace rdf;
 
 PointsSelect::PointsSelect() {
 }
@@ -22,7 +11,16 @@ PointsSelect::PointsSelect(const PointsSelect& orig) {
 PointsSelect::~PointsSelect() {
 }
 
-void PointsSelect::generatedPoints(std::string type_Algorithm, std::vector<Estructura::Pixel>& points, int NumPoints, int height, int width, int NumTree){
+/**
+ * This funtion generate to points to each algorithms 
+ * @param type_Algorithm
+ * @param points
+ * @param NumPoints
+ * @param height
+ * @param width
+ * @param NumTree
+ */
+void rdf::PointsSelect::generatedPoints(std::string type_Algorithm, std::vector<Estructura::Pixel>& points, int NumPoints, int height, int width, int NumTree){
     
     std::vector<Estructura::Pixel> temporal;
     if(type_Algorithm.compare(0,7,"shotton") == 0){
@@ -32,7 +30,15 @@ void PointsSelect::generatedPoints(std::string type_Algorithm, std::vector<Estru
     points = temporal;
 }
 
-void PointsSelect::generatShoton(std::vector<Estructura::Pixel>& points, int NumPoints, int height, int width, int NumTree){
+/**
+ * This funtion generate to points to the algorithm of shotton
+ * @param points
+ * @param NumPoints
+ * @param height
+ * @param width
+ * @param NumTree
+ */
+void rdf::PointsSelect::generatShoton(std::vector<Estructura::Pixel>& points, int NumPoints, int height, int width, int NumTree){
     
     
     std::vector<int> start (NumTree,0);
@@ -44,3 +50,4 @@ void PointsSelect::generatShoton(std::vector<Estructura::Pixel>& points, int Num
         points.push_back(pixelTemp);
     }
 }
+

@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /* 
  * File:   ImageGetter.h
- * Author: will
+ * Authors: 
+ * Gabriel Sanchez
+ * Alejandro Gonzalez
+ * Wilberth Varela
  *
- * Created on 29 de abril de 2018, 10:10 PM
  */
 
 #ifndef IMAGEGETTER_H
@@ -31,17 +28,23 @@
 #define Width 320
 #define Height 240
 
-class ImageGetter {
-public:
-    ImageGetter();
-    ImageGetter(const ImageGetter& orig);
-    virtual ~ImageGetter();
-    void readPath(std::vector<std::string>& directiones, int& cont, std::string path, int startRead, int endRead); // se encarga de leer el archivo que contiene las imagenes lo asigna a una aareglo input:arreglo, es llamado desde getStructure
+namespace rdf {
+    /*
+     * This class get the directiones of the images
+     */
+    class ImageGetter {
+    public:
+        ImageGetter();
+        ImageGetter(const ImageGetter& orig);
+        virtual ~ImageGetter();
+        void readPath(std::vector<std::string>& directiones, int& cont, std::string path, int startRead, int endRead); // se encarga de leer el archivo que contiene las imagenes lo asigna a una aareglo input:arreglo, es llamado desde getStructure
 
-private:
-    
+    private:
 
-};
+    };
+}
 
 #endif /* IMAGEGETTER_H */
+
+
 
